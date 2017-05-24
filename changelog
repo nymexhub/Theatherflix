@@ -1,0 +1,19 @@
+Changelog file:
+-----------------------------------------
+#
+NEXT DEVELOPMENT
+#
+2017: v3.2
+-Future integration of a loging user password in the system using mongoDB
+-Migration from handlebars to Socket.IO
+-Future creating of an algorithm to create AI to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related.
+#
+Notes:
+#
+the movies will be lolcally in the folder path:
+public/movies-db (There will be just one movie partially available to watch for testing pusposes)
+
+#
+Other data to add:
+-----------------------------------------
+#
