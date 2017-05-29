@@ -32,9 +32,8 @@ app.get('/', (req, res) => {
 });
 
 
-// esdfjdsfjskldj fakjsldk fñadf jñaslkdf ñlal fj
-/// mi vecino es un conchesumadre ....
-// si imbecil > universo = ?????
+// 
+
 
 app.get('/', (req, res) => {
 
