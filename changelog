@@ -7,6 +7,13 @@ NEXT DEVELOPMENT
 -Future integration of a loging user password in the system using mongoDB
 -Migration from handlebars to Socket.IO
 -Future creating of an algorithm to create AI to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related.
+
+#
+Recent:
+#
+29-05.2017
+I begun to deploy with yarn 
+
 #
 Notes:
 #
