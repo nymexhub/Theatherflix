@@ -31,7 +31,8 @@ node_modules
 jspm_packages
 
 # Directorios de peliculas por peso en MG no se incluyen .
-public/movies-db-local
+public/movies-db
+public/movies-db-github
 
 # Optional npm cache directory
 .npm

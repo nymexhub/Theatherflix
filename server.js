@@ -86,6 +86,23 @@ app.get('/claireinmotion', (req, res) => {
    });
 });
 
+//wofw2005
+app.get('/wofw2005', (req, res) => {
+   res.render('wofw2005.hbs', {
+      pageTitle: 'You are watching: Word of Worlds (2005)'
+
+
+   });
+});
+
+// loopers
+app.get('/looper', (req, res) => {
+   res.render('looper.hbs', {
+      pageTitle: 'You are watching: Looper (2012)'
+
+   });
+});
+
 
 // ------------------------
 
