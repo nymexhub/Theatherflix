@@ -1,5 +1,12 @@
-const express = require('express');
-const hbs = require('hbs');
+// trying to implement something using variables instead of const
+
+var express = require('express');
+var hbs = require('hbs');
+
+
+//
+// const express = require('express');
+// const hbs = require('hbs');
 
 
 // intilization of express.js
@@ -22,36 +29,37 @@ hbs.registerHelper('screamIt', (text)  => {
 });
 
 
-app.get('/', (req, res) => {
-
-    res.render('home.hbs', {
-      pageTitle: 'Theatherflix',
-      welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your Computer or Server.',
-
-    });
-});
-
-
-// 
 
 
 app.get('/', (req, res) => {
 
     res.render('home.hbs', {
       pageTitle: 'Theatherflix',
-      welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your Computer or Server.',
-
+      welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
     });
+
 });
 
-// hsdfglksjgh lsgh lsjg hlsdghl dsjfkhgl kghs
 
+//
 
 
 // list of the movies that perhaps we could extract from a MongoDB.
 // List of movies
 // slepeers
 
+
+//silence movie
+app.get('/silence', (req, res) => {
+   res.render('silence.hbs', {
+      pageTitle: 'You are watching: Silence'
+
+
+   });
+});
+
+
+//
 app.get('/sleepers', (req, res) => {
    res.render('sleepers.hbs', {
       pageTitle: 'You are watching: Sleepers - 1996'
@@ -117,25 +125,22 @@ app.get('/about', (req, res) => {
 });
 
 
-app.get('/listings', (req, res) => {
-   res.render('listings.hbs', {
-      pageTitle: 'Movies page - Listing:'
 
-
-   });
+app.get('listings', (reg, res) => {
+  res.render('listings.hbs', {
+    pageTitle: 'Movies page - Listings:'
+  });
 });
 
-
-// /bad - json error message
-
-app.get('/bad', (req, res) => {
+// bad json error message
+app.get('bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'
   });
-
 });
 
 
+// calling the port 3000 to run the app 
 
 app.listen(3000, () => {
   console.log('Server is up in port 3000');
