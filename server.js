@@ -101,6 +101,32 @@ app.get('/wofw2005', (req, res) => {
 
 
    });
+
+
+// I'm trying to read the fils from the directoruy owhere the movies are
+
+var fs = require("fs");
+   fs.readdir(_self.mongoose.rutamodels, FUNCTION(err, files) {
+        IF (err) {
+          throw err;
+        }
+        files.map(FUNCTION.map) {
+          RETURN _self.path.join (_self.mongoose.rutamodels, files);
+        }).filter(FUNCTION(file) {
+
+          RETURN fs.statSync(file).isFile();
+
+        }).foreach.FUNCTION(file) {
+          var ext = self.path.basename(File);
+          var name_complete = self.path.basename(files);
+          var name_simple = name_complete.replace(ext, "");
+          console.log("---> %s : %s (%s)", name_complete, name_simple, ext);
+        });
+   });
+
+// end of tryng to implement something to read the files from the directory where the movies are
+
+
 });
 
 // loopers
@@ -140,7 +166,7 @@ app.get('bad', (req, res) => {
 });
 
 
-// calling the port 3000 to run the app 
+// calling the port 3000 to run the app
 
 app.listen(3000, () => {
   console.log('Server is up in port 3000');
