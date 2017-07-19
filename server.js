@@ -36,7 +36,11 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
       pageTitle: 'Theatherflix',
       welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
-    });
+
+
+});
+
+
 
 });
 
@@ -134,7 +138,7 @@ app.get('/about', (req, res) => {
 
 
 
-app.get('/listings', (reg, res) => {
+app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
     pageTitle: 'Movies page - Listings:'
   });
