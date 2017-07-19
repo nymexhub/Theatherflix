@@ -30,6 +30,14 @@ hbs.registerHelper('screamIt', (text)  => {
 
 
 
+app.get('/listings', (req, res) => {
+  res.render('listings.hbs', {
+    pageTitle: 'Movies page - Listings:',
+  });
+});
+
+// app.getElementsByClassName('listings').pageTitle
+
 
 app.get('/', (req, res) => {
 
@@ -123,7 +131,6 @@ app.get('/looper', (req, res) => {
    });
 });
 
-
 // ------------------------
 
 
@@ -138,12 +145,6 @@ app.get('/about', (req, res) => {
 
 
 
-app.get('/listings', (req, res) => {
-  res.render('listings.hbs', {
-    pageTitle: 'Movies page - Listings:'
-  });
-});
-
 // bad json error message
 app.get('bad', (req, res) => {
   res.send({
@@ -154,6 +155,6 @@ app.get('bad', (req, res) => {
 
 // calling the port 3000 to run the app
 //
-app.listen(3030, () => {
+app.listen(3000, () => {
   console.log('Server is up in port 3000');
 });
