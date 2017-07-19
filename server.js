@@ -28,15 +28,15 @@ hbs.registerHelper('screamIt', (text)  => {
   return text.toUpperCase();
 });
 
-
+// fixed ... If I put this line of code at the end, it doesn't show the page ...
 
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
     pageTitle: 'Movies page - Listings:',
   });
 });
-
-// app.getElementsByClassName('listings').pageTitle
+//
+//
 
 
 app.get('/', (req, res) => {
