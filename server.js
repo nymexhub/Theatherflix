@@ -28,6 +28,15 @@ hbs.registerHelper('screamIt', (text)  => {
   return text.toUpperCase();
 });
 
+// just playing around
+
+// var app = express();
+
+
+//
+
+
+
 // fixed ... If I put this line of code at the end, it doesn't show the page ...
 
 app.get('/listings', (req, res) => {
