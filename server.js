@@ -19,8 +19,11 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 // we render the html page in the public directory
 // we're gonnna try to use a different way to load the movies automatically.
-//app.use(express.static(__dirname+ 'public'));
+app.use(express.static(__dirname+ '/public'));
+//app.use('/static', express.static(path.join(__dirname, '/public')));
 
+//app.use(express.static(path.join(__dirname, 'movies-db')));
+//app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
 
 // $NODE_PATH
 
@@ -34,12 +37,13 @@ app.set('view engine', 'hbs');
 // this line is OK OK OK !!!!!
 // app.use(express.static(__dirname + '/public'));
 
-// *******************
-// app.use(express.static('/public/movies-db'));
+// ******************* OK *******
+// app.use(express.static(__dirname + '/public'));
+// ********** OK *******
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/movies-db',express.static(path.join(__dirname, 'public/movies-db')));
-
+// app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
+// app.use('/movies-all', express.static(__dirname, 'public/movies-db'));
 
 // ********************
 
