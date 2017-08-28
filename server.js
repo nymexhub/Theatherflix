@@ -3,8 +3,10 @@
 var express = require('express');
 var hbs = require('hbs');
 
-
+const path = require('path');
 //
+
+
 // const express = require('express');
 // const hbs = require('hbs');
 
@@ -12,11 +14,34 @@ var hbs = require('hbs');
 // intilization of express.js
 var app = express();
 
-// we declare partials
-hbs.registerPartials(__dirname + '/views/partials')
+// we declare partials+
+hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 // we render the html page in the public directory
-app.use(express.static(__dirname + '/public'));
+// we're gonnna try to use a different way to load the movies automatically.
+//app.use(express.static(__dirname+ 'public'));
+
+
+// $NODE_PATH
+
+
+// app.use('static', express.static(path.join(__dirname, 'public')));
+
+//hbs.registerPartials(__dirname + '/views/partials')
+//app.set('view engine', 'hbs');
+// we render the html page in the public directory
+
+// this line is OK OK OK !!!!!
+// app.use(express.static(__dirname + '/public'));
+
+// *******************
+// app.use(express.static('/public/movies-db'));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/movies-db',express.static(path.join(__dirname, 'public/movies-db')));
+
+
+// ********************
 
 // display the current year
 hbs.registerHelper('getCurrentYear', () => {
@@ -38,6 +63,12 @@ hbs.registerHelper('screamIt', (text)  => {
 
 
 // fixed ... If I put this line of code at the end, it doesn't show the page ...
+
+
+
+// we're gonna try to load all from here... (It's just a testing !!!  WARNING WITH THE CODE )
+
+// app.use('static', express.static(path.join(__dirname, 'public')));
 
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
