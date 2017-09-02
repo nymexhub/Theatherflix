@@ -1,6 +1,7 @@
 // trying to implement something using variables instead of const
 
 var express = require('express');
+// app = express.createServer();
 var hbs = require('hbs');
 
 const path = require('path');
@@ -17,13 +18,20 @@ var app = express();
 // we declare partials+
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
+
 // we render the html page in the public directory
 // we're gonnna try to use a different way to load the movies automatically.
-app.use(express.static(__dirname+ '/public'));
+// app.use(express.static(__dirname+ '/public'));
+// This one is OK.
+// ----> app.use(express.static(__dirname+ '/public'));
 //app.use('/static', express.static(path.join(__dirname, '/public')));
 
 //app.use(express.static(path.join(__dirname, 'movies-db')));
-//app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
+ app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
+ app.use(express.static(path.join(__dirname, '/movies-db')));
+// app.use('/movies-db', express.static(__dirname, '/public_html/style'));
+
+
 
 // $NODE_PATH
 
@@ -48,14 +56,23 @@ app.use(express.static(__dirname+ '/public'));
 // ********************
 
 // display the current year
-hbs.registerHelper('getCurrentYear', () => {
-      return new Date().getFullYear();
-});
+
+hbs.registerHelper('getCurrentYear'), () => {
+    return new Date().getFullYear();
+}
 
 // sdhflsjdfh sdfh lsfhs
-hbs.registerHelper('screamIt', (text)  => {
+
+hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 });
+
+// -----------------------------------------------------------------------
+// Powerered by Felipe Gonzalez Lopez
+//  Software Engineer - Stgo. Chile.
+// -----------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------
 
 // just playing around
 
@@ -73,15 +90,20 @@ hbs.registerHelper('screamIt', (text)  => {
 // we're gonna try to load all from here... (It's just a testing !!!  WARNING WITH THE CODE )
 
 // app.use('static', express.static(path.join(__dirname, 'public')));
+//
+// app.get('/listings', (req, res) => {
+//   res.render('listings.hbs', {
+//     pageTitle: 'Movies page - Listings:',
+//   });
+// });
+//
+//
 
 app.get('/listings', (req, res) => {
-  res.render('listings.hbs', {
-    pageTitle: 'Movies page - Listings:',
-  });
+    res.render('listings.hbs', {
+      pageTitle: 'Movies page - Listings:',
+    });
 });
-//
-//
-
 
 app.get('/', (req, res) => {
 
@@ -106,14 +128,12 @@ app.get('/', (req, res) => {
 
 
 //silence movie
+// that's all for today folks! from Felipe ..... >!#$
 app.get('/silence', (req, res) => {
-   res.render('silence.hbs', {
-      pageTitle: 'You are watching: Silence'
-
-
-   });
+  res.render('silence', {
+    pageTitle: 'You are watching : silence'
+  });
 });
-
 
 //
 app.get('/sleepers', (req, res) => {
@@ -199,6 +219,6 @@ app.get('bad', (req, res) => {
 
 // calling the port 3000 to run the app
 //
-app.listen(3000, () => {
-  console.log('Server is up in port 3000');
+app.listen(3001, () => {
+  console.log('Server is up in port 3001');
 });

@@ -30,7 +30,10 @@ var Schema = new Schema({
       return ¨¨ ((Date.now() - this.birthplace) / (31557600000)),
     }
     return mongoose.model('User', UserSchema);
+    var = UserSchemaFinal;
+
 }
+
 
 
 // ******
@@ -43,6 +46,7 @@ app.get('/', (req, res) => {
       pageTitle: 'Home page',
       welcomeMessage: 'Welcome To my website',
       currentYear: new Date().getFullYear(),
+
 
     });
 });
