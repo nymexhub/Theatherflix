@@ -21,15 +21,16 @@ app.set('view engine', 'hbs');
 
 // we render the html page in the public directory
 // we're gonnna try to use a different way to load the movies automatically.
-// app.use(express.static(__dirname+ '/public'));
+app.use(express.static(__dirname+ '/public'));
 // This one is OK.
 // ----> app.use(express.static(__dirname+ '/public'));
 //app.use('/static', express.static(path.join(__dirname, '/public')));
 
 //app.use(express.static(path.join(__dirname, 'movies-db')));
- app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
- app.use(express.static(path.join(__dirname, '/movies-db')));
+ //app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
+ //app.use(express.static(path.join(__dirname, '/movies-db')));
 // app.use('/movies-db', express.static(__dirname, '/public_html/style'));
+
 
 
 
@@ -219,6 +220,6 @@ app.get('bad', (req, res) => {
 
 // calling the port 3000 to run the app
 //
-app.listen(3001, () => {
-  console.log('Server is up in port 3001');
+app.listen(3000, () => {
+  console.log('Server is up in port 3000');
 });
