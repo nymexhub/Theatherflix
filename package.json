@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.6",
     "express": "^4.15.3",
     "hbs": "^4.0.1",
     "nedb": "^1.8.0",

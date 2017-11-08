@@ -16,6 +16,12 @@ const path = require('path');
 var app = express();
 
 // we declare partials+
+// hbs.registerPartials(__dirname + '/views/partials');
+// app.set('view engine', 'hbs');
+
+
+// recopilation of the set up previously developed and operated with other DevOps by Corp. India
+// thuis part was developerd by me.
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
@@ -57,6 +63,7 @@ app.use(express.static(__dirname+ '/public'));
 // ********************
 
 // display the current year
+// hs.registerHelper()
 
 hbs.registerHelper('getCurrentYear'), () => {
     return new Date().getFullYear();
@@ -70,7 +77,7 @@ hbs.registerHelper('screamIt', (text) => {
 
 // -----------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
-//  Software Engineer - Stgo. Chile.
+//  Software Developer - Stgo. Chile.
 // -----------------------------------------------------------------------
 //
 // -----------------------------------------------------------------------
@@ -100,33 +107,56 @@ hbs.registerHelper('screamIt', (text) => {
 //
 //
 
+// Code will be improved in the other new lines
+// app.get('/listings', (req, res) => {
+//     res.render('listings.hbs', {
+//       pageTitle: 'Movies page - Listings:',
+//     });
+// });
+//
+// app.get('/', (req, res) => {
+//
+//     res.render('home.hbs', {
+//       pageTitle: 'Theatherflix',
+//       welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
+//      });
+// });
+
 app.get('/listings', (req, res) => {
-    res.render('listings.hbs', {
-      pageTitle: 'Movies page - Listings:',
-    });
+  res.render('listings.hbs', {
+    pageTitle: 'Movie page - Listings: ',
+
+  });
 });
 
 app.get('/', (req, res) => {
-
-    res.render('home.hbs', {
-      pageTitle: 'Theatherflix',
-      welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
-
-
+  res.render('home.hbs', {
+    pageTitle: 'Theatherflix',
+    welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or local Server.',
+  });
 });
-
-
-
-});
-
-
-//
 
 
 // list of the movies that perhaps we could extract from a MongoDB.
 // List of movies
 // slepeers
 
+//interestelar movie
+//
+
+// code will improved in the following lines.
+// app.get('/interestelar', (req, res) => {
+//   res.render('interestelar', {
+//     pageTitle: 'You are watching : interestelar'
+//   });
+// });
+
+
+app.get('/interestelar', (req, res) => {
+  res.render('interestelar', {
+    pageTitle: 'you are watching now : interestelar'
+  });
+});
 
 //silence movie
 // that's all for today folks! from Felipe ..... >!#$
@@ -140,17 +170,13 @@ app.get('/silence', (req, res) => {
 app.get('/sleepers', (req, res) => {
    res.render('sleepers.hbs', {
       pageTitle: 'You are watching: Sleepers - 1996'
-
-
    });
 });
 
 ///jobs
-
 app.get('/jobs', (req, res) => {
    res.render('jobs.hbs', {
       pageTitle: 'You are watching: Jobs (2013)'
-
    });
 });
 
@@ -166,8 +192,6 @@ app.get('/borealis', (req, res) => {
 app.get('/claireinmotion', (req, res) => {
    res.render('claireinmotion.hbs', {
       pageTitle: 'You are watching: Claire in Motion (2016)'
-
-
    });
 });
 
@@ -175,16 +199,11 @@ app.get('/claireinmotion', (req, res) => {
 app.get('/wofw2005', (req, res) => {
    res.render('wofw2005.hbs', {
       pageTitle: 'You are watching: Word of Worlds (2005)'
-
-
-   });
+});
 
 
 // I'm trying to read the fils from the directoruy owhere the movies are
-
-
 // end of tryng to implement something to read the files from the directory where the movies are
-
 
 });
 
