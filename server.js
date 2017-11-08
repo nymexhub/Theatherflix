@@ -27,7 +27,11 @@ app.set('view engine', 'hbs');
 
 // we render the html page in the public directory
 // we're gonnna try to use a different way to load the movies automatically.
+// app.use(express.static(__dirname+ '/public'));
+
+// tyhis part was made up by whole scrach because of inconsistensies found by FG
 app.use(express.static(__dirname+ '/public'));
+
 // This one is OK.
 // ----> app.use(express.static(__dirname+ '/public'));
 //app.use('/static', express.static(path.join(__dirname, '/public')));
@@ -64,16 +68,27 @@ app.use(express.static(__dirname+ '/public'));
 
 // display the current year
 // hs.registerHelper()
+//
+// hbs.registerHelper('getCurrentYear'), () => {
+//     return new Date().getFullYear();
+// }
 
 hbs.registerHelper('getCurrentYear'), () => {
     return new Date().getFullYear();
 }
 
 // sdhflsjdfh sdfh lsfhs
+//
+// hbs.registerHelper('screamIt', (text) => {
+//   return text.toUpperCase();
+// });
 
+// creation of then new paet for the new module. 
 hbs.registerHelper('screamIt', (text) => {
-  return text.toUpperCase();
+   return text.toUpperCase();
 });
+
+
 
 // -----------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
