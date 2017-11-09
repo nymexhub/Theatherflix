@@ -83,10 +83,12 @@ hbs.registerHelper('getCurrentYear'), () => {
 //   return text.toUpperCase();
 // });
 
-// creation of then new paet for the new module. 
+// creation of then new paet for the new module.
 hbs.registerHelper('screamIt', (text) => {
    return text.toUpperCase();
 });
+
+
 
 
 
@@ -136,21 +138,34 @@ hbs.registerHelper('screamIt', (text) => {
 //       welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
 //      });
 // });
+//
+// app.get('/listings', (req, res) => {
+//   res.render('listings.hbs', {
+//     pageTitle: 'Movie page - Listings: ',
+//
+//   });
+// });
+//
+// app.get('/', (req, res) => {
+//   res.render('home.hbs', {
+//     pageTitle: 'Theatherflix',
+//     welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or local Server.',
+//   });
+// });
 
+
+// this is the creation of the module
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
-    pageTitle: 'Movie page - Listings: ',
-
+    pageTitle: 'movie page - listings:',
   });
 });
 
 app.get('/', (req, res) => {
-  res.render('home.hbs', {
-    pageTitle: 'Theatherflix',
-    welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or local Server.',
+  res.render('listings.hbs', {
+    pageTitle: 'movie page - listings:',
   });
 });
-
 
 // list of the movies that perhaps we could extract from a MongoDB.
 // List of movies
