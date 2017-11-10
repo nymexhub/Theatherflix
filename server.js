@@ -1,160 +1,43 @@
-// trying to implement something using variables instead of const
-
-var express = require('express');
-// app = express.createServer();
-var hbs = require('hbs');
-
-const path = require('path');
-//
-
-
-// const express = require('express');
-// const hbs = require('hbs');
-
-
-// intilization of express.js
-var app = express();
-
-// we declare partials+
-// hbs.registerPartials(__dirname + '/views/partials');
-// app.set('view engine', 'hbs');
-
-
-// recopilation of the set up previously developed and operated with other DevOps by Corp. India
-// thuis part was developerd by me.
-hbs.registerPartials(__dirname + '/views/partials');
-app.set('view engine', 'hbs');
-
-// we render the html page in the public directory
-// we're gonnna try to use a different way to load the movies automatically.
-// app.use(express.static(__dirname+ '/public'));
-
-// tyhis part was made up by whole scrach because of inconsistensies found by FG
-app.use(express.static(__dirname+ '/public'));
-
-// This one is OK.
-// ----> app.use(express.static(__dirname+ '/public'));
-//app.use('/static', express.static(path.join(__dirname, '/public')));
-
-//app.use(express.static(path.join(__dirname, 'movies-db')));
- //app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
- //app.use(express.static(path.join(__dirname, '/movies-db')));
-// app.use('/movies-db', express.static(__dirname, '/public_html/style'));
-
-
-
-
-// $NODE_PATH
-
-
-// app.use('static', express.static(path.join(__dirname, 'public')));
-
-//hbs.registerPartials(__dirname + '/views/partials')
-//app.set('view engine', 'hbs');
-// we render the html page in the public directory
-
-// this line is OK OK OK !!!!!
-// app.use(express.static(__dirname + '/public'));
-
-// ******************* OK *******
-// app.use(express.static(__dirname + '/public'));
-// ********** OK *******
-
-// app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/movies-db', express.static(__dirname, 'public/movies-db'));
-// app.use('/movies-all', express.static(__dirname, 'public/movies-db'));
-
-// ********************
-
-// display the current year
-// hs.registerHelper()
-//
-// hbs.registerHelper('getCurrentYear'), () => {
-//     return new Date().getFullYear();
-// }
-
-hbs.registerHelper('getCurrentYear'), () => {
-    return new Date().getFullYear();
-}
-
-// sdhflsjdfh sdfh lsfhs
-//
-// hbs.registerHelper('screamIt', (text) => {
-//   return text.toUpperCase();
-// });
-
-// creation of then new paet for the new module.
-hbs.registerHelper('screamIt', (text) => {
-   return text.toUpperCase();
-});
-
-
-
 
 
 // -----------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
 //  Software Developer - Stgo. Chile.
 // -----------------------------------------------------------------------
-//
+// 2017 (CC) -- All by Felipe alfonso gonzalez f.alfonso,go@gmail.com 
 // -----------------------------------------------------------------------
 
-// just playing around
-
-// var app = express();
-
-
-//
 
 
 
-// fixed ... If I put this line of code at the end, it doesn't show the page ...
+var express = require('express');
+
+var hbs = require('hbs');
+
+const path = require('path');
+
+var app = express();
+
+
+hbs.registerPartials(__dirname + '/views/partials');
+app.set('view engine', 'hbs');
+
+
+app.use(express.static(__dirname+ '/public'));
 
 
 
-// we're gonna try to load all from here... (It's just a testing !!!  WARNING WITH THE CODE )
-
-// app.use('static', express.static(path.join(__dirname, 'public')));
-//
-// app.get('/listings', (req, res) => {
-//   res.render('listings.hbs', {
-//     pageTitle: 'Movies page - Listings:',
-//   });
-// });
-//
-//
-
-// Code will be improved in the other new lines
-// app.get('/listings', (req, res) => {
-//     res.render('listings.hbs', {
-//       pageTitle: 'Movies page - Listings:',
-//     });
-// });
-//
-// app.get('/', (req, res) => {
-//
-//     res.render('home.hbs', {
-//       pageTitle: 'Theatherflix',
-//       welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or Server.',
-//      });
-// });
-//
-// app.get('/listings', (req, res) => {
-//   res.render('listings.hbs', {
-//     pageTitle: 'Movie page - Listings: ',
-//
-//   });
-// });
-//
-// app.get('/', (req, res) => {
-//   res.render('home.hbs', {
-//     pageTitle: 'Theatherflix',
-//     welcomeMessage: 'Welcome to a new era, where netflix is only online, but Theatherflix will be locally in your computer or local Server.',
-//   });
-// });
+hbs.registerHelper('getCurrentYear'), () => {
+    return new Date().getFullYear();
+}
 
 
-// this is the creation of the module
+hbs.registerHelper('screamIt', (text) => {
+   return text.toUpperCase();
+});
+
+
+
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
     pageTitle: 'movie page - listings:',
@@ -167,19 +50,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// list of the movies that perhaps we could extract from a MongoDB.
-// List of movies
-// slepeers
 
-//interestelar movie
-//
-
-// code will improved in the following lines.
-// app.get('/interestelar', (req, res) => {
-//   res.render('interestelar', {
-//     pageTitle: 'You are watching : interestelar'
-//   });
-// });
 
 
 app.get('/interestelar', (req, res) => {
@@ -188,8 +59,7 @@ app.get('/interestelar', (req, res) => {
   });
 });
 
-//silence movie
-// that's all for today folks! from Felipe ..... >!#$
+
 app.get('/silence', (req, res) => {
   res.render('silence', {
     pageTitle: 'You are watching : silence'
@@ -218,7 +88,7 @@ app.get('/borealis', (req, res) => {
 });
 
 
-// claire in motion ----
+// claire in motion
 app.get('/claireinmotion', (req, res) => {
    res.render('claireinmotion.hbs', {
       pageTitle: 'You are watching: Claire in Motion (2016)'
@@ -232,8 +102,6 @@ app.get('/wofw2005', (req, res) => {
 });
 
 
-// I'm trying to read the fils from the directoruy owhere the movies are
-// end of tryng to implement something to read the files from the directory where the movies are
 
 });
 
