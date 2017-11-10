@@ -2,18 +2,17 @@
 
 // -----------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
+// Theatherflix v2.x
 //  Software Developer - Stgo. Chile.
 // -----------------------------------------------------------------------
-// 2017 (CC) -- All by Felipe alfonso gonzalez f.alfonso,go@gmail.com 
+// 2017 (CC) -- All by Felipe alfonso gonzalez f.alfonso,go@gmail.com
 // -----------------------------------------------------------------------
 
 
 
 
 var express = require('express');
-
 var hbs = require('hbs');
-
 const path = require('path');
 
 var app = express();
@@ -21,23 +20,17 @@ var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
-
-
 app.use(express.static(__dirname+ '/public'));
-
-
 
 hbs.registerHelper('getCurrentYear'), () => {
     return new Date().getFullYear();
 }
-
-
 hbs.registerHelper('screamIt', (text) => {
    return text.toUpperCase();
 });
 
 
-
+// code for the app//
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
     pageTitle: 'movie page - listings:',
@@ -51,22 +44,23 @@ app.get('/', (req, res) => {
 });
 
 
+// listing of the movies
 
-
+// interestelar
 app.get('/interestelar', (req, res) => {
   res.render('interestelar', {
     pageTitle: 'you are watching now : interestelar'
   });
 });
 
-
+// silence
 app.get('/silence', (req, res) => {
   res.render('silence', {
     pageTitle: 'You are watching : silence'
   });
 });
 
-//
+// sleepers
 app.get('/sleepers', (req, res) => {
    res.render('sleepers.hbs', {
       pageTitle: 'You are watching: Sleepers - 1996'
@@ -99,17 +93,13 @@ app.get('/claireinmotion', (req, res) => {
 app.get('/wofw2005', (req, res) => {
    res.render('wofw2005.hbs', {
       pageTitle: 'You are watching: Word of Worlds (2005)'
-});
-
-
-
+    });
 });
 
 // loopers
 app.get('/looper', (req, res) => {
    res.render('looper.hbs', {
       pageTitle: 'You are watching: Looper (2012)'
-
    });
 });
 
@@ -120,11 +110,8 @@ app.get('/about', (req, res) => {
   // res.send('About page');
   res.render('about.hbs', {
     pageTitle: 'About Page',
-
-  });
-
+    });
 });
-
 
 
 // bad json error message
@@ -140,3 +127,6 @@ app.get('bad', (req, res) => {
 app.listen(3000, () => {
   console.log('Server is up in port 3000');
 });
+
+
+// end of the lines of code
