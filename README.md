@@ -16,12 +16,7 @@ modules:
 express
 handlebars
 
-
-#
-Website for promotion:
-#
-www.seasumo.com 
 #
 questions:
 #
-felipe@nic-nac-project.org
+felipe.dev.engr.js@gmail.com

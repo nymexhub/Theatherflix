@@ -1,12 +1,12 @@
 
 
-// -----------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
 // Theatherflix v2.x
-//  Software Developer - Stgo. Chile.
-// -----------------------------------------------------------------------
-// 2017 (CC) -- All by Felipe alfonso gonzalez f.alfonso,go@gmail.com
-// -----------------------------------------------------------------------
+//  Software Engineer / Developer - Stgo. Chile.
+// ------------------------------------------------------------------------
+// 2017 (CC) -- All by Felipe alfonso gonzalez felipe.dev.engr.js@gmail.com
+// ------------------------------------------------------------------------
 
 
 
@@ -50,6 +50,13 @@ app.get('/', (req, res) => {
 app.get('/interestelar', (req, res) => {
   res.render('interestelar', {
     pageTitle: 'you are watching now : interestelar'
+  });
+});
+
+// american history x
+app.get('/americanhistoryx', (req, res) => {
+  res.render('americanhistoryx', {
+    pageTitle: 'you are watching now: American history X'
   });
 });
 
