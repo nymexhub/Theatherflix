@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
-Github: git@github.com:felipealfonsog/theatherflix.git
+
+#Github: 
+git@github.com:felipealfonsog/theatherflix.git
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
