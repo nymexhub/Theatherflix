@@ -48,21 +48,25 @@ If you want to run the latest code from git, here's how to get started:
 ## Contributing
 
 Before raising a pull-request, please read our
+Email me first of all: felipe.dev.engr.js@gmail.com and,
 
 This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
  By participating, you are expected to uphold this code. Please report unacceptable
  behavior to any of the [project's core team]
 
+
+| We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
+| time will tell. ;-)
+
 ## Authors
 
 Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
 
-
-* Felipe [@felipealfonsog](http://twitter.com/felipealfonsog)
+* Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
 
 
 
 
 ## Copyright and license
-
-Copyright JS Foundation and other contributors, http://js.foundation under [the Apache 2.0 license](LICENSE).
+ 
+Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
