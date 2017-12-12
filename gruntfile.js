@@ -12,10 +12,6 @@ module.exports = function(grunt) {
     options: {
       namespace: 'MyApp.Templates'
     }
-    watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
-    }
   })
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -27,4 +23,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-bg-shell');
+  
+
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  
+      grunt.registerTask('default', 'compass');
 };

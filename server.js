@@ -10,12 +10,12 @@
 
 // Con ésta tarea llamada 'compile' llamamos a las
 // tareas 'stylus' y 'cssmin' que ahora definiremos
-grunt.registerTask('compile', ['stylus', 'cssmin']);
+// grunt.registerTask('compile', ['stylus', 'cssmin']);
 
 // Ésta tarea llamada 'server' nos permitirá correr 
 // el servidor a al vez que las tareas 'compile' y
 // 'watch' que ahora definiremos
-grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch'])
+// grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch'])
 
 
 var express = require('express');
