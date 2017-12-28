@@ -10,11 +10,18 @@
 
 // Con ésta tarea llamada 'compile' llamamos a las
 // tareas 'stylus' y 'cssmin' que ahora definiremos
+
+
+
 // grunt.registerTask('compile', ['stylus', 'cssmin']);
 
 // Ésta tarea llamada 'server' nos permitirá correr 
 // el servidor a al vez que las tareas 'compile' y
 // 'watch' que ahora definiremos
+
+
+
+
 // grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch'])
 
 
@@ -35,6 +42,21 @@ hbs.registerHelper('getCurrentYear'), () => {
 hbs.registerHelper('screamIt', (text) => {
    return text.toUpperCase();
 });
+
+
+
+
+
+
+
+
+// here I supppose to write code to read automatically the movies ... part of them in this code:
+
+
+
+
+
+
 
 
 // code for the app//
