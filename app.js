@@ -1,5 +1,14 @@
 
 
+// ------------------------------------------------------------------------
+// Powerered by Felipe Gonzalez Lopez
+// Theatherflix v2.x
+//  Software Engineer / Developer - Stgo. Chile.
+// ------------------------------------------------------------------------
+// 2017 (CC) -- All by Felipe alfonso gonzalez felipe.dev.engr.js@gmail.com
+// ------------------------------------------------------------------------
+
+
 // const path = require('server.js');
 
 
@@ -36,7 +45,7 @@ module.exports = function(grunt) {
 			}
 		}
 	})
-};
+}; // missing line 
 
 
 require('./server.js');
