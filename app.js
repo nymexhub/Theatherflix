@@ -1,10 +1,15 @@
+
+
+// const path = require('server.js');
+require('./server.js');
+
 module.exports = function(grunt) {
 	grunt.initConfig({	
 		pkg: grunt.file.readJSON('package.json'),
 
 		bgShell: {
 			runNode: {
-				cmd: 'node server.js',
+				cmd: 'node app.js',
 				bg: true
 			}
 		},
@@ -30,4 +35,5 @@ module.exports = function(grunt) {
 				}
 			}
 		}
-	});
+	})
+};
