@@ -11,8 +11,6 @@
 // Con ésta tarea llamada 'compile' llamamos a las
 // tareas 'stylus' y 'cssmin' que ahora definiremos
 
-
-
 // grunt.registerTask('compile', ['stylus', 'cssmin']);
 
 // Ésta tarea llamada 'server' nos permitirá correr 
@@ -24,6 +22,11 @@
 
 // grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch'])
 
+
+
+
+
+// ----------------------------------
 
 var express = require('express');
 var hbs = require('hbs');
@@ -57,7 +60,9 @@ hbs.registerHelper('screamIt', (text) => {
 
 
 
-
+// now you have to code this part... but I'm planning to make it automatically all this
+// ----
+// 
 
 // code for the app//
 app.get('/listings', (req, res) => {

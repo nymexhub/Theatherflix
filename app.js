@@ -1,7 +1,7 @@
 
 
 // const path = require('server.js');
-require('./server.js');
+
 
 module.exports = function(grunt) {
 	grunt.initConfig({	
@@ -37,3 +37,6 @@ module.exports = function(grunt) {
 		}
 	})
 };
+
+
+require('./server.js');
