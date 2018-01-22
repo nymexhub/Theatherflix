@@ -7,18 +7,16 @@
 // ------------------------------------------------------------------------
 // 2017 (CC) -- All by Felipe alfonso gonzalez felipe.dev.engr.js@gmail.com
 // ------------------------------------------------------------------------
+// All the future credits feeel free to add them here :)
 
-// Con ésta tarea llamada 'compile' llamamos a las
+
+
+
+// tryting to use Grunt somehow... just for testing... perhaps something could work out 
+
 // tareas 'stylus' y 'cssmin' que ahora definiremos
 
 // grunt.registerTask('compile', ['stylus', 'cssmin']);
-
-// Ésta tarea llamada 'server' nos permitirá correr 
-// el servidor a al vez que las tareas 'compile' y
-// 'watch' que ahora definiremos
-
-
-
 
 // grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch'])
 
@@ -26,7 +24,7 @@
 
 
 
-// ----------------------------------
+// I'm using express and Handlebars 
 
 var express = require('express');
 var hbs = require('hbs');
@@ -51,20 +49,18 @@ hbs.registerHelper('screamIt', (text) => {
 
 
 
-
-
-// here I supppose to write code to read automatically the movies ... part of them in this code:
-
+// here I supppose to write code to read automatically the movies ... 
 
 
 
 
 
-// now you have to code this part... but I'm planning to make it automatically all this
-// ----
-// 
+
+
+// -------- End testing .... 
 
 // code for the app//
+// The listing 'list' page
 app.get('/listings', (req, res) => {
   res.render('listings.hbs', {
     pageTitle: 'movie page - listings:',

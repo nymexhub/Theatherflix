@@ -11,8 +11,9 @@ app.set('view engine', 'hbs');
 
 
 // **************************
-// I will try to configure this with mongoDB
-// all in a starbucks --- >>
+// I will try to configure this with mongoDB --- Just testing... -- it's not working properly
+// playing around .-.-.
+// trying this in a starbucks coffe shop ... :) 
 //***************************
 
 

@@ -2,6 +2,7 @@ var application_root = __dirname,
     express = require("express"),
     path = require("path");
 
+    // This is when i tried to use neDB -- Didn't finish
 var databseURL = "/home/felipe/nedb/user.db";
 var Datastore = require('nedb');
 db = ();

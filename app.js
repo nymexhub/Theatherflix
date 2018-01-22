@@ -1,5 +1,6 @@
 
 
+
 // ------------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
 // Theatherflix v2.x
@@ -45,7 +46,13 @@ module.exports = function(grunt) {
 			}
 		}
 	})
-}; // missing line 
+}; // missing line
 
-
+// loading the server.js 
 require('./server.js');
+
+// intention of executing the Gruntfile inside the app. -- Just testing. 
+// require('Gruntfile.js'); 
+// the app crashed. 
+
+// eventually problems executing the file . ??? 
