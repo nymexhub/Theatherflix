@@ -21,7 +21,7 @@ OpenSource Project [Initially] to create a platform to watch movies locally with
 More info or contributions go to [felipe.dev.engr.js@gmail.com] 
 
 
-## Developers
+## Developers and collabs
 
 If you want to run the latest code from git, here's how to get started:
 
@@ -47,8 +47,8 @@ If you want to run the latest code from git, here's how to get started:
 
 ## Contributing
 
-Before raising a pull-request, please read our
-Email me first of all: felipe.dev.engr.js@gmail.com and,
+Before raising a pull-request, please read all carefully
+Email me first of all: felipe.dev.engr.js@gmail.com if you have any question, and,
 
 This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
  By participating, you are expected to uphold this code. Please report unacceptable
@@ -56,11 +56,18 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
-| time will tell. ;-)
+| time will tell. ;-) Feel free to add your credits.
 
-## Authors
+## Authors and contribs.
 
-Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
+-Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
+-
+-
+-
+-
+
+
+
 
 * Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
 
