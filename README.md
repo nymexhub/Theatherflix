@@ -59,19 +59,13 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 | time will tell. ;-) Feel free to add your credits.
 
 ## Authors and contribs.
-
--Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
--
--
--
--
-
-
-
+Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
 
 * Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
-
-
+*
+*
+*
+*
 
 
 ## Copyright and license
