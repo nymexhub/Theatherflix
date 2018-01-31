@@ -1,4 +1,10 @@
 
+var express = require('express');
+var hbs = require('hbs');
+const path = require('path');
+
+var app = express();
+
 
 // ------------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
@@ -8,6 +14,7 @@
 // 2017 (CC) -- All by Felipe alfonso gonzalez felipe.dev.engr.js@gmail.com
 // ------------------------------------------------------------------------
 // All the future credits feeel free to add them here :)
+//
 
 
 
@@ -26,11 +33,7 @@
 
 // I'm using express and Handlebars 
 
-var express = require('express');
-var hbs = require('hbs');
-const path = require('path');
 
-var app = express();
 
 
 hbs.registerPartials(__dirname + '/views/partials');
