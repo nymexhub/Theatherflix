@@ -2,9 +2,6 @@
 var express = require('express');
 var hbs = require('hbs');
 const path = require('path');
-// passport            = require('passport'),
-// passportLocalMongoose = require('passport-local-mongoose'),
-// LocalStrategy         = require('passport-local').Strategy;
 
 var app = express();
 
