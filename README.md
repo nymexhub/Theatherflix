@@ -84,7 +84,7 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
 
 * Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
-* Reuben Antz - Colaborator - [@AntZ_Shrek] (https://twitter.com/AntZ_Shrek)
+* Reuben Antz - Colaborator - [@AntZ_Shrek](http://twitter.com/AntZ_Shrek)
 *
 *
 *
