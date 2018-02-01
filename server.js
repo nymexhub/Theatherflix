@@ -2,6 +2,9 @@
 var express = require('express');
 var hbs = require('hbs');
 const path = require('path');
+// passport            = require('passport'),
+// passportLocalMongoose = require('passport-local-mongoose'),
+// LocalStrategy         = require('passport-local').Strategy;
 
 var app = express();
 
@@ -17,8 +20,6 @@ var app = express();
 //
 
 
-
-
 // tryting to use Grunt somehow... just for testing... perhaps something could work out 
 
 // tareas 'stylus' y 'cssmin' que ahora definiremos
@@ -29,12 +30,10 @@ var app = express();
 
 
 
-
-
-// I'm using express and Handlebars 
-
-
-
+/**********************************************************
+*  Express and Handlebars were used in this project        *         
+*                                                          *
+* *********************************************************/
 
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
@@ -48,15 +47,7 @@ hbs.registerHelper('screamIt', (text) => {
 });
 
 
-
-
-
-
 // here I supppose to write code to read automatically the movies ... 
-
-
-
-
 
 
 
@@ -77,7 +68,10 @@ app.get('/', (req, res) => {
 });
 
 
-// listing of the movies
+/********************************
+*  listing of the movies        *         
+*                               *
+* ******************************/
 
 // interestelar
 app.get('/interestelar', (req, res) => {
@@ -143,8 +137,10 @@ app.get('/looper', (req, res) => {
    });
 });
 
-// ------------------------
 
+  /*******************************
+   *        Navigations          *
+   * ****************************/
 
 app.get('/about', (req, res) => {
   // res.send('About page');
@@ -169,4 +165,7 @@ app.listen(3000, () => {
 });
 
 
-// end of the lines of code
+/********************************
+*  end of the lines of code     *         
+*                               *
+* ******************************/

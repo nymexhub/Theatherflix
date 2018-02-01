@@ -16,6 +16,22 @@ A visual tool for wiring the Internet of Things, digital movies, stored in your 
 
 OpenSource Project [Initially] to create a platform to watch movies locally with all confort online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
+## Installation
+To run the Theatherflix web app offline, you need to install the following;
+
+1. Make sure you have installed [Node.js](https://nodejs.org/en/download/). Versions 6.0.0 and higher should work. We recommend that you use the most-recent "Active LTS" version of Node.js.
+2. Make sure you have installed `npm` (NB: `npm` is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer).   
+
+### Check that you have node and npm installed
+
+- To check if you have Node.js installed, run this command in your terminal:
+
+`node -v`
+
+- To confirm that you have npm installed you can run this command in your terminal:
+
+`npm -v`
+
 ## Quick Start
 
 1. `sudo npm install`
@@ -68,7 +84,7 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
 
 * Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
-*
+* Reuben Antz - Colaborator - [@antz_shrek] ()
 *
 *
 *
