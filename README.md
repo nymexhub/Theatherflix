@@ -20,9 +20,9 @@ https://nodeio-labs.slack.com.
 
 DON'T FORGET TO :
 
--$:GIT PULL
+$:GIT PULL
 
-BEFORE ANY COMMMIT!
+BEFORE ANY COMMMIT! (or we could lose all the work that other engineers and developers in the project could have done)
 
 #
 git@github.com:felipealfonsog/theatherflix.git
