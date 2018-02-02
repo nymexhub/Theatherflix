@@ -1,32 +1,17 @@
-
-
-
-</body>
-</html>
 <!DOCTYPE html>
 <html>
  <head>
    <meta charset="utf-8">
    <title>Home website</title>
-
-<link rel="stylesheet" type="text/css" href="./css_listings.css">
-
-   <style>
-   a.floeat: left;
-   a.display: block;
-   </style>
+   <link rel="stylesheet" type="text/css" href="./css_listings.css">
  </head>
+ 
  <body>
     {{> header }}
-   <h1>{{pageTitle}}</h1>
-   <p>{{welcomeMessage}}</p>
-
-
- {{> listings}}
-
-
-
-<!-- inject the partial -->
- {{> footer}}
+    <h1>{{pageTitle}}</h1>
+    <p>{{welcomeMessage}}</p>
+    {{> listings}}
+      <!-- inject the partial -->
+    {{> footer}}
  </body>
 </html>
