@@ -15,6 +15,14 @@ https://nodeio-labs.slack.com.
 
 #
 #Github: 
+
+#IMPORTANT
+#
+DON'T FORGET TO :
+-$:GIT PULL
+BEFORE ANY COMMMIT!
+
+#
 git@github.com:felipealfonsog/theatherflix.git
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
