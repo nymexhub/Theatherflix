@@ -20,7 +20,7 @@ What do we have now? present stages.
 #
 -the movies will be lolcally in the folder path:
 public/movies-db (There will be just one movie partially available to watch for testing pusposes)
--the interface is being handled with handlebars ... 
+-the interface is being handled with handlebars ... (working)
 
 
 #

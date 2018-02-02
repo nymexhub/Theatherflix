@@ -4,7 +4,7 @@
 // ------------------------------------------------------------------------
 // Powerered by Felipe Gonzalez Lopez
 // Theatherflix v2.x
-//  Software Engineer / Developer - Stgo. Chile.
+//  Software Engineer / Developer
 // ------------------------------------------------------------------------
 // 2017 (CC) -- All by Felipe alfonso gonzalez felipe.dev.engr.js@gmail.com
 // ------------------------------------------------------------------------
@@ -13,6 +13,9 @@
 // const path = require('server.js');
 
 
+// I'm trying to make it work all this and somwhow read all the movies automatically with grunt
+// it's not working properly 
+// I had to call the serever.js file to read the complete code inside of it. 
 module.exports = function(grunt) {
 	grunt.initConfig({	
 		pkg: grunt.file.readJSON('package.json'),
