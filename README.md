@@ -17,9 +17,11 @@ https://nodeio-labs.slack.com.
 #Github: 
 
 #IMPORTANT
-#
+
 DON'T FORGET TO :
+
 -$:GIT PULL
+
 BEFORE ANY COMMMIT!
 
 #
