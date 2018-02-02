@@ -8,6 +8,7 @@ NEXT DEVELOPMENT?
 - Perhaps using mongoDB (Seriously for some things we could use MondoDB)
 -move all to React! (we need to think how to move into React and Redux)
 -create a different way to stream the videos...  (the movies)
+-
 
 
 
