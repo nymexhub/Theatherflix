@@ -1,7 +1,7 @@
 Changelog file:
 -----------------------------------------
 #
-NEXT DEVELOPMENT?
+NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
 #
 2017: v3.2 (future version)
 -Future creating of an algorithm to create AI to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related.
@@ -16,7 +16,7 @@ NEXT DEVELOPMENT?
 
 
 #
-What do we have now?
+What do we have now? present stages.
 #
 -the movies will be lolcally in the folder path:
 public/movies-db (There will be just one movie partially available to watch for testing pusposes)
