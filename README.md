@@ -2,7 +2,7 @@
 # [A NodeJS + React.JS + Redux - JavaScript Project]
 v2.1.0.2rvc1.0 
 
-#The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars.
+#The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck! :)
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
