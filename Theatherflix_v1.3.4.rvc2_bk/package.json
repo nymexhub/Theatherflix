@@ -1,0 +1,29 @@
+{
+  "name": "node-webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "express": "^4.15.3",
+    "grunt-bg-shell": "^2.3.3",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "hbs": "^4.0.1",
+    "nedb": "^1.8.0",
+    "require-all": "^2.2.0",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-handlebars": "^1.0.0"
+  }
+}
