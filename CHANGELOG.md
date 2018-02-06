@@ -1,5 +1,4 @@
-WELCOME TO THE CHANGELOG FILE. 
-
+Theatherflix Changelog file
 -----------------------------------------
 #
 NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
