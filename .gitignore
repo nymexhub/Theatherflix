@@ -30,9 +30,12 @@ build/Release
 node_modules
 jspm_packages
 
-# Directorios de peliculas por peso en MG no se incluyen .
+# Directories of the movies. Obviously not included due the huge amount of GB.
 public/movies-db
 public/movies-db-github
+
+#Other directories that will not be uploaded. It's the old version with Handlebars. 
+Theatherflix_v1.3.4.rvc2_bk
 
 # Optional npm cache directory
 .npm

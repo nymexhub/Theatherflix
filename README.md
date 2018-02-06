@@ -1,5 +1,5 @@
 # Theatherflix
-# [A NodeJS - JavaScript Project]
+# [A NodeJS + React.JS + Redux - JavaScript Project]
 
 #The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars.
 
