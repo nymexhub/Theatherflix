@@ -1,4 +1,4 @@
-# Theatherflix
+# Theatherflix Open Source Project
 # [A NodeJS + React.JS + Redux - JavaScript Project]
 v2.1.0.2rvc1.0 
 
