@@ -1,6 +1,6 @@
 # Theatherflix
 # [A NodeJS + React.JS + Redux - JavaScript Project]
-v2.1.0.2rvc1.0
+v2.1.0.2rvc1.0 
 
 #The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars.
 
