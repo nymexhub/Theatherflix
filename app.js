@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 			}
 		}
 	})
-}; // missing line
+}; // missing line 
 
 // loading the server.js 
 require('./server.js');
@@ -58,4 +58,4 @@ require('./server.js');
 // require('Gruntfile.js'); 
 // the app crashed. 
 
-// eventually problems executing the file . ??? 
+// eventually problems executing the file . ???  I don't know what happened (tested by Felipe.)

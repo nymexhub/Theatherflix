@@ -8,7 +8,7 @@ NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
 - Perhaps using mongoDB (Seriously for some things we could use MondoDB)
 -move all to React! (we need to think how to move into React and Redux)
 -create a different way to stream the videos...  (the movies)
--
+-Moving to React! 5-2-1018
 
 
 
@@ -23,7 +23,7 @@ public/movies-db (There will be just one movie partially available to watch for 
 -the interface is being handled with handlebars ... (working)
 
 
-#
+# 
 Other data to add or comments :
 -----------------------------------------
 #
