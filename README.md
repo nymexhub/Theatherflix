@@ -19,16 +19,13 @@ http://www.nodeio.us (nodeio labs)
 #Join the conversation about Theatherflix using Slack!
 https://nodeio-labs.slack.com.
 
-# 
-#Github: 
 
-#IMPORTANT
+## Github notes for Engineers & Developers
+Before any commit, don't forget this: (or we could lose all the work that other engineers and developers in the project could have done)
+1. `git pull`
+2. `git add .` (your contrib.)
+3.  your contrin - commit ...
 
-DON'T FORGET TO :
-
-$:GIT PULL
-
-BEFORE ANY COMMMIT! (or we could lose all the work that other engineers and developers in the project could have done)
 
 #
 git@github.com:felipealfonsog/theatherflix.git
