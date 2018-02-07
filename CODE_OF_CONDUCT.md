@@ -109,7 +109,7 @@ Additionally, community organizers are available to help community members engag
 
 ## 7. Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Felipe with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
+If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Felipe or any other member to talk about it in a private meeting, with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
 
 
 
