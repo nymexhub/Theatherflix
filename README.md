@@ -23,8 +23,9 @@ https://nodeio-labs.slack.com.
 ## Github notes for Engineers & Developers
 Before any commit, don't forget this: (or we could lose all the work that other engineers and developers in the project could have done)
 1. `git pull`
-2. `git add .` (your contrib.)
-3.  your contrin - commit ...
+
+2. `git add .` (your contribs.)
+3.  your contribs - commits ...
 
 
 #
