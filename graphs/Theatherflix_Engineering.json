@@ -1,0 +1,588 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "Theatherflix Engineering",
+        "environment": {
+            "type": "noflo-browser",
+            "content": "<canvas id=\"mycanvas\" width=\"200\" height=\"200\"></canvas>\n<br />\n<button id=\"mybutton\">Generate</button>"
+        },
+        "icon": "cog"
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "canvas/Draw_ps7an": {
+            "component": "canvas/Draw",
+            "metadata": {
+                "label": "canvas/Draw",
+                "x": 756,
+                "y": 648,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/Fill_cbdq5": {
+            "component": "canvas/Fill",
+            "metadata": {
+                "label": "canvas/Fill",
+                "x": 612,
+                "y": 612,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/MakeRectangle_1rmr9": {
+            "component": "canvas/MakeRectangle",
+            "metadata": {
+                "label": "canvas/MakeRectangle",
+                "x": 324,
+                "y": 612,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/MakeRange_lb9hw": {
+            "component": "canvas/MakeRange",
+            "metadata": {
+                "label": "canvas/MakeRange",
+                "x": 36,
+                "y": 576,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/Stroke_3m3hk": {
+            "component": "canvas/Stroke",
+            "metadata": {
+                "label": "canvas/Stroke",
+                "x": 504,
+                "y": 612,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/MakeRandom_wcbwf": {
+            "component": "canvas/MakeRandom",
+            "metadata": {
+                "label": "canvas/MakeRandom",
+                "x": 504,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/MakeRandom_guh5x": {
+            "component": "canvas/MakeRandom",
+            "metadata": {
+                "label": "canvas/MakeRandom",
+                "x": 504,
+                "y": 432,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "GetButton": {
+            "component": "dom/GetElement",
+            "metadata": {
+                "label": "GetButton",
+                "x": 180,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "ListenClick": {
+            "component": "interaction/ListenMouse",
+            "metadata": {
+                "label": "ListenClick",
+                "x": 36,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "canvas/MakeGrid_st846": {
+            "component": "canvas/MakeGrid",
+            "metadata": {
+                "label": "canvas/MakeGrid",
+                "x": 180,
+                "y": 576,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "movie 1": {
+            "component": "math/SendNumber",
+            "metadata": {
+                "label": "movie 1",
+                "x": 324,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "movie 2": {
+            "component": "math/SendNumber",
+            "metadata": {
+                "label": "movie 2",
+                "x": 324,
+                "y": 468,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "movie 3": {
+            "component": "math/SendNumber",
+            "metadata": {
+                "label": "movie 3",
+                "x": 324,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "movie 4": {
+            "component": "math/SendNumber",
+            "metadata": {
+                "label": "movie 4",
+                "x": 324,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "Main front with React": {
+            "component": "core/Split",
+            "metadata": {
+                "label": "Main front with React",
+                "x": 180,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "Start": {
+            "component": "core/Repeat",
+            "metadata": {
+                "label": "Start",
+                "x": 36,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "canvas/MakeRectangle_1rmr9",
+                "port": "rectangle"
+            },
+            "tgt": {
+                "process": "canvas/Stroke_3m3hk",
+                "port": "items"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "canvas/Stroke_3m3hk",
+                "port": "stroke"
+            },
+            "tgt": {
+                "process": "canvas/Fill_cbdq5",
+                "port": "items"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "canvas/Fill_cbdq5",
+                "port": "fill"
+            },
+            "tgt": {
+                "process": "canvas/Draw_ps7an",
+                "port": "commands"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "GetButton",
+                "port": "element"
+            },
+            "tgt": {
+                "process": "ListenClick",
+                "port": "element"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "canvas/MakeRange_lb9hw",
+                "port": "range"
+            },
+            "tgt": {
+                "process": "canvas/MakeGrid_st846",
+                "port": "x"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "canvas/MakeRange_lb9hw",
+                "port": "range"
+            },
+            "tgt": {
+                "process": "canvas/MakeGrid_st846",
+                "port": "y"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "canvas/MakeGrid_st846",
+                "port": "point"
+            },
+            "tgt": {
+                "process": "canvas/MakeRectangle_1rmr9",
+                "port": "point"
+            }
+        },
+        {
+            "src": {
+                "process": "movie 1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_guh5x",
+                "port": "min"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "movie 1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_wcbwf",
+                "port": "min"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "movie 2",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_guh5x",
+                "port": "max"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "movie 2",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_guh5x",
+                "port": "count"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "movie 3",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_wcbwf",
+                "port": "max"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "movie 4",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "canvas/MakeRandom_wcbwf",
+                "port": "count"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "Main front with React",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "movie 1",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "Main front with React",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "movie 2",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "Main front with React",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "movie 3",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "Main front with React",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "movie 4",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "ListenClick",
+                "port": "click"
+            },
+            "tgt": {
+                "process": "Main front with React",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "Start",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Main front with React",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "ListenClick",
+                "port": "dblclick"
+            },
+            "tgt": {
+                "process": "GetButton",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "GetButton",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "movie 4",
+                "port": "number"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "GetButton",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "movie 3",
+                "port": "number"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "GetButton",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "movie 2",
+                "port": "number"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "GetButton",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "movie 1",
+                "port": "number"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "data": 0,
+            "tgt": {
+                "process": "canvas/MakeRange_lb9hw",
+                "port": "from"
+            }
+        },
+        {
+            "data": 10,
+            "tgt": {
+                "process": "canvas/MakeRectangle_1rmr9",
+                "port": "width"
+            }
+        },
+        {
+            "data": 10,
+            "tgt": {
+                "process": "canvas/MakeRectangle_1rmr9",
+                "port": "height"
+            }
+        },
+        {
+            "data": 2,
+            "tgt": {
+                "process": "canvas/Stroke_3m3hk",
+                "port": "linewidth"
+            }
+        },
+        {
+            "data": true,
+            "tgt": {
+                "process": "canvas/Draw_ps7an",
+                "port": "drawevery"
+            }
+        },
+        {
+            "data": true,
+            "tgt": {
+                "process": "canvas/Draw_ps7an",
+                "port": "clearevery"
+            }
+        },
+        {
+            "data": 200,
+            "tgt": {
+                "process": "canvas/MakeRange_lb9hw",
+                "port": "to"
+            }
+        },
+        {
+            "data": "30",
+            "tgt": {
+                "process": "canvas/MakeRange_lb9hw",
+                "port": "count"
+            }
+        },
+        {
+            "data": "#000000",
+            "tgt": {
+                "process": "canvas/Stroke_3m3hk",
+                "port": "strokestyle"
+            }
+        },
+        {
+            "data": "#mybutton",
+            "tgt": {
+                "process": "GetButton",
+                "port": "selector"
+            }
+        },
+        {
+            "data": 0,
+            "tgt": {
+                "process": "movie 1",
+                "port": "number"
+            }
+        },
+        {
+            "data": 100,
+            "tgt": {
+                "process": "movie 2",
+                "port": "number"
+            }
+        },
+        {
+            "data": 360,
+            "tgt": {
+                "process": "movie 3",
+                "port": "number"
+            }
+        },
+        {
+            "data": 500,
+            "tgt": {
+                "process": "movie 4",
+                "port": "number"
+            }
+        },
+        {
+            "data": "true",
+            "tgt": {
+                "process": "Start",
+                "port": "in"
+            }
+        }
+    ]
+}
