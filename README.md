@@ -86,7 +86,7 @@ If you want to run the latest code from git, here's how to get started:
         npm start
    or
 
-        node app.js
+        node server.js
 
 ## Contributing
 
