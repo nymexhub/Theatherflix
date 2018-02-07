@@ -62,20 +62,20 @@
                 "height": 72
             }
         },
-        "canvas/MakeRandom_wcbwf": {
+        "movie loading": {
             "component": "canvas/MakeRandom",
             "metadata": {
-                "label": "canvas/MakeRandom",
+                "label": "movie loading",
                 "x": 504,
                 "y": 108,
                 "width": 72,
                 "height": 72
             }
         },
-        "canvas/MakeRandom_guh5x": {
+        "movie loading 2": {
             "component": "canvas/MakeRandom",
             "metadata": {
-                "label": "canvas/MakeRandom",
+                "label": "movie loading 2",
                 "x": 504,
                 "y": 396,
                 "width": 72,
@@ -268,7 +268,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_guh5x",
+                "process": "movie loading 2",
                 "port": "min"
             },
             "metadata": {
@@ -281,7 +281,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_wcbwf",
+                "process": "movie loading",
                 "port": "min"
             },
             "metadata": {
@@ -294,7 +294,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_guh5x",
+                "process": "movie loading 2",
                 "port": "max"
             },
             "metadata": {
@@ -307,7 +307,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_guh5x",
+                "process": "movie loading 2",
                 "port": "count"
             },
             "metadata": {
@@ -320,7 +320,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_wcbwf",
+                "process": "movie loading",
                 "port": "max"
             },
             "metadata": {
@@ -333,7 +333,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "canvas/MakeRandom_wcbwf",
+                "process": "movie loading",
                 "port": "count"
             },
             "metadata": {
