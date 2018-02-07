@@ -56,7 +56,7 @@ To run the Theatherflix web app offline, you need to install the following;
 ## Quick Start
 
 1. `sudo npm install`
-2. `node app.js`
+2. `node server.js` (recommend install nodemon)
 3. Open <http://localhost:3000>
 
 ## Getting Help
