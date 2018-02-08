@@ -12,102 +12,62 @@
     "outports": {},
     "groups": [],
     "processes": {
-        "canvas/Draw_ps7an": {
-            "component": "canvas/Draw",
-            "metadata": {
-                "label": "canvas/Draw",
-                "x": 756,
-                "y": 648,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "canvas/Fill_cbdq5": {
-            "component": "canvas/Fill",
-            "metadata": {
-                "label": "canvas/Fill",
-                "x": 612,
-                "y": 612,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "canvas/MakeRectangle_1rmr9": {
+        "auto categorization according to what the code learns": {
             "component": "canvas/MakeRectangle",
             "metadata": {
-                "label": "canvas/MakeRectangle",
-                "x": 324,
-                "y": 612,
+                "label": "auto categorization according to what the code learns",
+                "x": 720,
+                "y": 720,
                 "width": 72,
                 "height": 72
             }
         },
-        "canvas/MakeRange_lb9hw": {
+        "DB stored info": {
             "component": "canvas/MakeRange",
             "metadata": {
-                "label": "canvas/MakeRange",
-                "x": 36,
-                "y": 576,
+                "label": "DB stored info",
+                "x": -36,
+                "y": 756,
                 "width": 72,
                 "height": 72
             }
         },
-        "canvas/Stroke_3m3hk": {
-            "component": "canvas/Stroke",
-            "metadata": {
-                "label": "canvas/Stroke",
-                "x": 504,
-                "y": 612,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "movie loading": {
+        "container movie 1": {
             "component": "canvas/MakeRandom",
             "metadata": {
-                "label": "movie loading",
-                "x": 504,
-                "y": 108,
+                "label": "container movie 1",
+                "x": 900,
+                "y": 216,
                 "width": 72,
                 "height": 72
             }
         },
-        "movie loading 2": {
+        "container movie 2": {
             "component": "canvas/MakeRandom",
             "metadata": {
-                "label": "movie loading 2",
-                "x": 504,
+                "label": "container movie 2",
+                "x": 900,
                 "y": 396,
                 "width": 72,
                 "height": 72
             }
         },
-        "GetButton": {
-            "component": "dom/GetElement",
-            "metadata": {
-                "label": "GetButton",
-                "x": 144,
-                "y": 180,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "ListenClick": {
+        "each movie (click)": {
             "component": "interaction/ListenMouse",
             "metadata": {
-                "label": "ListenClick",
-                "x": -180,
-                "y": 108,
+                "label": "each movie (click)",
+                "x": 144,
+                "y": 252,
                 "width": 72,
                 "height": 72
             }
         },
-        "canvas/MakeGrid_st846": {
+        "filtering and machine learning": {
             "component": "canvas/MakeGrid",
             "metadata": {
-                "label": "canvas/MakeGrid",
-                "x": 180,
-                "y": 576,
+                "label": "filtering and machine learning",
+                "x": 252,
+                "y": 720,
                 "width": 72,
                 "height": 72
             }
@@ -116,7 +76,7 @@
             "component": "math/SendNumber",
             "metadata": {
                 "label": "movie 1",
-                "x": 324,
+                "x": 612,
                 "y": 36,
                 "width": 72,
                 "height": 72
@@ -126,8 +86,8 @@
             "component": "math/SendNumber",
             "metadata": {
                 "label": "movie 2",
-                "x": 324,
-                "y": 468,
+                "x": 612,
+                "y": 180,
                 "width": 72,
                 "height": 72
             }
@@ -136,8 +96,8 @@
             "component": "math/SendNumber",
             "metadata": {
                 "label": "movie 3",
-                "x": 324,
-                "y": 180,
+                "x": 612,
+                "y": 360,
                 "width": 72,
                 "height": 72
             }
@@ -146,8 +106,8 @@
             "component": "math/SendNumber",
             "metadata": {
                 "label": "movie 4",
-                "x": 324,
-                "y": 324,
+                "x": 612,
+                "y": 504,
                 "width": 72,
                 "height": 72
             }
@@ -156,8 +116,8 @@
             "component": "core/Split",
             "metadata": {
                 "label": "Main front with React",
-                "x": 144,
-                "y": 360,
+                "x": 0,
+                "y": 396,
                 "width": 72,
                 "height": 72
             }
@@ -166,8 +126,28 @@
             "component": "core/Repeat",
             "metadata": {
                 "label": "Start",
-                "x": 36,
-                "y": 216,
+                "x": -180,
+                "y": 360,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "loadmovies": {
+            "component": "interaction/ListenMouse",
+            "metadata": {
+                "label": "loadmovies",
+                "x": 288,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "server app (back end) reads the movies": {
+            "component": "interaction/ListenMouse",
+            "metadata": {
+                "label": "server app (back end) reads the movies",
+                "x": 324,
+                "y": 540,
                 "width": 72,
                 "height": 72
             }
@@ -176,63 +156,11 @@
     "connections": [
         {
             "src": {
-                "process": "canvas/MakeRectangle_1rmr9",
-                "port": "rectangle"
-            },
-            "tgt": {
-                "process": "canvas/Stroke_3m3hk",
-                "port": "items"
-            },
-            "metadata": {
-                "route": 9
-            }
-        },
-        {
-            "src": {
-                "process": "canvas/Stroke_3m3hk",
-                "port": "stroke"
-            },
-            "tgt": {
-                "process": "canvas/Fill_cbdq5",
-                "port": "items"
-            },
-            "metadata": {
-                "route": 9
-            }
-        },
-        {
-            "src": {
-                "process": "canvas/Fill_cbdq5",
-                "port": "fill"
-            },
-            "tgt": {
-                "process": "canvas/Draw_ps7an",
-                "port": "commands"
-            },
-            "metadata": {
-                "route": 9
-            }
-        },
-        {
-            "src": {
-                "process": "GetButton",
-                "port": "element"
-            },
-            "tgt": {
-                "process": "ListenClick",
-                "port": "element"
-            },
-            "metadata": {
-                "route": 1
-            }
-        },
-        {
-            "src": {
-                "process": "canvas/MakeRange_lb9hw",
+                "process": "DB stored info",
                 "port": "range"
             },
             "tgt": {
-                "process": "canvas/MakeGrid_st846",
+                "process": "filtering and machine learning",
                 "port": "x"
             },
             "metadata": {
@@ -241,11 +169,11 @@
         },
         {
             "src": {
-                "process": "canvas/MakeRange_lb9hw",
+                "process": "DB stored info",
                 "port": "range"
             },
             "tgt": {
-                "process": "canvas/MakeGrid_st846",
+                "process": "filtering and machine learning",
                 "port": "y"
             },
             "metadata": {
@@ -254,11 +182,11 @@
         },
         {
             "src": {
-                "process": "canvas/MakeGrid_st846",
+                "process": "filtering and machine learning",
                 "port": "point"
             },
             "tgt": {
-                "process": "canvas/MakeRectangle_1rmr9",
+                "process": "auto categorization according to what the code learns",
                 "port": "point"
             }
         },
@@ -268,7 +196,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading 2",
+                "process": "container movie 2",
                 "port": "min"
             },
             "metadata": {
@@ -281,7 +209,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading",
+                "process": "container movie 1",
                 "port": "min"
             },
             "metadata": {
@@ -294,7 +222,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading 2",
+                "process": "container movie 2",
                 "port": "max"
             },
             "metadata": {
@@ -307,7 +235,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading 2",
+                "process": "container movie 2",
                 "port": "count"
             },
             "metadata": {
@@ -320,7 +248,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading",
+                "process": "container movie 1",
                 "port": "max"
             },
             "metadata": {
@@ -333,7 +261,7 @@
                 "port": "out"
             },
             "tgt": {
-                "process": "movie loading",
+                "process": "container movie 1",
                 "port": "count"
             },
             "metadata": {
@@ -386,19 +314,6 @@
             },
             "tgt": {
                 "process": "movie 4",
-                "port": "in"
-            },
-            "metadata": {
-                "route": 1
-            }
-        },
-        {
-            "src": {
-                "process": "ListenClick",
-                "port": "click"
-            },
-            "tgt": {
-                "process": "Main front with React",
                 "port": "in"
             },
             "metadata": {
@@ -420,30 +335,43 @@
         },
         {
             "src": {
-                "process": "ListenClick",
-                "port": "dblclick"
+                "process": "Main front with React",
+                "port": "out"
             },
             "tgt": {
-                "process": "GetButton",
-                "port": "in"
+                "process": "each movie (click)",
+                "port": "element"
+            },
+            "metadata": {
+                "route": 1
+            }
+        },
+        {
+            "src": {
+                "process": "each movie (click)",
+                "port": "click"
+            },
+            "tgt": {
+                "process": "loadmovies",
+                "port": "element"
             },
             "metadata": {}
         },
         {
             "src": {
-                "process": "GetButton",
-                "port": "error"
+                "process": "loadmovies",
+                "port": "click"
             },
             "tgt": {
-                "process": "movie 4",
+                "process": "movie 1",
                 "port": "number"
             },
             "metadata": {}
         },
         {
             "src": {
-                "process": "GetButton",
-                "port": "error"
+                "process": "loadmovies",
+                "port": "click"
             },
             "tgt": {
                 "process": "movie 3",
@@ -455,8 +383,21 @@
         },
         {
             "src": {
-                "process": "GetButton",
-                "port": "error"
+                "process": "loadmovies",
+                "port": "click"
+            },
+            "tgt": {
+                "process": "movie 4",
+                "port": "number"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "loadmovies",
+                "port": "click"
             },
             "tgt": {
                 "process": "movie 2",
@@ -468,12 +409,36 @@
         },
         {
             "src": {
-                "process": "GetButton",
-                "port": "error"
+                "process": "Main front with React",
+                "port": "out"
             },
             "tgt": {
-                "process": "movie 1",
-                "port": "number"
+                "process": "server app (back end) reads the movies",
+                "port": "element"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "each movie (click)",
+                "port": "dblclick"
+            },
+            "tgt": {
+                "process": "server app (back end) reads the movies",
+                "port": "element"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "each movie (click)",
+                "port": "click"
+            },
+            "tgt": {
+                "process": "server app (back end) reads the movies",
+                "port": "element"
             },
             "metadata": {
                 "route": 0
@@ -482,71 +447,36 @@
         {
             "data": 0,
             "tgt": {
-                "process": "canvas/MakeRange_lb9hw",
+                "process": "DB stored info",
                 "port": "from"
             }
         },
         {
             "data": 10,
             "tgt": {
-                "process": "canvas/MakeRectangle_1rmr9",
+                "process": "auto categorization according to what the code learns",
                 "port": "width"
             }
         },
         {
             "data": 10,
             "tgt": {
-                "process": "canvas/MakeRectangle_1rmr9",
+                "process": "auto categorization according to what the code learns",
                 "port": "height"
-            }
-        },
-        {
-            "data": 2,
-            "tgt": {
-                "process": "canvas/Stroke_3m3hk",
-                "port": "linewidth"
-            }
-        },
-        {
-            "data": true,
-            "tgt": {
-                "process": "canvas/Draw_ps7an",
-                "port": "drawevery"
-            }
-        },
-        {
-            "data": true,
-            "tgt": {
-                "process": "canvas/Draw_ps7an",
-                "port": "clearevery"
             }
         },
         {
             "data": 200,
             "tgt": {
-                "process": "canvas/MakeRange_lb9hw",
+                "process": "DB stored info",
                 "port": "to"
             }
         },
         {
             "data": "30",
             "tgt": {
-                "process": "canvas/MakeRange_lb9hw",
+                "process": "DB stored info",
                 "port": "count"
-            }
-        },
-        {
-            "data": "#000000",
-            "tgt": {
-                "process": "canvas/Stroke_3m3hk",
-                "port": "strokestyle"
-            }
-        },
-        {
-            "data": "#mybutton",
-            "tgt": {
-                "process": "GetButton",
-                "port": "selector"
             }
         },
         {
