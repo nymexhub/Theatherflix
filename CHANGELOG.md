@@ -4,6 +4,12 @@ Theatherflix Changelog file
 NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
 #
 
+# Conversations about future functions and other things
+
+
+
+#what's forthcoming:  
+
 we're moving to React - Redux the whole project will be unstable. To make it fast? Help out!
 
 2017: (future version)

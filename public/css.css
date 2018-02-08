@@ -1,4 +1,4 @@
-*body {
+body {
   color: white;
   background-color: black;
   font-family: "Arial";
@@ -9,6 +9,9 @@ a:link {
 }
 
 /* visited link */
+titles {
+    color: black; 
+}
 a:visited {
     color: rgb(0, 0, 0);
 }
