@@ -6,7 +6,7 @@ NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
 
 # Conversations about future functions and other things
 
-
+There will be an app in the back end, between the front and the handlers to watch the movies. 
 
 #what's forthcoming:  
 
