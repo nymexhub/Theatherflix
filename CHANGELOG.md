@@ -1,7 +1,6 @@
-Theatherflix Changelog file
------------------------------------------
-#
-NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
+# Theatherflix Changelog file
+
+### Next development? What's forthcoming?
 #
 
 # Conversations about future functions and other things
@@ -19,9 +18,9 @@ we're moving to React - Redux the whole project will be unstable. To make it fas
 
 - create a different way to stream the videos (movies)... Perhaps we will have to work a lot in the back end.
 
-- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any devide, sorta like USB. 
+- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any device, sorta like USB. 
 
-- We must to create a way to load the images of the movies, or load an specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? we gotta engineer that. 
+- We must create a way to load the images of the movies, or load an specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? we gotta engineer that. 
 
 - Moving to React! 5-2-2018 (Doing now)
 
@@ -47,7 +46,7 @@ public/movies-db (There will be just one movie partially available to watch for 
 Other data to add or comments :
 -----------------------------------------
 #
-#
+
 
 #
 Notes:
@@ -55,6 +54,6 @@ Notes:
 - The movie folder 'movies-db' must be created and stored with *.mp4 files in order to list movies.
 
 Additionally you must get the images related with the movie and put them in the folder 'movies-imgs'.
-#
-#
+
+
 
