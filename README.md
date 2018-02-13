@@ -97,16 +97,28 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
-| time will tell. ;-) Feel free to add your credits.
+| time will tell. Feel free to add your credits.
 
 ## Authors and contribs.
-Felipe Alfonso Gonzalez // Software Engineer / Soft Developer.
 
-* Felipe - Admin/Founder - [@felipealfonsog](http://twitter.com/felipealfonsog)
-* Reuben Antz - Colaborator - [@AntZ_Shrek](http://twitter.com/AntZ_Shrek)
-*
-*
-*
+
+
+| Names of collaborators         | Github Links          | Remarks
+| ------------------ |:------------------- |:--------------
+| Felipe     | https://github.com/felipealfonsog | (Founder)
+| Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
+| Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
+| Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
+| Bhagvat Lande         | https://github.com/BMLande    | (Collaborator)
+| Prabhpahul  Singh     | https://github.com/prabhpahul | (Collaborator)
+| Mmajidali             |https://github.com/mmajidali40 | (Collaborator)
+| Hiago Machado         | https://github.com/HiagoMachado777 | (Collaborator)
+| Patelvvipulgk         | https://github.com/patelvipulgk | (Collaborator) 
+| Parikshit Hooda       | https://github.com/Parikshit-Hooda | (Collaborator)
+| Douglas Alves         | https://github.com/dougtq | (Collaborator)
+| Naimur Rahman Sourov  | https://github.com/nsourov | (Collaborator)
+| Jpart                 | https://github.com/jpart-r | (Collaborator)
+
 
 
 ## Copyright and license
