@@ -43,3 +43,6 @@ BK
 
 # Optional REPL history
 .node_repl_history
+
+# Vscode configuration
+.vscode
