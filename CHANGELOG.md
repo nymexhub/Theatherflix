@@ -1,46 +1,80 @@
-Theatherflix Changelog file
+# **Theatherflix Changelog file** 
+#### *NEXT DEVELOPMENT? <br> WHAT'S FORTHCOMING?*
 -----------------------------------------
+
+
+## A little walk through into the project
+
+The whole project originally started on a NodeJS platform, and it was aimed at getting some sorta app to watch movies like Netflix but this time think of the offinline version of Netflex in your TV, or any Desktop PC or in any other device. The idea was to create a visual tool for wiring the Internet of Things, digital movies, stored in your HD.
+
+It started as far back as ________ by [Felipe Alfonso Gonzalez](https://github.com/felipealfonsog) who is the Admin/Founder of the project. Some major changes have been archive over the period of time and all credit should be given to him for archiving all that alone.
+
+Early (January) 2018, Felipe thought of getting more collaborators to the project to speeding and better the project. 
+
+After some series of meeting with new collaborators (all volunteers) the project was sujested to be moved from just **[A NodeJS - JavaScript Project]** to **[A NodeJS + React.JS + Redux - JavaScript Project]**. This resulted to moving of the old-version from the project to the [old branch](https://github.com/felipealfonsog/theatherflix/tree/old_branch) to the [current branch](https://github.com/felipealfonsog/theatherflix/) where some files have been deleted to give way for the ReactJS + React-Native concept to come in.
+
 #
-NEXT DEVELOPMENT? WHAT'S FORTHCOMING ?
+## Aims
+
+TheatherFlix plans at the end of the whole project to provide a solution to users to watch movies offline, and these can be archived by the full coorperation of all the collaborators.
+
 #
+## Stages
+
+The whole project is splited into *FIVE (5)* stages:
+
+| Stage1        | Stage 2          | Stage 3          | Stage 4          | Stage 5
+| ------------------ |:------------------- |:-------------- |:-------------- |:--------------
+| Creation of a UI     | Back-end (the whole functionality)  |Debugging | Testing (UI + Back-end)    | Lager scale testing
+
+#
+## What's forthcoming and needs to be done:  
+
+We're moving to React - Redux the whole project will be unstable. To make it fast? Help out!
+
+### **(Future version)**
+- Future: creating an algorithm for AI. Why? To read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related. The code behind Theatherflix will learn by itself. 
+
+- Perhaps using mongoDB - For some functionalities. Not sure. Any aditional idea on this is greatly welcome.
+
+- Create a different way to stream the videos (movies)... Perhaps we will have to work a lot in the back-end.
+
+- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any devide, sorta like USB. 
+
+- We must to create a way to load the images of the movies, or load a specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? We gotta engineer that. 
+
+
 
 # Conversations about future functions and other things
 
 There will be an app in the backend, between the front and the handlers to watch the movies. 
 
-# what's forthcoming:  
-
-we're moving to React - Redux the whole project will be unstable. To make it fast? Help out!
-
-2017: (future version)
-- Future: creating an algorithm for AI. Why? to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related. The code behind Theatherflix will learn by itself. 
-
-- Perhaps using mongoDB - For some functionalities. Not sure. Ideas?
-
-- create a different way to stream the videos (movies)... Perhaps we will have to work a lot in the back end.
-
-- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any devide, sorta like USB. 
-
-- We must to create a way to load the images of the movies, or load an specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? we gotta engineer that. 
-
-- Moving to React! 5-2-2018 (Doing now)
-
-
-
-
-
-
-
+# I should check on how to include an image in md
+## Current stage of the project
 #
 What do we have now? present stages.
 #
+We have moved to React! 5-2-2018 (Doing now)
+
 - the movies are lolcally in the folder path:
 
-public/movies-db (There will be just one movie partially available to watch for testing pusposes perhaps.)
+    - public/movies-db (There will be just one movie partially available to watch for testing pusposes perhaps.)
 
 - the interface is being handled with handlebars.
 
 - We just use Express and handlebars right now for the interface. I intented to use Grunt.js - By Felipe.
+
+#
+## Things to Notes:
+#
+- The movie folder 'movies-db' must be created and stored with *.mp4 files in order to list movies.
+
+- Additionally you must get the images related with the movie and put them in the folder 'movies-imgs'.
+- Future creating of an algorithm to create AI to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related.
+- Perhaps using mongoDB (Seriously for some things we could use MondoDB)
+- We have move all to React! (we need to think on how to create a best project with React and Redux)
+- create a different way to stream the videos...  (the movies)
+- Any new commit made on the project should be noted in the **Changelog.md**
 
 
 # 
@@ -48,13 +82,5 @@ Other data to add or comments :
 -----------------------------------------
 #
 #
-
-#
-Notes:
-#
-- The movie folder 'movies-db' must be created and stored with *.mp4 files in order to list movies.
-
-Additionally you must get the images related with the movie and put them in the folder 'movies-imgs'.
 #
 #
-

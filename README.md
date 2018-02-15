@@ -8,22 +8,22 @@ A visual tool for wiring the Internet of Things, digital movies, stored in your 
 
 OpenSource Project [Initially] to create a platform to watch movies locally with all confort online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
-#Old_branch
+## Old_branch
 If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
 
 
-#The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck! :)
+### _The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck!_
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
-#Visit our websites:
+### Visit our websites:
 https://felipealfonsog.github.io/theatherflix/
 
 http://www.nodeio.us (nodeio labs)
 
 
-#Join the conversation about Theatherflix using Slack!
+### Join the conversation about Theatherflix using Slack!
 https://nodeio-labs.slack.com.
 
 
@@ -98,6 +98,11 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
+
+
+
+### **Note:** 
+_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique._
 
 ## Authors and contribs.
 
