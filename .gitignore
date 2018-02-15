@@ -46,3 +46,6 @@ BK
 
 # Vscode configuration
 .vscode
+
+# .env configuration
+.env
