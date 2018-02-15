@@ -1,20 +1,19 @@
 {
   "name": "theatherflix",
   "version": "2.3.0",
-  "description": "",
+  "description": "A visual tool for wiring the Internet of Things, digital movies, stored in your HD.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
   },
   "author": "",
-  "license": "GNU",
+  "license": "MIT",
   "dependencies": {
-    "angular": "^1.6.6",
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.53.0",
     "require-all": "^2.2.0",
     "walk": "^2.3.9"
   },
