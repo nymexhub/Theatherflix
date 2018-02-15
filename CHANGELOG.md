@@ -7,7 +7,7 @@
 
 The whole project originally started on a NodeJS platform, and it was aimed at getting some sorta app to watch movies like Netflix but this time think of the offinline version of Netflex in your TV, or any Desktop PC or in any other device. The idea was to create a visual tool for wiring the Internet of Things, digital movies, stored in your HD.
 
-It started as far back as ________ by [Felipe Alfonso Gonzalez](https://github.com/felipealfonsog) who is the Admin/Founder of the project. Some major changes have been archive over the period of time and all credit should be given to him for archiving all that alone.
+It started as far back as May 2017 by [Felipe Alfonso Gonzalez](https://github.com/felipealfonsog) who is the Admin/Founder of the project. Some major changes have been archive over the period of time and all credit should be given to him for archiving all that alone.
 
 Early (January) 2018, Felipe thought of getting more collaborators to the project to speeding and better the project. 
 
@@ -49,7 +49,8 @@ We're moving to React - Redux the whole project will be unstable. To make it fas
 
 There will be an app in the backend, between the front and the handlers to watch the movies. 
 
-# I should check on how to include an image in md
+### [A brife work flow of the project](flow.png)
+
 ## Current stage of the project
 #
 What do we have now? present stages.
