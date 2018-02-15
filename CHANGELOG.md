@@ -5,23 +5,23 @@
 
 ## A little walk through into the project
 
-The whole project originally started on a NodeJS platform, and it was aimed at getting some sorta app to watch movies like Netflix but this time think of the offinline version of Netflex in your TV, or any Desktop PC or in any other device. The idea was to create a visual tool for wiring the Internet of Things, digital movies, stored in your HD.
+The whole project originally started on a NodeJS platform, and it was aimed at getting some sorta app to watch movies like Netflix but this time think of the offline version of Netflex in your TV, or any Desktop PC or in any other device. The idea was to create a visual tool for wiring the Internet of Things, digital movies, stored in your HD.
 
 It started as far back as May 2017 by [Felipe Alfonso Gonzalez](https://github.com/felipealfonsog) who is the Admin/Founder of the project. Some major changes have been archive over the period of time and all credit should be given to him for archiving all that alone.
 
 Early (January) 2018, Felipe thought of getting more collaborators to the project to speeding and better the project. 
 
-After some series of meeting with new collaborators (all volunteers) the project was sujested to be moved from just **[A NodeJS - JavaScript Project]** to **[A NodeJS + React.JS + Redux - JavaScript Project]**. This resulted to moving of the old-version from the project to the [old branch](https://github.com/felipealfonsog/theatherflix/tree/old_branch) to the [current branch](https://github.com/felipealfonsog/theatherflix/) where some files have been deleted to give way for the ReactJS + React-Native concept to come in.
+After some series of meeting with new collaborators (all volunteers) the project was suggested to be moved from just **[A NodeJS - JavaScript Project]** to **[A NodeJS + React.JS + Redux - JavaScript Project]**. This resulted to moving of the old-version from the project to the [old branch](https://github.com/felipealfonsog/theatherflix/tree/old_branch) to the [current branch](https://github.com/felipealfonsog/theatherflix/) where some files have been deleted to give way for the ReactJS + React-Native concept to come in.
 
 #
 ## Aims
 
-TheatherFlix plans at the end of the whole project to provide a solution to users to watch movies offline, and these can be archived by the full coorperation of all the collaborators.
+TheatherFlix plans at the end of the whole project to provide a solution to users to watch movies offline, and these can be archived by the full cooperation of all the collaborators.
 
 #
 ## Stages
 
-The whole project is splited into *FIVE (5)* stages:
+The whole project is split into *FIVE (5)* stages:
 
 | Stage1        | Stage 2          | Stage 3          | Stage 4          | Stage 5
 | ------------------ |:------------------- |:-------------- |:-------------- |:--------------
@@ -33,13 +33,13 @@ The whole project is splited into *FIVE (5)* stages:
 We're moving to React - Redux the whole project will be unstable. To make it fast? Help out!
 
 ### **(Future version)**
-- Future: creating an algorithm for AI. Why? To read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related. The code behind Theatherflix will learn by itself. 
+- Future: creating an algorithm for AI. Why? To read an specific folder for movies or an external source, loading automatically movies and its images or sources related. The code behind Theatherflix will learn by itself. 
 
-- Perhaps using mongoDB - For some functionalities. Not sure. Any aditional idea on this is greatly welcome.
+- Perhaps using mongoDB - For some functionalities. Not sure. Any additional idea on this is greatly welcome.
 
 - Create a different way to stream the videos (movies)... Perhaps we will have to work a lot in the back-end.
 
-- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any devide, sorta like USB. 
+- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any device, sorta like USB. 
 
 - We must to create a way to load the images of the movies, or load a specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? We gotta engineer that. 
 
@@ -47,9 +47,10 @@ We're moving to React - Redux the whole project will be unstable. To make it fas
 
 # Conversations about future functions and other things
 
-There will be an app in the backend, between the front and the handlers to watch the movies. 
+There will be an app in the back-end, between the front and the handlers to watch the movies. 
 
-### [A brife work flow of the project](flow.png)
+### [An imagery brief work flow of the project](flow.png)
+
 
 ## Current stage of the project
 #
@@ -57,13 +58,13 @@ What do we have now? present stages.
 #
 We have moved to React! 5-2-2018 (Doing now)
 
-- the movies are lolcally in the folder path:
+- the movies are locally in the folder path:
 
-    - public/movies-db (There will be just one movie partially available to watch for testing pusposes perhaps.)
+    - public/movies-db (There will be just one movie partially available to watch for testing purposes perhaps.)
 
 - the interface is being handled with handlebars.
 
-- We just use Express and handlebars right now for the interface. I intented to use Grunt.js - By Felipe.
+- We just use Express and handlebars right now for the interface. I intended to use Grunt.js - By Felipe.
 
 #
 ## Things to Notes:
