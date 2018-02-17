@@ -66,6 +66,11 @@ We have moved to React! 5-2-2018 (Doing now)
 
 - We just use Express and handlebars right now for the interface. I intended to use Grunt.js - By Felipe.
 
+- Started to write the server side for folder sync and video serving. (jp6rt)
+
+	- Need to research if there is package to handle video stream properly (e.g., return correct byte offset for user seek?)
+	- Use reactive (rxjs) to for event handling, async operations?  
+
 #
 ## Things to Notes:
 #
