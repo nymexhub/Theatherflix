@@ -122,7 +122,7 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 | Parikshit Hooda       | https://github.com/Parikshit-Hooda | (Collaborator)
 | Douglas Alves         | https://github.com/dougtq | (Collaborator)
 | Naimur Rahman Sourov  | https://github.com/nsourov | (Collaborator)
-| Jpart                 | https://github.com/jpart-r | (Collaborator)
+| Jpart                 | https://github.com/jp6rt | (Collaborator)
 
 
 
