@@ -4,6 +4,7 @@ v2.1.0.2rvc1.0
 #
 git@github.com:felipealfonsog/theatherflix.git
 
+#What's this?
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
 OpenSource Project [Initially] to create a platform to watch movies locally with all confort online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
