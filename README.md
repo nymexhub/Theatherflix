@@ -11,6 +11,11 @@ OpenSource Project [Initially] to create a platform to watch movies locally with
 ## Old_branch
 If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
 
+#If you want to clone the old branch follow this:
+1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. npm install
+3. node (or nodemon) server.js
+
 
 ### _The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck!_
 
