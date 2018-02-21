@@ -1,40 +1,41 @@
 
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer CC 2018 
+// ---------------------------------------------------------------
+// if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 
 
+var reeter = React.createClass({
+  getDefaultProps: function () {
+    return {
+      title: 'Theatherflix OpenSource Project',
+      message: 'A visual tool for wiring the Internet of Things, digital movies, stored in your HD. "The cousin of Netflix in the future".'
+    };
+  },
+  getInitialState: function () {
+    return {
+        title: this.props.title,
+        message: this.props.message
+    };
+  },
+  handleNewData: function (updates) {
+    this.setState(updates);
+  },
+  render: function () {
+    var title = this.state.title;
+    var message = this.state.message;
 
-var Greeter = React.createClass({
-    getDefaultProps: function () {
-      return {
-        name: 'Theatherflix OpenSource Project',
-        message: 'A visual tool for wiring the Internet of Things, digital movies, stored in your HD. The cousin of Netflix in the future.'
-      };
-    },
+    return (
+      <div>
+        <GreeterMessage title={title} message={message}/>
+        <GreeterForm onNewData={this.handleNewData}/>
+      </div>
+    );
+  }
+});
 
-    
-    render: function () {
-      var name = this.props.name;
-      var message = this.props.message;
-  
-      return (
-        <div>  
-          <h1>{name}</h1>
+var firstName = 'Felipe the Founder welcomes you!';
 
-          <p>{message}</p>
-        </div>
-      );
-    }
-  });
-  
-  
-  ReactDOM.render(
-    <Greeter />,
-    document.getElementById('theatherflixapp')
-  );
-  
-
-  // probably the logic will be like to continue with different containers to load the movies ....  but here's the thing! how to sync it without to code container after container ! .....
-  // cause with handlebars I had the same issue.... I gotta research ... in the end React is huge...  quite flexible ... 
-
-  // if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
-
-
+ReactDOM.render(
+  <Greeter name={firstName}/>,
+  document.getElementById('app')
+);
