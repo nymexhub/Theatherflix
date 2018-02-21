@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------
 // if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 
-
+// creating component 
 var reeter = React.createClass({
   getDefaultProps: function () {
     return {
@@ -33,9 +33,12 @@ var reeter = React.createClass({
   }
 });
 
+// var to make a welcome ... 
 var firstName = 'Felipe the Founder welcomes you!';
 
+// the render 
 ReactDOM.render(
-  <Greeter name={firstName}/>,
-  document.getElementById('app')
+    <Greeter name={firstName}/>,
+    document.getElementById('app')
 );
+

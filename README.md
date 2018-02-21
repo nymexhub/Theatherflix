@@ -106,6 +106,11 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
 
+If you wanna be part of this seriously, coding, documenting, write me out, and also check out the Changelog.md file:
+
+https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
+
+
 
 
 ### **Note:** 
