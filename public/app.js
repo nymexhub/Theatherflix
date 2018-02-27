@@ -2,7 +2,11 @@
 // This is an Open Source project. 
 
 
-var greeter = require('./components/greeter'); 
+var greeter = require('./components/Greeter.js'); 
+
+// function greeter () {
+//     document.write('From greeter function');
+// }
 
 greeter();
 
