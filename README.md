@@ -15,6 +15,7 @@ If you want to download the old version stored, go to the old branch -> https://
 
 #If you want to clone the old branch follow this:
 1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd old_branch (which is downloaded as a folder named 'theatherflix' though)
 2. npm install
 3. node (or nodemon) server.js
 
