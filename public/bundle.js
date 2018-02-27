@@ -65,36 +65,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// All this code has been made by Felipe Alfonso González - Software Engineer 
-// This is an Open Source project. 
-
-
-var greeter = __webpack_require__(1); 
-
-// function greeter () {
-//     document.write('From greeter function');
-// }
-
-greeter();
-
-
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
-
-function greeter () {
-    document.write('From greeter function'); 
-}
-
-module.exports = greeter;
-
-
-
+throw new Error("Module parse failed: Unexpected token (28:6)\nYou may need an appropriate loader to handle this file type.\n| \r\n|     return (\r\n|       <div>\r\n|         <GreeterMessage title={title} message={message}/>\r\n|         <GreeterForm onNewData={this.handleNewData}/>\r");
 
 /***/ })
 /******/ ]);

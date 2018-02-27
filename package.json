@@ -9,14 +9,17 @@
   "author": "",
   "license": "GNU",
   "dependencies": {
-    "angular": "^1.6.6",
     "express": "^4.16.2",
-    "hbs": "^4.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.53.0",
     "require-all": "^2.2.0",
     "walk": "^2.3.9"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "webpack": "^1.12.13"
+  }
 }
