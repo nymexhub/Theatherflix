@@ -81,8 +81,7 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(GreeterMessage, { title: title, message: message }),
-	      React.createElement(GreeterForm, { onNewData: this.handleNewData })
+	      React.createElement(GreeterMessage, { title: title, message: message })
 	    );
 	  }
 	});
