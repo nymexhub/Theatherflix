@@ -2,6 +2,10 @@
 // any doubts go to README.md and Changelog.md
 
 
+// Thatherflix is an Open Source Project 
+// Founded by Felipe Alfonso Gonzalez - Soft. Engr. - felipe.dev.engr.js@gmail.com 
+// CC2018
+
 const express = require('express');
 
 // creation of the app using express .
@@ -12,5 +16,5 @@ app.set('port', process.env.PORT || 3000)
 app.use(express.static('public'));
 
 app.listen(app.get('port'), function () {
-  console.log(`Express server is up, on port ${app.get('port')}`);
+  console.log(`Wow! now you can check it out on the web! the server is up, on port ${app.get('port')}`);
 });
