@@ -81,7 +81,7 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(GreeterMessage, { title: title, message: message })
+	      React.createElement(Greeter, { title: title, message: message })
 	    );
 	  }
 	});

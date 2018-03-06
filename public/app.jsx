@@ -34,7 +34,7 @@ var Greeter = React.createClass({
 
     return (
       <div>
-        <GreeterMessage title={title} message={message}/>
+        <Greeter title={title} message={message}/>
       </div>
     );
   }
