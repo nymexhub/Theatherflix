@@ -35,7 +35,6 @@ var Greeter = React.createClass({
     return (
       <div>
         <GreeterMessage title={title} message={message}/>
-        <GreeterForm onNewData={this.handleNewData}/>
       </div>
     );
   }
