@@ -1,10 +1,17 @@
 
-// Coding by Felipe Alfonso Gonzalez -  Software Engineer CC 2018 
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018 
 // ---------------------------------------------------------------
 // if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 
-// creating component 
-var reeter = React.createClass({
+// for future adjustaments from other coders please refactoring is necessary.
+
+
+
+var React = require('react');
+var ReactDOM = require('react-dom'); 
+
+
+var Greeter = React.createClass({
   getDefaultProps: function () {
     return {
       title: 'Theatherflix OpenSource Project',
@@ -33,7 +40,7 @@ var reeter = React.createClass({
   }
 });
 
-// var to make a welcome ... 
+// var to make a welcome ... from me 
 var firstName = 'Felipe the Founder welcomes you!';
 
 // the render 
