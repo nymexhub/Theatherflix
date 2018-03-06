@@ -1,3 +1,4 @@
+// configuration webpack
 module.exports = {
   entry: './public/app.jsx',
   output: {
@@ -13,7 +14,9 @@ module.exports = {
               loader: 'babel-loader',
               query: {
                   presets: ['react', 'es2015']
-              }
+              },
+              test: /\.jsx?$/,
+              exclude: /(node_modules|bower_components)/
           }
       ]
   }
