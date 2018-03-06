@@ -6,5 +6,15 @@ module.exports = {
   },
   resolve: {
       extensions: ['.js', '.jsx']
+  },
+  module: {
+      loaders: [
+          {
+              loader: 'babel-loader',
+              query: {
+                  presets: ['react', 'es2015']
+              }
+          }
+      ]
   }
 };
