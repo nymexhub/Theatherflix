@@ -16,7 +16,7 @@ var createReactClass = require('create-react-class');
 // var createReactClass = require('create-react-class');
 
 // module.exports= React.createClass({
- var Greeter = React.createClass({ // I started with this, I get an error in the console ... needed to get fixed somehow.
+ //var Greeter = React.createClass({ // I started with this, I get an error in the console ... needed to get fixed somehow.
 
   /*
 strangely I get this error in the console:
@@ -35,6 +35,13 @@ Uncaught TypeError: React.createClass is not a function
    /// Tried this °°°°°° ----- °° _°°__°_°__°_°_°_°
 //   module.exports= createReactClass({
  
+
+
+  var Greeter = React.createClass({
+
+
+
+
 // trying something different :
 // var Greeter = createReactClass({ // this seems to be created a sort of fucking strange freeze in the browser .... °__° 
   getDefaultProps: function () {

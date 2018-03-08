@@ -62,23 +62,26 @@
 	// var createReactClass = require('create-react-class');
 
 	// module.exports= React.createClass({
+	//var Greeter = React.createClass({ // I started with this, I get an error in the console ... needed to get fixed somehow.
+
+	/*
+	strangely I get this error in the console:
+
+	Uncaught TypeError: React.createClass is not a function
+	  at Object.<anonymous> (bundle.js:65)
+	  at __webpack_require__ (bundle.js:20)
+	  at bundle.js:40
+	  at bundle.js:43
+
+	  */
+
+	/// Tried this °°°°°° ----- °° _°°__°_°__°_°_°_°
+	//   module.exports= createReactClass({
+
+
 	var Greeter = React.createClass({
 	  displayName: 'Greeter',
-	  // I started with this, I get an error in the console ... needed to get fixed somehow.
 
-	  /*
-	  strangely I get this error in the console:
-	  
-	  Uncaught TypeError: React.createClass is not a function
-	    at Object.<anonymous> (bundle.js:65)
-	    at __webpack_require__ (bundle.js:20)
-	    at bundle.js:40
-	    at bundle.js:43
-	  
-	    */
-
-	  /// Tried this °°°°°° ----- °° _°°__°_°__°_°_°_°
-	  //   module.exports= createReactClass({
 
 	  // trying something different :
 	  // var Greeter = createReactClass({ // this seems to be created a sort of fucking strange freeze in the browser .... °__° 
