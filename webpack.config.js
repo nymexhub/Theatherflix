@@ -1,7 +1,10 @@
 // creating the config file for webpack
 // Project founded by Felipe Software Engineer C2018-Present  - felipe.dev.engr.js@gmail.com
 
+// °_°_°_°_°_°_°__°___°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 // WARNING : Please be careful with this file!
+// °_°_°_°_°_°_°__°___°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
 
 module.exports = {
     entry: './public/app.jsx',
