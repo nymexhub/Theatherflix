@@ -1,5 +1,5 @@
 
-// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018 
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  C2018 -Present
 // ---------------------------------------------------------------
 
 // for future adjustaments from other coders please refactoring is necessary.
