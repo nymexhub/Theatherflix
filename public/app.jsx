@@ -1,18 +1,42 @@
 
 // Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018 
 // ---------------------------------------------------------------
-// if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 
 // for future adjustaments from other coders please refactoring is necessary.
 
+// this file is going to be rendered by WEBPACK ! 
 
-
+// Calling the React and react-dom Vars and modules ... .
 var React = require('react');
 var ReactDOM = require('react-dom'); 
 
 
+var createReactClass = require('create-react-class');
 
-var Greeter = React.createClass({
+// var createReactClass = require('create-react-class');
+
+// module.exports= React.createClass({
+ var Greeter = React.createClass({ // I started with this, I get an error in the console ... needed to get fixed somehow.
+
+  /*
+strangely I get this error in the console:
+
+
+Uncaught TypeError: React.createClass is not a function
+    at Object.<anonymous> (bundle.js:65)
+    at __webpack_require__ (bundle.js:20)
+    at bundle.js:40
+    at bundle.js:43
+
+
+
+  */
+
+   /// Tried this °°°°°° ----- °° _°°__°_°__°_°_°_°
+//   module.exports= createReactClass({
+ 
+// trying something different :
+// var Greeter = createReactClass({ // this seems to be created a sort of fucking strange freeze in the browser .... °__° 
   getDefaultProps: function () {
     return {
       title: 'Theatherflix OpenSource Project',
@@ -48,4 +72,7 @@ ReactDOM.render(
     <Greeter name={firstName}/>,
     document.getElementById('app')
 );
+
+
+
 

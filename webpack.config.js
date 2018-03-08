@@ -1,6 +1,7 @@
 // creating the config file for webpack
-// created by Felipe Software Engineer CC1028
+// Project founded by Felipe Software Engineer C2018-Present  - felipe.dev.engr.js@gmail.com
 
+// WARNING : Please be careful with this file!
 
 module.exports = {
     entry: './public/app.jsx',
@@ -8,22 +9,18 @@ module.exports = {
       path: __dirname,
       filename: './public/bundle.js'
     },
-
     resolve: {
       extensions: ['', '.js', '.jsx']
     },
-
     module: {
       loaders: [
         {
-
           loader: 'babel-loader',
           query: {
             presets: ['react', 'es2015']
           },
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/
-
         }
       ]
     }
