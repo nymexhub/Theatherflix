@@ -6,7 +6,7 @@
 // °_°_°_°_°_°_°__°___°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 
 module.exports = {
-  entry: './public/app.jsx',
+  entry: './app/app.jsx',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -15,7 +15,9 @@ module.exports = {
     root: __dirname,
     alias: {
       //  here we tell webpack where the components are
-      Greeter: 'public/components/Greeter.jsx'
+
+      // commented due to the development of a boilerplate
+      // Greeter: 'public/components/Greeter.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

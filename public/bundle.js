@@ -61,10 +61,17 @@
 	var ReactDOM = __webpack_require__(12);
 
 	// calling out the freeter from the components 
-	var Greeter = __webpack_require__(27);
+	// var Greeter = require('Greeter');
+
 
 	// the render 
-	ReactDOM.render(React.createElement(Greeter, null), document.getElementById('app'));
+	ReactDOM.render(
+	// <Greeter />,
+	React.createElement(
+	    "h1",
+	    null,
+	    "Testing for theatherflix"
+	), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -18218,75 +18225,6 @@
 	}
 
 	module.exports = camelize;
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(1);
-	var React = __webpack_require__(12);
-
-	var Greeter = __webpack_require__(27);
-
-	/// var createReactClass = require('create-react-class');
-
-	// var createReactClass = require('create-react-class');
-
-	// module.exports= React.createClass({
-	//var Greeter = React.createClass({ // I started with this, I get an error in the console ... needed to get fixed somehow.
-
-	/*
-	strangely I get this error in the console:
-
-	Uncaught TypeError: React.createClass is not a function
-	  at Object.<anonymous> (bundle.js:65)
-	  at __webpack_require__ (bundle.js:20)
-	  at bundle.js:40
-	  at bundle.js:43
-
-	  */
-
-	/// Tried this °°°°°° ----- °° _°°__°_°__°_°_°_°
-	//   module.exports= createReactClass({
-
-
-	var Greeter = React.createClass({
-	  displayName: "Greeter",
-
-
-	  // trying something different :
-	  // var Greeter = createReactClass({ // this seems to be created a sort of fucking strange freeze in the browser .... °__° 
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      title: 'Theatherflix OpenSource Project',
-	      message: 'A visual tool for wiring the Internet of Things, digital movies, stored in your HD. "The cousin of Netflix in the future".'
-	    };
-	  },
-	  getInitialState: function getInitialState() {
-	    return {
-	      title: this.props.title,
-	      message: this.props.message
-	    };
-	  },
-	  handleNewData: function handleNewData(updates) {
-	    this.setState(updates);
-	  },
-	  render: function render() {
-	    var title = this.state.title;
-	    var message = this.state.message;
-
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(Greeter, { title: title, message: message })
-	    );
-	  }
-	});
-
-	// I try to export the greeters .... 
-	module.exports = Greeter;
 
 /***/ })
 /******/ ]);
