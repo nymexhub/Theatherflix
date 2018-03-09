@@ -14,8 +14,7 @@ var React = require("react");
 var ReactDOM = require("react-dom"); 
 
 // calling out the freeter from the components 
-var Greeter = require('./components/Greeter');
-
+var Greeter = require('Greeter');
 
 
 // the render 

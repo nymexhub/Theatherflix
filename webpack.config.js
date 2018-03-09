@@ -12,6 +12,11 @@ module.exports = {
     filename: './public/bundle.js'
   },
   resolve: {
+    root: __dirname,
+    alias: {
+      //  here we tell webpack where the components are
+      Greeter: 'public/components/Greeter.jsx'
+    },
     extensions: ['', '.js', '.jsx']
   },
   module: {
