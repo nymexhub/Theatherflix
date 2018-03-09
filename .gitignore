@@ -46,3 +46,6 @@ old_branch
 
 # Vscode configuration
 .vscode
+
+# .env configuration
+.env
