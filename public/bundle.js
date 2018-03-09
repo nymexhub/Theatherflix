@@ -51,6 +51,9 @@
 
 	// for future adjustaments from other coders please refactoring is necessary.
 
+	// we can order the files in the future .... there're a always different ways to make it.
+	// now: let's make it work. There're a few bugs.....
+
 	// this file is going to be rendered by WEBPACK ! 
 
 	// Calling the React and react-dom Vars and modules ... .
@@ -60,11 +63,8 @@
 	// calling out the freeter from the components 
 	var Greeter = __webpack_require__(27);
 
-	// var to make a welcome ... from me 
-	var firstName = 'Felipe the Founder welcomes you!';
-
 	// the render 
-	ReactDOM.render(React.createElement(Greeter, { name: firstName }), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Greeter, null), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -18285,6 +18285,7 @@
 	  }
 	});
 
+	// I try to export the greeters .... 
 	module.exports = Greeter;
 
 /***/ })
