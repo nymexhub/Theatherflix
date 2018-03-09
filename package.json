@@ -1,7 +1,7 @@
 {
   "name": "theatherflix",
   "version": "v2.1.0.2 rvc1.0",
-  "description": "",
+  "description": "Visual TOOL for Internet of Things.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,8 @@
     "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.5.0"
   }
 }

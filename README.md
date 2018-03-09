@@ -1,5 +1,7 @@
 # Theatherflix Open Source Project
-# [A NodeJS + React.JS + Redux - JavaScript Project]
+# [A NodeJS + React.JS + Redux - React-native - Machine Learning - JavaScript Project]
+      °°°°°°°°° If you like to study these topics, don't hesitate to join it! 
+
 v2.1.0.2rvc1.0 
 #
 git@github.com:felipealfonsog/theatherflix.git
