@@ -4,6 +4,9 @@
 
 // for future adjustaments from other coders please refactoring is necessary.
 
+// we can order the files in the future .... there're a always different ways to make it.
+// now: let's make it work. There're a few bugs.....
+
 // this file is going to be rendered by WEBPACK ! 
 
 // Calling the React and react-dom Vars and modules ... .
