@@ -2,20 +2,30 @@
   "name": "theatherflix",
   "version": "2.3.0",
   "description": "A visual tool for wiring the Internet of Things, digital movies, stored in your HD.",
+  "version": "v2.1.0.2 rvc1.0",
+  "description": "Visual TOOL for Internet of Things.",
   "main": "server.js",
   "scripts": {
     "test": "",
     "start": "node ./server.js"
   },
-  "author": "",
+  "author": "Nodeio Labs",
   "license": "MIT",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "express": "^4.16.2",
-    "hbs": "^4.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "require-all": "^2.2.0",
     "walk": "^2.3.9"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.5.0"
+  }
 }

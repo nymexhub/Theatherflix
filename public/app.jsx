@@ -1,40 +1,28 @@
 
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  C2018 -Present
+// ---------------------------------------------------------------
+
+// for future adjustaments from other coders please refactoring is necessary.
+
+// we can order the files in the future .... there're a always different ways to make it.
+// now: let's make it work. There're a few bugs.....
+
+// this file is going to be rendered by WEBPACK ! 
+
+// Calling the React and react-dom Vars and modules ... .
+var React = require("react");
+var ReactDOM = require("react-dom"); 
+
+// calling out the freeter from the components 
+var Greeter = require('Greeter');
 
 
-
-var Greeter = React.createClass({
-    getDefaultProps: function () {
-      return {
-        name: 'Theatherflix OpenSource Project',
-        message: 'A visual tool for wiring the Internet of Things, digital movies, stored in your HD. The cousin of Netflix in the future.'
-      };
-    },
-
-    
-    render: function () {
-      var name = this.props.name;
-      var message = this.props.message;
-  
-      return (
-        <div>  
-          <h1>{name}</h1>
-
-          <p>{message}</p>
-        </div>
-      );
-    }
-  });
-  
-  
-  ReactDOM.render(
+// the render 
+ReactDOM.render(
     <Greeter />,
-    document.getElementById('theatherflixapp')
-  );
-  
+    document.getElementById('app')
+);
 
-  // probably the logic will be like to continue with different containers to load the movies ....  but here's the thing! how to sync it without to code container after container ! .....
-  // cause with handlebars I had the same issue.... I gotta research ... in the end React is huge...  quite flexible ... 
 
-  // if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 
 

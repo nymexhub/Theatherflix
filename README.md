@@ -1,8 +1,12 @@
 # Theatherflix Open Source Project
-# [A NodeJS + React.JS + Redux - JavaScript Project]
+# [A NodeJS + React.JS + Redux - React-native - Machine Learning - JavaScript Project]
+      °°°°°°°°° If you like to study these topics, don't hesitate to join it! 
+
 v2.1.0.2rvc1.0 
 #
 git@github.com:felipealfonsog/theatherflix.git
+
+#What's this?
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
@@ -11,8 +15,14 @@ OpenSource Project [Initially] to create a platform to watch movies locally with
 ## Old_branch
 If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
 
+#If you want to clone the old branch follow this:
+1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd old_branch (which is downloaded as a folder named 'theatherflix' though)
+2. npm install
+3. node (or nodemon) server.js
 
-### _The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck!_
+
+### _Warning: The project will be unstable due changes, and the migration of the project to React.
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
@@ -98,6 +108,11 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
+
+If you wanna be part of this seriously, coding, documenting, write me out, and also check out the Changelog.md file:
+
+https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
+
 
 
 
