@@ -19,17 +19,9 @@ var ReactDOM = require("react-dom");
 // var Greeter = require('Greeter');
 
 
-
-
-
-
 // the render 
 ReactDOM.render(
     // <Greeter />,
     <h1>Testing for theatherflix</h1>,
     document.getElementById('app')
 );
-
-
-
-
