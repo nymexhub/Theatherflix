@@ -15,12 +15,9 @@ var Greeter = require('./components/Greeter');
 
 
 
-// var to make a welcome ... from me 
-var firstName = 'Felipe the Founder welcomes you!';
-
 // the render 
 ReactDOM.render(
-    <Greeter name={firstName}/>,
+    <Greeter />,
     document.getElementById('app')
 );
 
