@@ -13,13 +13,20 @@
 var React = require("react");
 var ReactDOM = require("react-dom"); 
 
+
+
 // calling out the freeter from the components 
-var Greeter = require('Greeter');
+// var Greeter = require('Greeter');
+
+
+
+
 
 
 // the render 
 ReactDOM.render(
-    <Greeter />,
+    // <Greeter />,
+    <h1>Testing for theatherflix</h1>,
     document.getElementById('app')
 );
 
