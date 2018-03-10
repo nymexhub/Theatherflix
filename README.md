@@ -1,88 +1,172 @@
-# **Theatherflix Changelog file** 
-#### *NEXT DEVELOPMENT? <br> WHAT'S FORTHCOMING?*
------------------------------------------
-
-
-## A little walk through into the project
-
-The whole project originally started on a NodeJS platform, and it was aimed at getting some sorta app to watch movies like Netflix but this time think of the offline version of Netflex in your TV, or any Desktop PC or in any other device. The idea was to create a visual tool for wiring the Internet of Things, digital movies, stored in your HD.
-
-It started as far back as May 2017 by [Felipe Alfonso Gonzalez](https://github.com/felipealfonsog) who is the Admin/Founder of the project. Some major changes have been archive over the period of time and all credit should be given to him for archiving all that alone.
-
-Early (January) 2018, Felipe thought of getting more collaborators to the project to speeding and better the project. 
-
-After some series of meeting with new collaborators (all volunteers) the project was suggested to be moved from just **[A NodeJS - JavaScript Project]** to **[A NodeJS + React.JS + Redux - JavaScript Project]**. This resulted to moving of the old-version from the project to the [old branch](https://github.com/felipealfonsog/theatherflix/tree/old_branch) to the [current branch](https://github.com/felipealfonsog/theatherflix/) where some files have been deleted to give way for the ReactJS + React-Native concept to come in.
-
+# Theatherflix Open Source Project 
+ [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could conver it with JS]
 #
-## Aims
-
-TheatherFlix plans at the end of the whole project to provide a solution to users to watch movies offline, and these can be archived by the full cooperation of all the collaborators.
-
+       If you like to study these topics, don't hesitate to join it! 
+    ---------------------------------------------------------------------------------------------------------------------------------
+      IMPORTANT: 
+      If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. WE must use that first before to make a pull request to the master. 
+      Create any issue about moving files etc. We in that way can avoid any kind of conflit regarding files or programming.
+      Thanks!
 #
-## Stages
-
-The whole project is split into *FIVE (5)* stages:
-
-| Stage1        | Stage 2          | Stage 3          | Stage 4          | Stage 5
-| ------------------ |:------------------- |:-------------- |:-------------- |:--------------
-| Creation of a UI     | Back-end (the whole functionality)  |Debugging | Testing (UI + Back-end)    | Lager scale testing
-
-#
-## What's forthcoming and needs to be done:  
-
-We're moving to React - Redux the whole project will be unstable. To make it fast? Help out!
-
-### **(Future version)**
-- Future: creating an algorithm for AI. Why? To read an specific folder for movies or an external source, loading automatically movies and its images or sources related. The code behind Theatherflix will learn by itself. 
-
-- Perhaps using mongoDB - For some functionalities. Not sure. Any additional idea on this is greatly welcome.
-
-- Create a different way to stream the videos (movies)... Perhaps we will have to work a lot in the back-end.
-
-- Another thing: the folder movies-db should be changed by the sync path that automatically read the back end of the system. It could read any port of any device, sorta like USB. 
-
-- We must to create a way to load the images of the movies, or load a specific icon, or to load the images that are related with the movie (in the external HD) sorta like reading the metadata ... or something like that. Otherwise just an icon. How? We gotta engineer that. 
+  
+|Version:
+v2.2.0.2 rvc1.0
 
 
+## What's this? Where are we going?
 
-# Conversations about future functions and other things
+A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
-There will be an app in the back-end, between the front and the handlers to watch the movies. 
+It's an OpenSource Project[*] to create a platform to watch movies locally with all confort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
-### [An imagery brief work flow of the project](flow.png)
+It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
 
+## Technical stuff:
 
-## Current stage of the project
-#
-What do we have now? present stages.
-#
-We have moved to React! 5-2-2018 (Doing now)
+## Development vs Production (The master branch)
+Don't write initially in the master branch, all first goes to development. then we pull request to master which is 'Production'.
+If you want to download the whole development files, go to the 'development' branch -> 
+https://github.com/felipealfonsog/theatherflix/tree/development
 
-- the movies are locally in the folder path:
-
-    - public/movies-db (There will be just one movie partially available to watch for testing purposes perhaps.)
-
-- the interface is being handled with handlebars.
-
-- We just use Express and handlebars right now for the interface. I intended to use Grunt.js - By Felipe.
-
-#
-## Things to Notes:
-#
-- The movie folder 'movies-db' must be created and stored with *.mp4 files in order to list movies.
-
-- Additionally you must get the images related with the movie and put them in the folder 'movies-imgs'.
-- Future creating of an algorithm to create AI to read an specific folder for movies or an external source, loading atuomatically movies and its images or sources related.
-- Perhaps using mongoDB (Seriously for some things we could use MondoDB)
-- We have move all to React! (we need to think on how to create a best project with React and Redux)
-- create a different way to stream the videos...  (the movies)
-- Any new commit made on the project should be noted in the **Changelog.md**
+#If you want to clone the development branch follow this:
+1. git clone -b development --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd development (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
+3. node (or nodemon) server.js
 
 
-# 
-Other data to add or comments :
------------------------------------------
-#
-#
-#
-#
+## The first version where all begun. It's in the Old_branch
+If you want to download the old version stored, go to the old branch ->
+ https://github.com/felipealfonsog/theatherflix/tree/old_branch 
+
+#If you want to clone the old branch follow this:
+1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd old_branch (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
+3. node (or nodemon) server.js
+
+
+### _Warning: The project will be unstable due changes, and the migration of the project to React, and other technologies slowly.
+
+[![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
+[![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
+
+### Visit our websites:
+https://felipealfonsog.github.io/theatherflix/
+
+http://www.nodeio.us (nodeio labs)
+
+
+### Join the conversation about Theatherflix using Slack!
+https://nodeio-labs.slack.com. 
+
+
+## Github notes for Engineers & Developers
+Before any commit, don't forget this: (or we could lose all the work that other engineers and developers in the project could have done)
+1. `git pull`
+
+2. `git add .` (your contribs.)
+3.  your contribs - commits ...
+
+
+## Installation
+To run the Theatherflix web app offline, you need to install the following;
+
+1. Make sure you have installed [Node.js](https://nodejs.org/en/download/). Versions 6.0.0 and higher should work. We recommend that you use the most-recent "Active LTS" version of Node.js.
+2. Make sure you have installed `npm` (NB: `npm` is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer).   
+
+### Check that you have node and npm installed
+
+- To check if you have Node.js installed, run this command in your terminal:
+
+`node -v`
+
+- To confirm that you have npm installed you can run this command in your terminal:
+
+`npm -v`
+
+## Quick Start
+
+1. `sudo npm install`
+2. `node server.js` (recommend install nodemon)
+3. Open <http://localhost:3000>
+
+## Getting Help
+
+More info or contributions go to [felipe.dev.engr.js@gmail.com] 
+
+
+## Developers and collabs
+
+If you want to run the latest code from git, here's how to get started:
+
+1. Clone the code:
+
+        git clone git@github.com:felipealfonsog/theatherflix.git
+        cd theatherflix
+
+2. Install the theatherflix dependencies
+
+        npm install (You can also use Yarn)
+
+3. Build the code
+
+        npm run build
+
+4. Run
+
+        npm start
+   or
+
+        node server.js
+
+## Contributing
+
+Before raising a pull-request, please read all carefully
+Email me first of all: felipe.dev.engr.js@gmail.com if you have any question, and.
+
+This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
+ By participating, you are expected to uphold this code. Please report unacceptable
+ behavior to any of the [project's core team]
+
+
+| We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
+| time will tell. Feel free to add your credits.
+
+## Important for new contributors: 
+If you wanna be part of this: seriously, coding, documenting; write me out, and also check out the Changelog.md file:
+
+https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
+
+
+## Contact and Communications 
+
+### **Note:** 
+_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+
+## Authors and contribs nowadays.
+
+
+
+| Names of collaborators         | Github Links          | Remarks
+| ------------------ |:------------------- |:--------------
+| Felipe     | https://github.com/felipealfonsog | (Founder)
+| Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
+| Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
+| Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
+| Bhagvat Lande         | https://github.com/BMLande    | (Collaborator)
+| Prabhpahul  Singh     | https://github.com/prabhpahul | (Collaborator)
+| Mmajidali             |https://github.com/mmajidali40 | (Collaborator)
+| Hiago Machado         | https://github.com/HiagoMachado777 | (Collaborator)
+| Patelvvipulgk         | https://github.com/patelvipulgk | (Collaborator) 
+| Parikshit Hooda       | https://github.com/Parikshit-Hooda | (Collaborator)
+| Douglas Alves         | https://github.com/dougtq | (Collaborator)
+| Naimur Rahman Sourov  | https://github.com/nsourov | (Collaborator)
+| Jpart                 | https://github.com/jpart-r | (Collaborator)
+
+
+
+## Copyright and license
+ 
+Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
+Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - C2018-Present.
