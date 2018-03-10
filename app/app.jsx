@@ -1,27 +1,19 @@
-
-// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  C2018 -Present
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018
 // ---------------------------------------------------------------
-
+// if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
 // for future adjustaments from other coders please refactoring is necessary.
 
-// we can order the files in the future .... there're a always different ways to make it.
-// now: let's make it work. There're a few bugs.....
+// import react and its dom
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-// this file is going to be rendered by WEBPACK ! 
+// import the main Component
+import Greeter from './components/greeter'
 
-// Calling the React and react-dom Vars and modules ... .
-var React = require("react");
-var ReactDOM = require("react-dom"); 
+// var to make a welcome ... from me
+// Pass data to the components if necessary
+const title = 'Felipe the Founder welcomes you!'
+const message = 'Our first Component'
 
-
-
-// calling out the freeter from the components 
-// var Greeter = require('Greeter');
-
-
-// the render 
-ReactDOM.render(
-    // <Greeter />,
-    <h1>Testing for theatherflix</h1>,
-    document.getElementById('app')
-);
+// the renderer
+ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app'))

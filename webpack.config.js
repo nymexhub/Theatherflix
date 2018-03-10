@@ -8,7 +8,7 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: './public/app.jsx',
+  entry: './app/app.jsx',
   output: {
     path: path.join(__dirname, './public/'),
     filename: 'bundle.js'
