@@ -54,28 +54,28 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _greeter = __webpack_require__(27);
+	var _Greeter = __webpack_require__(27);
 
-	var _greeter2 = _interopRequireDefault(_greeter);
+	var _Greeter2 = _interopRequireDefault(_Greeter);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// var to make a welcome ... from me
 	// Pass data to the components if necessary
-	var title = 'Felipe the Founder welcomes you!';
+	var title = 'Theatherflix';
 
 	// import the main Component
 	// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018
 	// ---------------------------------------------------------------
-	// if you wanna code with good music in the background, I recommend : https://ibizasonica.com/
+
 	// for future adjustaments from other coders please refactoring is necessary.
 
 	// import react and its dom
 
-	var message = 'Our first Component';
+	var message = 'A visual tool for wiring the Internet of Things, digital movies - All offline and out of suscriptions!';
 
 	// the renderer
-	_reactDom2.default.render(_react2.default.createElement(_greeter2.default, { title: title, message: message }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_Greeter2.default, { title: title, message: message }), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
