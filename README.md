@@ -23,17 +23,30 @@ It's focused for people with no possibility to get a good Internet Conection and
 
 ## Technical stuff:
 
-## Old_branch
-If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
+## Development vs Production (The master branch)
+Don't write initially in the master branch, all first goes to development. then we pull request to master which is 'Production'.
+If you want to download the whole development files, go to the 'development' branch -> 
+https://github.com/felipealfonsog/theatherflix/tree/development
 
-#If you want to clone the old branch follow this:
-1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
-2. cd old_branch (which is downloaded as a folder named 'theatherflix' though)
-2. npm install
+#If you want to clone the development branch follow this:
+1. git clone -b development --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd development (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
 3. node (or nodemon) server.js
 
 
-### _Warning: The project will be unstable due changes, and the migration of the project to React.
+## The first version where all begun. It's in the Old_branch
+If you want to download the old version stored, go to the old branch ->
+ https://github.com/felipealfonsog/theatherflix/tree/old_branch 
+
+#If you want to clone the old branch follow this:
+1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd old_branch (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
+3. node (or nodemon) server.js
+
+
+### _Warning: The project will be unstable due changes, and the migration of the project to React, and other technologies slowly.
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
@@ -45,7 +58,7 @@ http://www.nodeio.us (nodeio labs)
 
 
 ### Join the conversation about Theatherflix using Slack!
-https://nodeio-labs.slack.com.
+https://nodeio-labs.slack.com. 
 
 
 ## Github notes for Engineers & Developers
@@ -120,7 +133,8 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
 
-If you wanna be part of this seriously, coding, documenting, write me out, and also check out the Changelog.md file:
+## Important for new contributors: 
+If you wanna be part of this: seriously, coding, documenting; write me out, and also check out the Changelog.md file:
 
 https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 
@@ -128,9 +142,9 @@ https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique._
+_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
-## Authors and contribs.
+## Authors and contribs nowadays.
 
 
 
