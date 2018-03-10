@@ -1,18 +1,27 @@
-# Theatherflix Open Source Project
-# [A NodeJS + React.JS + Redux - React-native - Machine Learning - JavaScript Project]
-      °°°°°°°°° If you like to study these topics, don't hesitate to join it! 
-    ---------------------------------------------------------------------------------------------------------------------------------
-      °°°°°°°°° If you are one of the engineers, developers or testers, don't forget there's a branch called 'development' ;)
-
-v2.2.0.2 rvc1.0
+# Theatherflix Open Source Project 
+# [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could conver it with JS]
 #
-git@github.com:felipealfonsog/theatherflix.git
+       If you like to study these topics, don't hesitate to join it! 
+    ---------------------------------------------------------------------------------------------------------------------------------
+      IMPORTANT: 
+      If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. WE must use that first before to make a pull request to the master. 
+      Create any issue about moving files etc. We in that way can avoid any kind of conflit regarding files or programming.
+      Thanks!
+#
+  
+|Version:
+v2.2.0.2 rvc1.0
 
-#What's this?
+
+| What's this? Where are we going?
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
-OpenSource Project [Initially] to create a platform to watch movies locally with all confort online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
+It's an OpenSource Project[*] to create a platform to watch movies locally with all confort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
+
+It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
+
+| Technical stuff:
 
 ## Old_branch
 If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
@@ -85,7 +94,7 @@ If you want to run the latest code from git, here's how to get started:
 
 2. Install the theatherflix dependencies
 
-        npm install
+        npm install (You can also use Yarn)
 
 3. Build the code
 
@@ -116,7 +125,7 @@ If you wanna be part of this seriously, coding, documenting, write me out, and a
 https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 
 
-
+| Contact and Communications 
 
 ### **Note:** 
 _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique._
