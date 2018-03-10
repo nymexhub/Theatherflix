@@ -1,5 +1,5 @@
 // creating the config file for webpack
-// created by Felipe Software Engineer CC1028
+// Project founded by Felipe Software Engineer C2018-Present  - felipe.dev.engr.js@gmail.com
 
 // Webpack now bundles .css, and other files like fonts, etc
 // Set a webpack devServer that runs on port 8080
