@@ -13,7 +13,7 @@
 v2.2.0.2 rvc1.0
 
 
-| What's this? Where are we going?
+## What's this? Where are we going?
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
@@ -21,7 +21,7 @@ It's an OpenSource Project[*] to create a platform to watch movies locally with 
 
 It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
 
-| Technical stuff:
+## Technical stuff:
 
 ## Old_branch
 If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
