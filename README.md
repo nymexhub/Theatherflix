@@ -4,7 +4,7 @@
     ---------------------------------------------------------------------------------------------------------------------------------
       °°°°°°°°° If you are one of the engineers, developers or testers, don't forget there's a branch called 'development' ;)
 
-v2.1.0.2rvc1.0 
+v2.2.0.2 rvc1.0
 #
 git@github.com:felipealfonsog/theatherflix.git
 

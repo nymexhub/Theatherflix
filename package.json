@@ -1,6 +1,6 @@
 {
   "name": "theatherflix",
-  "version": "v2.1.0.2 rvc1.0",
+  "version": "v2.2.0.2 rvc1.0",
   "description": "Visual Tool for Internet of Things.",
   "main": "server.js",
   "scripts": {
