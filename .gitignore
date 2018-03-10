@@ -35,10 +35,6 @@ public/movies-db
 public/movies-db-github
 
 #Other directories that will not be uploaded. It's the old version with Handlebars. 
-
-development
-=======
-
 old_branch
 development
 

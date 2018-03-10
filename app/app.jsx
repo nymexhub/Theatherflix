@@ -1,27 +1,22 @@
-
-// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  C2018 -Present
+// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018
 // ---------------------------------------------------------------
 
 // for future adjustaments from other coders please refactoring is necessary.
 
-// we can order the files in the future .... there're a always different ways to make it.
-// now: let's make it work. There're a few bugs.....
+// import react and its dom
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-// this file is going to be rendered by WEBPACK ! 
+// import the main Component
+import Greeter from './app/components/greeter'
 
-// Calling the React and react-dom Vars and modules ... .
-var React = require("react");
-var ReactDOM = require("react-dom"); 
+// var to make a welcome ... from me
+// Pass data to the components if necessary
+const title = 'Theatherflix'
+const message = 'A visual tool for wiring the Internet of Things, digital movies, stored in your HD. "The cousin of Netflix in the future".'
 
-
-
-// calling out the freeter from the components 
-// var Greeter = require('Greeter');
-
-
-// the render 
+// the renderer
 ReactDOM.render(
-    // <Greeter />,
-    <h1>Testing for theatherflix</h1>,
-    document.getElementById('app')
-);
+     <Greeter title={title} message={message} />,
+     document.getElementById('app')
+    );

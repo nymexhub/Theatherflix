@@ -21,7 +21,7 @@ module.exports = {
   },
   devServer: {
     port: 8080,
-    contentBase: './public'
+    contentBase: './app/dev'
   },
   plugins: [new ExtractTextPlugin('app.css')], // will bundle all the css to this app.css file
   module: {

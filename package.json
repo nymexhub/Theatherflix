@@ -1,9 +1,7 @@
 {
   "name": "theatherflix",
-  "version": "2.3.0",
-  "description": "A visual tool for wiring the Internet of Things, digital movies, stored in your HD.",
   "version": "v2.1.0.2 rvc1.0",
-  "description": "Visual TOOL for Internet of Things.",
+  "description": "Visual Tool for Internet of Things.",
   "main": "server.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
