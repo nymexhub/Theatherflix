@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-
-
 // Create component class
 export default class Greeter extends Component {
   // set new state using the old state so info does not disappear
