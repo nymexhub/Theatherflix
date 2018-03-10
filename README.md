@@ -125,7 +125,7 @@ If you wanna be part of this seriously, coding, documenting, write me out, and a
 https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 
 
-| Contact and Communications 
+## Contact and Communications 
 
 ### **Note:** 
 _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique._
@@ -155,3 +155,4 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
+Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - C2018-Present.
