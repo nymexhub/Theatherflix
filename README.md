@@ -142,7 +142,7 @@ https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+_Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
 ## Authors and contribs nowadays.
 
