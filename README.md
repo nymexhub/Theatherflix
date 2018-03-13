@@ -93,7 +93,7 @@ To run the Theatherflix web app offline, you need to install the following;
 
 ## Getting Help
 
-More info or contributions go to [felipe.dev.engr.js@gmail.com] 
+More info or contributions go to [felipealfonsog@fleep.io] 
 
 
 ## Developers and collabs
