@@ -123,7 +123,7 @@ If you want to run the latest code from git, here's how to get started:
 ## Contributing
 
 Before raising a pull-request, please read all carefully
-Email me first of all: felipe.dev.engr.js@gmail.com if you have any question, and.
+Email me first of all: felipealfonsog@fleep.io if you have any question, and.
 
 This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
  By participating, you are expected to uphold this code. Please report unacceptable
@@ -169,4 +169,4 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
-Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - C2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - C2018-Present.
