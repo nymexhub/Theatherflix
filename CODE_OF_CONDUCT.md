@@ -41,10 +41,8 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
+This Code of Conduct is adapted from the http://contributor-covenant.org, version 1.4, available at http://contributor-covenant.org/version/1/4/
 
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
 =======
 # Code of Conduct
 
@@ -90,6 +88,7 @@ The following behaviors are considered harassment and are unacceptable within ou
 *   Deliberate intimidation, stalking or following (online or in person).
 *   Advocating for, or encouraging, any of the above behavior.
 *   Sustained disruption of community events, including talks and presentations.
+*   Someone trying to get money out of  this project, or insisting on it. This is an Open Source Project with colaborations.
 
 ## 5. Consequences of Unacceptable Behavior
 
@@ -109,7 +108,7 @@ Additionally, community organizers are available to help community members engag
 
 ## 7. Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Felipe with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
+If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Felipe or any other member to talk about it in a private meeting, with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
 
 
 

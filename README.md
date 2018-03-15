@@ -169,4 +169,6 @@ _Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the proj
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
+
 Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - C2018-Present.
+
