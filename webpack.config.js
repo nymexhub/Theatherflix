@@ -1,5 +1,5 @@
 // creating the config file for webpack
-// Project founded by Felipe Software Engineer C2018-Present  - felipe.dev.engr.js@gmail.com
+// Project founded by Felipe Software Engineer C2018-Present  - felipealfonsog@fleep.io
 
 // Webpack now bundles .css, and other files like fonts, etc
 // Set a webpack devServer that runs on port 8080
@@ -13,11 +13,14 @@ module.exports = {
     path: path.join(__dirname, './public/'),
     filename: 'bundle.js'
   },
+  // Please don't change this part of the webpach config.
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    root: __dirname,
     alias: {
-      modules: path.join(__dirname, '/node_modules')
-    }
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx'
+    },
+    extensions: ['', '.js', '.jsx']
   },
   devServer: {
     port: 8080,
