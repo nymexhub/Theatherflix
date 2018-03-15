@@ -1,6 +1,22 @@
 // creating the config file for webpack
 // Project founded by Felipe Software Engineer C2018-Present  - felipealfonsog@fleep.io
 
+
+/*
+Please here add the emails of all the collabs who wrote code here or changed the webpack config.
+Thanks.
+-----
+
+-
+-
+-
+-
+-
+-
+
+
+*/
+
 // Webpack now bundles .css, and other files like fonts, etc
 // Set a webpack devServer that runs on port 8080
 
