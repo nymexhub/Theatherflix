@@ -1,15 +1,9 @@
-// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018
-// ---------------------------------------------------------------
-// for future adjustaments from other coders please refactoring is necessary.
-
-// import react and its dom
-import React from 'react'
-import ReactDOM from 'react-dom'
+// please inform by email any big changes please. 
 
 
-// routing with react and the module react-router
-
-var {Route, Router, IndexRoute, hashHistory} = require('react-router'); 
+var React = require('react');
+var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 var Main = require('Main');
 
 

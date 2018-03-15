@@ -29,7 +29,7 @@ module.exports = {
     path: path.join(__dirname, './public/'),
     filename: 'bundle.js'
   },
-  // Please don't change this part of the webpach config.
+  // Please don't change this part of the webpach config. The 'resolve'
   resolve: {
     root: __dirname,
     alias: {
