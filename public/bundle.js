@@ -46,23 +46,12 @@
 
 	'use strict';
 
-	var _react = __webpack_require__(1);
+	// please inform by email any big changes please. 
 
-	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(12);
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(12);
 
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// routing with react and the module react-router
-
-	// Coding by Felipe Alfonso Gonzalez -  Software Engineer/Developer  CC 2018
-	// ---------------------------------------------------------------
-	// for future adjustaments from other coders please refactoring is necessary.
-
-	// import react and its dom
 	var _require = __webpack_require__(27),
 	    Route = _require.Route,
 	    Router = _require.Router,
@@ -87,10 +76,10 @@
 	// Pass data to the components if necessary
 
 	// the renderer
-	_reactDom2.default.render(_react2.default.createElement(
+	ReactDOM.render(React.createElement(
 	  Router,
 	  { history: hashHistory },
-	  _react2.default.createElement(Route, { path: '/', component: Main })
+	  React.createElement(Route, { path: '/', component: Main })
 	), document.getElementById('app'));
 
 	// import Greeter from './components/greeter'

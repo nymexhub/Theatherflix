@@ -48,7 +48,7 @@ module.exports = {
       test: /.js[x]?$/, // will look for .js and .jsx files
       loader: 'babel-loader',
       query: {
-        presets: ['es2015', 'react'],
+        presets: ['es2015', 'react', 'stage-0'], // added - npm install --save-dev babel-preset-stage-0
         plugins: ['transform-object-rest-spread'] // you can use object-rest-spread at the code
       },
       exclude: /(node_modules|bower_components)/
