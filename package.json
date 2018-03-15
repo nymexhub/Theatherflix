@@ -15,6 +15,7 @@
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^2.0.0",
     "require-all": "^2.2.0",
     "walk": "^2.3.9"
   },
@@ -28,7 +29,6 @@
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "^1.1.11",
-    "react-router": "^4.2.0",
     "style-loader": "^0.20.2",
     "webpack": "^1.12.13",
     "webpack-dev-server": "1.16.2",
