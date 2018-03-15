@@ -1,18 +1,52 @@
-# Theatherflix Open Source Project
-# [A NodeJS + React.JS + Redux - JavaScript Project]
-v2.1.0.2rvc1.0 
+# Theatherflix Open Source Project 
+ [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could conver it with JS]
 #
-git@github.com:felipealfonsog/theatherflix.git
+       If you like to study these topics, don't hesitate to join it! 
+    ---------------------------------------------------------------------------------------------------------------------------------
+      IMPORTANT: 
+      If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. WE must use that first before to make a pull request to the master. 
+      Create any issue about moving files etc. We in that way can avoid any kind of conflit regarding files or programming.
+      Thanks!
+#
+  
+|Version:
+v2.2.0.2 rvc1.0
+
+
+## What's this? Where are we going?
 
 A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
 
-OpenSource Project [Initially] to create a platform to watch movies locally with all confort online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
+It's an OpenSource Project[*] to create a platform to watch movies locally with all confort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
-## Old_branch
-If you want to download the old version stored, go to the old branch -> https://github.com/felipealfonsog/theatherflix/tree/old_branch 
+It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
+
+## Technical stuff:
+
+## Development vs Production (The master branch)
+Don't write initially in the master branch, all first goes to development. then we pull request to master which is 'Production'.
+If you want to download the whole development files, go to the 'development' branch -> 
+https://github.com/felipealfonsog/theatherflix/tree/development
+
+#If you want to clone the development branch follow this:
+1. git clone -b development --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd development (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
+3. node (or nodemon) server.js
 
 
-### _The project will be unstable due changes, and the migration of the project to React. The interface was running with Handlebars. The future of the project is just awesome with the migration of it to React! wish us luck!_
+## The first version where all begun. It's in the Old_branch
+If you want to download the old version stored, go to the old branch ->
+ https://github.com/felipealfonsog/theatherflix/tree/old_branch 
+
+#If you want to clone the old branch follow this:
+1. git clone -b old_branch --single-branch git@github.com:felipealfonsog/theatherflix.git
+2. cd old_branch (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. npm install (We can use Yarn too)
+3. node (or nodemon) server.js
+
+
+### _Warning: The project will be unstable due changes, and the migration of the project to React, and other technologies slowly.
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
@@ -24,7 +58,7 @@ http://www.nodeio.us (nodeio labs)
 
 
 ### Join the conversation about Theatherflix using Slack!
-https://nodeio-labs.slack.com.
+https://nodeio-labs.slack.com. 
 
 
 ## Github notes for Engineers & Developers
@@ -59,7 +93,7 @@ To run the Theatherflix web app offline, you need to install the following;
 
 ## Getting Help
 
-More info or contributions go to [felipe.dev.engr.js@gmail.com] 
+More info or contributions go to [felipealfonsog@fleep.io] 
 
 
 ## Developers and collabs
@@ -73,7 +107,7 @@ If you want to run the latest code from git, here's how to get started:
 
 2. Install the theatherflix dependencies
 
-        npm install
+        npm install (You can also use Yarn)
 
 3. Build the code
 
@@ -89,7 +123,7 @@ If you want to run the latest code from git, here's how to get started:
 ## Contributing
 
 Before raising a pull-request, please read all carefully
-Email me first of all: felipe.dev.engr.js@gmail.com if you have any question, and.
+Email me first of all: felipealfonsog@fleep.io if you have any question, and.
 
 This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
  By participating, you are expected to uphold this code. Please report unacceptable
@@ -99,12 +133,18 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 | We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
 
+## Important for new contributors: 
+If you wanna be part of this: seriously, coding, documenting; write me out, and also check out the Changelog.md file:
 
+https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
+
+
+## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique._
+_Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
-## Authors and contribs.
+## Authors and contribs nowadays.
 
 
 
@@ -122,10 +162,11 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 | Parikshit Hooda       | https://github.com/Parikshit-Hooda | (Collaborator)
 | Douglas Alves         | https://github.com/dougtq | (Collaborator)
 | Naimur Rahman Sourov  | https://github.com/nsourov | (Collaborator)
-| Jpart                 | https://github.com/jp6rt | (Collaborator)
+| Jpart                 | https://github.com/jpart-r | (Collaborator)
 
 
 
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
+Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - C2018-Present.
