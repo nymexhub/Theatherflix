@@ -21,7 +21,7 @@ Thanks.
 
 
 
-// the webpack config was pretty fucked up. I started from from scratch. (Felipe)
+// the webpack config was pretty fucked up. lol :D I started from from scratch. (Felipe)
 
 module.exports = {
   entry: './app/app.jsx',
