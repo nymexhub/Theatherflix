@@ -19,42 +19,6 @@ Thanks.
 
 */
 
-// module.exports = {
-//   entry: './app/app.jsx',
-//   output: {
-//     path: __dirname,
-//     filename: './public/bundle.js'
-//   },
-//   resolve: {
-//     root: __dirname,
-//     alias: {
-//       Main: 'app/components/Main.jsx',
-//       Nav: 'app/components/Nav.jsx'
-//     },
-//     extensions: ['', '.js', '.jsx']
-//   },
-//   module: {
-//     loaders: [
-//       {
-//         loader: 'babel-loader',
-//         query: {
-//           presets: ['react', 'es2015', 'stage-0']
-//         },
-//         test: /\.jsx?$/,
-//         exclude: /(node_modules|bower_components)/
-//       }
-//     ]
-//   }
-// };
-
-
-// Webpack now bundles .css, and other files like fonts, etc
-// Set a webpack devServer that runs on port 8080
-
-// const path = require('path')
-// const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-// this way is easier .
 
 
 
@@ -93,15 +57,3 @@ module.exports = {
   }
 }
 
-
-// rules: [
-//   {
-//     test: /\.jsx?$/,
-//     loader: "babel-loader",
-//     exclude: /node_modules/,
-//     options: {
-//       // https://github.com/babel/babel-loader#options
-//       cacheDirectory: isDebug,
-//     }
-//   },
-// ]
