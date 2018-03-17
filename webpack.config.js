@@ -21,7 +21,6 @@ Thanks.
 
 
 
-
 // the webpack config was pretty fucked up. I started from from scratch. (Felipe)
 
 module.exports = {
