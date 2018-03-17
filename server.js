@@ -2,7 +2,11 @@
 // any doubts go to README.md and Changelog.md
 
 
-
+// var config = require('./webpack.config.js')
+// if (!process.env.NODE_ENV) {
+// process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
+// process.noDeprecation = true
+// }
 
 // Thatherflix is an Open Source Project
 // Founded by Felipe Alfonso Gonzalez - Soft. Engr. - felipe.dev.engr.js@gmail.com

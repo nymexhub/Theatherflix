@@ -8,8 +8,8 @@
     "prod": "webpack --progress -p",
     "start": "node ./server.js"
   },
-  "author": "Nodeio Labs",
-  "license": "MIT",
+  "author": "Theatherflix Group - Associeted with Nodeio Labs",
+  "license": "GNU-GPL",
   "dependencies": {
     "create-react-class": "^15.6.3",
     "express": "^4.16.2",
