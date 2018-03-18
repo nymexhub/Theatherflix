@@ -25,5 +25,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "webpack": "^3.10.0"
+
   }
 }

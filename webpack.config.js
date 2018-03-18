@@ -1,7 +1,6 @@
 // creating the config file for webpack
 // Project founded by Felipe Software Engineer C2018-Present  - felipealfonsog@fleep.io
 
-
 /*
 Please here add the emails of all the collabs who wrote code here or changed the webpack config.
 Anyone must write his or her name in this lines, and comment any changes. This file is critical. 
@@ -12,16 +11,10 @@ Thanks.
 - Felipe : felipealfonsog@fleep.io
 -
 -
--
--
--
-
 
 */
 
-
-
-// the webpack config was pretty fucked up. lol :D I started from from scratch. (Felipe)
+// the webpack config was pretty fucked up. I started from from scratch. (Felipe)
 
 module.exports = {
   entry: './app/app.jsx',

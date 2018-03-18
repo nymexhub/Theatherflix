@@ -1,5 +1,5 @@
 var React = require('react');
-var createReactClass = require('create-react-class');
+
 
 
 var Nav = React.createClass({
