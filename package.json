@@ -1,13 +1,13 @@
 {
-  "name": "theatherflix",
+  "name": "Theatherflix Software OpenSource Project",
   "version": "2.2.0.1 RC1.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Theatherflix group",
-  "license": "GNU",
+  "author": "Theatherflix group associated with Nodeio Labs",
+  "license": "GPL-3",
   "dependencies": {
     "express": "^4.13.4",
     "modules": "^0.4.0",
