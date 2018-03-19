@@ -1,9 +1,12 @@
 var React = require('react');
+var {Link} = require('react-router');
 
 var Nav = React.createClass({
   render: function () {
     return (
-      <h2>Welcome to theatherflix - Link1 - Link2 - Link3</h2>
+      <div >
+      <h2>Welcome to Theatherflix</h2> | <Link to="/">Home</Link> | <Link to="/about">About</Link>
+      </div>
     );
   }
 });
