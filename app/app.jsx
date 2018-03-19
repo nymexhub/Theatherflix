@@ -14,3 +14,6 @@ ReactDOM.render(
   </Router>,
   document.getElementById('app')
 );
+
+// redux 
+require('./redux-list.jsx');
