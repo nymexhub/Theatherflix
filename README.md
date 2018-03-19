@@ -21,6 +21,15 @@ It's an OpenSource Project[*] to create a platform to watch movies locally with 
 
 It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
 
+## Stages
+
+The whole project is split into *FIVE (5)* stages:
+
+| Stage1        | Stage 2          | Stage 3          | Stage 4          | Stage 5
+| ------------------ |:------------------- |:-------------- |:-------------- |:--------------
+| Creation of a UI     | Back-end (the whole functionality)  |Debugging | Testing (UI + Back-end)    | Lager scale testing
+
+
 ## Technical stuff:
 
 ## Development vs Production (The master branch)
@@ -87,13 +96,9 @@ To run the Theatherflix web app offline, you need to install the following;
 
 ## Quick Start
 
-1. `sudo npm install`
+1. `sudo npm install` (You can also use Yarn)
 2. `node server.js` (recommend install nodemon)
 3. Open <http://localhost:3000>
-
-## Getting Help
-
-More info or contributions go to [felipealfonsog@fleep.io] 
 
 
 ## Developers and collabs
@@ -123,7 +128,6 @@ If you want to run the latest code from git, here's how to get started:
 ## Contributing
 
 Before raising a pull-request, please read all carefully
-Email me first of all: felipealfonsog@fleep.io if you have any question, and.
 
 This project adheres to the [Contributor Covenant 1.4](http://contributor-covenant.org/version/1/4/).
  By participating, you are expected to uphold this code. Please report unacceptable
@@ -142,7 +146,7 @@ https://github.com/felipealfonsog/theatherflix/blob/master/CHANGELOG.md
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
 ## Authors and contribs nowadays.
 
@@ -169,4 +173,4 @@ _Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the proj
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
-Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - C2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - C2018-Present.

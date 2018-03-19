@@ -12,7 +12,7 @@ Anyone must write his or her name in this lines, and comment any changes.
 Thanks.
 -----
 
-- Felipe : felipealfonsog@fleep.io
+- Felipe : felipe.dev.engr.js@gmail.com
 -
 -
 -
