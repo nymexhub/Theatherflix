@@ -2,7 +2,7 @@
   "name": "theatherflix",
   "version": "2.2.0.1 RC1.0",
   "description": "",
-  "main": "index.js",
+  "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
