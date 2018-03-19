@@ -36,7 +36,8 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx'
+      Nav: 'app/components/Nav.jsx',
+      ListM: 'app/components/ListM.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

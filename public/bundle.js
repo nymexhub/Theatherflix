@@ -56,11 +56,16 @@
 	    hashHistory = _require.hashHistory;
 
 	var Main = __webpack_require__(222);
+	var ListM = __webpack_require__(224);
 
 	ReactDOM.render(React.createElement(
 	  Router,
 	  { history: hashHistory },
-	  React.createElement(Route, { path: '/', component: Main })
+	  React.createElement(
+	    Route,
+	    { path: '/', component: Main },
+	    React.createElement(IndexRoute, { component: ListM })
+	  )
 	), document.getElementById('app'));
 
 /***/ }),
@@ -25432,7 +25437,8 @@
 	        'h2',
 	        null,
 	        'Welcome to the list of the movies available'
-	      )
+	      ),
+	      this.props.children
 	    );
 	  }
 	});
@@ -25460,6 +25466,29 @@
 	});
 
 	module.exports = Nav;
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var ListM = React.createClass({
+	    displayName: 'ListM',
+
+	    render: function render() {
+	        return React.createElement(
+	            'h3',
+	            null,
+	            'Movie List'
+	        );
+	    }
+
+	});
+
+	module.exports = ListM;
 
 /***/ })
 /******/ ]);
