@@ -19,7 +19,7 @@ A visual tool for wiring the Internet of Things, digital movies, stored in your 
 
 It's an OpenSource Project[*] to create a platform to watch movies locally with all confort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
-It's focused for people with no possibility to get a good Internet Conection and no possibility to get suscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
+It's focused for people with no possibility to get a good Internet Connection and no possibility to get subscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
 
 ## Stages
 
