@@ -23,12 +23,13 @@ It's focused for people with no possibility to get a good Internet Connection an
 
 ## Stages
 
-The whole project is split into *FIVE (5)* stages:
+The whole project is split into *FIVE (5)* stages**:
 
 | Stage1        | Stage 2          | Stage 3          | Stage 4          | Stage 5
 | ------------------ |:------------------- |:-------------- |:-------------- |:--------------
 | Creation of a UI     | Back-end (the whole functionality)  |Debugging | Testing (UI + Back-end)    | Lager scale testing
 
+**We're now in between stage 1 and 2.
 
 ## Technical stuff:
 
