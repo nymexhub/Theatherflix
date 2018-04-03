@@ -35,6 +35,14 @@ var reducer = (state = stateDefault, action) => {
 
 var store = redux.createStore(reducer);
 
+
+// suscribe to changes 
+store.subscribe(() => {
+    var state = store.getState();
+}); 
+
+
+
 // var currentState = store.getState();
 console.log('currentState', store.getState());
 
@@ -43,4 +51,4 @@ store.dispatch({
     searchText: 'Theather'
 });
 
-console.log('searchText should be "work"', store.getState());
+console.log('searchText should be "Theather"', store.getState());
