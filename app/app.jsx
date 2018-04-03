@@ -15,5 +15,16 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
+
+
+// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
+// kinda creaating in my head while I'm coding here part of its algorithm .... 
+
+// °|°|°|°|°|°|°
+
+
 // redux 
-require('./redux-list.jsx');
+// require('./redux-list-init.jsx');
+
+require('./redux-movies.jsx');
+

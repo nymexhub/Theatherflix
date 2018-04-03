@@ -71,7 +71,9 @@
 	), document.getElementById('app'));
 
 	// redux 
-	__webpack_require__(226);
+	// require('./redux-list-init.jsx');
+
+	__webpack_require__(247);
 
 /***/ }),
 /* 1 */
@@ -25539,17 +25541,7 @@
 	module.exports = About;
 
 /***/ }),
-/* 226 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var redux = __webpack_require__(227);
-
-	// starting up redux 
-	console.log('Starting up redux');
-
-/***/ }),
+/* 226 */,
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26572,6 +26564,53 @@
 	    };
 	  });
 	}
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var redux = __webpack_require__(227);
+
+	// starting up redux 
+	console.log('Starting up redux');
+
+	var stateDefault = {
+	    searchText: '',
+	    showCompleted: false,
+	    movies: []
+
+	};
+
+	var reducer = function reducer() {
+	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
+	    var action = arguments[1];
+
+
+	    switch (action.type) {
+	        case 'CHANGE_SEARCH_TEXT':
+	            return _extends({}, state, {
+	                searchText: action.searchText
+	            });
+	        default:
+	            return state;
+	    }
+	};
+
+	var store = redux.createStore(reducer);
+
+	// var currentState = store.getState();
+	console.log('currentState', store.getState());
+
+	store.dispatch({
+	    type: 'CHANGE_SEARCH_TEXT',
+	    searchText: 'work'
+	});
+
+	console.log('searchText should be "work"', store.getState());
 
 /***/ })
 /******/ ]);
