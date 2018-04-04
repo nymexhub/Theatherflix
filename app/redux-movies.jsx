@@ -4,7 +4,7 @@ var redux = require('redux');
 console.log('Starting up redux');
 
 
-// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this shit done :P 
+// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this project done :P 
 
 var stateDefault = {
   searchText: '',
@@ -16,7 +16,7 @@ var stateDefault = {
 
 
 // |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
-// trying to get this thing donde with the most powerful attemp in the loeader. 
+// trying to get this thing done
 
 
 var reducer = (state = stateDefault, action) => {
