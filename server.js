@@ -12,7 +12,7 @@ Anyone must write his or her name in this lines, and comment any changes.
 Thanks.
 -----
 
-- Felipe : felipe.dev.engr.js@gmail.com
+- Felipe - Founder : felipe@nodeio.us
 -
 -
 -
