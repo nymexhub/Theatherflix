@@ -59,11 +59,14 @@
 	var ListM = __webpack_require__(224);
 	var About = __webpack_require__(225);
 
+	// I'm having problems with foundation to add the style ...
+
+
 	// Load foundation
-	$(document).foundation();
+	// $(document).foundation();
 
 	// App css
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"style!css!sass!applicationStyles\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	// require('style!css!sass!applicationStyles')
 
 	ReactDOM.render(React.createElement(
 	  Router,
