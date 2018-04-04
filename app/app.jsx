@@ -24,7 +24,7 @@ ReactDOM.render(
 
 
 // redux 
-// require('./redux-list-init.jsx');
+require('./redux-list-init.jsx');
 
-require('./redux-movies.jsx');
+// require('./redux-movies.jsx');
 

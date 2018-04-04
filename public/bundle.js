@@ -77,9 +77,9 @@
 
 
 	// redux 
-	// require('./redux-list-init.jsx');
+	__webpack_require__(247);
 
-	__webpack_require__(226);
+	// require('./redux-movies.jsx');
 
 /***/ }),
 /* 1 */
@@ -25547,59 +25547,7 @@
 	module.exports = About;
 
 /***/ }),
-/* 226 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var redux = __webpack_require__(227);
-
-	// starting up redux 
-	console.log('Starting up redux');
-
-	// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this shit done :P 
-
-	var stateDefault = {
-	    searchText: '',
-	    showCompleted: false,
-	    movies: []
-
-	};
-
-	// |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
-	// trying to get this thing donde with the most powerful attemp in the loeader. 
-
-
-	var reducer = function reducer() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
-	    var action = arguments[1];
-
-
-	    switch (action.type) {
-	        case 'CHANGE_SEARCH_TEXT':
-	            return _extends({}, state, {
-	                searchText: action.searchText
-	            });
-	        default:
-	            return state;
-	    }
-	};
-
-	var store = redux.createStore(reducer);
-
-	// var currentState = store.getState();
-	console.log('currentState', store.getState());
-
-	store.dispatch({
-	    type: 'CHANGE_SEARCH_TEXT',
-	    searchText: 'y'
-	});
-
-	console.log('searchText should be "y"', store.getState());
-
-/***/ }),
+/* 226 */,
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26622,6 +26570,72 @@
 	    };
 	  });
 	}
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var redux = __webpack_require__(227);
+
+	// starting up redux 
+	console.log('Starting up redux');
+	// we're gonna start to build the next stage with redux to load the movies. :=)
+
+	// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
+	// kinda creaating in my head while I'm coding here part of its algorithm .... 
+
+	// °|°|°|°|°|°|°
+
+
+	var reducer = function reducer() {
+	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { name: 'Anonymous' };
+	    var action = arguments[1];
+
+
+	    //  state = state || {name: 'Anonymous'}; 
+	    // console.log('New action', action); 
+
+	    switch (action.type) {
+	        case 'CHANGE_NAME':
+	            return _extends({}, state, {
+	                name: action.name
+	            });
+
+	        default:
+	            return state;
+
+	    }
+
+	    return state;
+	};
+
+	var store = redux.createStore(reducer);
+
+	// A little testing here 
+	store.subscribe(function () {
+	    var state = store.getState();
+
+	    console.log('Name is', state.name);
+	});
+
+	var currentState = store.getState();
+	console.log('currentState', currentState);
+
+	store.dispatch({
+	    type: 'CHANGE_NAME',
+	    name: 'y'
+	});
+
+	store.dispatch({
+	    type: 'CHANGE_NAME',
+	    name: 'w'
+	});
+
+	console.log('Name should be y', store.getState());
 
 /***/ })
 /******/ ]);

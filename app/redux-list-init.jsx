@@ -34,6 +34,14 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
 
 var store = redux.createStore(reducer);
 
+// A little testing here 
+store.subscribe(() => {
+    var state = store.getState();
+
+    console.log('Name is', state.name); 
+}); 
+
+
 var currentState = store.getState();
 console.log('currentState', currentState);
 
@@ -43,6 +51,11 @@ console.log('currentState', currentState);
 store.dispatch( {
    type: 'CHANGE_NAME', 
    name: 'y'
+}); 
+
+store.dispatch( {
+   type: 'CHANGE_NAME', 
+   name: 'w'
 }); 
 
 console.log('Name should be y', store.getState());
