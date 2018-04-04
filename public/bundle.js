@@ -59,6 +59,12 @@
 	var ListM = __webpack_require__(224);
 	var About = __webpack_require__(225);
 
+	// Load foundation
+	$(document).foundation();
+
+	// App css
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"style!css!sass!applicationStyles\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 	ReactDOM.render(React.createElement(
 	  Router,
 	  { history: hashHistory },
