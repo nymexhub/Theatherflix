@@ -59,6 +59,8 @@
 	var ListM = __webpack_require__(224);
 	var About = __webpack_require__(225);
 
+	// °°||||||||||
+
 	// I'm having problems with foundation to add the style ...
 
 
@@ -67,6 +69,10 @@
 
 	// App css
 	// require('style!css!sass!applicationStyles')
+
+
+	// **********
+
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -84,7 +90,7 @@
 
 	// °|°|°|°|°|°|°
 
-
+	//testing out with redux and thinking in an algorithm 
 	// redux 
 	__webpack_require__(226);
 
