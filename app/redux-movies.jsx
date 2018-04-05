@@ -38,7 +38,7 @@ console.log('currentState', store.getState());
 
 store.dispatch({
     type: 'CHANGE_SEARCH_TEXT', 
-    searchText: 'w'
+    searchText: 'm1'
 });
 
-console.log('searchText should be "w"', store.getState());
+console.log('searchText should be "m1"', store.getState());
