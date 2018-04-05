@@ -27,16 +27,19 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
     }
 }; 
 
-// lineas in case to work with redux developer tools 
-// not working 
+
+// lines in case to work with redux developer tools 
+// not working  2018
 // var store = redux.createStore(reducer, /* preloadedState, */
 //     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
+// working fine 
 var store = redux.createStore(reducer, redux.compose(
     redux.applyMiddleware(),
     window.devToolsExtension ? window.devToolsExtension() : f => f
 ));
+
 
 
 // A little testing here 
