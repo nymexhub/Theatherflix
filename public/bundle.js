@@ -26637,7 +26637,7 @@
 	// A little testing here 
 	var unsuscribe = store.subscribe(function () {
 	    var state = store.getState();
-	    console.log('Movie is', state.name);
+	    console.log('Movie is ', state.name);
 	    document.getElementById('app').innerHTML = state.name;
 	});
 	// unsuscribe();

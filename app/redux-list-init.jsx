@@ -43,7 +43,7 @@ var store = redux.createStore(reducer, redux.compose(
 // A little testing here 
 var unsuscribe = store.subscribe(() => {
     var state = store.getState();
-    console.log('Movie is', state.name); 
+    console.log('Movie is ', state.name); 
     document.getElementById('app').innerHTML = state.name;
 }); 
 // unsuscribe();
@@ -55,8 +55,6 @@ store.dispatch( {
    type: 'CHANGE_NAME', 
    name: 'movie1'
 }); 
-
-
 
 store.dispatch( {
     type: 'CHANGE_NAME', 
