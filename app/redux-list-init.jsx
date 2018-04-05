@@ -44,6 +44,7 @@ var store = redux.createStore(reducer, redux.compose(
 var unsuscribe = store.subscribe(() => {
     var state = store.getState();
     console.log('Movie is ', state.name); 
+    document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
     document.getElementById('app').innerHTML = state.name;
 }); 
 // unsuscribe();
