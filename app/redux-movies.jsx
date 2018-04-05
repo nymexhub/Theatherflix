@@ -13,14 +13,22 @@ var stateDefault = {
 
 };
 
-
+// all this is for testing purposes before to make a big time change in the code , I mean front end-back end. 
 
 // |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
 // trying to get this thing done
 
 
 var reducer = (state = stateDefault, action) => {
-            return state; 
+        switch (action.type) {
+            case 'CHAGE_SEARCH_TEXT':
+             return {
+                 ...state,
+                 searchText: action.searchText
+             };
+            default:
+            return state;
+        }
 }; 
 
 var store = redux.createStore(reducer);
@@ -28,3 +36,9 @@ var store = redux.createStore(reducer);
 // var currentState = store.getState();
 console.log('currentState', store.getState());
 
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT', 
+    searchText: 'w'
+});
+
+console.log('searchText should be "w"', store.getState());
