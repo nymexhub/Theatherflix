@@ -25594,7 +25594,7 @@
 	    var action = arguments[1];
 
 	    switch (action.type) {
-	        case 'CHAGE_SEARCH_TEXT':
+	        case 'CHANGE_SEARCH_TEXT':
 	            return _extends({}, state, {
 	                searchText: action.searchText
 	            });
