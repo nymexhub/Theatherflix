@@ -2,15 +2,11 @@ var redux = require('redux');
 
 // starting up redux 
 console.log('Starting up redux');
-// we're gonna start to build the next stage with redux to load the movies. :=)
 
-
-// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
-// kinda creaating in my head while I'm coding here part of its algorithm .... 
 
 // °|°|°|°|°|°|°
-
-
+// this file is only 
+// for testing puposes 
 // pure functions 
 function add (a, b) {
     return a + b; 

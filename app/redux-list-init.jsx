@@ -27,20 +27,38 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
     }
 }; 
 
-var store = redux.createStore(reducer);
+// lineas in case to work with redux developer tools 
+// not working 
+// var store = redux.createStore(reducer, /* preloadedState, */
+//     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
+
+var store = redux.createStore(reducer, redux.compose(
+    redux.applyMiddleware(),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
 
 // A little testing here 
-store.subscribe(() => {
+var unsuscribe = store.subscribe(() => {
     var state = store.getState();
     console.log('Movie is', state.name); 
 }); 
+// unsuscribe();
 
 var currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch( {
    type: 'CHANGE_NAME', 
-   name: 'w'
+   name: 'm1'
 }); 
 
-console.log('Name should be y', store.getState());
+
+
+store.dispatch( {
+    type: 'CHANGE_NAME', 
+    name: 'm2'
+ }); 
+
+// console.log('Name should be m1', store.getState());
