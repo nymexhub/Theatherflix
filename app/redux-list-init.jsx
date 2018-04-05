@@ -9,6 +9,7 @@ console.log('Starting up redux');
 
 // °|°|°|°|°|°|°
 
+// this is all for testing purposes !
 
 var reducer = (state = {name: 'Anonymous'}, action) => {
 
@@ -21,37 +22,21 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
         ...state, 
         name: action.name
            }; 
-
            default :
            return state; 
-
     }
-
-    return state; 
-
 }; 
-
 
 var store = redux.createStore(reducer);
 
 // A little testing here 
 store.subscribe(() => {
     var state = store.getState();
-
-    console.log('Name is', state.name); 
+    console.log('Movie is', state.name); 
 }); 
-
 
 var currentState = store.getState();
 console.log('currentState', currentState);
-
-
-
-
-store.dispatch( {
-   type: 'CHANGE_NAME', 
-   name: 'y'
-}); 
 
 store.dispatch( {
    type: 'CHANGE_NAME', 

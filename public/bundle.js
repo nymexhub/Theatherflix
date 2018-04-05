@@ -92,9 +92,9 @@
 
 	//testing out with redux and thinking in an algorithm 
 	// redux 
-	__webpack_require__(226);
+	// require('./redux-list-init.jsx');
 
-	// require('./redux-movies.jsx');
+	__webpack_require__(226);
 
 /***/ }),
 /* 1 */
@@ -25567,65 +25567,35 @@
 
 	'use strict';
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	var redux = __webpack_require__(227);
 
 	// starting up redux 
 	console.log('Starting up redux');
-	// we're gonna start to build the next stage with redux to load the movies. :=)
 
-	// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
-	// kinda creaating in my head while I'm coding here part of its algorithm .... 
+	// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this project done :P 
 
-	// °|°|°|°|°|°|°
+	var stateDefault = {
+	  searchText: '',
+	  showCompleted: false,
+	  movies: []
+
+	};
+
+	// |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
+	// trying to get this thing done
 
 
 	var reducer = function reducer() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { name: 'Anonymous' };
-	    var action = arguments[1];
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
+	  var action = arguments[1];
 
-
-	    //  state = state || {name: 'Anonymous'}; 
-	    // console.log('New action', action); 
-
-	    switch (action.type) {
-	        case 'CHANGE_NAME':
-	            return _extends({}, state, {
-	                name: action.name
-	            });
-
-	        default:
-	            return state;
-
-	    }
-
-	    return state;
+	  return state;
 	};
 
 	var store = redux.createStore(reducer);
 
-	// A little testing here 
-	store.subscribe(function () {
-	    var state = store.getState();
-
-	    console.log('Name is', state.name);
-	});
-
-	var currentState = store.getState();
-	console.log('currentState', currentState);
-
-	store.dispatch({
-	    type: 'CHANGE_NAME',
-	    name: 'y'
-	});
-
-	store.dispatch({
-	    type: 'CHANGE_NAME',
-	    name: 'w'
-	});
-
-	console.log('Name should be y', store.getState());
+	// var currentState = store.getState();
+	console.log('currentState', store.getState());
 
 /***/ }),
 /* 227 */
