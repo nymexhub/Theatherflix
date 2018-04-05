@@ -74,16 +74,16 @@
 	// **********
 
 
-	ReactDOM.render(React.createElement(
-	  Router,
-	  { history: hashHistory },
-	  React.createElement(
-	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'about', component: About }),
-	    React.createElement(IndexRoute, { component: ListM })
-	  )
-	), document.getElementById('app'));
+	// ReactDOM.render(
+	//   <Router history={hashHistory}>
+	//     <Route path="/" component={Main}>
+	//     <Route path="about" component={About}/>
+	//           <IndexRoute component={ListM}/>
+	//     </Route>
+	//   </Router>,
+	//   document.getElementById('app')
+	// );
+
 
 	// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
 	// kinda creaating in my head while I'm coding here part of its algorithm .... 
@@ -26638,6 +26638,7 @@
 	var unsuscribe = store.subscribe(function () {
 	    var state = store.getState();
 	    console.log('Movie is', state.name);
+	    document.getElementById('app').innerHTML = state.name;
 	});
 	// unsuscribe();
 
@@ -26646,12 +26647,17 @@
 
 	store.dispatch({
 	    type: 'CHANGE_NAME',
-	    name: 'm1'
+	    name: 'movie1'
 	});
 
 	store.dispatch({
 	    type: 'CHANGE_NAME',
-	    name: 'm2'
+	    name: 'movie2'
+	});
+
+	store.dispatch({
+	    type: 'CHANGE_NAME',
+	    name: 'movie3'
 	});
 
 	// console.log('Name should be m1', store.getState());

@@ -44,6 +44,7 @@ var store = redux.createStore(reducer, redux.compose(
 var unsuscribe = store.subscribe(() => {
     var state = store.getState();
     console.log('Movie is', state.name); 
+    document.getElementById('app').innerHTML = state.name;
 }); 
 // unsuscribe();
 
@@ -52,14 +53,20 @@ console.log('currentState', currentState);
 
 store.dispatch( {
    type: 'CHANGE_NAME', 
-   name: 'm1'
+   name: 'movie1'
 }); 
 
 
 
 store.dispatch( {
     type: 'CHANGE_NAME', 
-    name: 'm2'
+    name: 'movie2'
  }); 
+
+ store.dispatch( {
+    type: 'CHANGE_NAME', 
+    name: 'movie3'
+ }); 
+
 
 // console.log('Name should be m1', store.getState());

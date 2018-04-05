@@ -23,15 +23,15 @@ var About = require('About');
 
 
 
-ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-    <Route path="about" component={About}/>
-          <IndexRoute component={ListM}/>
-    </Route>
-  </Router>,
-  document.getElementById('app')
-);
+// ReactDOM.render(
+//   <Router history={hashHistory}>
+//     <Route path="/" component={Main}>
+//     <Route path="about" component={About}/>
+//           <IndexRoute component={ListM}/>
+//     </Route>
+//   </Router>,
+//   document.getElementById('app')
+// );
 
 
 
