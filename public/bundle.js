@@ -26638,6 +26638,7 @@
 	var unsuscribe = store.subscribe(function () {
 	    var state = store.getState();
 	    console.log('Movie is ', state.name);
+	    document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
 	    document.getElementById('app').innerHTML = state.name;
 	});
 	// unsuscribe();
