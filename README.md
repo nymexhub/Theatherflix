@@ -1,11 +1,11 @@
 # Theatherflix Open Source Project 
- [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could conver it with JS]
+ [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could convert it with JS]
 #
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
       IMPORTANT: 
       If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. WE must use that first before to make a pull request to the master. 
-      Create any issue about moving files etc. We in that way can avoid any kind of conflit regarding files or programming.
+      Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
 #
   
@@ -15,9 +15,9 @@ v2.3.0.2 rvc1.0
 
 ## What's this? Where are we going?
 
-A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offinline in your TV, or any Desktop PC or in any other device.
+A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offline in your TV, or any Desktop PC or in any other device.
 
-It's an OpenSource Project[*] to create a platform to watch movies locally with all confort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
+It's an OpenSource Project[*] to create a platform to watch movies locally with all comfort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
 
 It's focused for people with no possibility to get a good Internet Connection and no possibility to get subscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
 
@@ -34,14 +34,14 @@ The whole project is split into *FIVE (5)* stages**:
 ## Technical stuff:
 
 ## Development vs Production (The master branch)
-Don't write initially in the master branch, all first goes to development. then we pull request to master which is 'Production'.
+**Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
 https://github.com/NodeioLabs/theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. git clone -b development --single-branch git@github.com:NodeioLabs/theatherflix.git
-2. cd development (which is downloaded as a folder named 'theatherflix' though, you rename it)
-2. npm install (We can use Yarn too)
+1. `git clone -b development --single-branch git@github.com:NodeioLabs/theatherflix.git`
+2. `cd development` (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
 
 
@@ -50,9 +50,9 @@ If you want to download the old version stored, go to the old branch ->
 https://github.com/NodeioLabs/theatherflix/tree/old_branch
 
 #If you want to clone the old branch follow this:
-1. git clone -b old_branch --single-branch git@github.com:NodeioLabs/theatherflix.git
-2. cd old_branch (which is downloaded as a folder named 'theatherflix' though, you rename it)
-2. npm install (We can use Yarn too)
+1. `git clone -b old_branch --single-branch git@github.com:NodeioLabs/theatherflix.git`
+2. `cd old_branch` (which is downloaded as a folder named 'theatherflix' though, you rename it)
+2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
 
 
@@ -138,7 +138,7 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
  behavior to any of the [project's core team]
 
 
-| We need more colaborations or people involved in this modest project which I think it could be cool, perhaps.
+| We need more collaborations or people involved in this modest project which I think it could be cool, perhaps.
 | time will tell. Feel free to add your credits.
 
 ## Important for new contributors: 
