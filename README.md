@@ -1,5 +1,5 @@
 # Theatherflix Open Source Project 
- [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could convert it with JS]
+ [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
@@ -31,9 +31,9 @@ The whole project is split into *FIVE (5)* stages**:
 
 **We're now in between stage 1 and 2.
 
-## Technical stuff:
+## Technical stuff**:
 
-## Development vs Production (The master branch)
+## Development** vs Production (The master branch)
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
 https://github.com/NodeioLabs/theatherflix/tree/development
@@ -43,6 +43,8 @@ https://github.com/NodeioLabs/theatherflix/tree/development
 2. `cd development` (which is downloaded as a folder named 'theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
+
+** If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email inside of the code you might add as a comment as well; and keep working always in the development branch first. (Don't forget to use the issues inside of the Github platform.).-
 
 
 ## The first version where all begun. It's in the Old_branch
