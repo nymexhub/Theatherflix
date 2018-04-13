@@ -48,7 +48,7 @@ https://github.com/NodeioLabs/theatherflix/tree/development
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as please keep checking the progress of the [project](https://github.com/NodeioLabs/theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/NodeioLabs/theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
