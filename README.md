@@ -31,7 +31,7 @@ The whole project is split into *FIVE (5)* stages**:
 
 
 
-** If you wanna know where are ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/theatherflix/projects/5)   
+** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/theatherflix/projects/5)   
 
 
 ## Technical stuff**:
