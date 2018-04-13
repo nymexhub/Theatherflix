@@ -4,6 +4,13 @@
 // Licence and other public affairs go to README.md, Changelog.md & Licence
 //*******************************************************************************
 
+/* 
+Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+Thanks a lot!
+Felipe - felipe@nodeio.us  - 13-04-2018
+----------
+
+*/ 
 
 /*
 Please here add the emails of all the collabs who wrote code here or changed the webpack config.
