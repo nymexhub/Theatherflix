@@ -59,6 +59,14 @@
 	var ListM = __webpack_require__(224);
 	var About = __webpack_require__(225);
 
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
+
 	// °°||||||||||
 
 	// I'm having problems with foundation to add the style ...
@@ -25474,6 +25482,14 @@
 
 	module.exports = Main;
 
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
+
 /***/ }),
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -25515,6 +25531,14 @@
 
 	module.exports = Nav;
 
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
+
 /***/ }),
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -25538,6 +25562,14 @@
 
 	module.exports = ListM;
 
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
+
 /***/ }),
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -25560,6 +25592,14 @@
 	});
 
 	module.exports = About;
+
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
 
 /***/ }),
 /* 226 */
@@ -25585,10 +25625,12 @@
 	/* 
 
 	******
-	Let's try to create an algorithm for this file, 
-	and please if you code in this file please also add your email among the comments before and after any code we could write.
+	Let's try to create an algorithm from  this file */
+
+	/* 
+	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 	Thanks a lot!
-	Felipe - felipe@nodeio.us 
+	Felipe - felipe@nodeio.us  - 13-04-2018
 	----------
 
 	*/
@@ -25624,12 +25666,21 @@
 	}));
 
 	// A little testing here 
+	// var unsuscribe = store.subscribe(() => {
+	//     var state = store.getState();
+	//     console.log('Movie is ', state.name); 
+	//     document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
+	//     document.getElementById('app').innerHTML = state.name;
+	// }); 
+
+
 	var unsuscribe = store.subscribe(function () {
 	    var state = store.getState();
-	    console.log('Movie is ', state.name);
-	    document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
+	    console.log('Movie is', state.name);
+	    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
 	    document.getElementById('app').innerHTML = state.name;
 	});
+
 	// unsuscribe();
 
 	var currentState = store.getState();

@@ -14,10 +14,13 @@ console.log('Starting up redux');
 /* 
 
 ******
-Let's try to create an algorithm for this file, 
-and please if you code in this file please also add your email among the comments before and after any code we could write.
+Let's try to create an algorithm from  this file */
+
+
+/* 
+Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 Thanks a lot!
-Felipe - felipe@nodeio.us 
+Felipe - felipe@nodeio.us  - 13-04-2018
 ----------
 
 */ 
@@ -56,12 +59,21 @@ var store = redux.createStore(reducer, redux.compose(
 
 
 // A little testing here 
-var unsuscribe = store.subscribe(() => {
-    var state = store.getState();
-    console.log('Movie is ', state.name); 
-    document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
-    document.getElementById('app').innerHTML = state.name;
+// var unsuscribe = store.subscribe(() => {
+//     var state = store.getState();
+//     console.log('Movie is ', state.name); 
+//     document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
+//     document.getElementById('app').innerHTML = state.name;
+// }); 
+
+
+var unsuscribe =  store.subscribe(() => {
+              var state = store.getState(); 
+              console.log('Movie is', state.name); 
+              document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !"; 
+              document.getElementById('app').innerHTML = state.name; 
 }); 
+
 // unsuscribe();
 
 var currentState = store.getState();
