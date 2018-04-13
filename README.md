@@ -29,7 +29,10 @@ The whole project is split into *FIVE (5)* stages**:
 | ------------------ |:------------------- |:-------------- |:-------------- |:--------------
 | Creation of a UI     | Back-end (the whole functionality)  |Debugging | Testing (UI + Back-end)    | Lager scale testing
 
-**We're now in between stage 1 and 2.
+
+
+** If you wanna know where are ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/theatherflix/projects/5)   
+
 
 ## Technical stuff**:
 
@@ -179,4 +182,4 @@ _Feel free to contact Felipe: felipe@nodeio.us if you wanna Fork the project to 
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
-Founded and Started by Felipe Alfonso Gonzalez, felipe@nodeio.us - C2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, felipe@nodeio.us - CC2018-Present.
