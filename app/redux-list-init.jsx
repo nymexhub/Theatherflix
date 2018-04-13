@@ -29,7 +29,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
     // console.log('New action', action); 
 
     switch (action.type) {
-        case 'CHANGE_NAME':   
+        case 'CHANGE_MOVIE':   
            return {
         ...state, 
         name: action.name
@@ -46,6 +46,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
 //     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
+// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
 // working fine 
 var store = redux.createStore(reducer, redux.compose(
     redux.applyMiddleware(),
@@ -67,19 +68,23 @@ var currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch( {
-   type: 'CHANGE_NAME', 
+   type: 'CHANGE_MOVIE', 
    name: 'movie1'
 }); 
 
 store.dispatch( {
-    type: 'CHANGE_NAME', 
+    type: 'CHANGE_MOVIE', 
     name: 'movie2'
  }); 
 
  store.dispatch( {
-    type: 'CHANGE_NAME', 
+    type: 'CHANGE_MOVIE', 
     name: 'movie3'
  }); 
+ store.dispatch( {
+     type: 'CHANGE_MOVIE',
+     name: 'movies4'
 
+ }); 
 
 // console.log('Name should be m1', store.getState());
