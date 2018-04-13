@@ -8,6 +8,20 @@ console.log('Starting up redux');
 // UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
 
 // this is all for testing purposes !
+// Well the final final that we have to focus on , it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
+// we have to work in the file!
+
+/* 
+
+******
+Let's try to create an algorithm for this file, 
+and please if you code in this file please also add your email among the comments before and after any code we could write.
+Thanks a lot!
+Felipe - felipe@nodeio.us 
+----------
+
+*/ 
+
 
 var reducer = (state = {name: 'Anonymous'}, action) => {
 
@@ -15,7 +29,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
     // console.log('New action', action); 
 
     switch (action.type) {
-        case 'CHANGE_NAME':   
+        case 'CHANGE_MOVIE':   
            return {
         ...state, 
         name: action.name
@@ -32,6 +46,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
 //     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
+// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
 // working fine 
 var store = redux.createStore(reducer, redux.compose(
     redux.applyMiddleware(),
@@ -53,19 +68,23 @@ var currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch( {
-   type: 'CHANGE_NAME', 
+   type: 'CHANGE_MOVIE', 
    name: 'movie1'
 }); 
 
 store.dispatch( {
-    type: 'CHANGE_NAME', 
+    type: 'CHANGE_MOVIE', 
     name: 'movie2'
  }); 
 
  store.dispatch( {
-    type: 'CHANGE_NAME', 
+    type: 'CHANGE_MOVIE', 
     name: 'movie3'
  }); 
+ store.dispatch( {
+     type: 'CHANGE_MOVIE',
+     name: 'movies4'
 
+ }); 
 
 // console.log('Name should be m1', store.getState());
