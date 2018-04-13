@@ -34,9 +34,10 @@ The whole project is split into *FIVE (5)* stages**:
 ** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/theatherflix/projects/5)   
 
 
-## Technical stuff**:
+## Technical stuff*:
 
 ## Development** vs Production (The master branch)
+
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
 https://github.com/NodeioLabs/theatherflix/tree/development
@@ -45,9 +46,9 @@ https://github.com/NodeioLabs/theatherflix/tree/development
 1. `git clone -b development --single-branch git@github.com:NodeioLabs/theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
-3. node (or nodemon) server.js
+3. node (or nodemon) server.js 
 
-** If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email inside of the code you might add as a comment as well; and keep working always in the development branch first. (Don't forget to use the issues inside of the Github platform.).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as please keep checking the progress of the [project](https://github.com/NodeioLabs/theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
