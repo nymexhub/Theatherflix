@@ -65,6 +65,11 @@ var stateDefault = {
             }
           ]
         };
+      case 'REMOVE_NMOVIE':
+          return {
+              ...state,
+              nmovie: state.nmovie.filter((nmovie) => nmovie.id !== action.id)
+          }
       case 'ADD_MOVIE':
         return {
           ...state,
@@ -135,6 +140,11 @@ store.dispatch({
     nmovie: 'waiting'
   });
   
+  store.dispatch({
+    type: 'REMOVE_NMOVIE',
+    id: 2
+  });
+
   store.dispatch({
     type: 'CHANGE_NAME',
     name: 'Y'
