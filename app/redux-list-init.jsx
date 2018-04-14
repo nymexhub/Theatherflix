@@ -29,9 +29,9 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 
 /* 
-I'm going to create separete files for a more understandable and logical way for the project. 
-now all this is for testing purposes and checking things, orgnizing things on my head and
- basically to put an algorithm on my head while I?m writing code here with redux.
+I'm going to create separete files for a better way to understand it and a better logical.... 
+now all this is for testing purposes and checking things, organizing stuff on my head and
+ basically to put an algorithm on my head while I'm writing code here with redux.
 */
 
 
@@ -65,6 +65,11 @@ var stateDefault = {
             }
           ]
         };
+      case 'REMOVE_NMOVIE':
+          return {
+              ...state,
+              nmovie: state.nmovie.filter((nmovie) => nmovie.id !== action.id)
+          }
       case 'ADD_MOVIE':
         return {
           ...state,
@@ -135,6 +140,11 @@ store.dispatch({
     nmovie: 'waiting'
   });
   
+  store.dispatch({
+    type: 'REMOVE_NMOVIE',
+    id: 2
+  });
+
   store.dispatch({
     type: 'CHANGE_NAME',
     name: 'Y'
