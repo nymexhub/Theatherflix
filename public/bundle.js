@@ -100,9 +100,9 @@
 
 	//testing out with redux and thinking in an algorithm 
 	// redux 
-	// require('./redux-list-init.jsx');
+	__webpack_require__(247);
 
-	__webpack_require__(226);
+	// require('./redux-movies.jsx');
 
 /***/ }),
 /* 1 */
@@ -25602,103 +25602,7 @@
 	*/
 
 /***/ }),
-/* 226 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var redux = __webpack_require__(227);
-
-	// starting up redux 
-	console.log('Starting up redux');
-
-	/* 
-	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
-	Thanks a lot!
-	Felipe - felipe@nodeio.us  - 13-04-2018
-	----------
-
-	*/
-
-	// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this project done :P 
-
-	var stateDefault = {
-	    searchText: '',
-	    showCompleted: false,
-	    movies: []
-
-	};
-
-	// all this is for testing purposes before to make a big time change in the code , I mean front end-back end. 
-
-	// |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
-	// trying to get this thing done
-
-
-	var reducer = function reducer() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case 'CHANGE_SEARCH_TEXT':
-	            return _extends({}, state, {
-	                searchText: action.searchText
-	            });
-	        default:
-	            return state;
-	    }
-	};
-
-	// var store = redux.createStore(reducer);
-
-	// lines in case to work with redux developer tools 
-	// not working  2018
-	// var store = redux.createStore(reducer, /* preloadedState, */
-	//     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-	// );
-
-	// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
-	// working fine 
-	var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(), window.devToolsExtension ? window.devToolsExtension() : function (f) {
-	    return f;
-	}));
-
-	// subscribe to changes 
-	store.subscribe(function () {
-	    var state = store.getState();
-
-	    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
-	    document.getElementById('app').innerHTML = state.searchText;
-	});
-
-	// var currentState = store.getState();
-	console.log('currentState', store.getState());
-
-	store.dispatch({
-	    type: 'CHANGE_SEARCH_TEXT',
-	    searchText: 'm1'
-	});
-
-	store.dispatch({
-	    type: 'CHANGE_SEARCH_TEXT',
-	    searchText: 'm2'
-	});
-
-	store.dispatch({
-	    type: 'CHANGE_SEARCH_TEXT',
-	    searchText: 'm3'
-	});
-
-	store.dispatch({
-	    type: 'CHANGE_SEARCH_TEXT',
-	    searchText: 'm4'
-	});
-
-	console.log('searchText should be "m1"', store.getState());
-
-/***/ }),
+/* 226 */,
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26721,6 +26625,151 @@
 	    };
 	  });
 	}
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	var redux = __webpack_require__(227);
+
+	// starting up redux 
+	console.log('Starting up redux');
+
+	// °|°|°|°|°|°|°
+
+	// UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
+
+	// this is all for testing purposes !
+	// Well the final final that we have to focus on , 
+	// it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
+	// we have to work in the file!
+
+	/* 
+
+	******
+	Let's try to create an algorithm from  this file */
+
+	/* 
+	Please if you code in this file please or another,  also add your email & 
+	name and date among the comments before and after any code we could write.
+	Thanks a lot!
+	Felipe - felipe@nodeio.us  - 13-04-2018
+	----------
+
+	*/
+
+	/* 
+	I'm going to create separete files for a more understandable and logical way for the project. 
+	now all this is for testing purposes and checking things, orgnizing things on my head and
+	 basically to put an algorithm on my head while I?m writing code here with redux.
+	*/
+
+	var stateDefault = {
+	  name: 'Anonymous',
+	  nmovie: [],
+	  movies: []
+	};
+
+	var nextNmovieId = 1;
+	var nextMovieId = 1;
+
+	var reducer = function reducer() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
+	  var action = arguments[1];
+
+	  // state = state || {name: 'Anonymous'};
+
+	  switch (action.type) {
+	    case 'CHANGE_NAME':
+	      return _extends({}, state, {
+	        name: action.name
+	      });
+	    case 'ADD_NMOVIE':
+	      return _extends({}, state, {
+	        nmovie: [].concat(_toConsumableArray(state.nmovie), [{
+	          id: nextNmovieId++,
+	          nmovie: action.nmovie
+	        }])
+	      });
+	    case 'ADD_MOVIE':
+	      return _extends({}, state, {
+	        movies: [].concat(_toConsumableArray(state.movies), [{
+	          id: nextMovieId++,
+	          title: action.title,
+	          genre: action.genre
+	        }])
+	      });
+	    default:
+	      return state;
+	  }
+	};
+
+	// lines in case to work with redux developer tools 
+	// not working  2018
+	// var store = redux.createStore(reducer, /* preloadedState, */
+	//     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	// );
+
+	// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
+	// working fine 
+	var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(), window.devToolsExtension ? window.devToolsExtension() : function (f) {
+	  return f;
+	}));
+
+	// A little testing here 
+	// var unsuscribe = store.subscribe(() => {
+	//     var state = store.getState();
+	//     console.log('Movie is ', state.name); 
+	//     document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
+	//     document.getElementById('app').innerHTML = state.name;
+	// }); 
+
+
+	var unsuscribe = store.subscribe(function () {
+	  var state = store.getState();
+	  console.log('Movie is', state.name);
+	  document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
+	  document.getElementById('app').innerHTML = state.name;
+	});
+
+	// unsuscribe();
+
+	var currentState = store.getState();
+	console.log('currentState', currentState);
+
+	store.dispatch({
+	  type: 'CHANGE_NAME',
+	  name: 'W'
+	});
+
+	store.dispatch({
+	  type: 'ADD_NMOVIE',
+	  nmovie: 'Running'
+	});
+
+	store.dispatch({
+	  type: 'ADD_NMOVIE',
+	  nmovie: 'waiting'
+	});
+
+	store.dispatch({
+	  type: 'CHANGE_NAME',
+	  name: 'Y'
+	});
+
+	store.dispatch({
+	  type: 'ADD_MOVIE',
+	  title: 'American history X',
+	  genre: 'Action'
+	});
+
+	// console.log('Name should be m1', store.getState());
 
 /***/ })
 /******/ ]);
