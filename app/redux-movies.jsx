@@ -38,7 +38,31 @@ var reducer = (state = stateDefault, action) => {
         }
 }; 
 
-var store = redux.createStore(reducer);
+// var store = redux.createStore(reducer);
+
+// lines in case to work with redux developer tools 
+// not working  2018
+// var store = redux.createStore(reducer, /* preloadedState, */
+//     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
+
+// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
+// working fine 
+var store = redux.createStore(reducer, redux.compose(
+    redux.applyMiddleware(),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
+// subscribe to changes 
+store.subscribe(() => {
+    var state = store.getState();
+
+    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !"; 
+    document.getElementById('app').innerHTML = state.searchText; 
+});
+
+
+
 
 // var currentState = store.getState();
 console.log('currentState', store.getState());
@@ -46,6 +70,21 @@ console.log('currentState', store.getState());
 store.dispatch({
     type: 'CHANGE_SEARCH_TEXT', 
     searchText: 'm1'
+});
+
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT', 
+    searchText: 'm2'
+});
+
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT', 
+    searchText: 'm3'
+});
+
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT', 
+    searchText: 'm4'
 });
 
 console.log('searchText should be "m1"', store.getState());
