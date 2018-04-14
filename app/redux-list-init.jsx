@@ -25,8 +25,15 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 */ 
 
+var stateDefault = {
+    name: 'Anonymous',
+    movies: []
+}; 
 
-var reducer = (state = {name: 'Anonymous'}, action) => {
+
+var nextMovieId = 1; 
+
+var reducer = (state = stateDefault, action) => {
 
     //  state = state || {name: 'Anonymous'}; 
     // console.log('New action', action); 
@@ -37,6 +44,18 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
         ...state, 
         name: action.name
            }; 
+           case 'ADD_MOVIE_LINK':
+           return {
+               ...state,
+               movieLink :  [
+                   ...state.movieLink,
+                   {
+                       id: nextMovieId++,
+                       movieLink: action.movieLink                 
+                    }
+               ]
+
+           };
            default :
            return state; 
     }
@@ -98,5 +117,11 @@ store.dispatch( {
      name: 'movies4'
 
  }); 
+
+ store.dispatch( {
+    type: 'ADD_MOVIE_LINK',
+    movieLink: 'american history x'
+
+}); 
 
 // console.log('Name should be m1', store.getState());
