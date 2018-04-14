@@ -100,9 +100,9 @@
 
 	//testing out with redux and thinking in an algorithm 
 	// redux 
-	__webpack_require__(226);
+	// require('./redux-list-init.jsx');
 
-	// require('./redux-movies.jsx');
+	__webpack_require__(226);
 
 /***/ }),
 /* 1 */
@@ -25614,19 +25614,6 @@
 	// starting up redux 
 	console.log('Starting up redux');
 
-	// °|°|°|°|°|°|°
-
-	// UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
-
-	// this is all for testing purposes !
-	// Well the final final that we have to focus on , it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
-	// we have to work in the file!
-
-	/* 
-
-	******
-	Let's try to create an algorithm from  this file */
-
 	/* 
 	Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 	Thanks a lot!
@@ -25635,23 +25622,36 @@
 
 	*/
 
+	// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this project done :P 
+
+	var stateDefault = {
+	    searchText: '',
+	    showCompleted: false,
+	    movies: []
+
+	};
+
+	// all this is for testing purposes before to make a big time change in the code , I mean front end-back end. 
+
+	// |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
+	// trying to get this thing done
+
+
 	var reducer = function reducer() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { name: 'Anonymous' };
+	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
 	    var action = arguments[1];
 
-
-	    //  state = state || {name: 'Anonymous'}; 
-	    // console.log('New action', action); 
-
 	    switch (action.type) {
-	        case 'CHANGE_MOVIE':
+	        case 'CHANGE_SEARCH_TEXT':
 	            return _extends({}, state, {
-	                name: action.name
+	                searchText: action.searchText
 	            });
 	        default:
 	            return state;
 	    }
 	};
+
+	// var store = redux.createStore(reducer);
 
 	// lines in case to work with redux developer tools 
 	// not working  2018
@@ -25665,48 +25665,38 @@
 	    return f;
 	}));
 
-	// A little testing here 
-	// var unsuscribe = store.subscribe(() => {
-	//     var state = store.getState();
-	//     console.log('Movie is ', state.name); 
-	//     document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
-	//     document.getElementById('app').innerHTML = state.name;
-	// }); 
-
-
-	var unsuscribe = store.subscribe(function () {
+	// subscribe to changes 
+	store.subscribe(function () {
 	    var state = store.getState();
-	    console.log('Movie is', state.name);
+
 	    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
-	    document.getElementById('app').innerHTML = state.name;
+	    document.getElementById('app').innerHTML = state.searchText;
 	});
 
-	// unsuscribe();
-
-	var currentState = store.getState();
-	console.log('currentState', currentState);
+	// var currentState = store.getState();
+	console.log('currentState', store.getState());
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie1'
+	    type: 'CHANGE_SEARCH_TEXT',
+	    searchText: 'm1'
 	});
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie2'
+	    type: 'CHANGE_SEARCH_TEXT',
+	    searchText: 'm2'
 	});
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie3'
+	    type: 'CHANGE_SEARCH_TEXT',
+	    searchText: 'm3'
 	});
+
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movies4'
-
+	    type: 'CHANGE_SEARCH_TEXT',
+	    searchText: 'm4'
 	});
 
-	// console.log('Name should be m1', store.getState());
+	console.log('searchText should be "m1"', store.getState());
 
 /***/ }),
 /* 227 */

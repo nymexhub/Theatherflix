@@ -50,7 +50,7 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 //testing out with redux and thinking in an algorithm 
 // redux 
-require('./redux-list-init.jsx');
+// require('./redux-list-init.jsx');
 
-// require('./redux-movies.jsx');
+require('./redux-movies.jsx');
 
