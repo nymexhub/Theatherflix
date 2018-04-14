@@ -8,7 +8,8 @@ console.log('Starting up redux');
 // UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
 
 // this is all for testing purposes !
-// Well the final final that we have to focus on , it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
+// Well the final final that we have to focus on , 
+// it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
 // we have to work in the file!
 
 /* 
@@ -18,12 +19,21 @@ Let's try to create an algorithm from  this file */
 
 
 /* 
-Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
+Please if you code in this file please or another,  also add your email & 
+name and date among the comments before and after any code we could write.
 Thanks a lot!
 Felipe - felipe@nodeio.us  - 13-04-2018
 ----------
 
 */ 
+
+
+/* 
+I'm going to create separete files for a more understandable and logical way for the project. 
+now all this is for testing purposes and checking things, orgnizing things on my head and
+ basically to put an algorithm on my head while I?m writing code here with redux.
+*/
+
 
 
 var stateDefault = {
@@ -118,6 +128,11 @@ store.dispatch({
   store.dispatch({
     type: 'ADD_NMOVIE',
     nmovie: 'Running'
+  });
+
+  store.dispatch({
+    type: 'ADD_NMOVIE',
+    nmovie: 'waiting'
   });
   
   store.dispatch({
