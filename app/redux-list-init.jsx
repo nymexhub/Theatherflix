@@ -25,41 +25,52 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 */ 
 
+
 var stateDefault = {
     name: 'Anonymous',
+    nmovie: [],
     movies: []
-}; 
+  };
 
+  var nextNmovieId = 1;
+  var nextMovieId = 1;
 
-var nextMovieId = 1; 
-
-var reducer = (state = stateDefault, action) => {
-
-    //  state = state || {name: 'Anonymous'}; 
-    // console.log('New action', action); 
-
+  var reducer = (state = stateDefault, action) => {
+    // state = state || {name: 'Anonymous'};
+  
     switch (action.type) {
-        case 'CHANGE_MOVIE':   
-           return {
-        ...state, 
-        name: action.name
-           }; 
-           case 'ADD_MOVIE_LINK':
-           return {
-               ...state,
-               movieLink :  [
-                   ...state.movieLink,
-                   {
-                       id: nextMovieId++,
-                       movieLink: action.movieLink                 
-                    }
-               ]
-
-           };
-           default :
-           return state; 
+      case 'CHANGE_NAME':
+        return {
+          ...state,
+          name: action.name
+        };
+      case 'ADD_NMOVIE':
+        return {
+          ...state,
+          nmovie: [
+            ...state.nmovie,
+            {
+              id: nextNmovieId++,
+              nmovie: action.nmovie
+            }
+          ]
+        };
+      case 'ADD_MOVIE':
+        return {
+          ...state,
+          movies: [
+            ...state.movies,
+            {
+              id: nextMovieId++,
+              title: action.title,
+              genre: action.genre
+            }
+          ]
+        }
+      default:
+        return state;
     }
-}; 
+  };
 
 
 // lines in case to work with redux developer tools 
@@ -98,30 +109,27 @@ var unsuscribe =  store.subscribe(() => {
 var currentState = store.getState();
 console.log('currentState', currentState);
 
-store.dispatch( {
-   type: 'CHANGE_MOVIE', 
-   name: 'movie1'
-}); 
 
-store.dispatch( {
-    type: 'CHANGE_MOVIE', 
-    name: 'movie2'
- }); 
-
- store.dispatch( {
-    type: 'CHANGE_MOVIE', 
-    name: 'movie3'
- }); 
- store.dispatch( {
-     type: 'CHANGE_MOVIE',
-     name: 'movies4'
-
- }); 
-
- store.dispatch( {
-    type: 'ADD_MOVIE_LINK',
-    movieLink: 'american history x'
-
-}); 
+store.dispatch({
+    type: 'CHANGE_NAME',
+    name: 'W'
+  });
+  
+  store.dispatch({
+    type: 'ADD_NMOVIE',
+    nmovie: 'Running'
+  });
+  
+  store.dispatch({
+    type: 'CHANGE_NAME',
+    name: 'Y'
+  });
+  
+  store.dispatch({
+    type: 'ADD_MOVIE',
+    title: 'American history X',
+    genre: 'Action'
+  });
+  
 
 // console.log('Name should be m1', store.getState());

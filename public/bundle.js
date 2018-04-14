@@ -26663,36 +26663,43 @@
 	*/
 
 	var stateDefault = {
-	    name: 'Anonymous',
-	    movies: []
+	  name: 'Anonymous',
+	  nmovie: [],
+	  movies: []
 	};
 
+	var nextNmovieId = 1;
 	var nextMovieId = 1;
 
 	var reducer = function reducer() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
-	    var action = arguments[1];
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;
+	  var action = arguments[1];
 
+	  // state = state || {name: 'Anonymous'};
 
-	    //  state = state || {name: 'Anonymous'}; 
-	    // console.log('New action', action); 
-
-	    switch (action.type) {
-	        case 'CHANGE_MOVIE':
-	            return _extends({}, state, {
-	                name: action.name
-	            });
-	        case 'ADD_MOVIE_LINK':
-	            return _extends({}, state, {
-	                movieLink: [].concat(_toConsumableArray(state.movieLink), [{
-	                    id: nextMovieId++,
-	                    movieLink: action.movieLink
-	                }])
-
-	            });
-	        default:
-	            return state;
-	    }
+	  switch (action.type) {
+	    case 'CHANGE_NAME':
+	      return _extends({}, state, {
+	        name: action.name
+	      });
+	    case 'ADD_NMOVIE':
+	      return _extends({}, state, {
+	        nmovie: [].concat(_toConsumableArray(state.nmovie), [{
+	          id: nextNmovieId++,
+	          nmovie: action.nmovie
+	        }])
+	      });
+	    case 'ADD_MOVIE':
+	      return _extends({}, state, {
+	        movies: [].concat(_toConsumableArray(state.movies), [{
+	          id: nextMovieId++,
+	          title: action.title,
+	          genre: action.genre
+	        }])
+	      });
+	    default:
+	      return state;
+	  }
 	};
 
 	// lines in case to work with redux developer tools 
@@ -26704,7 +26711,7 @@
 	// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
 	// working fine 
 	var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(), window.devToolsExtension ? window.devToolsExtension() : function (f) {
-	    return f;
+	  return f;
 	}));
 
 	// A little testing here 
@@ -26717,10 +26724,10 @@
 
 
 	var unsuscribe = store.subscribe(function () {
-	    var state = store.getState();
-	    console.log('Movie is', state.name);
-	    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
-	    document.getElementById('app').innerHTML = state.name;
+	  var state = store.getState();
+	  console.log('Movie is', state.name);
+	  document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !";
+	  document.getElementById('app').innerHTML = state.name;
 	});
 
 	// unsuscribe();
@@ -26729,29 +26736,24 @@
 	console.log('currentState', currentState);
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie1'
+	  type: 'CHANGE_NAME',
+	  name: 'W'
 	});
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie2'
+	  type: 'ADD_NMOVIE',
+	  nmovie: 'Running'
 	});
 
 	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movie3'
-	});
-	store.dispatch({
-	    type: 'CHANGE_MOVIE',
-	    name: 'movies4'
-
+	  type: 'CHANGE_NAME',
+	  name: 'Y'
 	});
 
 	store.dispatch({
-	    type: 'ADD_MOVIE_LINK',
-	    movieLink: 'american history x'
-
+	  type: 'ADD_MOVIE',
+	  title: 'American history X',
+	  genre: 'Action'
 	});
 
 	// console.log('Name should be m1', store.getState());
