@@ -99,9 +99,10 @@
 	// °|°|°|°|°|°|°
 
 	//testing out with redux and thinking in an algorithm 
-	// redux 
+	// redux - for testing
 	__webpack_require__(226);
 
+	// final file with refux.... I will separate everything by logical files
 	// require('./redux-movies.jsx');
 
 /***/ }),
@@ -25616,19 +25617,21 @@
 	// starting up redux 
 	console.log('Starting up redux');
 
-	// °|°|°|°|°|°|°
+	/*
+	°|°|°|°|°|°|°
 
-	// UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
+	UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
 
-	// this is all for testing purposes !
-	// Well the final final that we have to focus on , 
-	// it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
-	// we have to work in the file!
+	this is all for testing purposes !
+	Well the final final that we have to focus on , 
+	it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
+	we have to work in the file!
+	*/
 
 	/* 
 
-	******
-	Let's try to create an algorithm from  this file */
+	Let's try to create an algorithm from  this file
+	 */
 
 	/* 
 	Please if you code in this file please or another,  also add your email & 
@@ -25644,6 +25647,8 @@
 	now all this is for testing purposes and checking things, organizing stuff on my head and
 	 basically to put an algorithm on my head while I'm writing code here with redux.
 	*/
+
+	// I'm preparing the projet to move all into logical files .... pleaes any change report it here as a comment pleae. :)
 
 	var stateDefault = {
 	  name: 'Anonymous',
@@ -25699,6 +25704,7 @@
 
 	// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
 	// working fine 
+
 	var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(), window.devToolsExtension ? window.devToolsExtension() : function (f) {
 	  return f;
 	}));
@@ -25755,7 +25761,7 @@
 	  genre: 'Action'
 	});
 
-	// console.log('Name should be m1', store.getState());
+	console.log('We get: ', store.getState());
 
 /***/ }),
 /* 227 */
