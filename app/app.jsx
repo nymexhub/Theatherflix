@@ -49,8 +49,9 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 // °|°|°|°|°|°|°
 
 //testing out with redux and thinking in an algorithm 
-// redux 
+// redux - for testing
 require('./redux-list-init.jsx');
 
+// final file with refux.... I will separate everything by logical files
 // require('./redux-movies.jsx');
 
