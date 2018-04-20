@@ -31,7 +31,7 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 
 /* 
-I'm going to create separete files for a better way to understand it and a better logical.... 
+I'm going to create separete files for a better way to understand it ---- a better logical.... 
 now all this is for testing purposes and checking things, organizing stuff on my head and
  basically to put an algorithm on my head while I'm writing code here with redux.
 */
