@@ -1,4 +1,4 @@
-var redux = require('redux');
+import redux from ('redux');
 
 // starting up redux 
 console.log('Starting up redux');
@@ -57,7 +57,7 @@ var store = redux.createStore(reducer, redux.compose(
 store.subscribe(() => {
     var state = store.getState();
 
-    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !"; 
+    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward!"; 
     document.getElementById('app').innerHTML = state.searchText; 
 });
 

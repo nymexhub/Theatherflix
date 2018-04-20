@@ -8,6 +8,7 @@
 Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 Thanks a lot!
 Felipe - felipe@nodeio.us  - 13-04-2018
+Antz - cheerantz@gmail.com - 20-04-2018
 ----------
 
 */ 
@@ -20,11 +21,11 @@ Thanks.
 -----
 
 - Felipe - Founder : felipe@nodeio.us
+- Antz - cheerantz@gmail.com - 20-04-2018
 -
 -
 -
 -
-
 
 */
 
@@ -51,8 +52,6 @@ app.set('port', process.env.PORT || 3000)
 app.use(express.static('public'));
 
 
-app.listen(app.get('port'), function () {
-  console.log(`Server is up, on port ${app.get('port')}`);
+app.listen(app.get('port'), () => {
+  console.log(`Server is up, on port: ${app.get('port')}`);
 });
-
-

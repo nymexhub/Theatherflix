@@ -1,6 +1,6 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+import redux from ('redux');
+import ReactDOM from ('react-dom');
+import {Route, Router, IndexRoute, hashHistory} from ('react-router');
 var Main = require('Main');
 var ListM = require('ListM');
 var About = require('About');
@@ -9,6 +9,7 @@ var About = require('About');
 Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 Thanks a lot!
 Felipe - felipe@nodeio.us  - 13-04-2018
+Antz - cheerantz@gmail.com - 20-04-2018
 ----------
 
 */ 
@@ -27,7 +28,6 @@ Felipe - felipe@nodeio.us  - 13-04-2018
 
 
 // **********
-
 
 
 
