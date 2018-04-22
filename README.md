@@ -1,6 +1,9 @@
 # Theatherflix Open Source Project 
  [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
+
+[![CircleCI](https://circleci.com/gh/NodeioLabs/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/NodeioLabs/Theatherflix/tree/master)
+
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
       IMPORTANT: 
