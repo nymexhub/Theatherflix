@@ -8,6 +8,7 @@
       Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
 #
+
   
 |Version:
 v2.3.0.2 rvc1.0
@@ -156,7 +157,7 @@ https://github.com/NodeioLabs/theatherflix/blob/master/CHANGELOG.md
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipe@nodeio.us if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+_Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
 ## Authors and contribs nowadays.
 
@@ -164,7 +165,7 @@ _Feel free to contact Felipe: felipe@nodeio.us if you wanna Fork the project to 
 
 | Names of collaborators         | Github Links          | Remarks
 | ------------------ |:------------------- |:--------------
-| Felipe     | https://github.com/felipealfonsog | (Founder - felipe@nodeio.us)
+| Felipe     | https://github.com/felipealfonsog | (Founder - felipealfonsog@fleep.io)
 | Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
 | Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
 | Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
@@ -183,4 +184,4 @@ _Feel free to contact Felipe: felipe@nodeio.us if you wanna Fork the project to 
 ## Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
-Founded and Started by Felipe Alfonso Gonzalez, felipe@nodeio.us - CC2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - CC2018-Present.
