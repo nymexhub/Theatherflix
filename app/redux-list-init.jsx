@@ -44,6 +44,7 @@ var stateDefault = {
     nmovie: [],
     movies: []
   };
+  
 
   var nextNmovieId = 1;
   var nextMovieId = 1;
