@@ -35,7 +35,7 @@ The whole project is split into *FIVE (5)* stages**:
 
 
 
-** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/theatherflix/projects/5)   
+** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/NodeioLabs/Theatherflix/projects/5)   
 
 
 ## Technical stuff*:
@@ -44,24 +44,24 @@ The whole project is split into *FIVE (5)* stages**:
 
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
-https://github.com/NodeioLabs/theatherflix/tree/development
+https://github.com/NodeioLabs/Theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. `git clone -b development --single-branch git@github.com:NodeioLabs/theatherflix.git`
-2. `cd development` (which is downloaded as a folder named 'theatherflix' though, you rename it)
+1. `git clone -b development --single-branch git@github.com:NodeioLabs/Theatherflix.git`
+2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/NodeioLabs/theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/NodeioLabs/Theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
 If you want to download the old version stored, go to the old branch ->
-https://github.com/NodeioLabs/theatherflix/tree/old_branch
+https://github.com/NodeioLabs/Theatherflix/tree/old_branch
 
 #If you want to clone the old branch follow this:
-1. `git clone -b old_branch --single-branch git@github.com:NodeioLabs/theatherflix.git`
-2. `cd old_branch` (which is downloaded as a folder named 'theatherflix' though, you rename it)
+1. `git clone -b old_branch --single-branch git@github.com:NodeioLabs/Theatherflix.git`
+2. `cd old_branch` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
 
@@ -72,7 +72,7 @@ https://github.com/NodeioLabs/theatherflix/tree/old_branch
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
 ### Visit our websites:
-https://nodeiolabs.github.io/theatherflix/
+https://nodeiolabs.github.io/Theatherflix/
 
 http://www.nodeio.us (nodeio labs)
 
@@ -154,13 +154,13 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 ## Important for new contributors: 
 If you wanna be part of this: seriously, coding, documenting; write me out, and also check out the Changelog.md file:
 
-https://github.com/NodeioLabs/theatherflix/blob/master/CHANGELOG.md
+https://github.com/NodeioLabs/Theatherflix/blob/master/CHANGELOG.md
 
 
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
 ## Authors and contribs nowadays.
 
@@ -188,5 +188,5 @@ _Feel free to contact Felipe: felipealfonsog@fleep.io if you wanna Fork the proj
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
 
-Founded and Started by Felipe Alfonso Gonzalez, felipealfonsog@fleep.io - CC2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - CC2018-Present.
 
