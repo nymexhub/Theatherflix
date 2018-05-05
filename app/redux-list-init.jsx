@@ -24,7 +24,7 @@ Let's try to create an algorithm from  this file
 Please if you code in this file please or another,  also add your email & 
 name and date among the comments before and after any code we could write.
 Thanks a lot!
-Felipe - felipe@nodeio.us  - 13-04-2018
+Felipe - felipe.dev.engr.js@gmail.com  - 13-04-2018
 Antz - cheerantz@gmail.com - 20-04-2018
 ----------
 
