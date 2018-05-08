@@ -1,6 +1,7 @@
 import redux from ('redux');
 import ReactDOM from ('react-dom');
 import {Route, Router, IndexRoute, hashHistory} from ('react-router');
+
 var Main = require('Main');
 var ListM = require('ListM');
 var About = require('About');
