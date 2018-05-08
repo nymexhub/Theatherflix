@@ -168,7 +168,7 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 
 | Names of collaborators         | Github Links          | Remarks
 | ------------------ |:------------------- |:--------------
-| Felipe     | https://github.com/felipealfonsog | (Founder - felipealfonsog@fleep.io)
+| Felipe     | https://github.com/felipealfonsog | (Founder - felipe.dev.engr.js@gmail.com)
 | Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
 | Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
 | Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
