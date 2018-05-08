@@ -10,7 +10,7 @@ UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
 
 this is all for testing purposes !
 Well the final final that we have to focus on , 
-it's actually totally diffferent, it's not this. It's 'redux-movies-jsx'
+it's actually totally different, it's not this. It's 'redux-movies-jsx'
 we have to work in the file!
 */
 
@@ -49,7 +49,7 @@ var stateDefault = {
   var nextNmovieId = 1;
   var nextMovieId = 1;
 
-  var reducer = (state = stateDefault, action) => {
+  var OldReducer = (state = stateDefault, action) => {
     // state = state || {name: 'Anonymous'};
   
     switch (action.type) {
@@ -90,6 +90,23 @@ var stateDefault = {
         return state;
     }
   };
+
+
+
+
+
+var nameReducer = (state = 'Anonymous', action) => {
+   switch (action.type) {
+     case 'CHANGE_NAME': 
+       return action.name
+     default:
+        return state;
+   }; 
+}; 
+
+var reducer = redux.combineReducers({
+    name: nameReducer
+})
 
 
 // lines in case to work with redux developer tools 
