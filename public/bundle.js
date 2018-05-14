@@ -56,9 +56,7 @@
 	    hashHistory = _require.hashHistory;
 
 	// Load foundation
-
-
-	$(document).foundation();
+	// $(document).foundation();
 
 	// App css
 	// require('style!css!sass!applicationStyles')
@@ -27794,6 +27792,10 @@
 	    map: mapReducer
 	  });
 
+	  // var store = redux.createStore(reducer, redux.compose(
+	  //   redux.applyMiddleware(thunk),
+	  //   window.devToolsExtension ? window.devToolsExtension() : f => f
+	  // ));
 	  var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : function (f) {
 	    return f;
 	  }));
