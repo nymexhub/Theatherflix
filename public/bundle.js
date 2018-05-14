@@ -73,7 +73,7 @@
 	  'div',
 	  null,
 	  React.createElement('div', { title: 'Movie Browser' }),
-	  React.createElement(_materialUi.AppBar, { movies: movies, isLoading: topMovies.isLoading })
+	  React.createElement(_materialUi.AppBar, { movies: movies, isLoading: isLoading })
 	));
 
 	__webpack_require__(583);

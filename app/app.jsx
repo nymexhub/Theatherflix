@@ -25,7 +25,7 @@ ReactDOM.render(
             <div title='Movie Browser' />
     
      
-                <AppBar movies={movies} isLoading={topMovies.isLoading} />
+                <AppBar movies={movies} isLoading={isLoading} />
         
           </div>
  
