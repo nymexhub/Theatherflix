@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-import {AppBar, TextField, RaisedButton} from 'material-ui';
+import {AppBar, Grid, TextField, RaisedButton} from 'material-ui';
 
 // Load foundation
 // $(document).foundation();
