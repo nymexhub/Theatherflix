@@ -1,44 +1,9 @@
 import redux from ('redux');
 
-// starting up redux 
+
 console.log('Starting up redux');
 
-/*
-°|°|°|°|°|°|°
-
-UNDER DEVELOPMENT !!!!!!!!!!!!!!!!!
-
-this is all for testing purposes !
-Well the final final that we have to focus on , 
-it's actually totally different, it's not this. It's 'redux-movies-jsx'
-we have to work in the file!
-*/
-
-/* 
-
-Let's try to create an algorithm from  this file
- */
-
-
-/* 
-Please if you code in this file please or another,  also add your email & 
-name and date among the comments before and after any code we could write.
-Thanks a lot!
-Felipe - felipe.dev.engr.js@gmail.com  - 13-04-2018
-Antz - cheerantz@gmail.com - 20-04-2018
-----------
-
-*/ 
-
-
-/* 
-I'm going to create separete files for a better way to understand it ---- a better logical.... 
-now all this is for testing purposes and checking things, organizing stuff on my head and
- basically to put an algorithm on my head while I'm writing code here with redux.
-*/
-
-// I'm preparing the projet to move all into logical files .... pleaes any change report it here as a comment pleae. :)
-
+// testing stuff
   
 
   var nextNmovieId = 1;
@@ -129,13 +94,6 @@ var store = redux.createStore(reducer, redux.compose(
 
 
 
-// A little testing here 
-// var unsuscribe = store.subscribe(() => {
-//     var state = store.getState();
-//     console.log('Movie is ', state.name); 
-//     document.getElementById('welcome').innerHTML = "Welcome to Theatherflix, we're moving forward !";
-//     document.getElementById('app').innerHTML = state.name;
-// }); 
 
 
 var unsuscribe =  store.subscribe(() => {

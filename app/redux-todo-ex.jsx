@@ -2,6 +2,8 @@ var redux = require('redux');
 
 console.log('Starting todo redux example');
 
+// testing stuff
+
 var stateDefault = {
   searchText: '',
   showCompleted: false,
