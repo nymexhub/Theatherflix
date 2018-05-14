@@ -74,7 +74,7 @@
 	  null,
 	  React.createElement(_materialUi.AppBar, { title: 'Movie Browser' }),
 	  React.createElement(
-	    Grid,
+	    _materialUi.Grid,
 	    null,
 	    React.createElement(
 	      Row,
