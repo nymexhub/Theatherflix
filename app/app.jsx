@@ -22,15 +22,11 @@ ReactDOM.render(
     
        
           <div>
-            <AppBar title='Movie Browser' />
-            <Grid>
-              <Row>
-                <p>Search will go here</p>
-              </Row>
-              <Row>
-                <MovieList movies={movies} isLoading={topMovies.isLoading} />
-              </Row>
-            </Grid>
+            <div title='Movie Browser' />
+    
+     
+                <AppBar movies={movies} isLoading={isLoading} />
+        
           </div>
  
  

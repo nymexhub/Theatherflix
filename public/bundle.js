@@ -72,25 +72,8 @@
 	ReactDOM.render(React.createElement(
 	  'div',
 	  null,
-	  React.createElement(_materialUi.AppBar, { title: 'Movie Browser' }),
-	  React.createElement(
-	    _materialUi.Grid,
-	    null,
-	    React.createElement(
-	      _materialUi.Row,
-	      null,
-	      React.createElement(
-	        'p',
-	        null,
-	        'Search will go here'
-	      )
-	    ),
-	    React.createElement(
-	      _materialUi.Row,
-	      null,
-	      React.createElement(MovieList, { movies: movies, isLoading: topMovies.isLoading })
-	    )
-	  )
+	  React.createElement('div', { title: 'Movie Browser' }),
+	  React.createElement(_materialUi.AppBar, { movies: movies, isLoading: isLoading })
 	));
 
 	__webpack_require__(583);
