@@ -24,7 +24,7 @@ console.log('currentState', currentState);
 
 store.dispatch(actions.fetchLocation());
 
-store.dispatch(actions.changeName('Andrew'));
+store.dispatch(actions.changeName('Phil'));
 
 store.dispatch(actions.addHobby('Running'));
 store.dispatch(actions.addHobby('Walking'));
