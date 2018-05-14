@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
+import {AppBar, TextField, RaisedButton} from 'material-ui';
+
 // Load foundation
 // $(document).foundation();
 
@@ -13,6 +15,29 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 //   document.getElementById('app')
 // );
 
+
+ReactDOM.render(
+ 
+ 
+    
+       
+          <div>
+            <AppBar title='Movie Browser' />
+            <Grid>
+              <Row>
+                <p>Search will go here</p>
+              </Row>
+              <Row>
+                <MovieList movies={movies} isLoading={topMovies.isLoading} />
+              </Row>
+            </Grid>
+          </div>
+ 
+ 
+);
+
+
+
 require('./redux-movies.jsx');
-// require('./redux-todo-example.jsx');
+// require('./redux-todo-ex.jsx');
 
