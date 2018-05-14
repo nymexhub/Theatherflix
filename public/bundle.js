@@ -77,7 +77,7 @@
 	    _materialUi.Grid,
 	    null,
 	    React.createElement(
-	      Row,
+	      _materialUi.Row,
 	      null,
 	      React.createElement(
 	        'p',
@@ -86,7 +86,7 @@
 	      )
 	    ),
 	    React.createElement(
-	      Row,
+	      _materialUi.Row,
 	      null,
 	      React.createElement(MovieList, { movies: movies, isLoading: topMovies.isLoading })
 	    )
