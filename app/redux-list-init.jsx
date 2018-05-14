@@ -39,11 +39,6 @@ now all this is for testing purposes and checking things, organizing stuff on my
 
 // I'm preparing the projet to move all into logical files .... pleaes any change report it here as a comment pleae. :)
 
-var stateDefault = {
-    name: 'Anonymous',
-    nmovie: [],
-    movies: []
-  };
   
 
   var nextNmovieId = 1;
@@ -104,8 +99,17 @@ var nameReducer = (state = 'Anonymous', action) => {
    }; 
 }; 
 
+var newMovies = (state = [], action) => {
+   switch (action.type) {
+     case 'ADD_newMovies':
+
+   }
+}; 
+
 var reducer = redux.combineReducers({
-    name: nameReducer
+    name: nameReducer,
+    newMovies: newMoviesReducer 
+
 })
 
 
