@@ -1,4 +1,5 @@
 var redux = require('redux');
+export default MovieListComponent;
 
 console.log('Starting redux example');
 
@@ -13,6 +14,29 @@ var unsubscribe = store.subscribe(() => {
 
   if (state.map.isFetching) {
     document.getElementById('app').innerHTML = 'Loading...';
+
+
+    //
+      const MovieListComponent = ({movies, isLoading}) => {
+        const movieColumns = movies ? movies.map(movie => (
+          <Col style={styles.movieColumn} key={movie.id} xs={12} sm={4} md={3} lg={3}>
+            <MovieCard movie={movie} />
+          </Col>
+      )) : null;
+      
+      return (
+        <Row>
+          {movieColumns}
+          <LoaderComponent isLoading={isLoading} />
+        </Row>
+      );
+    }
+    
+
+
+    //
+
+
   } else if (state.map.url) {
     document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
   }
