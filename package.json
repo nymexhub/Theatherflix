@@ -12,6 +12,7 @@
     "docker": "^1.0.0",
     "express": "^4.13.4",
     "find-process": "^1.1.0",
+    "loader": "^2.1.1",
     "modules": "^0.4.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
