@@ -58,13 +58,18 @@
 	// Load foundation
 	// $(document).foundation();
 
-	// // App css
+	//   App css
 	// require('style!css!sass!applicationStyles')
 
 	// ReactDOM.render(
 	//   <p>Boilerplate 3 Project</p>,
 	//   document.getElementById('app')
 	// );
+
+	var CHANGE_NAME = document.getElementById('app_video');
+	function renderer(state, dispatch) {
+	  ReactDOM.render(React.createElement(Application, { state: state, dispatch: dispatch }), CHANGE_NAME);
+	}
 
 	__webpack_require__(617);
 	// require('./redux-movies.jsx');
@@ -101,10 +106,6 @@
 
 
 	// );
-
-
-	// require('./redux-movies.jsx');
-	// // require('./redux-todo-ex.jsx');
 
 /***/ }),
 /* 1 */,
@@ -28291,9 +28292,12 @@
 
 	  if (state.map.isFetching) {
 	    document.getElementById('app').innerHTML = 'Loading...';
-	    document.getElementById('app_video').innerHTML = "boooom";
-	  } else if (state.map.url) {
-	    document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+	    // document.getElementById('app_video').innerHTML = "boooom"; 
+	  } else if (state.map.moviesReducer) {
+	    // document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+	    // document.getElementById('app').innerHTML = '<a href="' + state.map.movies + '" target="_blank">View </a>';
+
+	    dispatch(navigation.start('moviesReducer'));
 	  }
 	});
 	// unsubscribe();

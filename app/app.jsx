@@ -8,13 +8,23 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 // Load foundation
 // $(document).foundation();
 
-// // App css
+//   App css
 // require('style!css!sass!applicationStyles')
 
 // ReactDOM.render(
 //   <p>Boilerplate 3 Project</p>,
 //   document.getElementById('app')
 // );
+
+var CHANGE_NAME = document.getElementById('app_video')
+function renderer(state, dispatch) {
+  ReactDOM.render(
+    <Application state={state} dispatch={dispatch} />,
+    CHANGE_NAME
+    
+  )
+
+}
 
 require('./redux-ex.jsx');
 // require('./redux-movies.jsx');
@@ -56,7 +66,3 @@ require('./redux-ex.jsx');
 // );
 
  
-
-// require('./redux-movies.jsx');
-// // require('./redux-todo-ex.jsx');
-
