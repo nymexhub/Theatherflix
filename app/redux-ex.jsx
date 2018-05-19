@@ -13,8 +13,12 @@ var unsubscribe = store.subscribe(() => {
 
   if (state.map.isFetching) {
     document.getElementById('app').innerHTML = 'Loading...';
-  } else if (state.map.url) {
-    document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+    // document.getElementById('app_video').innerHTML = "boooom"; 
+  } else if (state.map.moviesReducer) {
+    // document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+    // document.getElementById('app').innerHTML = '<a href="' + state.map.movies + '" target="_blank">View </a>';
+
+    dispatch(navigation.start('moviesReducer')); 
   }
 });
 // unsubscribe();

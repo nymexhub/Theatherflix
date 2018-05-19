@@ -1,7 +1,7 @@
 var redux = require('redux');
 export default MovieListComponent;
 
-console.log('Starting redux example');
+console.log('Starting redux');
 
 var actions = require('./actions/index');
 var store = require('./store/configureStore').configure();
@@ -15,8 +15,6 @@ var unsubscribe = store.subscribe(() => {
   if (state.map.isFetching) {
     document.getElementById('app').innerHTML = 'Loading...';
 
-
-    //
       const MovieListComponent = ({movies, isLoading}) => {
         const movieColumns = movies ? movies.map(movie => (
           <Col style={styles.movieColumn} key={movie.id} xs={12} sm={4} md={3} lg={3}>
@@ -32,11 +30,6 @@ var unsubscribe = store.subscribe(() => {
       );
     }
     
-
-
-    //
-
-
   } else if (state.map.url) {
     document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
   }
