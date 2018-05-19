@@ -13,6 +13,7 @@ var unsubscribe = store.subscribe(() => {
 
   if (state.map.isFetching) {
     document.getElementById('app').innerHTML = 'Loading...';
+    document.getElementById('app_video').innerHTML = "boooom"; 
   } else if (state.map.url) {
     document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
   }
