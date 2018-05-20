@@ -1,8 +1,8 @@
 
-//*******************************************************************************
-// Thatherflix is an Software Open Source Project CC2017-Present
-// Licence and other public affairs go to README.md, Changelog.md & Licence
-//*******************************************************************************
+/*******************************************************************************
+ Thatherflix is an Software Open Source Project CC2017-Present
+ Licence and other public affairs go to README.md, Changelog.md & Licence
+*******************************************************************************/
 
 /* 
 Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
@@ -13,12 +13,21 @@ Antz - cheerantz@gmail.com - 20-04-2018
 
 */ 
 
-var express = require('express');
+/***********************
+ * Module dependencies *
+ ***********************/
+const express = require('express');
 
-// Create our app
+/********************
+ * express instance *
+ ********************/
 var app = express();
 const PORT = process.env.PORT || 3000;
 
+
+/*********************
+ * Module middleware *
+ *********************/
 app.use(function (req, res, next){
   if (req.headers['x-forwarded-proto'] === 'https') {
     res.redirect('http://' + req.hostname + req.url);

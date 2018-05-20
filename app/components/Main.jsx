@@ -1,3 +1,6 @@
+/***********************
+ * Module dependencies *
+ ***********************/
 import React from ('react');
 var Nav = require('Nav');
 // In this file I figure out how to show a movie. 
@@ -14,6 +17,10 @@ var Main = React.createClass({
   }
 });
 
+
+/******************
+ * Export Main    *
+ ******************/
 module.exports = Main;
 
 

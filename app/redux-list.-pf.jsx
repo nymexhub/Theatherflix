@@ -1,3 +1,6 @@
+/***********************
+ * Module dependencies *
+ ***********************/
 import redux from ('redux');
 
 // starting up redux 
