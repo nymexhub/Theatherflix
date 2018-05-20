@@ -1,8 +1,9 @@
+/***********************
+ * Module dependencies *
+ ***********************/
 
-
-
-var React = require('react');
-var ReactDOM = require('react-dom');
+import redux from ('redux');
+import ReactDOM from ('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 // Load foundation

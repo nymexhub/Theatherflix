@@ -1,4 +1,7 @@
-var redux = require('redux');
+/***********************
+ * Module dependencies *
+ ***********************/
+import redux from ('redux');
 
 console.log('Starting redux example');
 

@@ -1,4 +1,7 @@
-var redux = require('redux');
+/***********************
+ * Module dependencies *
+ ***********************/
+import redux from ('redux');
 export default MovieListComponent;
 
 console.log('Starting redux');
