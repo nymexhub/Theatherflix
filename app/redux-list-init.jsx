@@ -11,6 +11,8 @@ console.log('Starting up redux');
   var nextNmovieId = 1;
   var nextMovieId = 1;
 
+  
+
   var OldReducer = (state = stateDefault, action) => {
     // state = state || {name: 'Anonymous'};
   
