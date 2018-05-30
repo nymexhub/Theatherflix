@@ -18,6 +18,8 @@ import ReactDOM from ('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 
+
+
 // Load foundation
 // $(document).foundation();
 
