@@ -10,10 +10,14 @@
   "license": "GPL-3",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.4",
     "docker": "^1.0.0",
-    "express": "^4.13.4",
+    "express": "^4.16.3",
     "find-process": "^1.1.0",
+    "jslint": "^0.12.0",
     "loader": "^2.1.1",
+    "loaders": "^1.1.3",
     "material-ui": "^0.20.1",
     "modules": "^0.4.0",
     "react": "^0.14.7",
@@ -21,14 +25,13 @@
     "react-router": "^2.0.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "webpack": "^2.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
-    "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "webpack": "^1.12.13"
+    "babel-preset-stage-0": "^6.5.0"
   }
 }

@@ -7,7 +7,7 @@
 /* 
 Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
 Thanks a lot!
-Felipe - felipealfonsog@fleep.io  - 13-04-2018
+Felipe - f.alfonso@res-ear.ch - 13-04-2018
 Antz - cheerantz@gmail.com - 20-04-2018
 ----------
 
@@ -33,22 +33,6 @@ app.listen(PORT, function () {
   console.log('Express server is up on port ' + PORT);
 });
 
-
-/*
-Please here add the emails of all the collabs who wrote code here or changed the webpack config.
-Anyone must write his or her name in this lines, and comment any changes.  
-
-Thanks.
------
-
-- Felipe - Founder : felipe@nodeio.us
-- Antz - cheerantz@gmail.com - 20-04-2018
--
--
--
--
-
-*/
 
 
 // starting the coding - main server file.

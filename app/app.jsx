@@ -1,5 +1,9 @@
 
+/*
 
+If you code in this file mail me please about your thoughts f.alfonso@res-ear.ch 
+
+*/
 
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -12,21 +16,27 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 // require('style!css!sass!applicationStyles')
 
 // ReactDOM.render(
-//   <p>Boilerplate 3 Project</p>,
+//   <p>xxxxx</p>,
 //   document.getElementById('app')
 // );
 
-var CHANGE_NAME = document.getElementById('app_video')
+var video = document.getElementById('app_video') == '<iframe width="1821" height="641" src="https://www.youtube.com/embed/wL1V1eURgDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'; 
+return video;
+
 function renderer(state, dispatch) {
   ReactDOM.render(
+  
     <Application state={state} dispatch={dispatch} />,
-    CHANGE_NAME
+    
     
   )
 
+
+  
+
 }
 
-require('./redux-ex.jsx');
+// require('./redux-ex.jsx');
 // require('./redux-movies.jsx');
 
 
