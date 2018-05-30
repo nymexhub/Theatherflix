@@ -1,4 +1,7 @@
-var React = require('react');
+/***********************
+ * Module dependencies *
+ ***********************/
+import React from ('react');
 
 var MovieListComponent = React.createClass({
     render() {
@@ -7,9 +10,10 @@ var MovieListComponent = React.createClass({
 });
 
 
- 
 
-
+/******************************
+ * Export MovieListComponent  *
+ ******************************/
 module.exports = MovieListComponent;
 
 

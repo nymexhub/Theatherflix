@@ -1,4 +1,7 @@
-var axios = require('axios');
+/***********************
+ * Module dependencies *
+ ***********************/
+import axios from ('axios');
 
 export var changeName = (name) => {
   return {
