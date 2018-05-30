@@ -1,3 +1,6 @@
+/***********************
+ * Module dependencies *
+ ***********************/
 import React from ('react');
 
 var About = React.createClass({
@@ -8,7 +11,9 @@ var About = React.createClass({
    }
 });
 
-
+/******************
+ * Export About   *
+ ******************/
 module.exports = About;
 
 

@@ -1,4 +1,8 @@
+/***********************
+ * Module dependencies *
+ ***********************/
 
+ 
 /*
 
 If you code in this file mail me please about your thoughts f.alfonso@res-ear.ch 
@@ -7,6 +11,10 @@ If you code in this file mail me please about your thoughts f.alfonso@res-ear.ch
 
 var React = require('react');
 var ReactDOM = require('react-dom');
+ 
+import redux from ('redux');
+import ReactDOM from ('react-dom');
+ 
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 
