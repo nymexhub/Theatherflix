@@ -36,7 +36,7 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   devServer: {
     port: 8080,
@@ -44,7 +44,7 @@ module.exports = {
   },
   plugins: [new ExtractTextPlugin('app.css')], // will bundle all the css to this app.css file
   module: {
-    loaders: [{
+    rules: [{
       test: /.js[x]?$/, // will look for .js and .jsx files
       loader: 'babel-loader',
       query: {

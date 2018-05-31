@@ -10,10 +10,10 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         query: {
@@ -40,10 +40,10 @@ module.exports = {
       ListM: 'app/components/ListM.jsx',
       About: 'app/components/About.jsx'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         query: {
