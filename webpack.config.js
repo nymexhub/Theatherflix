@@ -1,22 +1,25 @@
-module.exports = {
-  entry: './public/app.jsx',
+mmodule.exports = {
+  entry: "./public/app.jsx",
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+      path:__dirname+ '/public/',
+      filename: "bundle.js",
+      publicPath: '/'
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
+  devServer: {
+      inline: false,
+      contentBase: "./public",
   },
   module: {
-    loaders: [
-      {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015']
-        },
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
-      }
-    ]
+      rules: [
+          {
+              test: /\.jsx?$/,
+              exclude:/(node_modules|bower_components)/,
+              loader: 'babel-loader',
+              query: {
+                  presets: ['es2015', 'react']
+              }
+          }
+      ]
   }
-};
+
+}
