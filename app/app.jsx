@@ -13,7 +13,7 @@ var Main = require('Main');
 
 // import the main Component
 
- import Greeter from './components/Greeter.jsx'
+//  import Greeter from './components/Greeter.jsx'
 
 // var to make a welcome ... from me
 // Pass data to the components if necessary
@@ -36,5 +36,5 @@ ReactDOM.render(
 // const title = 'Felipe the Founder welcomes you!'
 // const message = 'Our first Component'
 
-// // the renderer
-// ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app'))
+// the renderer
+// ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app')) 

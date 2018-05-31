@@ -1,22 +1,10 @@
-// Project Theatherflix 
-// any doubts go to README.md and Changelog.md
+var express = require('express');
 
-
-
-
-// Thatherflix is an Open Source Project
-// Founded by Felipe Alfonso Gonzalez - Soft. Engr. - felipe.dev.engr.js@gmail.com
-// C2018 - Present
-
-const express = require('express');
-
-// creation of the app using express .
-const app = express();
-
-app.set('port', process.env.PORT || 3000)
+// Create our app
+var app = express();
 
 app.use(express.static('public'));
 
-app.listen(app.get('port'), function () {
-  console.log(`Server is up, on port ${app.get('port')}`);
+app.listen(3000, function () {
+  console.log('Express server is up on port 3000');
 });
