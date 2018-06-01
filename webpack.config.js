@@ -1,13 +1,13 @@
 mmodule.exports = {
   entry: "./public/app.jsx",
   output: {
-      path:__dirname+ '/public/',
+      path:__dirname+ 'public/',
       filename: "bundle.js",
-      publicPath: '/'
+      publicPath: './public'
   },
   devServer: {
       inline: false,
-      contentBase: "./public",
+      contentBase: "public",
   },
   module: {
       rules: [

@@ -160,7 +160,7 @@ https://github.com/NodeioLabs/Theatherflix/blob/master/CHANGELOG.md
 ## Contact and Communications 
 
 ### **Note:** 
-_Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
+_Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
 ## Authors and contribs nowadays.
 
@@ -168,7 +168,7 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
 
 | Names of collaborators         | Github Links          | Remarks
 | ------------------ |:------------------- |:--------------
-| Felipe     | https://github.com/felipealfonsog | (Founder - felipe.dev.engr.js@gmail.com)
+| Felipe     | https://github.com/felipealfonsog | (Founder - f.alfonso@res-ear.ch)
 | Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
 | Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
 | Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
@@ -188,5 +188,5 @@ _Feel free to contact Felipe: felipe.dev.engr.js@gmail.com if you wanna Fork the
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
 
-Founded and Started by Felipe Alfonso Gonzalez, felipe.dev.engr.js@gmail.com - CC2018-Present.
+Founded and Started by Felipe Alfonso Gonzalez, f.alfonso@res-ear.ch - CC2018-Present.
 
