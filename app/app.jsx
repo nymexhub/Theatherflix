@@ -1,40 +1,17 @@
-// please inform by email any big changes please. 
-
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
 
+// Load foundation
+$(document).foundation();
 
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
+// App css
+require('style!css!sass!applicationStyles')
 
+// ReactDOM.render(
+//   <p>Boilerplate 3 Project</p>,
+//   document.getElementById('app')
+// );
 
-// import the main Component
-
-//  import Greeter from './components/Greeter.jsx'
-
-// var to make a welcome ... from me
-// Pass data to the components if necessary
-
-// the renderer
-ReactDOM.render(
-    <Router history={hashHistory}>
-      <Route path="/" component={Main}>
-  
-      </Route>
-    </Router>,
-    document.getElementById('app')
-  );
-  
-
-// import Greeter from './components/greeter'
-
-// var to make a welcome ... from me
-// Pass data to the components if necessary
-// const title = 'Felipe the Founder welcomes you!'
-// const message = 'Our first Component'
-
-// the renderer
-// ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app')) 
+// require('./redux-example.jsx');
+require('./redux-todo-example.jsx');
