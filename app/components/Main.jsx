@@ -1,12 +1,14 @@
 var React = require('react');
-var Nav = require('Nav');
+var Nav = require('./Nav/Nav');
+var MovieList = require('./MovieList/MovieList');
+// In this file I figure out how to show a movie. 
 
 var Main = React.createClass({
   render: function () {
     return (
       <div>
         <Nav/>
-        <h2>Main Component</h2>
+        <MovieList/>
       </div>
     );
   }

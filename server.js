@@ -1,19 +1,50 @@
-var express = require('express');
 
-// Create our app
-var app = express();
-const PORT = process.env.PORT || 3000;
+//*******************************************************************************
+// Thatherflix is an Software Open Source Project CC2017-Present
+// Licence and other public affairs go to README.md, Changelog.md & Licence
+//*******************************************************************************
 
-app.use(function (req, res, next){
-  if (req.headers['x-forwarded-proto'] === 'https') {
-    res.redirect('http://' + req.hostname + req.url);
-  } else {
-    next();
-  }
-});
+
+/*
+Please here add the emails of all the collabs who wrote code here or changed the webpack config.
+Anyone must write his or her name in this lines, and comment any changes.  
+
+Thanks.
+-----
+
+- Felipe : felipe.dev.engr.js@gmail.com
+-
+-
+-
+-
+
+
+*/
+
+
+// starting the coding - main server file.
+
+
+// var config = require('./webpack.config.js')
+// if (!process.env.NODE_ENV) {
+// process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
+// process.noDeprecation = true
+// }
+
+
+
+
+const express = require('express');
+
+// creation of the app using express .
+const app = express();
+
+app.set('port', process.env.PORT || 3000)
 
 app.use(express.static('public'));
 
-app.listen(PORT, function () {
-  console.log('Express server is up on port ' + PORT);
+app.listen(app.get('port'), function () {
+  console.log(`Server is up, on port ${app.get('port')}`);
 });
+
+

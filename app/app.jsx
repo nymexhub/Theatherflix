@@ -1,17 +1,20 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var Main = require('Main');
+var MovieList = require('./components/MovieList/MovieList');
+var About = require('./components/About/About');
+import './app.scss';
 
-// Load foundation
-$(document).foundation();
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+    <Route path="about" component={About}/>
+          <IndexRoute component={MovieList}/>
+    </Route>
+  </Router>,
+  document.getElementById('app')
+);
 
-// App css
-require('style!css!sass!applicationStyles')
-
-// ReactDOM.render(
-//   <p>Boilerplate 3 Project</p>,
-//   document.getElementById('app')
-// );
-
-// require('./redux-example.jsx');
-require('./redux-todo-example.jsx');
+// redux 
+require('./redux-list.jsx');

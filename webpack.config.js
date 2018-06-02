@@ -1,26 +1,5 @@
-// work with all paths in a cross-platform manner
-const path = require('path');
-
-// plugins covered below
-const { ProvidePlugin } = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
-  entry: [
-    'script!jquery/dist/jquery.min.js',
-    'script!foundation-sites/dist/foundation.min.js',
-    './app/app.jsx'
-  ],
-  externals: {
-    jquery: 'jQuery'
-  },
-  plugins: [
-    new webpack.ProvidePlugin({
-      '$': 'jquery',
-      'jQuery': 'jquery'
-    })
-  ],
+  entry: './app/app.jsx',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -28,7 +7,8 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-      applicationStyles: 'app/styles/app.scss'
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -43,11 +23,36 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
+  }
+};
+// please don't change this! inform first in the group!
+module.exports = {
+  entry: './app/app.jsx',
+  output: {
+    path: __dirname,
+    filename: './public/bundle.js'
   },
-  sassLoader: {
-    includePaths: [
-      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+  resolve: {
+    root: __dirname,
+    alias: {
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx',
+      ListM: 'app/components/ListM.jsx',
+      About: 'app/components/About.jsx'
+    },
+    extensions: ['', '.js', '.jsx', '.scss']
+  },
+  module: {
+    loaders: [
+      {
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/
+      },
+      { test: /\.scss$/, loader: 'style-loader!css-loader'},
     ]
-  },
-  devtool: 'cheap-module-eval-source-map'
+  }
 };
