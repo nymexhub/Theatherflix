@@ -1,3 +1,9 @@
+
+
+
+
+
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
@@ -9,12 +15,12 @@ import './app.scss';
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-    <Route path="about" component={About}/>
+    <Route path="About" component={About}/>
           <IndexRoute component={MovieList}/>
-    </Route>
-  </Router>,
+    </Route>,
+  </Router>
   document.getElementById('app')
 );
 
 // redux 
-require('./redux-list.jsx');
+//require('./redux-list.jsx');

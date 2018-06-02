@@ -85,8 +85,9 @@ var GreeterMessage = React.createClass({
 
 /* var firstName = 'Andrew'; */
 
-ReactDOM.render(
-/*   <Greeter name={firstName}/>, */
 
-  document.getElementById('app')
-);
+ReactDOM.render(<Greeter />, 
+  <div>
+    document.getElementById('app')
+    </div>
+  );

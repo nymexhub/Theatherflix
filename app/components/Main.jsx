@@ -8,7 +8,7 @@ var Main = React.createClass({
     return (
       <div>
         <Nav/>
-        <p>Beta</p>
+        <p>Theatherflix Beta</p>
         <MovieList/>
       </div>
     );

@@ -3,27 +3,39 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './public/app.jsx'
+    app: './app/app.jsx'
   },
-  mode: "development",
+  mode: "production",
   output: {
     filename: './bundle.js',
     path: path.resolve(__dirname, 'public')
-  },
+  }
+}  
 
   module: {
-    rules: [{
-      test: /\.js$/, // include .js files
-      enforce: "pre", // preload the jshint loader
-      exclude: /node_modules/, // exclude any and all files in the node_modules folder
-      use: [{
+      rules: [{
         loader: 'babel-loader',
         options: {
           camelcase: true,
           emitErrors: false,
           failOnHint: false
+        },
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+
+        resolve: {
+          root: __dirname,
+          alias: {
+            Main: 'app/components/Main.jsx',
+            Nav: 'app/components/Nav.jsx',
+            ListM: 'app/components/ListM.jsx',
+            About: 'app/components/About.jsx'
+          },
         }
       }]
-    }]
-  },
-}
+  
+  }
