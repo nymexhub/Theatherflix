@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+// I get an error from this part with webpack 
+/* 
 var GreeterMessage = React.createClass({
     render: function () {
       var name = this.props.name;
@@ -14,8 +16,8 @@ var GreeterMessage = React.createClass({
       );
     }
 });
-
-var GreeterForm = React.createClass({
+ */
+/* var GreeterForm = React.createClass({
   onFormSubmit: function (e) {
     e.preventDefault();
 
@@ -51,8 +53,8 @@ var GreeterForm = React.createClass({
     );
   }
 });
-
-var Greeter = React.createClass({
+ */
+/* var Greeter = React.createClass({
   getDefaultProps: function () {
     return {
       name: 'React',
@@ -79,11 +81,12 @@ var Greeter = React.createClass({
       </div>
     );
   }
-});
+}); */
 
-var firstName = 'Andrew';
+/* var firstName = 'Andrew'; */
 
 ReactDOM.render(
-  <Greeter name={firstName}/>,
+/*   <Greeter name={firstName}/>, */
+
   document.getElementById('app')
 );

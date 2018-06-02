@@ -8,6 +8,7 @@ var Main = React.createClass({
     return (
       <div>
         <Nav/>
+        <p>Beta</p>
         <MovieList/>
       </div>
     );
