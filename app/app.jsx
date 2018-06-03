@@ -1,9 +1,5 @@
 
 
-
-
-
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
@@ -18,7 +14,7 @@ ReactDOM.render(
     <Route path="About" component={About}/>
           <IndexRoute component={MovieList}/>
     </Route>,
-  </Router>
+  </Router>,
   document.getElementById('app')
 );
 
