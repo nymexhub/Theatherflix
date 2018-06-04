@@ -26,6 +26,7 @@ module.exports = {
     ]
   }
 };
+
 // please don't change this! inform first in the group!
 module.exports = {
   entry: './app/app.jsx',
