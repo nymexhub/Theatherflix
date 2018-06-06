@@ -12,7 +12,6 @@ module.exports = {
     },
     extensions: ['', '.js', '.jsx']
   },
-  mode: 'production',
   module: {
     loaders: [
       {
@@ -26,7 +25,6 @@ module.exports = {
     ]
   }
 };
-
 // please don't change this! inform first in the group!
 module.exports = {
   entry: './app/app.jsx',
