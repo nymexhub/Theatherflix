@@ -1,57 +1,39 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './app/app.jsx',
+  mode: 'development', 
+  entry: '././app/app.jsx',
   output: {
-    path: __dirname,
-    filename: './bundle.js'
+    path: path.resolve(__dirname, '././public'),
+    filename: 'bundle.js'
   },
-  resolve: {
-    root: __dirname,
-    alias: {
-      Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx'
-    },
-    extensions: ['', '.js', '.jsx']
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: '././app',
+    hot: true
   },
   module: {
-    loaders: [
+    rules: [
       {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0']
-        },
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react']
+          }
+        }
       }
     ]
-  }
-};
-// please don't change this! inform first in the group!
-module.exports = {
-  entry: './app/app.jsx',
-  output: {
-    path: __dirname,
-    filename: './bundle.js'
   },
-  resolve: {
-    root: __dirname,
-    alias: {
-      Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
-      ListM: 'app/components/ListM.jsx',
-      About: 'app/components/About.jsx'
-    },
-    extensions: ['', '.js', '.jsx']
-  },
-  module: {
-    loaders: [
-      {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0']
-        },
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
-      }
-    ]
-  }
-};
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "././public/index.html"
+    }),
+    new CleanWebpackPlugin(['././public']),
+    new webpack.HotModuleReplacementPlugin()
+  ]
+}
