@@ -17,14 +17,13 @@
 Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing 747-
 
 #
-##IRC
+#IRC
 
-Join us in the IRC server: /server irc.freenode.net - channel: /j #nodeiolabs 
-
+   Join us in the IRC server: /server irc.freenode.net - channel: /j #nodeiolabs 
+    
+    -(admin nickname: SoulBlue [Felipe, Founder of the project])
+    -
 #
--(admin nickname: SoulBlue [Felipe, Founder of the project])
--
-
 
 ## What's this? Where are we going?
 
