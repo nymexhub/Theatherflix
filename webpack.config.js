@@ -1,21 +1,34 @@
-const path = require('path');
+var webpack = require('webpack');
+var path = require('path');
 
+// var chokidar = require('chokidar');
+// I tried to use chokidar ... no use.
+
+// One-liner for current directory, ignores .dotfiles
+// chokidar.watch('.', {ignored: /(^|[\/\\])\../}).on('all', (event, module) => {
+//  console.log(event, mode);
+
+// I'm having troubles and nightmares with webpack 
+// v2.1
+//
 module.exports = {
+  mode: 'production',
   entry: {
-    app: 'app/app.jsx.js'
+    app: './app/app.jsx'
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
-  },
+    path: path.resolve(__dirname, './public')
+  }, 
 
   module: {
+
     rules: [{
-      test: /\.js$/, // include .js files
-      enforce: "pre", // preload the jshint loader
+      test: /\.jsx?$/, // include .js files
+ 
       exclude: /node_modules/, // exclude any and all files in the node_modules folder
       use: [{
-        loader: "jshint-loader",
+        loader: "babel-loader",
         options: {
           camelcase: true,
           emitErrors: false,
@@ -24,4 +37,7 @@ module.exports = {
       }]
     }]
   },
-};
+}
+
+
+// });

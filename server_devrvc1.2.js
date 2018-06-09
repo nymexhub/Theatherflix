@@ -5,7 +5,7 @@
 
 
 // Thatherflix is an Open Source Project
-// Founded by Felipe Alfonso Gonzalez - Soft. Engr. - felipe.dev.engr.js@gmail.com
+// Founded by Felipe Alfonso Gonzalez - Soft. Engr. - 
 // C2018 - Present
 
 const express = require('express');
