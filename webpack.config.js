@@ -1,32 +1,27 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
-  mode: 'development',
-  entry: '././app/app.jsx',
+  entry: {
+    app: 'app/app.jsx.js'
+  },
   output: {
-    path: path.resolve(__dirname, '././public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: '././app',
-    hot: true
-  },
+
   module: {
     rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader',
+      test: /\.js$/, // include .js files
+      enforce: "pre", // preload the jshint loader
+      exclude: /node_modules/, // exclude any and all files in the node_modules folder
+      use: [{
+        loader: "jshint-loader",
         options: {
-          cacheDirectory: true,
-          presets: ['react', 'es2015']
+          camelcase: true,
+          emitErrors: false,
+          failOnHint: false
         }
-      }
+      }]
     }]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
-}
+};
