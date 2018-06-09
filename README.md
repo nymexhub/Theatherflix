@@ -13,11 +13,11 @@
 #
 
 
-
-
-  
 |Version:
 Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing 747-
+
+#
+IRC
 |
 Join us in the IRC server: /server irc.debian.org - channel_: /j #nodeiolabs
 |
