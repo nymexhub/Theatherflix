@@ -28,11 +28,9 @@ module.exports = {
  
       exclude: /node_modules/, // exclude any and all files in the node_modules folder
       use: [{
-        loader: "babel-loader",
-        options: {
-          camelcase: true,
-          emitErrors: false,
-          failOnHint: false
+        loader: 'babel-loader',
+        query: {
+            presets: ['es2015']
         }
       }]
     }]

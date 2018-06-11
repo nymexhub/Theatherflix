@@ -1,18 +1,35 @@
+// please inform by email any big changes please. 
 
-import React from 'react';
-import ReactDom from 'react-dom';
 
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory, Main, About, MovieList} = require('react-router');
+var Main = require('Main');
+
 var Main = require('Main');
 var MovieList = require('./components/MovieList/MovieList');
 var About = require('./components/About/About');
 import './app.scss';
 
 
+// import the main Component
 
+// import Greeter from './components/Greeter.jsx'
 
+// var to make a welcome ... from me
+// Pass data to the components if necessary
 
-ReactDOM.render(
+// the renderer
+/*  ReactDOM.render(
+   <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+ 
+     </Route>,
+  </Router>,
+   document.getElementById('app')
+ ); */
+
+ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
     <Route path="about" component={About}/>
@@ -22,5 +39,13 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-// redux 
-// require('./redux-list.jsx');
+  
+
+// import Greeter from './components/greeter
+ //var to make a welcome ... from me
+// Pass data to the components if necessary
+// const title = 'Felipe the Founder welcomes you!'
+// const message = 'Our first Component'
+
+// // the renderer
+ // ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app'))
