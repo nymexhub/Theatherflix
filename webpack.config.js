@@ -20,22 +20,19 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './public')
   }, 
-
   module: {
-
-    rules: [{
-      test: /\.jsx?$/, // include .js files
- 
-      exclude: /node_modules/, // exclude any and all files in the node_modules folder
-      use: [{
-        loader: 'babel-loader',
-        query: {
-            presets: ['es2015']
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
-      }]
-    }]
-  },
-}
+      }
+    ]
+  }
 
-
-// });
+};

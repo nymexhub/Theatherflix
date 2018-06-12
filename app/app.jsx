@@ -1,15 +1,17 @@
-// please inform by email any big changes please. 
+// 
 
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory, Main, About, MovieList} = require('react-router');
 var Main = require('Main');
+// import {Route, Router, IndexRoute, hashHistory, Main, About, MovieList} from 'react-router-dom';
+// import Uploader from './containers/Uploader';
 
-var Main = require('Main');
-var MovieList = require('./components/MovieList/MovieList');
-var About = require('./components/About/About');
-import './app.scss';
+var Main = require('./Main.jsx');
+var MovieList = require('./MovieList.jsx');
+var About = require('./components/About/About.jsx');
+// import './app.scss';
 
 
 // import the main Component
@@ -19,15 +21,7 @@ import './app.scss';
 // var to make a welcome ... from me
 // Pass data to the components if necessary
 
-// the renderer
-/*  ReactDOM.render(
-   <Router history={hashHistory}>
-    <Route path="/" component={Main}>
- 
-     </Route>,
-  </Router>,
-   document.getElementById('app')
- ); */
+
 
  ReactDOM.render(
   <Router history={hashHistory}>
@@ -39,7 +33,9 @@ import './app.scss';
   document.getElementById('app')
 );
 
-  
+
+
+
 
 // import Greeter from './components/greeter
  //var to make a welcome ... from me
