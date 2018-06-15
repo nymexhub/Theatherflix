@@ -2,7 +2,7 @@
 
 <p align="center"><a href="https://github.com/NodeioLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41447749-bbfa6630-704e-11e8-87d4-f56d3a27b1bb.png" alt="logo"></a></p>
 
-*logo created by Dee-y | https://github/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
+*logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
  [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
@@ -183,7 +183,7 @@ _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project
 | ------------------ |:------------------- |:--------------
 | Felipe     | https://github.com/felipealfonsog | (Founder - f.alfonso@res-ear.ch)
 | Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
-| Dee-y      | https://github/dee-y  | (Graphic Designer - Contrib)
+| Dee-y      | https://github.com/dee-y  | (Graphic Designer - Contrib)
 | Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
 | Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
 | Bhagvat Lande         | https://github.com/BMLande    | (Collaborator)
