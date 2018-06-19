@@ -13,6 +13,9 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 //   document.getElementById('app')
 // );
 
+
+
+
 var CHANGE_NAME = document.getElementById('app_video')
 function renderer(state, dispatch) {
   ReactDOM.render(
@@ -20,14 +23,16 @@ function renderer(state, dispatch) {
     CHANGE_NAME
     
 
-    
   )
 
 }
 
+
+
+
 // trying to get fixed a bunch of lines. 
 // require('./redux-ex.jsx');
- require('./redux-todo-ex.jsx');
+// require('./redux-todo-ex.jsx');
 
 
 
