@@ -1,6 +1,3 @@
-
-
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
@@ -26,8 +23,9 @@ function renderer(state, dispatch) {
 
 }
 
-require('./redux-ex.jsx');
-// require('./redux-movies.jsx');
+// trying to get fixed a bunch of lines. 
+// require('./redux-ex.jsx');
+ require('./redux-todo-ex.jsx');
 
 
 
@@ -64,5 +62,3 @@ require('./redux-ex.jsx');
  
  
 // );
-
- 

@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #a9adac;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.nav h1 {
+  font-size: 2rem;
+  color: #e8183e;
+  align-content: left;
+}

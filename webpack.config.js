@@ -1,19 +1,23 @@
+const path = require('path');
+
 module.exports = {
+  // mode: "production", // enable many optimizations for production builds
+   mode: "development", // enabled useful tools for development
+  // mode: "none",
+  
   entry: './app/app.jsx',
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
   resolve: {
-    root: __dirname,
-    alias: {
-      Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx'
-    },
-    extensions: ['', '.js', '.jsx']
+alias: {
+  Main : path.resolve(__dirname, './app/components/Main'),
+  Nav: path.resolve(__dirname, './app/components/Nav'),
+    extensions: [".js", ".jsx"]
   },
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         query: {
@@ -24,26 +28,26 @@ module.exports = {
       }
     ]
   }
+}
 };
 // please don't change this! inform first in the group!
 module.exports = {
   entry: './app/app.jsx',
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
   resolve: {
-    root: __dirname,
-    alias: {
-      Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
-      ListM: 'app/components/ListM.jsx',
-      About: 'app/components/About.jsx'
-    },
-    extensions: ['', '.js', '.jsx']
+alias: {
+  Main : path.resolve(__dirname, './app/components/Main'),
+  Nav: path.resolve(__dirname, './app/components/Nav'),
+  ListM: path.resolve(__dirname, './app/components/ListM'),
+  About: path.resolve(__dirname, './app/components/About')
+},
+    extensions: [".js", ".jsx"]
   },
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         query: {
