@@ -19,6 +19,8 @@ function renderer(state, dispatch) {
     <Application state={state} dispatch={dispatch} />,
     CHANGE_NAME
     
+
+    
   )
 
 }
