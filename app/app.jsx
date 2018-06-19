@@ -1,47 +1,64 @@
-// 
-
-
 var React = require('react');
 var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory, Main, About, MovieList} = require('react-router');
-var Main = require('Main');
-// import {Route, Router, IndexRoute, hashHistory, Main, About, MovieList} from 'react-router-dom';
-// import Uploader from './containers/Uploader';
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-var Main = require('./Main.jsx');
-var MovieList = require('./MovieList.jsx');
-var About = require('./components/About/About.jsx');
-// import './app.scss';
+// Load foundation
+// $(document).foundation();
 
+//   App css
+// require('style!css!sass!applicationStyles')
 
-// import the main Component
+// ReactDOM.render(
+//   <p>Boilerplate 3 Project</p>,
+//   document.getElementById('app')
+// );
 
-// import Greeter from './components/Greeter.jsx'
+var CHANGE_NAME = document.getElementById('app_video')
+function renderer(state, dispatch) {
+  ReactDOM.render(
+    <Application state={state} dispatch={dispatch} />,
+    CHANGE_NAME
+    
+  )
 
-// var to make a welcome ... from me
-// Pass data to the components if necessary
+}
 
-
-
- ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-    <Route path="about" component={About}/>
-          <IndexRoute component={MovieList}/>
-    </Route>
-  </Router>,
-  document.getElementById('app')
-);
+// trying to get fixed a bunch of lines. 
+// require('./redux-ex.jsx');
+ require('./redux-todo-ex.jsx');
 
 
 
+// var React = require('react');
+// var ReactDOM = require('react-dom');
+// var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+
+// import {AppBar, Grid, Row, TextField, RaisedButton} from 'material-ui';
+
+// Load foundation
+// $(document).foundation();
+
+// App css
+// require('style!css!sass!applicationStyles')
+
+// ReactDOM.render(
+//   <p>Boilerplate 3 Project</p>,
+//   document.getElementById('app')
+// );
 
 
-// import Greeter from './components/greeter
- //var to make a welcome ... from me
-// Pass data to the components if necessary
-// const title = 'Felipe the Founder welcomes you!'
-// const message = 'Our first Component'
-
-// // the renderer
- // ReactDOM.render(<Greeter title={title} message={message} />, document.getElementById('app'))
+// ReactDOM.render(
+ 
+ 
+    
+       
+//           <div>
+//             <div title='Movie Browser' />
+    
+     
+//                 <AppBar movies={movies} isLoading={isLoading} />
+        
+//           </div>
+ 
+ 
+// );

@@ -4,7 +4,7 @@
 
  // attempt to addapt the site to redux. Left posponed. By Founder.
  
-import redux from ('redux');
+ import redux from ('redux');
 
 console.log('Starting redux example');
 

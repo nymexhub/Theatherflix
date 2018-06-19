@@ -1,38 +1,61 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path');
 
-// var chokidar = require('chokidar');
-// I tried to use chokidar ... no use.
-
-// One-liner for current directory, ignores .dotfiles
-// chokidar.watch('.', {ignored: /(^|[\/\\])\../}).on('all', (event, module) => {
-//  console.log(event, mode);
-
-// I'm having troubles and nightmares with webpack 
-// v2.1
-//
 module.exports = {
-  mode: 'production',
-  entry: {
-    app: './app/app.jsx'
-  },
+  // mode: "production", // enable many optimizations for production builds
+   mode: "development", // enabled useful tools for development
+  // mode: "none",
+  
+  entry: './app/app.jsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './public')
-  }, 
+    path: path.resolve(__dirname, 'public')
+  },
+  resolve: {
+alias: {
+  Main : path.resolve(__dirname, './app/components/Main'),
+  Nav: path.resolve(__dirname, './app/components/Nav'),
+    extensions: [".js", ".jsx"]
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/
       }
     ]
   }
-
+}
+};
+// please don't change this! inform first in the group!
+module.exports = {
+  entry: './app/app.jsx',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
+  },
+  resolve: {
+alias: {
+  Main : path.resolve(__dirname, './app/components/Main'),
+  Nav: path.resolve(__dirname, './app/components/Nav'),
+  ListM: path.resolve(__dirname, './app/components/ListM'),
+  About: path.resolve(__dirname, './app/components/About')
+},
+    extensions: [".js", ".jsx"]
+  },
+  module: {
+    rules: [
+      {
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/
+      }
+    ]
+  }
 };
