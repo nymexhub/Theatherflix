@@ -8,9 +8,9 @@ var Nav = React.createClass({
       <section className="nav">
         <div>
           | <Link to="/">Home Movie List</Link>
-          | <Link to="/About">About</Link>
-          | <Link to="/Upload">Upload videos</Link>
-          | <Link to="/Editing">Editing data</Link>
+          | <Link to="/about">About</Link>
+          | <Link to="/upload">Upload videos</Link>
+          | <Link to="/editing">Editing data</Link>
           |
           <br />
         </div>

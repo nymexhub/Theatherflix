@@ -6,13 +6,16 @@ var {
   IndexRoute,
   Main,
   About,
+  Upload,
+  Editing,
   MovieList,
   hashHistory
 } = require("react-router");
 var Main = require("./components/Main.jsx");
 var MovieList = require("./components/MovieList/MovieList.jsx");
 var About = require("./components/About/About.jsx");
- 
+var About = require("./components/Upload/Upload.jsx");
+var About = require("./components/Editing/Editing.jsx");
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -20,6 +23,16 @@ ReactDOM.render(
       <Route path="about" component={About} />
       <IndexRoute component={MovieList} />
     </Route>
+
+    <Route path="about" component={About} />
+    
+
+    <Route path="upload" component={Upload} />
+   
+
+    <Route path="editing" component={Editing} />
+ 
+
   </Router>,
   document.getElementById("app")
 );

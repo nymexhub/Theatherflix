@@ -100,12 +100,16 @@ var _require = __webpack_require__(158),
     IndexRoute = _require.IndexRoute,
     Main = _require.Main,
     About = _require.About,
+    Upload = _require.Upload,
+    Editing = _require.Editing,
     MovieList = _require.MovieList,
     hashHistory = _require.hashHistory;
 
 var Main = __webpack_require__(221);
 var MovieList = __webpack_require__(223);
 var About = __webpack_require__(224);
+var About = __webpack_require__(225);
+var About = __webpack_require__(226);
 
 ReactDOM.render(React.createElement(
   Router,
@@ -115,7 +119,10 @@ ReactDOM.render(React.createElement(
     { path: "/", component: Main },
     React.createElement(Route, { path: "about", component: About }),
     React.createElement(IndexRoute, { component: MovieList })
-  )
+  ),
+  React.createElement(Route, { path: "about", component: About }),
+  React.createElement(Route, { path: "upload", component: Upload }),
+  React.createElement(Route, { path: "editing", component: Editing })
 ), document.getElementById("app"));
 
 // redux // postponed by founder.
@@ -25401,7 +25408,8 @@ var React = __webpack_require__(1);
 var Nav = __webpack_require__(222);
 var MovieList = __webpack_require__(223);
 var About = __webpack_require__(224);
-
+var About = __webpack_require__(225);
+var About = __webpack_require__(225);
 // In this file I figure out how to show a movie.
 
 var Main = React.createClass({
@@ -25452,19 +25460,19 @@ var Nav = React.createClass({
         "| ",
         React.createElement(
           Link,
-          { to: "/About" },
+          { to: "/about" },
           "About"
         ),
         "| ",
         React.createElement(
           Link,
-          { to: "/Upload" },
+          { to: "/upload" },
           "Upload videos"
         ),
         "| ",
         React.createElement(
           Link,
-          { to: "/Editing" },
+          { to: "/editing" },
           "Editing data"
         ),
         "|",
@@ -25604,6 +25612,44 @@ var About = React.createClass({
 });
 
 module.exports = About;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(1);
+
+var Upload = React.createClass({
+  displayName: "Upload",
+
+  render: function render() {
+    return React.createElement("div", { className: "container" });
+  }
+});
+
+module.exports = Upload;
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(1);
+
+var Editing = React.createClass({
+  displayName: "Editing",
+
+  render: function render() {
+    return React.createElement("div", { className: "container" });
+  }
+});
+
+module.exports = Editing;
 
 /***/ })
 /******/ ]);
