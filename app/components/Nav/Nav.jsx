@@ -1,6 +1,6 @@
 var React = require('react');
 var {Link} = require('react-router');
-import './Nav.scss';
+//import './Nav.scss';
 
 
 var Nav = React.createClass({
