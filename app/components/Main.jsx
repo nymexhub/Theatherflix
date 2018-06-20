@@ -1,6 +1,6 @@
 var React = require('react');
-var Nav = require('./Nav/Nav');
-var MovieList = require('./MovieList/MovieList');
+var Nav = require('./Nav/Nav.jsx');
+var MovieList = require('./MovieList/MovieList.jsx');
 // In this file I figure out how to show a movie. 
 
 var Main = React.createClass({
