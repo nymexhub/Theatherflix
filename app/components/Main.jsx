@@ -10,7 +10,7 @@ var Main = React.createClass({
     return (
       <div>
         <Nav />
-        <p>Theatherflix</p>
+        <br />
         <MovieList />
       </div>
     );

@@ -7,8 +7,12 @@ var Nav = React.createClass({
     return (
       <section className="nav">
         <div>
-          <h2>Welcome to Theatherflix</h2> | <Link to="/">Home Movie List</Link>
+          | <Link to="/">Home Movie List</Link>
           | <Link to="/About">About</Link>
+          | <Link to="/Upload">Upload videos</Link>
+          | <Link to="/Editing">Editing data</Link>
+          |
+          <br />
         </div>
       </section>
       // <div >

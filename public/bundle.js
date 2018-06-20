@@ -25412,11 +25412,7 @@ var Main = React.createClass({
       "div",
       null,
       React.createElement(Nav, null),
-      React.createElement(
-        "p",
-        null,
-        "Theatherflix"
-      ),
+      React.createElement("br", null),
       React.createElement(MovieList, null)
     );
   }
@@ -25447,12 +25443,7 @@ var Nav = React.createClass({
       React.createElement(
         "div",
         null,
-        React.createElement(
-          "h2",
-          null,
-          "Welcome to Theatherflix"
-        ),
-        " | ",
+        "| ",
         React.createElement(
           Link,
           { to: "/" },
@@ -25463,7 +25454,21 @@ var Nav = React.createClass({
           Link,
           { to: "/About" },
           "About"
-        )
+        ),
+        "| ",
+        React.createElement(
+          Link,
+          { to: "/Upload" },
+          "Upload videos"
+        ),
+        "| ",
+        React.createElement(
+          Link,
+          { to: "/Editing" },
+          "Editing data"
+        ),
+        "|",
+        React.createElement("br", null)
       )
     )
     // <div >
