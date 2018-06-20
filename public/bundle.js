@@ -117,13 +117,12 @@ ReactDOM.render(React.createElement(
   React.createElement(
     Route,
     { path: "/", component: Main },
-    React.createElement(Route, { path: "about", component: About }),
-    React.createElement(Route, { path: "about", component: About }),
-    React.createElement(Route, { path: "upload", component: Upload }),
-    React.createElement(Route, { path: "editing", component: Editing }),
     React.createElement(IndexRoute, { component: MovieList }),
+    React.createElement(Route, { path: "about", component: About }),
     React.createElement(IndexRoute, { component: About }),
+    React.createElement(Route, { path: "upload", component: Upload }),
     React.createElement(IndexRoute, { component: Upload }),
+    React.createElement(Route, { path: "editing", component: Editing }),
     React.createElement(IndexRoute, { component: Editing })
   )
 ), document.getElementById("app"));

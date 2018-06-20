@@ -20,17 +20,12 @@ var About = require("./components/Editing/Editing.jsx");
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="about" component={About} />
-
-      <Route path="about" component={About} />
-
-      <Route path="upload" component={Upload} />
-
-      <Route path="editing" component={Editing} />
-
       <IndexRoute component={MovieList} />
+      <Route path="about" component={About} />
       <IndexRoute component={About} />
+      <Route path="upload" component={Upload} />
       <IndexRoute component={Upload} />
+      <Route path="editing" component={Editing} />
       <IndexRoute component={Editing} />
     </Route>
   </Router>,
