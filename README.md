@@ -1,6 +1,6 @@
 # Theatherflix Open Source Project 
 
-<p align="center"><a href="https://github.com/NodeioLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41447749-bbfa6630-704e-11e8-87d4-f56d3a27b1bb.png" alt="logo"></a></p>
+<p align="center"><a href="https://github.com/NodeioLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
 *logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
