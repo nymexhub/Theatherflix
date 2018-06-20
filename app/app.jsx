@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var {Route, Router, IndexRoute, Main, About, MovieList, hashHistory} = require('react-router');
 var Main = require('./components/Main.jsx');
 var MovieList = require('./components/MovieList/MovieList.jsx');
 var About = require('./components/About/About.jsx');
@@ -16,5 +16,5 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-// redux 
-require('./redux-list.jsx');
+// redux // postponed by founder.
+// require('./redux-list.jsx');
