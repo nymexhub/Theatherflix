@@ -25506,13 +25506,52 @@ module.exports = MovieList;
 var React = __webpack_require__(1);
 
 var About = React.createClass({
-   displayName: "About",
+   displayName: 'About',
 
    render: function render() {
       return React.createElement(
-         "div",
-         { className: "container" },
-         React.createElement("iframe", { width: "150", height: "250", src: "https://www.youtube.com/embed/hO7mzO83N1Q", frameborder: "0", allow: "autoplay; encrypted-media", allowfullscreen: true })
+         'div',
+         { className: 'container' },
+         React.createElement(
+            'a',
+            { href: '/sleepers' },
+            React.createElement('img', { src: './movies-imgs/sleepers.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/jobs' },
+            React.createElement('img', { src: './movies-imgs/jobs.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/claireinmotion' },
+            React.createElement('img', { src: './movies-imgs/claireinmotion.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/looper' },
+            React.createElement('img', { src: './movies-imgs/looper.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/wofw2005' },
+            React.createElement('img', { src: './movies-imgs/wofw2005.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/silence' },
+            React.createElement('img', { src: './movies-imgs/silence.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/interestelar' },
+            React.createElement('img', { src: './movies-imgs/interestelar.jpg', border: '0', width: '120px', height: '178px' })
+         ),
+         React.createElement(
+            'a',
+            { href: '/americanhistoryx' },
+            React.createElement('img', { src: './movies-imgs/americanhx.jpg', border: '0', width: '120px', height: '178px' })
+         )
       );
    }
 
