@@ -15,9 +15,7 @@ var Nav = React.createClass({
           <br />
         </div>
       </section>
-      // <div >
-      // <h2>Welcome to Theatherflix</h2> | <Link to="/">Home</Link> | <Link to="/about">About</Link>
-      // </div>
+     
     );
   }
 });

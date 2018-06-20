@@ -21,18 +21,18 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="about" component={About} />
+
+      <Route path="about" component={About} />
+
+      <Route path="upload" component={Upload} />
+
+      <Route path="editing" component={Editing} />
+
       <IndexRoute component={MovieList} />
+      <IndexRoute component={About} />
+      <IndexRoute component={Upload} />
+      <IndexRoute component={Editing} />
     </Route>
-
-    <Route path="about" component={About} />
-    
-
-    <Route path="upload" component={Upload} />
-   
-
-    <Route path="editing" component={Editing} />
- 
-
   </Router>,
   document.getElementById("app")
 );

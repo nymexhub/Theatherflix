@@ -118,11 +118,14 @@ ReactDOM.render(React.createElement(
     Route,
     { path: "/", component: Main },
     React.createElement(Route, { path: "about", component: About }),
-    React.createElement(IndexRoute, { component: MovieList })
-  ),
-  React.createElement(Route, { path: "about", component: About }),
-  React.createElement(Route, { path: "upload", component: Upload }),
-  React.createElement(Route, { path: "editing", component: Editing })
+    React.createElement(Route, { path: "about", component: About }),
+    React.createElement(Route, { path: "upload", component: Upload }),
+    React.createElement(Route, { path: "editing", component: Editing }),
+    React.createElement(IndexRoute, { component: MovieList }),
+    React.createElement(IndexRoute, { component: About }),
+    React.createElement(IndexRoute, { component: Upload }),
+    React.createElement(IndexRoute, { component: Editing })
+  )
 ), document.getElementById("app"));
 
 // redux // postponed by founder.
@@ -25478,11 +25481,7 @@ var Nav = React.createClass({
         "|",
         React.createElement("br", null)
       )
-    )
-    // <div >
-    // <h2>Welcome to Theatherflix</h2> | <Link to="/">Home</Link> | <Link to="/about">About</Link>
-    // </div>
-    ;
+    );
   }
 });
 
@@ -25497,6 +25496,9 @@ module.exports = Nav;
 
 var React = __webpack_require__(1);
 
+var _require = __webpack_require__(158),
+    Link = _require.Link;
+
 var MovieList = React.createClass({
   displayName: "MovieList",
 
@@ -25505,8 +25507,8 @@ var MovieList = React.createClass({
       "div",
       { className: "container" },
       React.createElement(
-        "a",
-        { href: "/sleepers" },
+        "link",
+        { to: "/sleepers" },
         React.createElement("img", {
           src: "./movies-imgs/sleepers.jpg",
           border: "0",
@@ -25515,8 +25517,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/jobs" },
+        "link",
+        { to: "/jobs" },
         React.createElement("img", {
           src: "./movies-imgs/jobs.jpg",
           border: "0",
@@ -25525,8 +25527,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/claireinmotion" },
+        "link",
+        { to: "/claireinmotion" },
         React.createElement("img", {
           src: "./movies-imgs/claireinmotion.jpg",
           border: "0",
@@ -25535,8 +25537,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/looper" },
+        "link",
+        { to: "/looper" },
         React.createElement("img", {
           src: "./movies-imgs/looper.jpg",
           border: "0",
@@ -25545,8 +25547,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/wofw2005" },
+        "link",
+        { to: "/wofw2005" },
         React.createElement("img", {
           src: "./movies-imgs/wofw2005.jpg",
           border: "0",
@@ -25555,8 +25557,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/silence" },
+        "link",
+        { to: "/silence" },
         React.createElement("img", {
           src: "./movies-imgs/silence.jpg",
           border: "0",
@@ -25565,8 +25567,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/interestelar" },
+        "link",
+        { to: "/interestelar" },
         React.createElement("img", {
           src: "./movies-imgs/interestelar.jpg",
           border: "0",
@@ -25575,8 +25577,8 @@ var MovieList = React.createClass({
         })
       ),
       React.createElement(
-        "a",
-        { href: "/americanhistoryx" },
+        "link",
+        { to: "/americanhistoryx" },
         React.createElement("img", {
           src: "./movies-imgs/americanhx.jpg",
           border: "0",
@@ -25603,9 +25605,9 @@ var About = React.createClass({
   displayName: "About",
 
   render: function render() {
-    return React.createElement(
-      "div",
-      { className: "container" },
+    React.createElement(
+      "section",
+      { className: "nav" },
       "About"
     );
   }
@@ -25626,7 +25628,11 @@ var Upload = React.createClass({
   displayName: "Upload",
 
   render: function render() {
-    return React.createElement("div", { className: "container" });
+    return React.createElement(
+      "div",
+      { className: "nav" },
+      "Upload"
+    );
   }
 });
 
@@ -25645,7 +25651,11 @@ var Editing = React.createClass({
   displayName: "Editing",
 
   render: function render() {
-    return React.createElement("div", { className: "container" });
+    return React.createElement(
+      "div",
+      { className: "nav" },
+      "Editing"
+    );
   }
 });
 

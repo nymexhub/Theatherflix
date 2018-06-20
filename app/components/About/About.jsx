@@ -2,7 +2,9 @@ var React = require("react");
 
 var About = React.createClass({
   render: function() {
-    return <div className="container">About</div>;
+    <section className="nav">
+    About
+      </section>
   }
 });
 
