@@ -25409,7 +25409,7 @@ var MovieList = __webpack_require__(223);
 var About = __webpack_require__(224);
 var About = __webpack_require__(225);
 var About = __webpack_require__(225);
-// In this file I figure out how to show a movie.
+//
 
 var Main = React.createClass({
   displayName: "Main",
