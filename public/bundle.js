@@ -25407,9 +25407,10 @@ var React = __webpack_require__(1);
 var Nav = __webpack_require__(222);
 var MovieList = __webpack_require__(223);
 var About = __webpack_require__(224);
-var About = __webpack_require__(225);
-var About = __webpack_require__(225);
+var Upload = __webpack_require__(225);
+var Editing = __webpack_require__(226);
 //
+
 
 var Main = React.createClass({
   displayName: "Main",
