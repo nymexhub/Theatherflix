@@ -1,3 +1,6 @@
+
+
+
 var React = require("react");
 var ReactDOM = require("react-dom");
 var {
@@ -33,4 +36,4 @@ ReactDOM.render(
 );
 
 // redux // postponed by founder.
-// require('./redux-list.jsx');
+//require('./redux-list.jsx');
