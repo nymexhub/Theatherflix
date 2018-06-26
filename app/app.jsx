@@ -36,4 +36,4 @@ ReactDOM.render(
 );
 
 // redux // postponed by founder.
-//require('./redux-list.jsx');
+// require('./redux-list.jsx');

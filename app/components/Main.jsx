@@ -10,7 +10,7 @@ var Editing = require("./Editing/Editing.jsx");
 var Main = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="nav">
         <Nav />
         <br />
         <MovieList />
