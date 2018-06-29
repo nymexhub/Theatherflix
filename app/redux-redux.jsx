@@ -2,7 +2,9 @@ var redux = require('redux');
 
 console.log('Starting redux example');
 
-var reducer = (state = {name: 'Anonymous'}, action) => {
+var reducer = (state = {
+  name: 'Anonymous'
+}, action) => {
   // state = state || {name: 'Anonymous'};
 
   switch (action.type) {
@@ -23,7 +25,7 @@ var store = redux.createStore(reducer, redux.compose(
 var unsubscribe = store.subscribe(() => {
   var state = store.getState();
 
-  console.log('Name is', state.name);
+  // console.log('Name is', state.name);
   document.getElementById('app').innerHTML = state.name;
 });
 // unsubscribe();
@@ -40,3 +42,20 @@ store.dispatch({
   type: 'CHANGE_NAME',
   name: 'Movies Category #2'
 });
+
+store.getState().movies.map(({ type, name}) => {
+  insertShopDOM(movieElem, type, name)
+  return null;
+})
+
+
+function insertMovieDOM(movieElem, type, name) {
+  movieElem.innerHTML += `
+  <div data-type=${type} class="box item">
+ 
+      <div class="meta">
+         <h2>${name}</h2> 
+ 
+      </div>
+  </div>`
+}
