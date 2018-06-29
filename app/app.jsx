@@ -20,14 +20,12 @@ var About = require("./components/About/About.jsx");
 var About = require("./components/Upload/Upload.jsx");
 var About = require("./components/Editing/Editing.jsx");
 
+
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="about" component={About} />
-
-      <Route path="upload" component={Upload} />
-
-      <Route path="editing" component={Editing} />
+    
 
       <IndexRoute component={MovieList} />
     </Route>
@@ -35,5 +33,11 @@ ReactDOM.render(
   document.getElementById("app")
 );
 
-// redux // postponed by founder.
+
+
+
+// redux 
 // require('./redux-list.jsx');
+require('./redux-redux.jsx');
+
+

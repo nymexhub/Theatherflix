@@ -8,7 +8,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
   switch (action.type) {
     case 'CHANGE_NAME':
       return {
-        ...state,
+        // ...state,
         name: action.name
       };
     default:
@@ -33,10 +33,10 @@ console.log('currentState', currentState);
 
 store.dispatch({
   type: 'CHANGE_NAME',
-  name: 'Andrew'
+  name: 'Movies Category #1'
 });
 
 store.dispatch({
   type: 'CHANGE_NAME',
-  name: 'Emily'
+  name: 'Movies Category #2'
 });
