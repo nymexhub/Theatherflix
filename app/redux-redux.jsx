@@ -1,6 +1,6 @@
 var redux = require('redux');
 
-console.log('Starting redux example');
+console.log('Starting redux');
 
 var reducer = (state = {
   name: 'Anonymous'
