@@ -1,7 +1,8 @@
 /***********************
  * Module dependencies *
  ***********************/
-import axios from ('axios');
+//import axios from ('axios');
+var axios = require('axios');
 
 export var changeName = (name) => {
   return {

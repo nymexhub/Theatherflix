@@ -4,11 +4,12 @@
 // import redux from ('redux');
 // export default MovieListComponent;
 var redux = require('redux');
+var axios = require('axios');
 
-console.log('Starting redux');
+console.log('This is redux');
 
-var actions = require('./actions/index');
-var store = require('./store/configureStore').configure();
+var actions = require('./actions/index.jsx');
+var store = require('./store/configureStore.jsx').configure();
 
 // Subscribe to changes
 var unsubscribe = store.subscribe(() => {
@@ -35,10 +36,18 @@ var unsubscribe = store.subscribe(() => {
     }
     
   } else if (state.map.url) {
-    document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+   //  document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+    document.getElementById('welcome').innerHTML = '<hr>'; 
+    
+
+    
   }
 });
 // unsubscribe();
+
+
+
+
 
 var currentState = store.getState();
 console.log('currentState', currentState);
