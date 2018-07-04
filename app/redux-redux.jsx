@@ -34,11 +34,13 @@ var currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch({
+  id: 1,
   type: 'CHANGE_NAME',
   name: 'Movies Category #1'
 });
 
 store.dispatch({
+  id: 2,
   type: 'CHANGE_NAME',
   name: 'Movies Category #2'
 });
@@ -67,4 +69,7 @@ function renderer(state, dispatch) {
     CHANGE_NAME
   )
 }
+
+let element = document.getElementById(id);
+element.dispatchEvent(new Event("change"));
 
