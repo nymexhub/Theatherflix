@@ -38,6 +38,6 @@ ReactDOM.render(
 
 // redux 
 // require('./redux-list.jsx');
-require('./redux-redux.jsx');
+require('./redux-movies.jsx');
 
 
