@@ -43,19 +43,28 @@ store.dispatch({
   name: 'Movies Category #2'
 });
 
-store.getState().movies.map(({ type, name}) => {
-  insertShopDOM(movieElem, type, name)
-  return null;
-})
+// store.getState().movies.map(({ type, name}) => {
+//   insertMovieDOM(movieElem, type, name)
+//   return null;
+// })
 
 
-function insertMovieDOM(movieElem, type, name) {
-  movieElem.innerHTML += `
-  <div data-type=${type} class="box item">
+// function insertMovieDOM(movieElem, type, name) {
+//   movieElem.innerHTML += `
+//   <div data-type=${type} class="box item">
  
-      <div class="meta">
-         <h2>${name}</h2> 
+//       <div class="meta">
+//          <h2>${name}</h2> 
  
-      </div>
-  </div>`
+//       </div>
+//   </div>`
+// }
+
+var CHANGE_NAME = document.getElementById('app')
+function renderer(state, dispatch) {
+  ReactDOM.render(
+    <Application state={state} dispatch={dispatch} />,
+    CHANGE_NAME
+  )
 }
+
