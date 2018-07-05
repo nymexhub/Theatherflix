@@ -1,13 +1,11 @@
-//Leave off underscores for imports
-
 @import "base/variables";
 
-//foundation
+// foundation
 @import "base/foundation-settings";
 @import "foundation";
 @include foundation-everything;
 
-//Components
-@import "components/page-title";
+// Components
 @import "components/container";
+@import "components/page-title";
 @import "components/todo";
