@@ -23,9 +23,10 @@
     "path": "^0.12.7",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^5.0.7",
     "react-router": "^2.0.0",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0",
+    "redux-thunk": "^2.3.0",
     "ts-loader": "^4.4.1",
     "uuid": "^3.2.1",
     "webpack-dev-server": "^3.1.4"
