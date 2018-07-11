@@ -44,6 +44,26 @@ store.dispatch({
   type: 'CHANGE_NAME',
   name: 'Movies Category #2'
 });
+store.dispatch({
+  id: 3,
+  type: 'CHANGE_NAME',
+  name: 'Movies Category #3'
+});
+store.dispatch({
+  id: 4,
+  type: 'CHANGE_NAME',
+  name: 'Movies Category #4'
+});
+store.dispatch({
+  id: 5,
+  type: 'CHANGE_NAME',
+  name: 'Movies Category #5'
+});
+store.dispatch({
+  id: 6,
+  type: 'CHANGE_NAME',
+  name: 'Movies Category #6'
+});
 
 // store.getState().movies.map(({ type, name}) => {
 //   insertMovieDOM(movieElem, type, name)
@@ -62,14 +82,14 @@ store.dispatch({
 //   </div>`
 // }
 
-// var CHANGE_NAME = document.getElementById('app')
-// function renderer(state, dispatch) {
-//   ReactDOM.render(
-//     <Application state={state} dispatch={dispatch} />,
-//     CHANGE_NAME
-//   )
-// }
+var CHANGE_NAME = document.getElementById('app')
+function renderer(state, dispatch) {
+  ReactDOM.render(
+    <Application state={state} dispatch={dispatch} />,
+    CHANGE_NAME
+  )
+}
 
-// let element = document.getElementById(id);
-// element.dispatchEvent(new Event("change"));
+let element = document.getElementById(id);
+element.dispatchEvent(new Event("change"));
 
