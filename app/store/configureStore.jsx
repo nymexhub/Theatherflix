@@ -1,5 +1,5 @@
 var redux = require('redux');
-var {searchTextReducer, showCompletedReducer, todosReducer} = require('reducers');
+var {searchTextReducer, showCompletedReducer, todosReducer} = require('../reducers/index.jsx');
 
 export var configure = (initialState = {}) => {
   var reducer = redux.combineReducers({
@@ -14,3 +14,4 @@ export var configure = (initialState = {}) => {
 
   return store;
 };
+
