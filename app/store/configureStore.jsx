@@ -1,23 +1,16 @@
 var redux = require('redux');
-var thunk = require('redux-thunk').default;
-var {nameReducer, hobbiesReducer, moviesReducer, mapReducer} = require('./../reducers/index.jsx');
+var {searchTextReducer, showCompletedReducer, todosReducer} = require('reducers');
 
-export var configure = () => {
+export var configure = (initialState = {}) => {
   var reducer = redux.combineReducers({
-    name: nameReducer,
-    hobbies: hobbiesReducer,
-    movies: moviesReducer,
-    map: mapReducer
+    searchText: searchTextReducer,
+    showCompleted: showCompletedReducer,
+    todos: todosReducer
   });
 
-  // var store = redux.createStore(reducer, redux.compose(
-  //   redux.applyMiddleware(thunk),
-  //   window.devToolsExtension ? window.devToolsExtension() : f => f
-  // ));
-      var store = redux.createStore(reducer, redux.compose(
-        redux.applyMiddleware(thunk),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
-    ));
+  var store = redux.createStore(reducer, initialState, redux.compose(
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  ));
 
   return store;
-}
+};

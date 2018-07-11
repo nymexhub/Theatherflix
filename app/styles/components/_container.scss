@@ -1,4 +1,4 @@
-.container {
+.container{
   background: $light-grey;
   border: 1px solid $light-grey-border;
   border-radius: 5px;
@@ -6,28 +6,28 @@
   margin-bottom: 2rem;
 }
 
-.container__header {
+.container__header{
   border-bottom: 1px solid $light-grey-border;
   padding: 1rem;
 
-  label {
+  label{
     cursor: pointer;
     font-size: 1rem;
   }
 
-  > :last-child {
+  > :last-child{
     align-items: center;
     display: flex;
   }
 }
 
-.container__message {
+.container__footer{
+  border-top: 1px solid $light-grey-border;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.container__message{
   color: $light-color;
   margin: 2rem auto;
   text-align: center;
-}
-
-.container__footer {
-  border-top: 1px solid $light-grey-border;
-  padding: 1rem 1rem 0 1rem;
 }

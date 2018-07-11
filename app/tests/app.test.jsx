@@ -1,3 +1,5 @@
+//Tests that test framework is working (testception)
+
 var expect = require('expect');
 
 describe('App', () => {

@@ -1,52 +1,36 @@
 
-// var React = require('react');
-// var ReactDOM = require('react-dom');
-// // var {Provider} = require('react-redux');
-// var redux = require('redux');
-
-// var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-
-// // var TodoApp = require('TodoApp');
-// // var actions = require('actions');
-// // var store = require('configureStore').configure();
-// // var TodoAPI = require('TodoAPI');
-
-// store.subscribe(() => {
-// 	var state = store.getState();
-// 	console.log('New state', state);
-// 	TodoAPI.setTodos(state.todos);
-// });
-
-// var initialTodos = TodoAPI.getTodos();
-// store.dispatch(actions.addTodos(initialTodos));
-
-// //Load foundation
-// $(document).foundation();
-
-// //App.scss
-// // require('style!css!sass!applicationStyles');
-
-// ReactDOM.render(
-// 	<Provider store={store}>
-// 		<TodoApp />
-// 	</Provider>,
-// 	document.getElementById('app')
-// );
-
-
-
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-//import { Provider } from 'redux';
-import { Router, routes, browserHistory } from 'react-router';
-//import routes from './routes';
-import configureStore from './store/configureStore.jsx';
+import ReactDom from 'react-dom';
 
-const store = configureStore();
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+// var Main = require('Main/Main.jsx');
+// var MovieList = require('./components/MovieList/MovieList.jsx');
+// var About = require('./components/About/About.jsx');
+// import './app.scss';
+
+
+
+
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={browserHistory} routes={routes} />
-  </Provider>
-, document.getElementById('app'));
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+    <Route path="about" component={About}/>
+          <IndexRoute component={MovieList}/>
+    </Route>
+  </Router>,
+  document.getElementById('app')
+);
+
+// redux 
+//  require('./redux-redux.jsx');
+//  + /* eslint-disable no-underscore-dangle */
+//  const store = createStore(
+//   reducer, /* preloadedState, */
+//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//  );
+/* eslint-enable */
+
+// require('./redux-ex.jsx');
+
+require('./redux-redux.jsx');

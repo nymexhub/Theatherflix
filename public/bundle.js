@@ -116,31 +116,19 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _reactRouter = __webpack_require__(/*! react-router */ \"./node_modules/react-router/lib/index.js\");\n\nvar _configureStore = __webpack_require__(/*! ./store/configureStore.jsx */ \"./app/store/configureStore.jsx\");\n\nvar _configureStore2 = _interopRequireDefault(_configureStore);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//import { Provider } from 'redux';\n\n// var React = require('react');\n// var ReactDOM = require('react-dom');\n// // var {Provider} = require('react-redux');\n// var redux = require('redux');\n\n// var {Route, Router, IndexRoute, hashHistory} = require('react-router');\n\n// // var TodoApp = require('TodoApp');\n// // var actions = require('actions');\n// // var store = require('configureStore').configure();\n// // var TodoAPI = require('TodoAPI');\n\n// store.subscribe(() => {\n// \tvar state = store.getState();\n// \tconsole.log('New state', state);\n// \tTodoAPI.setTodos(state.todos);\n// });\n\n// var initialTodos = TodoAPI.getTodos();\n// store.dispatch(actions.addTodos(initialTodos));\n\n// //Load foundation\n// $(document).foundation();\n\n// //App.scss\n// // require('style!css!sass!applicationStyles');\n\n// ReactDOM.render(\n// \t<Provider store={store}>\n// \t\t<TodoApp />\n// \t</Provider>,\n// \tdocument.getElementById('app')\n// );\n\n\nvar store = (0, _configureStore2.default)();\n//import routes from './routes';\n\n\n_reactDom2.default.render(_react2.default.createElement(\n  Provider,\n  { store: store },\n  _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory, routes: _reactRouter.routes })\n), document.getElementById('app'));\n\n//# sourceURL=webpack:///./app/app.jsx?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _require = __webpack_require__(/*! react-router */ \"./node_modules/react-router/lib/index.js\"),\n    Route = _require.Route,\n    Router = _require.Router,\n    IndexRoute = _require.IndexRoute,\n    hashHistory = _require.hashHistory;\n// var Main = require('Main/Main.jsx');\n// var MovieList = require('./components/MovieList/MovieList.jsx');\n// var About = require('./components/About/About.jsx');\n// import './app.scss';\n\n\nReactDOM.render(_react2.default.createElement(\n  Router,\n  { history: hashHistory },\n  _react2.default.createElement(\n    Route,\n    { path: '/', component: Main },\n    _react2.default.createElement(Route, { path: 'about', component: About }),\n    _react2.default.createElement(IndexRoute, { component: MovieList })\n  )\n), document.getElementById('app'));\n\n// redux \n//  require('./redux-redux.jsx');\n//  + /* eslint-disable no-underscore-dangle */\n//  const store = createStore(\n//   reducer, /* preloadedState, */\n//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()\n//  );\n/* eslint-enable */\n\n// require('./redux-ex.jsx');\n\n__webpack_require__(/*! ./redux-redux.jsx */ \"./app/redux-redux.jsx\");\n\n//# sourceURL=webpack:///./app/app.jsx?");
 
 /***/ }),
 
-/***/ "./app/reducers/index.jsx":
-/*!********************************!*\
-  !*** ./app/reducers/index.jsx ***!
-  \********************************/
+/***/ "./app/redux-redux.jsx":
+/*!*****************************!*\
+  !*** ./app/redux-redux.jsx ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }\n\nvar nameReducer = exports.nameReducer = function nameReducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Anonymous';\n  var action = arguments[1];\n\n  switch (action.type) {\n    case 'CHANGE_NAME':\n      return action.name;\n    default:\n      return state;\n  };\n};\n\nvar nextHobbyId = 1;\nvar hobbiesReducer = exports.hobbiesReducer = function hobbiesReducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n  var action = arguments[1];\n\n  switch (action.type) {\n    case 'ADD_HOBBY':\n      return [].concat(_toConsumableArray(state), [{\n        id: nextHobbyId++,\n        hobby: action.hobby\n      }]);\n    case 'REMOVE_HOBBY':\n      return state.filter(function (hobby) {\n        return hobby.id !== action.id;\n      });\n    default:\n      return state;\n  }\n};\n\nvar nextMovieId = 1;\nvar moviesReducer = exports.moviesReducer = function moviesReducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n  var action = arguments[1];\n\n  switch (action.type) {\n    case 'ADD_MOVIE':\n      return [].concat(_toConsumableArray(state), [{\n        id: nextMovieId++,\n        title: action.title,\n        genre: action.genre\n      }]);\n    case 'REMOVE_MOVIE':\n      return state.filter(function (movie) {\n        return movie.id !== action.id;\n      });\n    default:\n      return state;\n  }\n};\n\nvar mapReducer = exports.mapReducer = function mapReducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { isFetching: false, url: undefined };\n  var action = arguments[1];\n\n  switch (action.type) {\n    case 'START_LOCATION_FETCH':\n      return {\n        isFetching: true,\n        url: undefined\n      };\n    case 'COMPLETE_LOCATION_FETCH':\n      return {\n        isFetching: false,\n        url: action.url\n      };\n    default:\n      return state;\n  }\n};\n\n//# sourceURL=webpack:///./app/reducers/index.jsx?");
-
-/***/ }),
-
-/***/ "./app/store/configureStore.jsx":
-/*!**************************************!*\
-  !*** ./app/store/configureStore.jsx ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar redux = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\nvar thunk = __webpack_require__(/*! redux-thunk */ \"./node_modules/redux-thunk/es/index.js\").default;\n\nvar _require = __webpack_require__(/*! ./../reducers/index.jsx */ \"./app/reducers/index.jsx\"),\n    nameReducer = _require.nameReducer,\n    hobbiesReducer = _require.hobbiesReducer,\n    moviesReducer = _require.moviesReducer,\n    mapReducer = _require.mapReducer;\n\nvar configure = exports.configure = function configure() {\n  var reducer = redux.combineReducers({\n    name: nameReducer,\n    hobbies: hobbiesReducer,\n    movies: moviesReducer,\n    map: mapReducer\n  });\n\n  // var store = redux.createStore(reducer, redux.compose(\n  //   redux.applyMiddleware(thunk),\n  //   window.devToolsExtension ? window.devToolsExtension() : f => f\n  // ));\n  var store = redux.createStore(reducer, redux.compose(redux.applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : function (f) {\n    return f;\n  }));\n\n  return store;\n};\n\n//# sourceURL=webpack:///./app/store/configureStore.jsx?");
+eval("\n\nvar redux = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n\nconsole.log('Starting redux');\n\nvar reducer = function reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {\n    name: 'Anonymous'\n  };\n  var action = arguments[1];\n\n  // state = state || {name: 'Anonymous'};\n\n  switch (action.type) {\n    case 'CHANGE_NAME':\n      return {\n        // ...state,\n        name: action.name\n      };\n    default:\n      return state;\n  }\n};\nvar store = redux.createStore(reducer, redux.compose(window.devToolsExtension ? window.devToolsExtension() : function (f) {\n  return f;\n}));\n\n// Subscribe to changes\nvar unsubscribe = store.subscribe(function () {\n  var state = store.getState();\n\n  // console.log('Name is', state.name);\n  document.getElementById('app').innerHTML = state.name;\n});\n// unsubscribe();\n\nvar currentState = store.getState();\nconsole.log('currentState', currentState);\n\nstore.dispatch({\n  id: 1,\n  type: 'CHANGE_NAME',\n  name: 'Movies Category #1'\n});\n\nstore.dispatch({\n  id: 2,\n  type: 'CHANGE_NAME',\n  name: 'Movies Category #2'\n});\n\n// store.getState().movies.map(({ type, name}) => {\n//   insertMovieDOM(movieElem, type, name)\n//   return null;\n// })\n\n\n// function insertMovieDOM(movieElem, type, name) {\n//   movieElem.innerHTML += `\n//   <div data-type=${type} class=\"box item\">\n\n//       <div class=\"meta\">\n//          <h2>${name}</h2> \n\n//       </div>\n//   </div>`\n// }\n\n// var CHANGE_NAME = document.getElementById('app')\n// function renderer(state, dispatch) {\n//   ReactDOM.render(\n//     <Application state={state} dispatch={dispatch} />,\n//     CHANGE_NAME\n//   )\n// }\n\n// let element = document.getElementById(id);\n// element.dispatchEvent(new Event(\"change\"));\n\n//# sourceURL=webpack:///./app/redux-redux.jsx?");
 
 /***/ }),
 
@@ -2754,18 +2742,6 @@ eval("/**\n * Copyright 2015, Facebook, Inc.\n * All rights reserved.\n *\n * Th
 
 "use strict";
 eval("\n\nmodule.exports = __webpack_require__(/*! ./lib/React */ \"./node_modules/react/lib/React.js\");\n\n\n//# sourceURL=webpack:///./node_modules/react/react.js?");
-
-/***/ }),
-
-/***/ "./node_modules/redux-thunk/es/index.js":
-/*!**********************************************!*\
-  !*** ./node_modules/redux-thunk/es/index.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction createThunkMiddleware(extraArgument) {\n  return function (_ref) {\n    var dispatch = _ref.dispatch,\n        getState = _ref.getState;\n    return function (next) {\n      return function (action) {\n        if (typeof action === 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      };\n    };\n  };\n}\n\nvar thunk = createThunkMiddleware();\nthunk.withExtraArgument = createThunkMiddleware;\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (thunk);\n\n//# sourceURL=webpack:///./node_modules/redux-thunk/es/index.js?");
 
 /***/ }),
 
