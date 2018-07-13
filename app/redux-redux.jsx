@@ -82,14 +82,3 @@ store.dispatch({
 //   </div>`
 // }
 
-var CHANGE_NAME = document.getElementById('app')
-function renderer(state, dispatch) {
-  ReactDOM.render(
-    <Application state={state} dispatch={dispatch} />,
-    CHANGE_NAME
-  )
-}
-
-let element = document.getElementById(id);
-element.dispatchEvent(new Event("change"));
-
