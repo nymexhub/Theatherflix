@@ -1,4 +1,4 @@
-var redux = require('redux');
+const redux = require('redux');
 
 console.log('Starting todo redux example');
 

@@ -8,8 +8,8 @@
 
 console.log('Starting redux example');
 
-var actions = require('./actions/index');
-var store = require('./store/configureStore').configure();
+const actions = require('./actions/index');
+const store = require('./store/configureStore').configure();
 
 // Subscribe to changes
 var unsubscribe = store.subscribe(() => {

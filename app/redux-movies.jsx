@@ -3,17 +3,17 @@
  ***********************/
 // import redux from ('redux');
 // export default MovieListComponent;
-var redux = require('redux');
-var axios = require('axios');
+const redux = require('redux');
+const axios = require('axios');
 
 console.log('This is redux');
 
-var actions = require('./actions/index.jsx');
-var store = require('./store/configureStore.jsx').configure();
+const actions = require('./actions/index.jsx');
+const store = require('./store/configureStore.jsx').configure();
 
 // Subscribe to changes
-var unsubscribe = store.subscribe(() => {
-  var state = store.getState();
+const unsubscribe = store.subscribe(() => {
+  const state = store.getState();
 
   console.log('New state', store.getState());
 

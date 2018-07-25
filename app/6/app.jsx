@@ -1,9 +1,9 @@
 
 
 
-var React = require("react");
-var ReactDOM = require("react-dom");
-var {
+import React from ("react");
+import ReactDOM from ("react-dom");
+const {
   Route,
   Router,
   IndexRoute,
@@ -14,11 +14,11 @@ var {
   MovieList,
   hashHistory
 } = require("react-router");
-var Main = require("./components/Main.jsx");
-var MovieList = require("./components/MovieList/MovieList.jsx");
-var About = require("./components/About/About.jsx");
-var About = require("./components/Upload/Upload.jsx");
-var About = require("./components/Editing/Editing.jsx");
+const Main = require("./components/Main.jsx");
+const MovieList = require("./components/MovieList/MovieList.jsx");
+const About = require("./components/About/About.jsx");
+const About = require("./components/Upload/Upload.jsx");
+const About = require("./components/Editing/Editing.jsx");
 
 
 

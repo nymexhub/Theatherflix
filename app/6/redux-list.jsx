@@ -1,4 +1,4 @@
-var redux = require('redux');
+import redux from ('redux');
 
 // starting up redux 
 console.log('Starting up redux');

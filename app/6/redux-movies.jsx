@@ -3,17 +3,17 @@
  ***********************/
 // import redux from ('redux');
 // export default MovieListComponent;
-var redux = require('redux');
-var axios = require('axios');
+import redux from ('redux');
+import axios from ('axios');
 
 console.log('This is redux');
 
-var actions = require('./actions/index.jsx');
-var store = require('./store/configureStore.jsx').configure();
+const actions = require('./actions/index.jsx');
+const store = require('./store/configureStore.jsx').configure();
 
 // Subscribe to changes
-var unsubscribe = store.subscribe(() => {
-  var state = store.getState();
+let unsubscribe = store.subscribe(() => {
+  let state = store.getState();
 
   console.log('New state', store.getState());
 
@@ -49,7 +49,7 @@ var unsubscribe = store.subscribe(() => {
 
 
 
-var currentState = store.getState();
+let currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch(actions.fetchLocation());

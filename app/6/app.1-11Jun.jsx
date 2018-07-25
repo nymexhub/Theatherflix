@@ -2,10 +2,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
-var MovieList = require('./components/MovieList/MovieList');
-var About = require('./components/About/About');
+const {Route, Router, IndexRoute, hashHistory} = require('react-router');
+const Main = require('Main');
+const MovieList = require('./components/MovieList/MovieList');
+const About = require('./components/About/About');
 import './app.scss';
 
 

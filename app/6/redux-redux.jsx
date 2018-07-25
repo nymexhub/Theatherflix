@@ -1,8 +1,8 @@
-var redux = require('redux');
+import redux from ('redux');
 
 console.log('Starting redux');
 
-var reducer = (state = {
+let reducer = (state = {
   name: 'Anonymous'
 }, action) => {
   // state = state || {name: 'Anonymous'};
@@ -17,20 +17,20 @@ var reducer = (state = {
       return state;
   }
 };
-var store = redux.createStore(reducer, redux.compose(
+let store = redux.createStore(reducer, redux.compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 ));
 
 // Subscribe to changes
-var unsubscribe = store.subscribe(() => {
-  var state = store.getState();
+let unsubscribe = store.subscribe(() => {
+  let state = store.getState();
 
   // console.log('Name is', state.name);
   document.getElementById('app').innerHTML = state.name;
 });
 // unsubscribe();
 
-var currentState = store.getState();
+let currentState = store.getState();
 console.log('currentState', currentState);
 
 store.dispatch({
@@ -62,7 +62,7 @@ store.dispatch({
 //   </div>`
 // }
 
-var CHANGE_NAME = document.getElementById('app')
+let CHANGE_NAME = document.getElementById('app')
 function renderer(state, dispatch) {
   ReactDOM.render(
     <Application state={state} dispatch={dispatch} />,

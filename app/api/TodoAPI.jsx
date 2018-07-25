@@ -1,4 +1,4 @@
-var $ = require('jQuery')
+let $ = require('jQuery')
 
 module.exports = {
   setTodos: function(todos){
@@ -7,8 +7,8 @@ module.exports = {
     }
   },
   getTodos: function(){
-    var stringTodos = localStorage.getItem('todos');
-    var todos = [];
+    let stringTodos = localStorage.getItem('todos');
+    let todos = [];
     try {
       todos = JSON.parse(stringTodos);
     } catch(e) {
@@ -18,7 +18,7 @@ module.exports = {
     return $.isArray(todos) ? todos : [];
   },
   filterTodos: function(todos, showCompleted, searchText){
-    var filteredTodos = todos;
+    let filteredTodos = todos;
 
     filteredTodos = filteredTodos.filter((todo) => {
       return !todo.completed || showCompleted;
@@ -35,7 +35,7 @@ module.exports = {
     });
 
     filteredTodos = filteredTodos.filter((todo) => {
-      var text = todo.text.toLowerCase();
+      let text = todo.text.toLowerCase();
       return (text.indexOf(searchText) != -1);
     });
 

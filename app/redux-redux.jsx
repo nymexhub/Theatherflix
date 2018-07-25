@@ -1,8 +1,8 @@
-var redux = require('redux');
+const redux = require('redux');
 
 console.log('Starting redux');
 
-var reducer = (state = {
+const reducer = (state = {
   name: 'Anonymous'
 }, action) => {
   // state = state || {name: 'Anonymous'};

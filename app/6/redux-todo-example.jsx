@@ -1,13 +1,13 @@
-var redux = require('redux');
+import redux from ('redux');
 
 console.log('Starting todo redux example');
 
-var stateDefault = {
+let stateDefault = {
   searchText: '',
   showCompleted: false,
   todos: []
 };
-var reducer = (state = stateDefault, action) => {
+let reducer = (state = stateDefault, action) => {
   switch (action.type) {
     case 'CHANGE_SEARCH_TEXT':
       return {
@@ -18,13 +18,13 @@ var reducer = (state = stateDefault, action) => {
       return state;
   }
 };
-var store = redux.createStore(reducer, redux.compose(
+let store = redux.createStore(reducer, redux.compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 ));
 
 // Subscribe to changes
 store.subscribe(() => {
-  var state = store.getState();
+  let state = store.getState();
 
   document.getElementById('app').innerHTML = state.searchText;
 });
