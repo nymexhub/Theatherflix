@@ -66,14 +66,14 @@ store.dispatch({
 store.dispatch({
   id: 2,
   type: 'CHANGE_MOVIE',
-  name: 'The minimalist',
-  movie_url: '<iframe width="1778" height="711" src="https://www.youtube.com/embed/0Co1Iptd4p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+  name: 'The Buddha',
+  movie_url: '<iframe width="1778" height="711" src="https://www.youtube.com/embed/9I5RaJh1yPs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 });
 store.dispatch({
   id: 3,
   type: 'CHANGE_MOVIE',
-  name: 'The Buddha',
-  movie_url: '<iframe width="1778" height="711" src="https://www.youtube.com/embed/9I5RaJh1yPs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+  name: 'The minimalist',
+  movie_url: '<iframe width="1778" height="711" src="https://www.youtube.com/embed/0Co1Iptd4p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 });
 
 // store.getState().movies.map(({ type, name}) => {
