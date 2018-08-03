@@ -1,13 +1,13 @@
 # Theatherflix Open Source Project 
 
-<p align="center"><a href="https://github.com/NodeioLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
+<p align="center"><a href="https://github.com/MoodyLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
 *logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
  [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
 
-[![CircleCI](https://circleci.com/gh/NodeioLabs/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/NodeioLabs/Theatherflix/tree/master)
+[![CircleCI](https://circleci.com/gh/MoodyLabs/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/MoodyLabs/Theatherflix/tree/master)
 
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing
 #
 ## IRC
 
-   Join us in the IRC server: /server irc.freenode.net - channel: /j #nodeiolabs 
+   Join us in the IRC server: /server irc.freenode.net - channel: /j #MoodyLabs 
     
     -(admin nickname: SoulBlue [Felipe, Founder of the project])
     -
@@ -60,12 +60,12 @@ If you want to download the whole development files, go to the 'development' bra
 https://github.com/MoodyLabs/Theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. `git clone -b development --single-branch git@github.com:NodeioLabs/Theatherflix.git`
+1. `git clone -b development --single-branch git@github.com:MoodyLabs/Theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/NodeioLabs/Theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/MoodyLabs/Theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
@@ -73,7 +73,7 @@ If you want to download the old version stored, go to the old branch ->
 https://github.com/MoodyLabs/Theatherflix/tree/old_branch
 
 #If you want to clone the old branch follow this:
-1. `git clone -b old_branch --single-branch git@github.com:NodeioLabs/Theatherflix.git`
+1. `git clone -b old_branch --single-branch git@github.com:MoodyLabs/Theatherflix.git`
 2. `cd old_branch` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
@@ -131,7 +131,7 @@ If you want to run the latest code from git, here's how to get started:
 
 1. Clone the code:
 
-        git clone git@github.com:NodeioLabs/theatherflix.git
+        git clone git@github.com:MoodyLabs/theatherflix.git
         cd theatherflix
 
 2. Install the theatherflix dependencies
