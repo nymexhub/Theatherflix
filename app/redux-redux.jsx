@@ -35,17 +35,7 @@ var unsubscribe = store.subscribe(() => {
   // console.log('Name is', state.name);
   //document.getElementById('app').innerHTML = state.id;
 
-  const List = ({ todos, toggleList }) => (
-    <ul>
-      {list.map(state =>
-        <Todo
-          key={state.name}
-          {...todo}
-          onClick={() => toggleList(state.name)}
-        />
-      )}
-    </ul>
-  )
+
 
 
   document.getElementById('app_video').innerHTML = state.name;
