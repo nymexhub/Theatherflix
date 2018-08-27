@@ -2,7 +2,7 @@
 
 <p align="center"><a href="https://github.com/MoodyLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
-*logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
+*Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
  [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
