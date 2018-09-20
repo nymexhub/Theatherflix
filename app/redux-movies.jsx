@@ -1,17 +1,19 @@
 /***********************
  * Module dependencies *
  ***********************/
-import redux from ('redux');
-export default MovieListComponent;
+// import redux from ('redux');
+// export default MovieListComponent;
+const redux = require('redux');
+const axios = require('axios');
 
-console.log('Starting redux');
+console.log('This is redux');
 
-var actions = require('./actions/index');
-var store = require('./store/configureStore').configure();
+const actions = require('./actions/index.jsx');
+const store = require('./store/configureStore.jsx').configure();
 
 // Subscribe to changes
-var unsubscribe = store.subscribe(() => {
-  var state = store.getState();
+const unsubscribe = store.subscribe(() => {
+  const state = store.getState();
 
   console.log('New state', store.getState());
 
@@ -34,10 +36,18 @@ var unsubscribe = store.subscribe(() => {
     }
     
   } else if (state.map.url) {
-    document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+   //  document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+    document.getElementById('welcome').innerHTML = '<hr>'; 
+    
+
+    
   }
 });
 // unsubscribe();
+
+
+
+
 
 var currentState = store.getState();
 console.log('currentState', currentState);

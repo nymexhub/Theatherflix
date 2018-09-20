@@ -1,4 +1,4 @@
-var redux = require('redux');
+import redux from ('redux');
 
 console.log('Starting redux example');
 
@@ -15,18 +15,7 @@ var reducer = (state = {name: 'Anonymous'}, action) => {
       return state;
   }
 };
-var store = redux.createStore(reducer, redux.compose(
-  window.devToolsExtension ? window.devToolsExtension() : f => f
-));
-
-// Subscribe to changes
-var unsubscribe = store.subscribe(() => {
-  var state = store.getState();
-
-  console.log('Name is', state.name);
-  document.getElementById('app').innerHTML = state.name;
-});
-// unsubscribe();
+var store = redux.createStore(reducer);
 
 var currentState = store.getState();
 console.log('currentState', currentState);
@@ -35,8 +24,4 @@ store.dispatch({
   type: 'CHANGE_NAME',
   name: 'Andrew'
 });
-
-store.dispatch({
-  type: 'CHANGE_NAME',
-  name: 'Emily'
-});
+console.log('Name should be andrew', store.getState());
