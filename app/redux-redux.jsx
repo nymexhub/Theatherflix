@@ -1,3 +1,6 @@
+
+
+
 const redux = require('redux');
 
 console.log('Starting redux');
@@ -38,7 +41,7 @@ var unsubscribe = store.subscribe(() => {
 
 
 
-  document.getElementById('app_video').innerHTML = state.name;
+  document.getElementById('app').innerHTML = state.name;
   document.getElementById('app_video').innerHTML = state.movie_url;
 });
 // unsubscribe();
