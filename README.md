@@ -60,7 +60,7 @@ If you want to download the whole development files, go to the 'development' bra
 https://github.com/AardvarkLabs/Theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. `git clone -b development --single-branch git@github.com:MoodyLabs/Theatherflix.git`
+1. `git clone -b development --single-branch git@github.com:AardvarkLabs/Theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
