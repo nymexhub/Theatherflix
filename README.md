@@ -87,7 +87,7 @@ https://github.com/AardvarkLabs/Theatherflix/tree/old_branch
 ### Visit our websites:
 https://aardvarklabs.github.io/Theatherflix/
 
-http://www.aardvarklabs.us (moody labs)
+http://www.aardvark-labs.us (Aardvark Labs)
 
 
 ### Join the conversation about Theatherflix using Slack!
