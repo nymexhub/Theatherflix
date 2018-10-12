@@ -12,7 +12,7 @@ const reducer = (state = {
 
   switch (action.type) {
 
-      case 'CHANGE_MOVIE':
+    case 'CHANGE_MOVIE':
       return {
         // ...state,
         name: action.name,
@@ -23,11 +23,20 @@ const reducer = (state = {
       return state;
   }
 
+  switch (action.type) {
+
+    case 'CHANGE_TITLE':
+      return {
+        name: action.name,
+        movie_title: action.movie_title
+      }
+    // ...state
+
+  }
 
 
 
 
-  
 };
 var store = redux.createStore(reducer, redux.compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
@@ -80,10 +89,10 @@ store.dispatch({
 // function insertMovieDOM(movieElem, type, name) {
 //   movieElem.innerHTML += `
 //   <div data-type=${type} class="box item">
- 
+
 //       <div class="meta">
 //          <h2>${name}</h2> 
- 
+
 //       </div>
 //   </div>`
 // }
