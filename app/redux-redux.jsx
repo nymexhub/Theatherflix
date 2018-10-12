@@ -26,6 +26,8 @@ const reducer = (state = {
 
 
 
+
+  
 };
 var store = redux.createStore(reducer, redux.compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
