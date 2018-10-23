@@ -51,7 +51,12 @@ var unsubscribe = store.subscribe(() => {
 
 
 
+  // inner HTML
 
+
+
+
+  
   document.getElementById('app').innerHTML = state.name;
   document.getElementById('app_video').innerHTML = state.movie_url;
 });
