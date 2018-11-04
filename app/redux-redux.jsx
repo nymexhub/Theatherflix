@@ -61,8 +61,8 @@ var unsubscribe = store.subscribe(() => {
   document.getElementById('app_video').innerHTML = state.movie_url;
 
   // inner html 
-  document.getElementById('app').innerHTML = state.action;
-  
+ // document.getElementById('app').innerHTML = state.action;
+
 });
 // unsubscribe();
 
