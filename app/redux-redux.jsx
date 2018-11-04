@@ -12,7 +12,7 @@ const reducer = (state = {
 
   switch (action.type) {
 
-      case 'CHANGE_MOVIE':
+    case 'CHANGE_MOVIE':
       return {
         // ...state,
         name: action.name,
@@ -21,6 +21,17 @@ const reducer = (state = {
 
     default:
       return state;
+  }
+
+  switch (action.type) {
+
+    case 'CHANGE_TITLE':
+      return {
+        name: action.name,
+        movie_title: action.movie_title
+      }
+    // ...state
+
   }
 
 
@@ -40,9 +51,18 @@ var unsubscribe = store.subscribe(() => {
 
 
 
+  // inner HTML
 
+
+
+
+  
   document.getElementById('app').innerHTML = state.name;
   document.getElementById('app_video').innerHTML = state.movie_url;
+
+  // inner html 
+  document.getElementById('app').innerHTML = state.action;
+  
 });
 // unsubscribe();
 
@@ -78,10 +98,10 @@ store.dispatch({
 // function insertMovieDOM(movieElem, type, name) {
 //   movieElem.innerHTML += `
 //   <div data-type=${type} class="box item">
- 
+
 //       <div class="meta">
 //          <h2>${name}</h2> 
- 
+
 //       </div>
 //   </div>`
 // }
