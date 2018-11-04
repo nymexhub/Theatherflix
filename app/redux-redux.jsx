@@ -56,6 +56,8 @@ var unsubscribe = store.subscribe(() => {
 
 
 
+  // insert more elementbs in the colum in the fulter 
+
   
   document.getElementById('app').innerHTML = state.name;
   document.getElementById('app_video').innerHTML = state.movie_url;
