@@ -15,6 +15,9 @@
 
 // require('./redux-example.jsx');
 
+
+
+
 render() {
     const onClick = () => store.dispatch({ type: 'CHANGE_MOVIE' });
       return (
