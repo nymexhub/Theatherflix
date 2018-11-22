@@ -16,11 +16,16 @@
 // require('./redux-example.jsx');
 
 
+var PrintTemplate = require('react-print');
+var ReactDOM = require('react-dom');
+var React = require('react');
 
+var MyTemplate = React.createClass({
 
 render() {
     const onClick = () => store.dispatch({ type: 'CHANGE_MOVIE' });
       return (
+        <PrintTemplate>
         <div>
           <h1>To-dos</h1>
           <div>
@@ -30,12 +35,21 @@ render() {
               checked={!!this.state.checked}
              onClick={onClick} />
           </div>
+          
           {
             this.state.checked ? (<h2>Done!</h2>) : null
           }
         </div>
+        </PrintTemplate>
       );
     }
+  });
+
+
+
+ReactDOM.render(<MyTemplate/>, document.getElementById('print-mount'));
+
+
 
 require('./redux-redux.jsx');
 
