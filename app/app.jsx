@@ -1,55 +1,26 @@
 
+import React from 'react';
+import ReactDom from 'react-dom';
 
-// import React from ('react');
-// import ReactDOM from ('react-dom');
-
-// var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-
-// Load foundation
-//$(document).foundation();
-
-// App css
-//require('style!css!sass!applicationStyles')
-
-// all into redux now
-
-// require('./redux-example.jsx');
-
-
-var PrintTemplate = require('react-print');
-var ReactDOM = require('react-dom');
-var React = require('react');
-
-var MyTemplate = React.createClass({
-
-render() {
-    const onClick = () => store.dispatch({ type: 'CHANGE_MOVIE' });
-      return (
-        <PrintTemplate>
-        <div>
-          <h1>To-dos</h1>
-          <div>
-            Learn Redux&nbsp;
-            <input
-              type="checkbox"
-              checked={!!this.state.checked}
-             onClick={onClick} />
-          </div>
-          
-          {
-            this.state.checked ? (<h2>Done!</h2>) : null
-          }
-        </div>
-        </PrintTemplate>
-      );
-    }
-  });
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var Main = require('Main');
+var MovieList = require('./components/MovieList/MovieList');
+var About = require('./components/About/About');
+import './app.scss';
 
 
 
-ReactDOM.render(<MyTemplate/>, document.getElementById('print-mount'));
 
 
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+    <Route path="about" component={About}/>
+          <IndexRoute component={MovieList}/>
+    </Route>
+  </Router>,
+  document.getElementById('app')
+);
 
-require('./redux-redux.jsx');
-
+// redux 
+// require('./redux-list.jsx');
