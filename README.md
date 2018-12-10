@@ -24,7 +24,7 @@ Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing
 #
 ## IRC
 
-   Join us in the IRC server: /server irc.freenode.net - channel: /j #MoodyLabs 
+   Join us in the IRC server: /server irc.freenode.net - channel: /j #aardvarklabs 
     
     -(admin nickname: SoulBlue [Felipe, Founder of the project])
 
