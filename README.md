@@ -22,6 +22,12 @@
 Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing 747-
 
 #
+
+## Google Group:
+   Any question just email to:
+   theatherflix-project@googlegroups.com
+   
+   
 ## IRC
 
    Join us in the IRC server: /server irc.freenode.net - channel: /j #aardvarklabs 
