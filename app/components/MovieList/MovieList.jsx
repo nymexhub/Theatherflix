@@ -14,12 +14,14 @@ var MovieList = React.createClass({
           />
         </link>
         <link to="/jobs">
-          <img
+        <a href="jobs">          <img
             src="./movies-imgs/jobs.jpg"
             border="0"
             width="120px"
             height="178px"
           />
+          </a>
+
         </link>
         <link to="/claireinmotion">
           <img
