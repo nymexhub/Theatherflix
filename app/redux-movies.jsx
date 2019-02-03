@@ -4,7 +4,7 @@
 // import redux from ('redux');
 // export default MovieListComponent;
 const redux = require('redux');
-const axios = require('axios');
+ const axios = require('axios');
 
 console.log('This is redux');
 
