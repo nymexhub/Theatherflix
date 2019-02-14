@@ -1,6 +1,6 @@
 # Theatherflix Open Source Project 
 
-<p align="center"><a href="https://github.com/MoodyLabs/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
+<p align="center"><a href="https://github.com/Nodesy/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
 *Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
@@ -73,7 +73,7 @@ https://github.com/Nodesy/Theatherflix/tree/development
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/MoodyLabs/Theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/Nodesy/Theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
@@ -94,8 +94,6 @@ https://github.com/Nodesy/Theatherflix/tree/old_branch
 
 ### Visit our websites:
 https://Nodesy.github.io/Theatherflix/
-
-http://www.aardvark-labs.us (Aardvark Labs)
 
 
 ### Join the conversation about Theatherflix using Slack!
