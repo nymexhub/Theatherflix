@@ -12,7 +12,7 @@
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
       IMPORTANT: 
-      If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. WE must use that first before to make a pull request to the master. 
+      If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. We must use that first before to make a pull request to the master. 
       Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
 #
