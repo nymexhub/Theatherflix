@@ -1,13 +1,13 @@
 # Theatherflix Open Source Project 
 
-<p align="center"><a href="https://github.com/Rethex/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
+<p align="center"><a href="https://github.com/Vollj/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
 *Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
  [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
 #
 
-[![CircleCI](https://circleci.com/gh/Rethex/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/Rethex/Theatherflix/tree/master)
+[![CircleCI](https://circleci.com/gh/Vollj/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/Vollj/Theatherflix/tree/master)
 
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing
    
 ## IRC
 
-   Join us in the IRC server: /server irc.freenode.net - channel: /j #Rethex 
+   Join us in the IRC server: /server irc.freenode.net - channel: /j #Vollj 
     
     -(admin nickname: SoulBlue [Felipe, Founder of the project])
 
@@ -56,7 +56,7 @@ The whole project is split into *FIVE (5)* stages**:
 
 
 
-** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/Rethex/Theatherflix/projects/5)   
+** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/Vollj/Theatherflix/projects/5)   
 
 
 ## Technical stuff*:
@@ -65,23 +65,23 @@ The whole project is split into *FIVE (5)* stages**:
 
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
-https://github.com/Rethex/Theatherflix/tree/development
+https://github.com/Vollj/Theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. `git clone -b development --single-branch git@github.com:Rethex/Theatherflix.git`
+1. `git clone -b development --single-branch git@github.com:Vollj/Theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/Rethex/Theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/Vollj/Theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
 If you want to download the old version stored, go to the old branch ->
-https://github.com/Rethex/Theatherflix/tree/old_branch
+https://github.com/Vollj/Theatherflix/tree/old_branch
 
 #If you want to clone the old branch follow this:
-1. `git clone -b old_branch --single-branch git@github.com:Rethex/Theatherflix.git`
+1. `git clone -b old_branch --single-branch git@github.com:Vollj/Theatherflix.git`
 2. `cd old_branch` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
@@ -93,11 +93,11 @@ https://github.com/Rethex/Theatherflix/tree/old_branch
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
 ### Visit our websites:
-https://Rethex.github.io/Theatherflix/
+https://Vollj.github.io/Theatherflix/
 
 
 ### Join the conversation about Theatherflix using Slack!
-https://Rethex.slack.com/
+https://Vollj.slack.com/
 
 
 ## Github notes for Engineers & Developers
@@ -137,7 +137,7 @@ If you want to run the latest code from git, here's how to get started:
 
 1. Clone the code:
 
-        git clone git@github.com:Rethex/theatherflix.git
+        git clone git@github.com:Vollj/theatherflix.git
         cd theatherflix
 
 2. Install the theatherflix dependencies
@@ -173,7 +173,7 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 ## Important for new contributors: 
 If you wanna be part of this: seriously, coding, documenting; write me out, and also check out the Changelog.md file:
 
-https://github.com/Rethex/Theatherflix/blob/master/CHANGELOG.md
+https://github.com/Vollj/Theatherflix/blob/master/CHANGELOG.md
 
 
 ## Contact and Communications 
