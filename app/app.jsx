@@ -3,7 +3,9 @@
  ***********************/
 
  // attempt to adapt the site to redux. Left postponed. By Founder.
- 
+ // chceking the code in a Samsung tablet 
+// putting hands on it
+
  import redux from ('redux');
 
 console.log('Starting redux example');
