@@ -2,8 +2,9 @@
 // Software Craftsman 
 // f.alfonso.go@gmail.com 
 
-// variable to create a nested component : ->
-/// trying to figure out what's wrong in this project
+// variable to create a nested component : 
+// trying to understand the mess around
+
 
 // studies ..... nothing important 
 var GreeterMessage = React.createClass({
