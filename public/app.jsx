@@ -2,8 +2,8 @@
 // Software Craftsman 
 // f.alfonso.go@gmail.com 
 
-// variable to create a nested component : ->
-// trying to understand th mess aroud here
+// variable to create a nested component : 
+// trying to understand the mess around
 
 
 // studies ..... nothing important 
