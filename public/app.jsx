@@ -3,7 +3,7 @@
 // f.alfonso.go@gmail.com 
 
 // variable to create a nested component : ->
-///
+/// trying to figure out what's wrong in this project
 
 // studies ..... nothing important 
 var GreeterMessage = React.createClass({
