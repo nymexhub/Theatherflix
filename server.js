@@ -19,7 +19,6 @@ const express = require('express');
 // creation of the app using express .
 const app = express();
 
-const app = express();
 
 
 app.set('port', process.env.PORT || 3001)
