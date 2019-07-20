@@ -10,8 +10,8 @@ var Nav = React.createClass({
     return (
       <section className="nav">
         <div>
-          | <Link to="/">Home Movie List</Link>
-          | <Link to="/about">About</Link>
+          | <Link to="/"><a href="/">Home Movie List</a></Link>
+          | <Link to="/about"><a href="/about">About</a></Link>
           | <Link to="/upload">Upload videos</Link>
           | <Link to="/editing">Editing data</Link>
           |
