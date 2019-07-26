@@ -6,12 +6,14 @@ var MovieList = React.createClass({
     return (
       <div className="container">
         <link to="/sleepers">
+        <a href="/sleepers">
           <img
             src="./movies-imgs/sleepers.jpg"
             border="0"
             width="120px"
             height="178px"
           />
+          </a>
         </link>
         <link to="/jobs">
         <a href="jobs">          <img

@@ -15,8 +15,8 @@ var {
 var Main = require("./components/Main.jsx");
 var MovieList = require("./components/MovieList/MovieList.jsx");
 var About = require("./components/About/About.jsx");
-var About = require("./components/Upload/Upload.jsx");
-var About = require("./components/Editing/Editing.jsx");
+var Upload = require("./components/Upload/Upload.jsx");
+var Editing = require("./components/Editing/Editing.jsx");
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -34,3 +34,5 @@ ReactDOM.render(
 // redux
 // require('./redux-list.jsx');
 //require('./redux-movies.jsx');
+
+
