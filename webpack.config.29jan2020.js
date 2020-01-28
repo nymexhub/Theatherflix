@@ -1,7 +1,5 @@
 /*
     ./webpack.config.js
-
-    webpack get good output but there are problems with the output with react
 */
 const path = require('path');
 module.exports = {
