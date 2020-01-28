@@ -21,8 +21,8 @@ var Editing = require("./components/Editing/Editing.jsx");
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <IndexRoute component={MovieList} />
-    </Route>
+      <IndexRoute component={MovieList} />{" "}
+    </Route>{" "}
   </Router>,
   document.getElementById("app")
 );
@@ -34,5 +34,3 @@ ReactDOM.render(
 // redux
 // require('./redux-list.jsx');
 //require('./redux-movies.jsx');
-
-

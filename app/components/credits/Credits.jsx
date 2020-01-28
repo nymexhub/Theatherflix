@@ -2,8 +2,8 @@ var React = require("react");
 
 var About = React.createClass({
   render: function() {
-    <section className="nav">About</section>;
+    <section className="nav">Credits</section>;
   }
 });
 
-module.exports = About;
+module.exports = Credits;
