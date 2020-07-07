@@ -2,7 +2,9 @@
 // Software Craftsman 
 // f.alfonso.go@gmail.com 
 
-// variable to create a nested component : ->
+// variable to create a nested component : 
+// trying to understand the mess around
+
 
 // studies ..... nothing important 
 var GreeterMessage = React.createClass({
@@ -16,6 +18,8 @@ var GreeterMessage = React.createClass({
     );
   }
 });
+
+
 
 var GreeterForm = React.createClass({
  render: function () {
