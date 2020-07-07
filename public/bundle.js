@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _require = __webpack_require__(/*! react-router */ \"./node_modules/react-router/lib/index.js\"),\n    Route = _require.Route,\n    Router = _require.Router,\n    IndexRoute = _require.IndexRoute,\n    Main = _require.Main,\n    About = _require.About,\n    Upload = _require.Upload,\n    Editing = _require.Editing,\n    MovieList = _require.MovieList,\n    hashHistory = _require.hashHistory;\n\nvar Main = __webpack_require__(/*! ./components/Main.jsx */ \"./app/components/Main.jsx\");\nvar MovieList = __webpack_require__(/*! ./components/MovieList/MovieList.jsx */ \"./app/components/MovieList/MovieList.jsx\");\nvar About = __webpack_require__(/*! ./components/About/About.jsx */ \"./app/components/About/About.jsx\");\nvar Upload = __webpack_require__(/*! ./components/Upload/Upload.jsx */ \"./app/components/Upload/Upload.jsx\");\nvar Editing = __webpack_require__(/*! ./components/Editing/Editing.jsx */ \"./app/components/Editing/Editing.jsx\");\n\nReactDOM.render(React.createElement(\n  Router,\n  { history: hashHistory },\n  React.createElement(\n    Route,\n    { path: \"/\", component: Main },\n    React.createElement(IndexRoute, { component: MovieList }),\n    \" \"\n  ),\n  \" \"\n), document.getElementById(\"app\"));\n\n//\n\n//\n\n// redux\n// require('./redux-list.jsx');\n//require('./redux-movies.jsx');\n\n//# sourceURL=webpack:///./app/app.jsx?");
+eval("\n\nvar _themoviedb = __webpack_require__(/*! ../lib/themoviedb.js */ \"./lib/themoviedb.js\");\n\nvar _themoviedb2 = _interopRequireDefault(_themoviedb);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _require = __webpack_require__(/*! react-router */ \"./node_modules/react-router/lib/index.js\"),\n    Route = _require.Route,\n    Router = _require.Router,\n    IndexRoute = _require.IndexRoute,\n    Main = _require.Main,\n    About = _require.About,\n    Upload = _require.Upload,\n    Editing = _require.Editing,\n    MovieList = _require.MovieList,\n    hashHistory = _require.hashHistory;\n\nvar Main = __webpack_require__(/*! ./components/Main.jsx */ \"./app/components/Main.jsx\");\nvar MovieList = __webpack_require__(/*! ./components/MovieList/MovieList.jsx */ \"./app/components/MovieList/MovieList.jsx\");\nvar About = __webpack_require__(/*! ./components/About/About.jsx */ \"./app/components/About/About.jsx\");\nvar About = __webpack_require__(/*! ./components/Upload/Upload.jsx */ \"./app/components/Upload/Upload.jsx\");\nvar About = __webpack_require__(/*! ./components/Editing/Editing.jsx */ \"./app/components/Editing/Editing.jsx\");\n\nReactDOM.global.themoviedb = _themoviedb2.default;\n\nrender(React.createElement(Movies, null), document.getElementById(\"app\"));\n\n//\n\n//\n\n// redux\n// require('./redux-list.jsx');\n//require('./redux-movies.jsx');\n\n//# sourceURL=webpack:///./app/app.jsx?");
 
 /***/ }),
 
@@ -179,6 +179,17 @@ eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/re
 
 "use strict";
 eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar About = React.createClass({\n  displayName: \"About\",\n\n  render: function render() {\n    React.createElement(\n      \"section\",\n      { className: \"nav\" },\n      \"Credits\"\n    );\n  }\n});\n\nmodule.exports = Credits;\n\n//# sourceURL=webpack:///./app/components/credits/Credits.jsx?");
+
+/***/ }),
+
+/***/ "./lib/themoviedb.js":
+/*!***************************!*\
+  !*** ./lib/themoviedb.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: Unexpected token (6:1)\\n\\n\\u001b[0m \\u001b[90m 4 | \\u001b[39m\\n \\u001b[90m 5 | \\u001b[39m\\n\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 6 | \\u001b[39m\\u001b[33m<\\u001b[39m\\u001b[33m!\\u001b[39m\\u001b[33mDOCTYPE\\u001b[39m html\\u001b[33m>\\u001b[39m\\n \\u001b[90m   | \\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\n \\u001b[90m 7 | \\u001b[39m\\u001b[33m<\\u001b[39m\\u001b[33mhtml\\u001b[39m lang\\u001b[33m=\\u001b[39m\\u001b[32m\\\"en\\\"\\u001b[39m\\u001b[33m>\\u001b[39m\\n \\u001b[90m 8 | \\u001b[39m  \\u001b[33m<\\u001b[39m\\u001b[33mhead\\u001b[39m\\u001b[33m>\\u001b[39m\\n \\u001b[90m 9 | \\u001b[39m    \\u001b[33m<\\u001b[39m\\u001b[33mmeta\\u001b[39m charset\\u001b[33m=\\u001b[39m\\u001b[32m\\\"utf-8\\\"\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[0m\\n\");\n\n//# sourceURL=webpack:///./lib/themoviedb.js?");
 
 /***/ }),
 

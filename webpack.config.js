@@ -3,35 +3,37 @@
 
     webpack get good output but there are problems with the output with react
 */
-const path = require('path');
+const path = require("path");
 module.exports = {
-  mode: "development", 
-  entry: './app/app.jsx',
+  mode: "development",
+  entry: "./app/app.jsx",
   output: {
-    path: path.resolve('public'),
-    filename: 'bundle.js'
+    path: path.resolve("public"),
+    filename: "./public/bundle.js",
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.css$/,
-        use: [{
-            loader: "style-loader"
+        use: [
+          {
+            loader: "style-loader",
           },
           {
-            loader: "css-loader"
-          }
-        ]
+            loader: "css-loader",
+          },
+        ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader"
-      }, {
+        use: "babel-loader",
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: "babel-loader"
-      }
-    ]
-  }
-}
-
+        use: "babel-loader",
+      },
+    ],
+  },
+};
