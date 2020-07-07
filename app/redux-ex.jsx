@@ -2,14 +2,14 @@
  * Module dependencies *
  ***********************/
 
- // attempt to adapt the site to redux. Left postponed. By Founder.
+ // attempt to addapt the site to redux. Left posponed. By Founder.
  
  import redux from ('redux');
 
 console.log('Starting redux example');
 
 const actions = require('./actions/index');
-var store = require('./store/configureStore').configure();
+const store = require('./store/configureStore').configure();
 
 // Subscribe to changes
 var unsubscribe = store.subscribe(() => {

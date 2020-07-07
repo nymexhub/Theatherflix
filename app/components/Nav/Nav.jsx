@@ -8,13 +8,12 @@ var { Link } = require("react-router");
 var Nav = React.createClass({
   render: function() {
     return (
-      <section className="Nav">
+      <section className="nav">
         <div>
-          | <Link to="/"><a href="/">Home Movie List</a></Link>
-          | <Link to="/about"><a href="/about">About</a></Link>
+          | <Link to="/">Home Movie List</Link>
+          | <Link to="/about">About</Link>
           | <Link to="/upload">Upload videos</Link>
           | <Link to="/editing">Editing data</Link>
-          | <Link to="/credits">Credits</Link>
           |
           <br />
         </div>
