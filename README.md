@@ -4,7 +4,7 @@
 
 *Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
 
- [It's a project constructed with the foundations of NodeJS + React.JS + Redux - React-native - JavaScript - in the future also Python  for AI & Machine Learning unless we could cover or write it with JS, which is very probable.]
+ [It's a project build with the foundations of NodeJS + React.JS + Redux
 #
 
 [![CircleCI](https://circleci.com/gh/Vollj/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/Vollj/Theatherflix/tree/master)
@@ -40,11 +40,9 @@ Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing
 
 ## What's this? Where are we going?
 
-A visual tool for wiring the Internet of Things, digital movies, stored in your HD. Some sort of app to watch movies like netflix but offline in your TV, or any Desktop PC or in any other device.
+Theatherflix OpenSource Project - A visual tool for wiring digital movies, to sort and list the top latest movie trailers. We are constantly developing and making changes. Do you want to be part? Contact us! hi@vollj.xyz
 
-It's an OpenSource Project[*] to create a platform to watch movies locally with all comfort - online in an app or offline in an app in your TV, or any Desktop PC or in any other device.
-
-It's focused for people with no possibility to get a good Internet Connection and no possibility to get subscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device. 
+It's focused for people with no possibility to get a good Internet Connection and no possibility to get subscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device, to watch trailers of movies.
 
 ## Stages
 
