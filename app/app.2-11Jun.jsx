@@ -1,8 +1,8 @@
 
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+import React from ('react');
+import ReactDOM from ('react-dom');
+const {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 import {AppBar, Grid, Row, TextField, RaisedButton} from 'material-ui';
 
