@@ -1,9 +1,8 @@
 // All by Felipe Alfonso Gonzalez
-// Software Craftsman 
-// f.alfonso.go@gmail.com 
+// Computer Science Engineer 
+// f.alfonsoo@res-ear.ch 
 
 // variable to create a nested component : 
-// trying to understand the mess around
 
 
 // studies ..... nothing important 
