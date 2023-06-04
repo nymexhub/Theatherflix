@@ -1,9 +1,8 @@
 // All by Felipe Alfonso Gonzalez
-// Software Craftsman 
-// f.alfonso.go@gmail.com 
+// Computer Science Engineer 
+// f.alfonsoo@res-ear.ch 
 
 // variable to create a nested component : 
-// trying to understand the mess around
 
 
 // studies ..... nothing important 
@@ -93,12 +92,13 @@ var Greeter = React.createClass({
 
 
 // var props
-var firstname = 'Andrew';
+// testing this part of the project
+var firstname = 'Andy';
 ReactDOM.render(
  // we pass the var through React JSX
- <Greeter name={firstname} message="This is a message"/>,
+ <Greeter name={firstname} message="Message"/>,
  document.getElementById('app')
 );
 
-
+// prob. mentioning. 
 

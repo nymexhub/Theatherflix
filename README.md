@@ -206,5 +206,5 @@ _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
 
-Founded and Started by Felipe Alfonso Gonzalez, f.alfonso@res-ear.ch - CC2018-Present.
+Founded and Started by Computer Science Enginer: Felipe Alfonso Gonzalez / EMail: f.alfonso@res-ear.ch / CC2018-Present.
 
