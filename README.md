@@ -1,4 +1,4 @@
-# Theatherflix Open Source Project 
+# Theatherflix 
 
 <p align="center"><a href="https://github.com/Vollj/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
