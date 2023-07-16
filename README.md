@@ -7,7 +7,15 @@
  [It's a project build with the foundations of NodeJS + React.JS + Redux
 #
 
-[![CircleCI](https://circleci.com/gh/Vollj/Theatherflix/tree/master.svg?style=svg)](https://circleci.com/gh/Vollj/Theatherflix/tree/master)
+![Version 1.0.0](https://img.shields.io/badge/version-v1.0.0-blue)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+
+[![Vim](https://img.shields.io/badge/--019733?logo=vim)](https://www.vim.org/)
+[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+
 
        If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
