@@ -175,7 +175,7 @@ _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project
 | ------------------ |:------------------- |:--------------
 | Felipe     | https://github.com/felipealfonsog | (Founder - f.alfonso@res-ear.ch)
 | Antz      | https://github.com/antzshrek | (Main Collaborator - Management)
-| Dee-y      | https://github.com/dee-y  | (Graphic Designer - Contrib)
+| Dee-y      | https://github.com/dee-y  | (Graphic Designer - Contributor)
 | Gonzalrick   | https://github.com/gonzalrick | (Collaborator)
 | Vikas Singh Rajput    | https://github.com/rajvicky | (Collaborator)
 | Bhagvat Lande         | https://github.com/BMLande    | (Collaborator)
@@ -188,7 +188,7 @@ _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project
 | Naimur Rahman Sourov  | https://github.com/nsourov | (Collaborator)
 | Jpart                 | https://github.com/jpart-r | (Collaborator)
 
-
+If you are not in the list, reach out to Felipe - f.alfonso@res-ear.ch
 
 ## Copyright and license
  
