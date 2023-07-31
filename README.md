@@ -1,8 +1,8 @@
 # Theatherflix 
 
-<p align="center"><a href="https://github.com/Vollj/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
+<p align="center"><a href="https://github.com/NymexData/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
-*Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contrib) (Contributor of the project)
+*Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contributor)
 
  [It's a project build with the foundations of NodeJS + React.JS + Redux
 #
@@ -18,38 +18,15 @@
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
 
 
-       If you like to study these topics, don't hesitate to join it! 
     ---------------------------------------------------------------------------------------------------------------------------------
-      IMPORTANT: 
       If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. We must use that first before to make a pull request to the master. 
       Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
-#
-
-
-
  
-|Version:
-Alpha v2.3.2 (rvc1.0) [Coming soon beta and release-candidate] - Codename -Boing 747-
-
-#
-
-## Google Group:
-   Any question just email to:
-   theatherflix-project@googlegroups.com
-   
-   
-## IRC
-
-   Join us in the IRC server: /server irc.freenode.net - channel: /j #Vollj 
-    
-    -(admin nickname: SoulBlue [Felipe, Founder of the project])
-
-#
 
 ## What's this? Where are we going?
 
-Theatherflix OpenSource Project - A visual tool for wiring digital movies, to sort and list the top latest movie trailers. We are constantly developing and making changes. Do you want to be part? Contact us! hi@vollj.xyz
+Theatherflix OpenSource Project - A visual tool for wiring digital movies, to sort and list the top latest movie trailers. We are constantly developing and making changes.
 
 It's focused for people with no possibility to get a good Internet Connection and no possibility to get subscribed to any other kind of service, it will be a complete platform for free to use and to install it in any server, computer, or any other device, to watch trailers of movies.
 
@@ -63,7 +40,7 @@ The whole project is split into *FIVE (5)* stages**:
 
 
 
-** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/Vollj/Theatherflix/projects/5)   
+** If you wanna know where it's the project now ? in which stage somehow?... [Follow this link!](https://github.com/NymexData/Theatherflix/projects/5)   
 
 
 ## Technical stuff*:
@@ -72,23 +49,23 @@ The whole project is split into *FIVE (5)* stages**:
 
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
-https://github.com/Vollj/Theatherflix/tree/development
+https://github.com/NymexData/Theatherflix/tree/development
 
 #If you want to clone the development branch follow this:
-1. `git clone -b development --single-branch git@github.com:Vollj/Theatherflix.git`
+1. `git clone -b development --single-branch git@github.com:NymexData/Theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js 
 
-[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/Vollj/Theatherflix/projects/5).).-
+[*] If you are going to work inside of the project please inform, and them comment everything and please from now on (12-04-2018) add your email, name and date inside of the code you might add, as part of a comment; and keep working always in the development branch first. (Don't forget to use the 'issues' inside of the Github platform as well as please keep checking the progress of the [project](https://github.com/NymexData/Theatherflix/projects/5).).-
 
 
 ## The first version where all begun. It's in the Old_branch
 If you want to download the old version stored, go to the old branch ->
-https://github.com/Vollj/Theatherflix/tree/old_branch
+https://github.com/NymexData/Theatherflix/tree/old_branch
 
 #If you want to clone the old branch follow this:
-1. `git clone -b old_branch --single-branch git@github.com:Vollj/Theatherflix.git`
+1. `git clone -b old_branch --single-branch git@github.com:NymexData/Theatherflix.git`
 2. `cd old_branch` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
 2. `npm install` (We can use Yarn too)
 3. node (or nodemon) server.js
@@ -100,11 +77,11 @@ https://github.com/Vollj/Theatherflix/tree/old_branch
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
 ### Visit our websites:
-https://Vollj.github.io/Theatherflix/
+https://NymexData.github.io/Theatherflix/
 
 
 ### Join the conversation about Theatherflix using Slack!
-https://Vollj.slack.com/
+https://NymexData.slack.com/
 
 
 ## Github notes for Engineers & Developers
@@ -144,7 +121,7 @@ If you want to run the latest code from git, here's how to get started:
 
 1. Clone the code:
 
-        git clone git@github.com:Vollj/theatherflix.git
+        git clone git@github.com:NymexData/theatherflix.git
         cd theatherflix
 
 2. Install the theatherflix dependencies
