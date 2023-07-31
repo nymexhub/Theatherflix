@@ -1,13 +1,12 @@
 // app.js
-// Aquí se implementará la lógica para obtener las recomendaciones y mostrarlas en el DOM.
 
 const recommendationsList = document.getElementById('recommendations-list');
 
-// Obtener recomendaciones desde el servidor de proxy
+// Fetch recommendations from the proxy server
 fetch('http://localhost:3000/api/recommendations')
   .then(response => response.json())
   .then(data => {
-    // Procesar los datos y mostrar las recomendaciones en el DOM
+    // Process the data and display the recommendations in the DOM
     data.results.forEach(recommendation => {
       const title = recommendation.title || recommendation.name;
       const poster = `https://image.tmdb.org/t/p/w200${recommendation.poster_path}`;
@@ -23,5 +22,5 @@ fetch('http://localhost:3000/api/recommendations')
     });
   })
   .catch(error => {
-    console.error('Error al obtener las recomendaciones:', error);
+    console.error('Error fetching recommendations:', error);
   });

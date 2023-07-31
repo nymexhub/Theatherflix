@@ -3,7 +3,7 @@
     "manifest_version": 2,
     "name": "Theatherflix Extension",
     "version": "1.0",
-    "description": "Extensión para mostrar recomendaciones personalizadas de películas y series.",
+    "description": "Extension to display personalized recommendations for movies and series.",
     "permissions": [
       "http://localhost:3000/api/recommendations/"
     ],
