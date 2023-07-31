@@ -27,7 +27,7 @@ Theatherflix Extension is a browser extension that provides personalized movie a
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
 
-### 🚀 Project Transition: From Movie Trailer Organizer to Personalized Streaming Extension 🎬
+#### 🚀 Project Transition: From Movie Trailer Organizer to Personalized Streaming Extension 🎬
 
 Theatherflix was initially conceived as a visual tool for organizing digital movie trailers, sorting and listing the top latest movie trailers. 🎥 The main objective was to provide a comprehensive platform that catered to individuals with limited internet access or no subscription to streaming services. 🌐 The project aimed to offer a complete, free-to-use platform that could be installed on various servers, computers, or devices to watch movie trailers.
 
@@ -40,6 +40,7 @@ We believe this transition will better serve our users, as it allows for a more 
 Stay tuned for more updates as we continue to work on Theatherflix Extension and improve its functionality to provide the best personalized streaming recommendations for our users. 👀
 
 Thank you for being a part of this exciting journey with us! 🙌 If you have any feedback or suggestions, feel free to contribute or reach out to us. Together, let's make streaming entertainment more enjoyable for everyone. 🎉🍿
+🍿
 🎉🍿
 
 
@@ -72,7 +73,7 @@ https://github.com/NymexData/Theatherflix/tree/development
 3. node (or nodemon) server.js
 
 
-### Join the conversation about Theatherflix using Slack!
+#### Join the conversation about Theatherflix using Slack!
 https://NymexData.slack.com/
 
 
@@ -99,14 +100,14 @@ Before any commit, don't forget this: (or we could lose all the work that other 
 
 `npm -v`
 
-## Quick Start
+#### Quick Start
 
 1. `sudo npm install` (You can also use Yarn)
 2. `node server.js` (recommend install nodemon)
 3. Open <http://localhost:3000>
 
 
-## Developers 
+#### Developers 
 
 If you want to run the latest code from git, here's how to get started:
 
@@ -130,7 +131,7 @@ If you want to run the latest code from git, here's how to get started:
 
         node server.js
 
-## Contributing
+#### Contributing
 
 Before raising a pull-request, please read all carefully
 
@@ -141,12 +142,12 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 | We need more collaborations or people involved in this modest project which I think it could be cool, actualy initially behind Theatherfli there was a different idea, but now,  we have a different idea, I hope this new concepto for the project could work :).
 
-## Contact and Communications 
+#### Contact and Communications 
 
-### **Note:** 
+#### **Note:** 
 _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
-## Authors and contributors from the previous concept of the project.
+#### Authors and contributors from the previous concept of the project.
 
 
 
@@ -169,7 +170,7 @@ _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project
 
 If you are not in the list, reach out to Felipe - f.alfonso@res-ear.ch
 
-## Copyright and license
+#### Copyright and license
  
 Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
 
