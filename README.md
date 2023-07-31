@@ -26,14 +26,31 @@ Theatherflix Extension is a browser extension that provides personalized movie a
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
 
-## Technical stuff*:
+
+### 🚀 Project Transition: From Movie Trailer Organizer to Personalized Streaming Extension 🎬
+
+Theatherflix was initially conceived as a visual tool for organizing digital movie trailers, sorting and listing the top latest movie trailers. 🎥 The main objective was to provide a comprehensive platform that catered to individuals with limited internet access or no subscription to streaming services. 🌐 The project aimed to offer a complete, free-to-use platform that could be installed on various servers, computers, or devices to watch movie trailers.
+
+However, we have recently undergone a transition in our project's focus. 🔄 We are now developing Theatherflix as a browser extension. The new vision for Theatherflix is to create an extension that provides personalized movie and series recommendations, enhancing the user's streaming experience with tailored content suggestions. 📺🍿
+
+By shifting to an extension-based approach, we aim to offer a seamless integration with popular streaming platforms like Netflix. 🎉 Users will be able to receive personalized recommendations directly within their browser while using Netflix, making it easier for them to discover new content they might enjoy.
+
+We believe this transition will better serve our users, as it allows for a more direct and user-friendly interaction with the streaming platforms they are already using. 🤝 We are committed to continuous development and will keep updating the extension to meet the evolving needs and preferences of our users.
+
+Stay tuned for more updates as we continue to work on Theatherflix Extension and improve its functionality to provide the best personalized streaming recommendations for our users. 👀
+
+Thank you for being a part of this exciting journey with us! 🙌 If you have any feedback or suggestions, feel free to contribute or reach out to us. Together, let's make streaming entertainment more enjoyable for everyone. 🎉🍿
+🎉🍿
+
+
+#### Technical stuff*:
 
     ---------------------------------------------------------------------------------------------------------------------------------
       If you are one of the engineers, developers, someone documenting or a tester, don't forget there's a branch called 'development'. We must use that first before to make a pull request to the master. 
       Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
 
-## Development** vs Production (The master branch)
+#### Development** vs Production (The master branch)
 
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
@@ -46,7 +63,7 @@ https://github.com/NymexData/Theatherflix/tree/development
 3. node (or nodemon) server.js 
 
 
-## Clone the project 
+#### Clone the project 
 
 #If you want to clone the old branch follow this:
 1. `git clone -b development --single-branch git@github.com:NymexData/Theatherflix.git`
@@ -59,7 +76,7 @@ https://github.com/NymexData/Theatherflix/tree/development
 https://NymexData.slack.com/
 
 
-## Github notes for Engineers & Developers
+#### Github notes for Engineers & Developers
 Before any commit, don't forget this: (or we could lose all the work that other engineers and developers in the project could have done)
 1. `git pull`
 
@@ -67,12 +84,12 @@ Before any commit, don't forget this: (or we could lose all the work that other 
 3.  your contribution - commits ...
 
 
-## Installation
+#### Installation
 
 1. Make sure you have installed [Node.js](https://nodejs.org/en/download/). Versions 6.0.0 and higher should work. We recommend that you use the most-recent "Active LTS" version of Node.js.
 2. Make sure you have installed `npm` (NB: `npm` is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer).   
 
-### Check that you have node and npm installed
+#### Check that you have node and npm installed
 
 - To check if you have Node.js installed, run this command in your terminal:
 
