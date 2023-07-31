@@ -4,12 +4,14 @@
 
 *Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contributor)
 
- [It's a project build with the foundations of NodeJS + React.JS + Redux
+#
+
+Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
+
 #
 
 ![Version](https://img.shields.io/github/release/NymexData/Theatherflix.svg?style=flat&color=blue)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
-
 
 <!---
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
