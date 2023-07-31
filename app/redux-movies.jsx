@@ -1,90 +1,67 @@
-var redux = require('redux');
+/***********************
+ * Module dependencies *
+ ***********************/
+// import redux from ('redux');
+// export default MovieListComponent;
+import redux from ('redux');
+import axios from ('axios');
 
-// starting up redux 
-console.log('Starting up redux');
+console.log('This is redux');
 
-/* 
-Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
-Thanks a lot!
-Felipe - felipe@nodeio.us  - 13-04-2018
-----------
+const actions = require('./actions/index.jsx');
+const store = require('./store/configureStore.jsx').configure();
 
-*/ 
+// Subscribe to changes
+let unsubscribe = store.subscribe(() => {
+  let state = store.getState();
 
-// °|°°°°°°°°°°°°°°|||||°°°|°°° tryting to gget this project done :P 
+  console.log('New state', store.getState());
 
-var stateDefault = {
-  searchText: '',
-  showCompleted: false, 
-  movies: []
+  if (state.map.isFetching) {
+    document.getElementById('app').innerHTML = 'Loading...';
 
-};
+      const MovieListComponent = ({movies, isLoading}) => {
+        const movieColumns = movies ? movies.map(movie => (
+          <Col style={styles.movieColumn} key={movie.id} xs={12} sm={4} md={3} lg={3}>
+            <MovieCard movie={movie} />
+          </Col>
+      )) : null;
+      
+      return (
+        <Row>
+          {movieColumns}
+          <LoaderComponent isLoading={isLoading} />
+        </Row>
+      );
+    }
+    
+  } else if (state.map.url) {
+   //  document.getElementById('app').innerHTML = '<a href="' + state.map.url + '" target="_blank">View Your Location</a>';
+    document.getElementById('welcome').innerHTML = '<hr>'; 
+    
 
-// all this is for testing purposes before to make a big time change in the code , I mean front end-back end. 
-
-// |°°|°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°||||||| 
-// trying to get this thing done
-
-
-var reducer = (state = stateDefault, action) => {
-        switch (action.type) {
-            case 'CHANGE_SEARCH_TEXT':
-             return {
-                 ...state,
-                 searchText: action.searchText
-             };
-            default:
-            return state;
-        }
-}; 
-
-// var store = redux.createStore(reducer);
-
-// lines in case to work with redux developer tools 
-// not working  2018
-// var store = redux.createStore(reducer, /* preloadedState, */
-//     +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// );
-
-// this way to make it work fine with devtoolsextension is working fine - DDON'T CHANGE IT OR INFORM IT.
-// working fine 
-var store = redux.createStore(reducer, redux.compose(
-    redux.applyMiddleware(),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-));
-
-// subscribe to changes 
-store.subscribe(() => {
-    var state = store.getState();
-
-    document.getElementById('welcome').innerHTML = "Welcome to theatherflix we're moving forward. !"; 
-    document.getElementById('app').innerHTML = state.searchText; 
+    
+  }
 });
+// unsubscribe();
 
 
 
 
-// var currentState = store.getState();
-console.log('currentState', store.getState());
 
-store.dispatch({
-    type: 'CHANGE_SEARCH_TEXT', 
-    searchText: 'm1'
-});
+let currentState = store.getState();
+console.log('currentState', currentState);
 
-store.dispatch({
-    type: 'CHANGE_SEARCH_TEXT', 
-    searchText: 'm2'
-});
+store.dispatch(actions.fetchLocation());
 
-store.dispatch({
-    type: 'CHANGE_SEARCH_TEXT', 
-    searchText: 'm3'
-});
+store.dispatch(actions.changeName('Phil'));
 
-store.dispatch({
-    type: 'CHANGE_SEARCH_TEXT', 
-    searchText: 'm4'
-});
+store.dispatch(actions.addHobby('Running'));
+store.dispatch(actions.addHobby('Walking'));
+store.dispatch(actions.removeHobby(2));
 
-console.log('searchText should be "m1"', store.getState());
+store.dispatch(actions.changeName('Emily'));
+
+store.dispatch(actions.addMovie('Mad Max', 'Action'));
+store.dispatch(actions.addMovie('Start Wars', 'Action'));
+store.dispatch(actions.removeMovie(1));

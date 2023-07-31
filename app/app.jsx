@@ -1,57 +1,53 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
-var ListM = require('ListM');
-var About = require('About');
-
-/* 
-Please if you code in this file please or another,  also add your email & name and date among the comments before and after any code we could write.
-Thanks a lot!
-Felipe - felipe@nodeio.us  - 13-04-2018
-----------
-
-*/ 
-
-
-// °°||||||||||
-
-// I'm having problems with foundation to add the style ...
-
-
-// Load foundation
-// $(document).foundation();
-
-// App css
-// require('style!css!sass!applicationStyles')
-
-
-// **********
 
 
 
 
-// ReactDOM.render(
-//   <Router history={hashHistory}>
-//     <Route path="/" component={Main}>
-//     <Route path="about" component={About}/>
-//           <IndexRoute component={ListM}/>
-//     </Route>
-//   </Router>,
-//   document.getElementById('app')
-// );
+import React from ("react");
+import ReactDOM from ("react-dom");
+const {
+
+  Route,
+  Router,
+  IndexRoute,
+  Main,
+  About,
+  Upload,
+  Editing,
+  MovieList,
+  hashHistory
+} = require("react-router");
+const Main = require("./components/Main.jsx");
+const MovieList = require("./components/MovieList/MovieList.jsx");
+const About = require("./components/About/About.jsx");
+const About = require("./components/Upload/Upload.jsx");
+const About = require("./components/Editing/Editing.jsx");
 
 
 
-// This code and many other code is part of the process that I'm taking to the project of having something cool with redux...
-// kinda creaating in my head while I'm coding here part of its algorithm .... 
 
-// °|°|°|°|°|°|°
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+    
 
-//testing out with redux and thinking in an algorithm 
-// redux - for testing
-require('./redux-list-init.jsx');
+      <IndexRoute component={MovieList} />
+    </Route>
+  </Router>,
+  document.getElementById("app")
+);
 
-// final file with refux.... I will separate everything by logical files
-// require('./redux-movies.jsx');
+
+
+//
+
+
+
+
+//
+
+
+// redux 
+// require('./redux-list.jsx');
+require('./redux-movies.jsx');
+
 
