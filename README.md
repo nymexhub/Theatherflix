@@ -172,7 +172,7 @@ If you are not in the list, reach out to Felipe - f.alfonso@res-ear.ch
 
 #### Copyright and license
  
-Copyright JS Foundation and other contributors, http://js.foundation under [the GPU/GPL](LICENSE).
+Copyright JS Foundation and other contributors, http://js.foundation under the MIT LICENSE.
 
 Founded and Started by Computer Science Enginer: Felipe Alfonso Gonzalez / EMail: f.alfonso@res-ear.ch / CC2018-Present.
 
