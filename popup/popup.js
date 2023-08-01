@@ -1,18 +1,14 @@
-// Add a click event listener to toggle the configuration section
-document.addEventListener('DOMContentLoaded', () => {
-  const configButton = document.getElementById('config-button');
-  const configSection = document.getElementById('config-section');
+// popup.js
 
-  configButton.addEventListener('click', () => {
-    configSection.style.display = configSection.style.display === 'none' ? 'block' : 'none';
+$(document).ready(function() {
+  // Add accordion behavior using jQuery
+  $('.accordion-header').click(function() {
+    $('.accordion-content').slideToggle();
   });
 
   // Add a click event listener to save the API key
-  const saveButton = document.getElementById('save-button');
-  const apiKeyInput = document.getElementById('api-key');
-
-  saveButton.addEventListener('click', () => {
-    const apiKey = apiKeyInput.value;
+  $('#save-button').click(function() {
+    const apiKey = $('#api-key').val();
     if (apiKey) {
       // Save the API key to local storage or wherever you need to store it
       // For simplicity, let's store it in local storage

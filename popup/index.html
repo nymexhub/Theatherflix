@@ -11,16 +11,19 @@
   <div id="recommendations-list">
     <!-- Recommendations will be displayed here -->
   </div>
-  <button id="config-button">Configure API Key</button> <!-- Add a button for configuration -->
-  <div id="config-section" style="display: none;"> <!-- Add a section for configuration (hidden by default) -->
-    <label for="api-key">Enter your TMDb API Key:</label>
-    <input type="text" id="api-key" placeholder="Type your API Key here">
-    <button id="save-button">Save</button>
+  <div class="accordion">
+    <button class="accordion-header">Configure API Key</button>
+    <div class="accordion-content" style="display: none;">
+      <label for="api-key">Enter your TMDb API Key:</label>
+      <input type="text" id="api-key" placeholder="Type your API Key here">
+      <button id="save-button">Save</button>
+    </div>
   </div>
 
-  <!-- Load the external scripts -->
+  <!-- Add link to jQuery -->
   <script src="scripts/jquery-3.6.0.min.js"></script>
-  <script src="scripts/axios.min.js"></script>
+
+  <!-- Load the external api.js file -->
   <script src="scripts/api.js"></script>
   <script src="scripts/popup.js"></script>
 </body>
