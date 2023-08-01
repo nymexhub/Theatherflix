@@ -45,6 +45,18 @@ Thank you for being a part of this exciting journey with us! 🙌 If you have an
 
 #
 
+#### Installation
+
+Exciting news! Our extension will soon be available for Chrome users, providing enhanced functionality and convenience right in their browsers. We are working diligently on making it available to a wider audience. Moreover, we have fantastic plans to develop a Firefox Extension as well, catering to users across different platforms and browsers. Stay tuned for updates as we continue to innovate and expand our extension's capabilities to deliver the best possible experience to our users. Your support and feedback are invaluable in driving us towards a more versatile and accessible extension ecosystem. Together, we are shaping the future of our extension, ensuring it remains at the forefront of technology and usability. Thank you for joining us on this exciting journey!
+
+#### Screenshots
+
+![Screenshot](./images/small_sshots/sshot_top_small.png)
+
+![Screenshot](./images/small_sshots/sshot_bottom_small.png)
+
+#
+
 #### Technical stuff*:
 
     ---------------------------------------------------------------------------------------------------------------------------------
@@ -84,29 +96,6 @@ Before any commit, don't forget this: (or we could lose all the work that other 
 
 2. `git add .` (your contribution.)
 3.  your contribution - commits ...
-
-
-#### Installation
-
-1. Make sure you have installed [Node.js](https://nodejs.org/en/download/). Versions 6.0.0 and higher should work. We recommend that you use the most-recent "Active LTS" version of Node.js.
-2. Make sure you have installed `npm` (NB: `npm` is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer).   
-
-#### Check that you have node and npm installed
-
-- To check if you have Node.js installed, run this command in your terminal:
-
-`node -v`
-
-- To confirm that you have npm installed you can run this command in your terminal:
-
-`npm -v`
-
-#### Quick Start
-
-1. `sudo npm install` (You can also use Yarn)
-2. `node server.js` (recommend install nodemon)
-3. Open <http://localhost:3000>
-
 
 #### Developers 
 
