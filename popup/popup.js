@@ -1,22 +1,28 @@
-// popup/popup.js
-const recommendationsContainer = document.getElementById('recommendations');
+// popup.js
 
-// Function to fetch recommendations from the API using the user's API key
-async function fetchRecommendations(apiKey) {
-  try {
-    // Fetch recommendations data from the API using apiKey
-    // Process the data and display recommendations in the popup
-  } catch (error) {
-    console.error('Error fetching recommendations:', error);
-  }
-}
+// Add a click event listener to toggle the configuration section
+document.addEventListener('DOMContentLoaded', () => {
+  const configButton = document.getElementById('config-button');
+  const configSection = document.getElementById('config-section');
 
-// Fetch the user's API key from local storage
-chrome.storage.local.get(['apiKey'], (result) => {
-  const apiKey = result.apiKey;
-  if (apiKey) {
-    fetchRecommendations(apiKey);
-  } else {
-    // Display a message to prompt the user to enter their API key
-  }
+  configButton.addEventListener('click', () => {
+    configSection.style.display = configSection.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Add a click event listener to save the API key
+  const saveButton = document.getElementById('save-button');
+  const apiKeyInput = document.getElementById('api-key');
+
+  saveButton.addEventListener('click', () => {
+    const apiKey = apiKeyInput.value;
+    if (apiKey) {
+      // Save the API key to local storage or wherever you need to store it
+      // For simplicity, let's store it in local storage
+      localStorage.setItem('tmdb_api_key', apiKey);
+      // Optionally, you can display a success message to the user
+      alert('API Key saved successfully!');
+    } else {
+      alert('Please enter a valid API Key.');
+    }
+  });
 });

@@ -1,16 +1,30 @@
-<!-- popup/popup.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Theaterflix Extension</title>
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <h1>Theaterflix Top Picks</h1>
-  <div id="recommendations"></div>
-  <a href="../options/index.html" target="_blank">Configure Extension</a>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="../scripts/api.js"></script>
-  <script src="popup.js"></script>
+  <h1>Personalized Recommendations</h1>
+  <div id="recommendations-list">
+    <!-- Recommendations will be displayed here -->
+  </div>
+  <button id="config-button">Configure API Key</button> <!-- Add a button for configuration -->
+  <div id="config-section" style="display: none;"> <!-- Add a section for configuration (hidden by default) -->
+    <label for="api-key">Enter your TMDb API Key:</label>
+    <input type="text" id="api-key" placeholder="Type your API Key here">
+    <button id="save-button">Save</button>
+  </div>
+
+  <!-- Add links to jQuery and Axios -->
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/axios.min.js"></script>
+
+  <!-- Load the external api.js file -->
+  <script src="scripts/api.js"></script>
+
+  <script src="scripts/popup.js"></script>
 </body>
 </html>
