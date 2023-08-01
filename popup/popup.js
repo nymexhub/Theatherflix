@@ -1,9 +1,9 @@
 // popup.js
 
 $(document).ready(function() {
-  // Add accordion behavior using jQuery
-  $('.accordion-header').click(function() {
-    $('.accordion-content').slideToggle();
+  // Add a click event listener to toggle the configuration section
+  $('#config-button').click(function() {
+    $('#config-section').slideToggle();
   });
 
   // Add a click event listener to save the API key
