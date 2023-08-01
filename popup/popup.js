@@ -1,5 +1,3 @@
-// popup.js
-
 // Add a click event listener to toggle the configuration section
 document.addEventListener('DOMContentLoaded', () => {
   const configButton = document.getElementById('config-button');
