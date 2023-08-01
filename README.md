@@ -58,11 +58,11 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
 --->
 
 <p align="center">
-  <img src="./images/small_sshots/sshot_top_small.png" alt="Screenshot" width="300" height="200">
+  <img src="./images/small_sshots/sshot_top_small.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/small_sshots/sshot_bottom_small.png" alt="Screenshot" width="300" height="200">
+  <img src="./images/small_sshots/sshot_bottom_small.png" alt="Screenshot" width="400" height="350">
 </p>
 
 #
