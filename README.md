@@ -8,6 +8,12 @@
 
 Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
 
+Theaterflix is a browser extension that provides personalized movie and series recommendations. It's built using HTML, CSS, and JavaScript, and it leverages the TMDb API to fetch data about movies and TV shows. Users can configure the extension by entering their TMDb API key. In the future, we plan to enhance the recommendation system with machine learning and expand compatibility to other browsers. The goal is to create a seamless and delightful user experience for discovering new content based on individual preferences.
+
+The extension uses JavaScript to handle user interactions, such as displaying and hiding the configuration section using an accordion-style UI. It also fetches data from the TMDb API asynchronously and dynamically updates the UI with the fetched information.
+
+In the future, this project aims to incorporate advanced machine learning algorithms to deliver even more accurate and personalized movie and series recommendations. It will expand its reach to support multiple browsers, catering to a broader user base. Continuous updates and improvements will be implemented to stay up-to-date with the latest trends and user preferences. The ultimate goal is to become a go-to tool for entertainment discovery, providing users with an engaging and effortless content exploration experience.
+
 #
 
 ![Version](https://img.shields.io/github/release/NymexData/Theatherflix.svg?style=flat&color=blue)
