@@ -1,6 +1,5 @@
 // api.js
 
-// Function to fetch movie recommendations using the provided API key
 async function fetchMovieRecommendations(apiKey) {
   try {
     const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
@@ -11,11 +10,10 @@ async function fetchMovieRecommendations(apiKey) {
   }
 }
 
-// Function to render movie recommendations in the popup
 function renderMovieRecommendations(recommendations) {
   const recommendationsList = document.getElementById('recommendations-list');
 
-  recommendationsList.innerHTML = ''; // Clear previous recommendations
+  recommendationsList.innerHTML = '';
 
   recommendations.forEach((movie) => {
     const movieBox = document.createElement('div');
@@ -42,10 +40,10 @@ function renderMovieRecommendations(recommendations) {
   });
 }
 
-// Check if the API key is already saved in local storage
+
 const apiKey = localStorage.getItem('tmdb_api_key');
 
-// If the API key is already saved, fetch and render movie recommendations
+
 if (apiKey) {
   fetchMovieRecommendations(apiKey)
     .then((recommendations) => renderMovieRecommendations(recommendations))

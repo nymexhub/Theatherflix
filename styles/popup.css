@@ -1,8 +1,8 @@
 /* styles/popup.css */
 /* popup.css */
 body {
-  width: 600px; /* Set the width of the popup */
-  margin: 20px auto; /* Center the popup horizontally */
+  width: 600px; 
+  margin: 20px auto; 
   padding: 20px;
 }
 
@@ -29,8 +29,6 @@ body {
   flex: 1;
 }
 
-
-/* CSS styles for the configuration section */
 #config-section {
   display: none;
   border: 1px solid #ccc;
