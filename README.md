@@ -51,10 +51,19 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
 
 #### Screenshots
 
-![Screenshot](./images/small_sshots/sshot_top_small.png){:height="400px" width="250px"}
+<!-- 
+![Screenshot](./images/small_sshots/sshot_top_small.png)
 
-![Screenshot](./images/small_sshots/sshot_bottom_small.png){:height="400px" width="250px"}
+![Screenshot](./images/small_sshots/sshot_bottom_small.png)
+--->
 
+<p align="center">
+  <img src="./images/small_sshots/sshot_top_small.png" alt="Screenshot" width="250" height="400">
+</p>
+
+<p align="center">
+  <img src="./images/small_sshots/sshot_bottom_small.png" alt="Screenshot" width="250" height="400">
+</p>
 
 #
 
