@@ -8,7 +8,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Add styles for the accordion */
 .accordion {
   margin-top: 10px;
   border: 1px solid #ccc;
@@ -32,13 +31,11 @@ h1 {
   padding: 10px;
 }
 
-/* Show the accordion content when the button is clicked */
+
 .accordion.active .accordion-content {
   display: block;
 }
 
-
-/* Add CSS for the accordion */
 .accordion-header {
   cursor: pointer;
   padding: 15px;
