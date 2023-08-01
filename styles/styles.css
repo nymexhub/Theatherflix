@@ -36,3 +36,20 @@ h1 {
 .accordion.active .accordion-content {
   display: block;
 }
+
+
+/* Add CSS for the accordion */
+.accordion-header {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

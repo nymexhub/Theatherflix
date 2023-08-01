@@ -1,0 +1,42 @@
+/* styles/popup.css */
+/* popup.css */
+body {
+  width: 600px; /* Set the width of the popup */
+  margin: 20px auto; /* Center the popup horizontally */
+  padding: 20px;
+}
+
+#recommendations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.movie-poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+
+/* CSS styles for the configuration section */
+#config-section {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#config-section.active {
+  display: block;
+}
