@@ -1,18 +1,11 @@
 // manifest.json
 {
-    "manifest_version": 2,
-    "name": "Theatherflix Extension",
-    "version": "1.0",
-    "description": "Extension to display personalized recommendations for movies and series.",
-    "permissions": [
-      "http://localhost:3000/api/recommendations/"
-    ],
-    "browser_action": {
-      "default_popup": "index.html"
-    },
-    "icons": {
-      "48": "icon.png"
-    },
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
-  }
-  
+  "manifest_version": 2,
+  "name": "Theaterflix Extension",
+  "version": "1.0",
+  "description": "Extension to display personalized recommendations for movies and series.",
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["activeTab", "storage"]
+}
