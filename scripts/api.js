@@ -1,58 +1,53 @@
-// scripts/api.js
-const recommendationsContainer = document.getElementById('recommendations');
+// api.js
 
-// Function to fetch recommendations from the TMDB API using the user's API key
-async function fetchRecommendations(apiKey) {
+// Function to fetch movie recommendations using the provided API key
+async function fetchMovieRecommendations(apiKey) {
   try {
-    // Fetch recommendations data from the TMDB API using the user's API key
-    const response = await axios.get('https://api.themoviedb.org/3/discover/movie', {
-      params: {
-        api_key: apiKey,
-        language: 'en-US',
-        sort_by: 'popularity.desc',
-        include_adult: false,
-        include_video: false,
-        page: 1,
-      },
-    });
-
-    const recommendationsData = response.data.results;
-    // Process the data and display recommendations in the popup
-    displayRecommendations(recommendationsData);
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
+    return response.data.results;
   } catch (error) {
-    console.error('Error fetching recommendations:', error);
+    console.error('Error fetching movie recommendations:', error);
+    return [];
   }
 }
 
-// Function to display the recommendations in the popup
-function displayRecommendations(recommendationsData) {
-  recommendationsContainer.innerHTML = '';
+// Function to render movie recommendations in the popup
+function renderMovieRecommendations(recommendations) {
+  const recommendationsList = document.getElementById('recommendations-list');
 
-  recommendationsData.forEach((recommendation) => {
-    const { title, poster_path, vote_average } = recommendation;
-    const poster = `https://image.tmdb.org/t/p/w200${poster_path}`;
-    const rating = vote_average.toFixed(1);
+  recommendationsList.innerHTML = ''; // Clear previous recommendations
 
-    const recommendationElement = document.createElement('div');
-    recommendationElement.classList.add('recommendation');
-    recommendationElement.innerHTML = `
-      <img src="${poster}" alt="${title}">
-      <h3>${title}</h3>
-      <p>Rating: ${rating}/10</p>
-      <hr>
-    `;
+  recommendations.forEach((movie) => {
+    const movieBox = document.createElement('div');
+    movieBox.className = 'movie-box';
 
-    recommendationsContainer.appendChild(recommendationElement);
+    const moviePoster = document.createElement('img');
+    moviePoster.className = 'movie-poster';
+    moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
+    movieBox.appendChild(moviePoster);
+
+    const movieInfo = document.createElement('div');
+    movieInfo.className = 'movie-info';
+
+    const movieTitle = document.createElement('h2');
+    movieTitle.textContent = movie.title;
+    movieInfo.appendChild(movieTitle);
+
+    const movieOverview = document.createElement('p');
+    movieOverview.textContent = movie.overview;
+    movieInfo.appendChild(movieOverview);
+
+    movieBox.appendChild(movieInfo);
+    recommendationsList.appendChild(movieBox);
   });
 }
 
-// Fetch the user's API key from local storage
-chrome.storage.local.get(['apiKey'], (result) => {
-  const apiKey = result.apiKey;
-  if (apiKey) {
-    fetchRecommendations(apiKey);
-  } else {
-    // Display a message to prompt the user to enter their API key
-    console.log('Please enter your API key.');
-  }
-});
+// Check if the API key is already saved in local storage
+const apiKey = localStorage.getItem('tmdb_api_key');
+
+// If the API key is already saved, fetch and render movie recommendations
+if (apiKey) {
+  fetchMovieRecommendations(apiKey)
+    .then((recommendations) => renderMovieRecommendations(recommendations))
+    .catch((error) => console.error('Error fetching movie recommendations:', error));
+}
