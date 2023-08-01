@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Add styles for the accordion */
+.accordion {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+/* Show the accordion content when the button is clicked */
+.accordion.active .accordion-content {
+  display: block;
+}
