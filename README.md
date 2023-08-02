@@ -126,7 +126,7 @@ https://github.com/NymexData/Theatherflix/tree/development
 
 
 #### Join the conversation about Theatherflix using Slack!
-https://NymexData.slack.com/
+https://nymexdata.slack.com/
 
 
 #### Github notes for Engineers & Developers
@@ -136,29 +136,6 @@ Before any commit, don't forget this: (or we could lose all the work that other 
 2. `git add .` (your contribution.)
 3.  your contribution - commits ...
 
-#### Developers 
-
-If you want to run the latest code from git, here's how to get started:
-
-1. Clone the code:
-
-        git clone git@github.com:NymexData/theatherflix.git
-        cd theatherflix
-
-2. Install the theatherflix dependencies
-
-        npm install (You can also use Yarn)
-
-3. Build the code
-
-        npm run build
-
-4. Run
-
-        npm start
-   or
-
-        node server.js
 
 #### Contributing
 
