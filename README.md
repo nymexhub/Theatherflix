@@ -14,6 +14,8 @@ The extension uses JavaScript to handle user interactions, such as displaying an
 
 In the future, this project aims to incorporate advanced machine learning algorithms to deliver even more accurate and personalized movie and series recommendations. It will expand its reach to support multiple browsers, catering to a broader user base. Continuous updates and improvements will be implemented to stay up-to-date with the latest trends and user preferences. The ultimate goal is to become a go-to tool for entertainment discovery, providing users with an engaging and effortless content exploration experience.
 
+#
+
 <!--
 https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdckgjiillpcmlmlhhg
 -->
