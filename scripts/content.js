@@ -10,13 +10,11 @@ function insertExtensionUI() {
     }
   }
   
-
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message === "showExtensionUI") {
       insertExtensionUI();
     }
   });
   
-
   chrome.runtime.sendMessage("contentScriptReady");
   

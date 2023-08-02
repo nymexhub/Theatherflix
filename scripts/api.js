@@ -1,8 +1,8 @@
 // api.js
 
-async function fetchMovieRecommendations(apiKey) {
+async function fetchMovieRecommendations(apiKey, page = 1) {
   try {
-    const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`);
     return response.data.results;
   } catch (error) {
     console.error('Error fetching movie recommendations:', error);
@@ -40,9 +40,7 @@ function renderMovieRecommendations(recommendations) {
   });
 }
 
-
 const apiKey = localStorage.getItem('tmdb_api_key');
-
 
 if (apiKey) {
   fetchMovieRecommendations(apiKey)

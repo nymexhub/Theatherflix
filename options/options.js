@@ -2,7 +2,6 @@
 const saveBtn = document.getElementById('saveBtn');
 const apiKeyInput = document.getElementById('apiKey');
 
-// Save the entered API key to local storage when the "Save" button is clicked
 saveBtn.addEventListener('click', () => {
   const apiKey = apiKeyInput.value;
   if (apiKey) {

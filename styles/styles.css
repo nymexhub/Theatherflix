@@ -3,18 +3,15 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
-
 h1 {
   margin-bottom: 20px;
 }
-
 .accordion {
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
 }
-
 .accordion-btn {
   background-color: #f1f1f1;
   color: #333;
@@ -25,17 +22,13 @@ h1 {
   border: none;
   outline: none;
 }
-
 .accordion-content {
   display: none;
   padding: 10px;
 }
-
-
 .accordion.active .accordion-content {
   display: block;
 }
-
 .accordion-header {
   cursor: pointer;
   padding: 15px;
@@ -43,10 +36,36 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 .accordion-content {
   display: none;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+#refresh-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#refresh-button:hover {
+  background-color: #0056b3;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #45a049;
 }
