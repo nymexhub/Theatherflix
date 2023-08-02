@@ -126,7 +126,7 @@ https://github.com/NymexData/Theatherflix/tree/development
 
 
 #### Join the conversation about Theatherflix using Slack!
-https://NymexData.slack.com/
+https://nymexdata.slack.com/
 
 
 #### Github notes for Engineers & Developers
