@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Theaterflix Extension",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Extension to display personalized recommendations for movies and series.",
   "action": {
     "default_popup": "popup/index.html"
