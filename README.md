@@ -103,7 +103,7 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
       Create any issue about moving files etc. We in that way can avoid any kind of conflict regarding files or programming.
       Thanks!
 
-#### Development** vs Production (The master branch)
+#### Development
 
 **Don't write initially in the master branch, all first goes to development**. then we pull request to master which is 'Production'.
 If you want to download the whole development files, go to the 'development' branch -> 
@@ -112,30 +112,6 @@ https://github.com/NymexData/Theatherflix/tree/development
 #If you want to clone the development branch follow this:
 1. `git clone -b development --single-branch git@github.com:NymexData/Theatherflix.git`
 2. `cd development` (which is downloaded as a folder named 'Theatherflix' though, you rename it)
-2. `npm install` (We can use Yarn too)
-3. node (or nodemon) server.js 
-
-
-#### Clone the project 
-
-#If you want to clone the old branch follow this:
-1. `git clone -b development --single-branch git@github.com:NymexData/Theatherflix.git`
-2. `cd Theatherflix`
-2. `npm install` (We can use Yarn too)
-3. node (or nodemon) server.js
-
-
-#### Join the conversation about Theatherflix using Slack!
-https://nymexdata.slack.com/
-
-
-#### Github notes for Engineers & Developers
-Before any commit, don't forget this: (or we could lose all the work that other engineers and developers in the project could have done)
-1. `git pull`
-
-2. `git add .` (your contribution.)
-3.  your contribution - commits ...
-
 
 #### Contributing
 
@@ -148,8 +124,8 @@ This project adheres to the [Contributor Covenant 1.4](http://contributor-covena
 
 | We need more collaborations or people involved in this modest project which I think it could be cool, actualy initially behind Theatherfli there was a different idea, but now,  we have a different idea, I hope this new concepto for the project could work :).
 
-#### Contact and Communications 
-
+#### Join the conversation about Theatherflix using Slack!
+https://nymexdata.slack.com/
 #### **Note:** 
 _Feel free to contact Felipe: f.alfonso@res-ear.ch if you wanna Fork the project to try something unique, and learn and test, and feel an Open Source Project in your hands too._
 
