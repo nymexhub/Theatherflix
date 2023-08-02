@@ -26,9 +26,11 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 
 ![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue) 🎖️🔥
 #### YouTube Video
-<p align="center">
-[![YouTube Video](https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg)](https://www.youtube.com/watch?v=BWHu_yDAe9w)
-</p>
+
+<div style="text-align:center;">
+  [![YouTube Video](https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg)](https://www.youtube.com/watch?v=BWHu_yDAe9w)
+</div>
+
 
 #
 
