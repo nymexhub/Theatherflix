@@ -25,6 +25,13 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 [![Get it on Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Get%20it%20now-brightgreen)](https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdckgjiillpcmlmlhhg) 
 
 ![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue) 🎖️🔥
+#### YouTube Video
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=BWHu_yDAe9w">
+    <img src="https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg" alt="YouTube Video">
+  </a>
+</p>
 
 #
 
@@ -76,11 +83,15 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
 --->
 
 <p align="center">
-  <img src="./images/small_sshots/sshot_top_small.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/small_sshots_1.1.1/sshot_front.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/small_sshots/sshot_bottom_small.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/small_sshots_1.1.1/sshot_top.png" alt="Screenshot" width="400" height="350">
+</p>
+
+<p align="center">
+  <img src="./images/small_sshots_1.1.1/sshot_bottom.png" alt="Screenshot" width="400" height="350">
 </p>
 
 #
