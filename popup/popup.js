@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const moviesPerPage = 20;
   let movieRecommendations = [];
 
-  // Acordeón para la configuración
+
   const accordionHeader = document.querySelector('.accordion-header');
   accordionHeader.addEventListener('click', () => {
     configSection.classList.toggle('active');
