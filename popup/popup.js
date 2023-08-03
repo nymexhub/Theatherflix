@@ -1,93 +1,136 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const configButton = document.querySelector('.accordion-header');
-  const configSection = document.getElementById('config-section');
-
-  configButton.addEventListener('click', () => {
-    configSection.classList.toggle('active');
-  });
-
   const saveButton = document.getElementById('save-button');
   const apiKeyInput = document.getElementById('api-key');
   const statusMessage = document.getElementById('status-message');
+  const loadMoreButton = document.getElementById('load-more-button');
+  const recommendationsList = document.getElementById('recommendations-list');
+  const configSection = document.getElementById('config-section');
+  const refreshButton = document.getElementById('refresh-button');
+
+  let apiKey = '';
+  let page = 1;
+  const moviesPerPage = 20;
+  let movieRecommendations = [];
+
+  // Acordeón para la configuración
+  const accordionHeader = document.querySelector('.accordion-header');
+  accordionHeader.addEventListener('click', () => {
+    configSection.classList.toggle('active');
+  });
+
+  apiKeyInput.addEventListener('input', (event) => {
+    apiKey = event.target.value.trim();
+    validateApiKey(apiKey);
+  });
 
   saveButton.addEventListener('click', () => {
-    const apiKey = apiKeyInput.value;
-    if (apiKey) {
-      localStorage.setItem('tmdb_api_key', apiKey);
-      statusMessage.textContent = 'API Key saved successfully!';
-    } else {
+    if (!apiKey) {
       statusMessage.textContent = 'Please enter a valid API Key.';
+      return;
     }
-  });
 
-  const refreshButton = document.getElementById('refresh-button');
-  refreshButton.addEventListener('click', () => {
-    const apiKey = localStorage.getItem('tmdb_api_key');
-    if (apiKey) {
-      fetchMovieRecommendations(apiKey)
-        .then((recommendations) => renderMovieRecommendations(recommendations))
-        .catch((error) => console.error('Error fetching movie recommendations:', error));
-    } else {
-      statusMessage.textContent = 'Please enter your API Key first.';
+    if (!isValidApiKey(apiKey)) {
+      statusMessage.textContent = 'Please enter a valid API Key (letters and numbers only, no spaces).';
+      return;
     }
-  });
 
-  const loadMoreButton = document.getElementById('load-more-button');
-  let page = 1;
-  const recommendationsPerPage = 5;
+    localStorage.setItem('tmdb_api_key', apiKey);
+    statusMessage.textContent = 'API Key saved successfully!';
+    refreshRecommendations();
+  });
 
   loadMoreButton.addEventListener('click', () => {
-    const apiKey = localStorage.getItem('tmdb_api_key');
-    if (apiKey) {
-      fetchMoreMovieRecommendations(apiKey, page)
-        .then((additionalRecommendations) => {
-          if (additionalRecommendations.length > 0) {
-            renderMovieRecommendations(additionalRecommendations, true);
-            page += 1;
-          } else {
-            statusMessage.textContent = 'No more recommendations to load.';
-            loadMoreButton.style.display = 'none';
-          }
-        })
-        .catch((error) => console.error('Error fetching more movie recommendations:', error));
-    } else {
-      statusMessage.textContent = 'Please enter your API Key first.';
-    }
+    loadMoreRecommendations();
   });
 
-  // Function to fetch movie recommendations
-  async function fetchMovieRecommendations(apiKey) {
+  refreshButton.addEventListener('click', () => {
+    refreshRecommendations();
+  });
+
+  async function refreshRecommendations() {
+    if (!apiKey) {
+      statusMessage.textContent = 'Please enter a valid API Key before refreshing recommendations.';
+      return;
+    }
+
+    page = 1; // Reset page number on refresh
+
     try {
-      const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
-      return response.data.results.slice(0, recommendationsPerPage);
+      const recommendations = await fetchMovieRecommendations();
+      movieRecommendations = recommendations;
+      renderMovieRecommendations();
+      loadMoreButton.style.display = 'block';
     } catch (error) {
       console.error('Error fetching movie recommendations:', error);
-      return [];
+      statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
     }
   }
 
-  // Function to fetch more movie recommendations
-  async function fetchMoreMovieRecommendations(apiKey, page) {
+  async function loadMoreRecommendations() {
+    if (!apiKey) {
+      statusMessage.textContent = 'Please enter a valid API Key before loading more recommendations.';
+      return;
+    }
+
+    page++;
     try {
-      const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page + 1}`
-      );
-      return response.data.results.slice(0, recommendationsPerPage);
+      const recommendations = await fetchMovieRecommendations();
+      movieRecommendations.push(...recommendations);
+      renderMovieRecommendations();
+      loadMoreButton.style.display = 'block';
     } catch (error) {
-      console.error('Error fetching more movie recommendations:', error);
+      console.error('Error fetching movie recommendations:', error);
+      statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
+    }
+  }
+
+  async function fetchMovieRecommendations() {
+    try {
+      const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`);
+      const movies = response.data.results;
+      const moviePromises = movies.map(async (movie) => {
+        const streamingInfo = await fetchStreamingInfo(apiKey, movie.id);
+        movie.streamingInfo = streamingInfo;
+        return movie;
+      });
+
+      const moviesWithStreamingInfo = await Promise.all(moviePromises);
+      return moviesWithStreamingInfo;
+    } catch (error) {
+      console.error('Error fetching movie recommendations:', error);
+      throw error;
+    }
+  }
+
+  async function fetchStreamingInfo(apiKey, movieId) {
+    try {
+      const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`);
+      const results = response.data.results;
+      const streamingServices = new Set();
+
+      // Collect streaming information from all countries without duplicates
+      for (const country in results) {
+        if (results[country].flatrate) {
+          const countryStreamingServices = results[country].flatrate.map(service => service.provider_name);
+          countryStreamingServices.forEach(service => streamingServices.add(service));
+        }
+      }
+
+      return Array.from(streamingServices);
+    } catch (error) {
+      console.error('Error fetching streaming information:', error);
       return [];
     }
   }
 
-  // Function to render movie recommendations
-  function renderMovieRecommendations(recommendations, append = false) {
-    const recommendationsList = document.getElementById('recommendations-list');
+  function renderMovieRecommendations() {
+    const startIndex = (page - 1) * moviesPerPage;
+    const endIndex = startIndex + moviesPerPage;
+    const visibleRecommendations = movieRecommendations.slice(0, endIndex);
 
-    if (!append) {
-      recommendationsList.innerHTML = '';
-    }
+    recommendationsList.innerHTML = '';
 
-    recommendations.forEach((movie) => {
+    visibleRecommendations.forEach((movie) => {
       const movieBox = document.createElement('div');
       movieBox.className = 'movie-box';
 
@@ -107,18 +150,51 @@ document.addEventListener('DOMContentLoaded', () => {
       movieOverview.textContent = movie.overview;
       movieInfo.appendChild(movieOverview);
 
+      if (movie.streamingInfo && movie.streamingInfo.length > 0) {
+        const streamingInfo = document.createElement('p');
+        const services = movie.streamingInfo.join(', ');
+        streamingInfo.innerHTML = `<b>Available on:</b> ${services}`;
+        movieInfo.appendChild(streamingInfo);
+      } else {
+        const noStreamingInfo = document.createElement('p');
+        noStreamingInfo.textContent = 'Not available on any streaming service at the moment. Check local cinemas for availability.';
+        noStreamingInfo.style.fontWeight = 'bold'; // Make the message bold
+        movieInfo.appendChild(noStreamingInfo);
+      }
+
       movieBox.appendChild(movieInfo);
       recommendationsList.appendChild(movieBox);
     });
+
+    if (endIndex >= movieRecommendations.length) {
+      loadMoreButton.style.display = 'none';
+    } else {
+      loadMoreButton.style.display = 'block';
+    }
   }
 
-  // Initial load of movie recommendations
-  const apiKey = localStorage.getItem('tmdb_api_key');
-  if (apiKey) {
-    fetchMovieRecommendations(apiKey)
-      .then((recommendations) => renderMovieRecommendations(recommendations))
-      .catch((error) => console.error('Error fetching movie recommendations:', error));
-  } else {
-    statusMessage.textContent = 'Please enter your API Key first.';
+  function validateApiKey(apiKey) {
+    const apiKeyRegex = /^[A-Za-z0-9]+$/;
+    if (apiKeyRegex.test(apiKey)) {
+      statusMessage.textContent = '';
+      saveButton.disabled = false;
+    } else {
+      statusMessage.textContent = 'Please enter a valid API Key (letters and numbers only, no spaces).';
+      saveButton.disabled = true;
+    }
+  }
+
+  function isValidApiKey(apiKey) {
+    const apiKeyRegex = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]+$/;
+    return apiKeyRegex.test(apiKey);
+  }
+
+  // Cargar API Key si existe en el almacenamiento local
+  const savedApiKey = localStorage.getItem('tmdb_api_key');
+  if (savedApiKey) {
+    apiKeyInput.value = savedApiKey;
+    apiKey = savedApiKey;
+    validateApiKey(apiKey);
+    refreshRecommendations();
   }
 });

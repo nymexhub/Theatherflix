@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,39 @@
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/popup.css">
 </head>
+
 <body>
+  
   <div class="header">
     <img src="../images/logo.png" alt="Theaterflix Logo" width="170" height="35">
     <h1>Theaterflix Extension</h1>
-    <p>Explore a world of personalized movie and TV show recommendations! Our extension harnesses TMDb's vast database to deliver tailored content, enhancing your entertainment journey with seamless suggestions!</p>
+    <p>Explore a world of personalized movie and TV show recommendations! Our extension harnesses TMDb's vast database
+      to deliver tailored content, enhancing your entertainment journey with seamless suggestions!</p>
   </div>
 
   <div id="recommendations-list">
     <!-- Recommendations will be displayed here -->
   </div>
 
-  <button id="load-more-button" class="button">Load More</button>
+  <!-- Load More button -->
+  <button id="load-more-button" class="button" style="display: none;">Load More</button>
 
+  <!-- Configure API Key Section -->
   <div class="accordion-header">Configure API Key</div>
   <div id="config-section" class="active">
     <label for="api-key">Enter your TMDb API Key:</label>
-    <input type="text" id="api-key" placeholder="Type your API Key here">
+    <input type="text" id="api-key" placeholder="Type your API Key here" pattern="[A-Za-z0-9]+"
+      title="Only letters and numbers are allowed for the API Key.">
     <button id="save-button">Save</button>
     <p id="status-message"></p>
     <a href="#" id="refresh-button" class="button">Refresh</a>
   </div>
 
+  <!-- Developer Info -->
   <div class="developer-info">
     <br>
-    Developed by <a href="https://github.com/felipealfonsog" target="_blank">Felipe Alfonso Gonzalez</a>, Computer Science Engineer
+    Developed by <a href="https://github.com/felipealfonsog" target="_blank">Felipe Alfonso Gonzalez</a>, Computer
+    Science Engineer
     <br>
     in collaboration with other members of Nymex Data Research.
     <br>
@@ -50,8 +59,30 @@
       <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">
         <img src="https://img.shields.io/badge/TMDb-Get%20API%20Key-red.svg?logo=themoviedatabase" alt="TMDb API Key">
       </a>
-      <p>Get your API Key <a href="https://www.themoviedb.org/" target="_blank">here</a>! Sign up on TMDb to get your free API key for accessing movie data.</p>
+      <p>Get your API Key <a href="https://www.themoviedb.org/" target="_blank">here</a>! Sign up on TMDb to get your
+        free API key for accessing movie data.</p>
     </div>
+
+      <!-- Mensaje con enlaces en inglés -->
+  <div class="api-key-info">
+    <p>Get your API Key to access movie and TV show data:</p>
+    <p>
+      <a href="https://kb.synology.com/en-my/DSM/tutorial/How_to_apply_for_a_personal_API_key_to_get_video_info" target="_blank">
+        Guide to obtain API Key in English
+      </a>
+    </p>
+  </div>
+
+  <!-- Mensaje con enlaces en español -->
+  <div class="api-key-info">
+    <p>Obtén tu API Key para acceder a los datos de películas y programas de TV:</p>
+    <p>
+      <a href="https://kb.synology.com/es-mx/DSM/tutorial/How_to_apply_for_a_personal_API_key_to_get_video_info" target="_blank">
+        Guía para obtener la API Key en español
+      </a>
+    </p>
+  </div>
+
 
   </div>
 
@@ -59,5 +90,7 @@
   <script src="../scripts/axios.min.js"></script>
   <script src="../scripts/api.js"></script>
   <script src="../popup/popup.js"></script>
+  
 </body>
+
 </html>
