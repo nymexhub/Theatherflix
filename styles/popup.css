@@ -1,51 +1,62 @@
-/* styles/popup.css */
-
 body {
-  width: 600px; 
-  margin: 20px auto; 
+  width: 600px;
+  margin: 20px auto;
   padding: 20px;
 }
+
 #recommendations-list {
   list-style: none;
   padding: 0;
 }
+
 .movie-box {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
 }
+
 .movie-poster {
   width: 100px;
   height: 150px;
   object-fit: cover;
   margin-right: 10px;
 }
+
 .movie-info {
   flex: 1;
 }
+
 #config-section {
   display: none;
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
 }
+
 #config-section.active {
   display: block;
 }
+
 #status-message {
   color: blue;
 }
-#status-message-error {
-  color: blue;
-}
+
 .api-key-info {
   text-align: center;
   margin-top: 20px;
 }
+
 .api-key-info img {
   vertical-align: middle;
 }
+
 .api-key-info p {
   margin-top: 5px;
+}
+
+.streaming-info {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
 }
