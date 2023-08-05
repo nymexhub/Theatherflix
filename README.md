@@ -4,8 +4,9 @@
 
 #
 
-Felipe Alfonso González - Creator / Engineer - <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
-*Logo created by Afolayan Stephen | https://github.com/dee-y  | (Graphic Designer - Contributor).
+> Felipe Alfonso González - Creator / Engineer - <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
+
+> *Logo created by Afolayan Stephen | https://github.com/dee-y  | (Graphic Designer - Contributor).
 #
 
 Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
