@@ -27,7 +27,7 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 
 [![Get it on Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Get%20it%20now-brightgreen)](https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdckgjiillpcmlmlhhg) 
 
-![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue) 🎖️🔥
+[![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue)](#) 🎖️🔥
 #### YouTube Video
 
 <p align="center">
