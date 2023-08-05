@@ -4,7 +4,7 @@
 
 #
 
-> Felipe Alfonso González - Creator / Engineer - <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
+> Felipe Alfonso González - Creator / Computer Science Engineer - <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
 
 > *Logo created by Afolayan Stephen | https://github.com/dee-y  | (Graphic Designer - Contributor).
 #
