@@ -112,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function refreshRecommendations() {
-    configSection.classList.add("inactive");
     if (!apiKey) {
       statusMessage.textContent =
         "Please enter a valid API Key before refreshing recommendations.";
@@ -120,13 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     page = 1;
-    loadMoreButton.style.display = "none";
 
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations = recommendations;
       renderMovieRecommendations();
-      loadMoreButton.style.display = "block";
+      loadMoreButton.style.display = "block"; // Muestra el botón Load More
     } catch (error) {
       console.error("Error fetching movie recommendations:", error);
       statusMessage.textContent =
@@ -155,31 +153,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
-
   async function loadMoreSearchResults() {
     page++;
+    loadMoreButton.style.display = "block";
     try {
-      const additionalResults = await fetchSearchResults(searchInput.value.toLowerCase(), page);
-  
+      const additionalResults = await fetchSearchResults(
+        searchInput.value.toLowerCase(),
+        page
+      );
+
       if (additionalResults.length > 0) {
         searchResults.push(...additionalResults);
         renderMovieRecommendations(searchResults);
-      } else {
-        loadMoreButton.style.display = 'none'; 
       }
     } catch (error) {
-      console.error('Error fetching search results:', error);
+      console.error("Error fetching search results:", error);
     }
   }
-  
-
-  
-
-
-
-
-
 
   async function fetchMovieRecommendations() {
     try {
