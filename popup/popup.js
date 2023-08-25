@@ -1,166 +1,144 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const saveButton = document.getElementById('save-button');
-  const apiKeyInput = document.getElementById('api-key');
-  const statusMessage = document.getElementById('status-message');
-  const loadMoreButton = document.getElementById('load-more-button');
-  const recommendationsList = document.getElementById('recommendations-list');
-  const configSection = document.getElementById('config-section');
-  const refreshButton = document.getElementById('refresh-button');
+document.addEventListener("DOMContentLoaded", () => {
+  const saveButton = document.getElementById("save-button");
+  const apiKeyInput = document.getElementById("api-key");
+  const statusMessage = document.getElementById("status-message");
+  const loadMoreButton = document.getElementById("load-more-button");
+  const recommendationsList = document.getElementById("recommendations-list");
+  const configSection = document.getElementById("config-section");
+  const refreshButton = document.getElementById("refresh-button");
 
-  const searchInput = document.getElementById('search-input');
+  const searchInput = document.getElementById("search-input");
   let searchTimeout;
 
-  configSection.classList.add('inactive');
+  configSection.classList.add("inactive");
 
-
-  let apiKey = '';
+  let apiKey = "";
   let page = 1;
   const moviesPerPage = 20;
   let movieRecommendations = [];
 
-  let searchResults = []; 
-
+  let searchResults = [];
 
   const defaultMoviesPerPage = 20;
   let currentMoviesPerPage = defaultMoviesPerPage;
-  
-  searchInput.addEventListener('input', () => {
+
+  searchInput.addEventListener("input", () => {
     clearTimeout(searchTimeout);
     const searchTerm = searchInput.value.toLowerCase();
-  
+
     searchTimeout = setTimeout(async () => {
-      if (searchTerm === '') {
-        currentMoviesPerPage = defaultMoviesPerPage; 
+      if (searchTerm === "") {
+        currentMoviesPerPage = defaultMoviesPerPage;
         renderMovieRecommendations();
-        searchResults = []; 
-        loadMoreButton.style.display = 'block';
+        searchResults = [];
+        loadMoreButton.style.display = "block";
       } else {
         try {
           searchResults = await fetchSearchResults(searchTerm);
           renderMovieRecommendations(searchResults);
-          loadMoreButton.style.display = 'block'; 
+          loadMoreButton.style.display = "block";
         } catch (error) {
-          console.error('Error fetching search results:', error);
+          console.error("Error fetching search results:", error);
         }
       }
     }, 500);
   });
-  
 
-
-
-
-
-
-  const accordionHeader = document.querySelector('.accordion-header');
-  accordionHeader.addEventListener('click', () => {
-
-    configSection.classList.toggle('active');
-    configSection.classList.toggle('inactive');
+  const accordionHeader = document.querySelector(".accordion-header");
+  accordionHeader.addEventListener("click", () => {
+    configSection.classList.toggle("active");
+    configSection.classList.toggle("inactive");
   });
 
-
-  apiKeyInput.addEventListener('input', (event) => {
+  apiKeyInput.addEventListener("input", (event) => {
     apiKey = event.target.value.trim();
     validateApiKey(apiKey);
   });
 
-  saveButton.addEventListener('click', () => {
+  saveButton.addEventListener("click", () => {
     if (!apiKey) {
-      statusMessage.textContent = 'Please enter a valid API Key.';
+      statusMessage.textContent = "Please enter a valid API Key.";
       return;
     }
 
     if (!isValidApiKey(apiKey)) {
-      statusMessage.textContent = 'Please enter a valid API Key (letters and numbers only, no spaces).';
+      statusMessage.textContent =
+        "Please enter a valid API Key (letters and numbers only, no spaces).";
       return;
     }
 
-    localStorage.setItem('tmdb_api_key', apiKey);
-    statusMessage.textContent = 'API Key saved successfully!';
+    localStorage.setItem("tmdb_api_key", apiKey);
+    statusMessage.textContent = "API Key saved successfully!";
     refreshRecommendations();
   });
 
+  loadMoreButton.addEventListener("click", () => {
+    if (searchResults.length > 0) {
+      loadMoreSearchResults();
+    } else {
+      loadMoreRecommendations();
+    }
+  });
 
-
-loadMoreButton.addEventListener('click', () => {
-  if (searchResults.length > 0) {
-
-    loadMoreSearchResults();
-  } else {
-
-    loadMoreRecommendations();
-  }
-});
-
-
-
-
-
-
-  refreshButton.addEventListener('click', () => {
+  refreshButton.addEventListener("click", () => {
     refreshRecommendations();
   });
 
-
- async function fetchSearchResults(searchTerm) {
+  async function fetchSearchResults(searchTerm) {
     if (!apiKey) {
-      throw new Error('API Key is required to fetch search results.');
+      throw new Error("API Key is required to fetch search results.");
     }
 
     try {
-      const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`);
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`
+      );
       return response.data.results;
     } catch (error) {
-      console.error('Error fetching search results:', error);
+      console.error("Error fetching search results:", error);
       throw error;
     }
   }
 
-
   function renderSearchResults(searchResults) {
-    recommendationsList.innerHTML = '';
+    recommendationsList.innerHTML = "";
 
     searchResults.forEach((movie) => {
-      const movieBox = document.createElement('div');
-      movieBox.className = 'movie-box';
-
-      // ... (código para renderizar película)
+      const movieBox = document.createElement("div");
+      movieBox.className = "movie-box";
 
       recommendationsList.appendChild(movieBox);
     });
   }
 
-
-
-
-
-
   async function refreshRecommendations() {
-    configSection.classList.add('inactive');
+    configSection.classList.add("inactive");
     if (!apiKey) {
-      statusMessage.textContent = 'Please enter a valid API Key before refreshing recommendations.';
+      statusMessage.textContent =
+        "Please enter a valid API Key before refreshing recommendations.";
       return;
     }
-  
-    page = 1; 
-    loadMoreButton.style.display = 'none'; 
-  
+
+    page = 1;
+    loadMoreButton.style.display = "none";
+
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations = recommendations;
       renderMovieRecommendations();
-      loadMoreButton.style.display = 'block'; 
+      loadMoreButton.style.display = "block";
     } catch (error) {
-      console.error('Error fetching movie recommendations:', error);
-      statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
+      console.error("Error fetching movie recommendations:", error);
+      statusMessage.textContent =
+        "Error fetching movie recommendations. Please try again later.";
     }
   }
 
   async function loadMoreRecommendations() {
-    configSection.classList.add('inactive');
+    configSection.classList.add("inactive");
     if (!apiKey) {
-      statusMessage.textContent = 'Please enter a valid API Key before loading more recommendations.';
+      statusMessage.textContent =
+        "Please enter a valid API Key before loading more recommendations.";
       return;
     }
 
@@ -169,10 +147,11 @@ loadMoreButton.addEventListener('click', () => {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations.push(...recommendations);
       renderMovieRecommendations();
-      loadMoreButton.style.display = 'block';
+      loadMoreButton.style.display = "block";
     } catch (error) {
-      console.error('Error fetching movie recommendations:', error);
-      statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
+      console.error("Error fetching movie recommendations:", error);
+      statusMessage.textContent =
+        "Error fetching movie recommendations. Please try again later.";
     }
   }
 
@@ -186,31 +165,27 @@ loadMoreButton.addEventListener('click', () => {
       if (additionalResults.length > 0) {
         searchResults.push(...additionalResults);
         renderMovieRecommendations(searchResults);
-      }
-  
-      if (additionalResults.length < moviesPerPage) {
-        loadMoreButton.style.display = 'none'; // Oculta el botón Load More si no hay más resultados nuevos
       } else {
-        loadMoreButton.style.display = 'block'; // Muestra el botón Load More si hay más resultados nuevos
+        loadMoreButton.style.display = 'none'; 
       }
     } catch (error) {
       console.error('Error fetching search results:', error);
     }
   }
   
-  
-  
-  
-  
+
   
 
 
 
-  
+
+
 
   async function fetchMovieRecommendations() {
     try {
-      const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`);
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`
+      );
       const movies = response.data.results;
       const moviePromises = movies.map(async (movie) => {
         const streamingInfo = await fetchStreamingInfo(apiKey, movie.id);
@@ -221,71 +196,74 @@ loadMoreButton.addEventListener('click', () => {
       const moviesWithStreamingInfo = await Promise.all(moviePromises);
       return moviesWithStreamingInfo;
     } catch (error) {
-      console.error('Error fetching movie recommendations:', error);
+      console.error("Error fetching movie recommendations:", error);
       throw error;
     }
   }
 
   async function fetchStreamingInfo(apiKey, movieId) {
     try {
-      const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`);
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`
+      );
       const results = response.data.results;
       const streamingServices = new Set();
 
       for (const country in results) {
         if (results[country].flatrate) {
-          const countryStreamingServices = results[country].flatrate.map(service => service.provider_name);
-          countryStreamingServices.forEach(service => streamingServices.add(service));
+          const countryStreamingServices = results[country].flatrate.map(
+            (service) => service.provider_name
+          );
+          countryStreamingServices.forEach((service) =>
+            streamingServices.add(service)
+          );
         }
       }
 
       return Array.from(streamingServices);
     } catch (error) {
-      console.error('Error fetching streaming information:', error);
+      console.error("Error fetching streaming information:", error);
       return [];
     }
   }
 
   function renderMovieRecommendations(results = movieRecommendations) {
+    const startIndex = (page - 1) * moviesPerPage;
+    const endIndex = startIndex + moviesPerPage;
+    const visibleRecommendations = movieRecommendations.slice(0, endIndex);
 
+    recommendationsList.innerHTML = "";
 
-      const startIndex = (page - 1) * moviesPerPage;
-      const endIndex = startIndex + moviesPerPage;
-      const visibleRecommendations = movieRecommendations.slice(0, endIndex);
-    
-      recommendationsList.innerHTML = '';
-    
-      results.forEach((movie) => {
-      const movieBox = document.createElement('div');
-      movieBox.className = 'movie-box';
-    
-      const moviePoster = document.createElement('img');
-      moviePoster.className = 'movie-poster';
+    results.forEach((movie) => {
+      const movieBox = document.createElement("div");
+      movieBox.className = "movie-box";
+
+      const moviePoster = document.createElement("img");
+      moviePoster.className = "movie-poster";
       moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
       movieBox.appendChild(moviePoster);
 
-        
+      const movieInfo = document.createElement("div");
+      movieInfo.className = "movie-info";
 
-      const movieInfo = document.createElement('div');
-      movieInfo.className = 'movie-info';
-
-      const movieTitle = document.createElement('h2');
+      const movieTitle = document.createElement("h2");
       movieTitle.textContent = movie.title;
       movieInfo.appendChild(movieTitle);
 
-      const movieOverview = document.createElement('p');
+      const movieOverview = document.createElement("p");
       movieOverview.textContent = movie.overview;
       movieInfo.appendChild(movieOverview);
 
       if (movie.streamingInfo && movie.streamingInfo.length > 0) {
-        const streamingInfo = document.createElement('p');
-        const services = movie.streamingInfo.join(', ');
+        const streamingInfo = document.createElement("p");
+        const services = movie.streamingInfo.join(", ");
         streamingInfo.innerHTML = `<b>Available on:</b> ${services}`;
         movieInfo.appendChild(streamingInfo);
       } else {
-        const noStreamingInfo = document.createElement('p');
-        noStreamingInfo.textContent = 'Not available on any streaming service at the moment. Check local cinemas for availability.';
-        noStreamingInfo.style.fontWeight = 'bold'; // Make the message bold
+        const noStreamingInfo = document.createElement("p");
+        noStreamingInfo.textContent =
+          "Not available on any streaming service at the moment. Check local cinemas for availability.";
+        noStreamingInfo.style.fontWeight = "bold";
         movieInfo.appendChild(noStreamingInfo);
       }
 
@@ -293,23 +271,21 @@ loadMoreButton.addEventListener('click', () => {
       recommendationsList.appendChild(movieBox);
     });
 
-
     if (endIndex >= results.length) {
-      loadMoreButton.style.display = 'block';
+      loadMoreButton.style.display = "block";
     } else {
-      loadMoreButton.style.display = 'block';
+      loadMoreButton.style.display = "block";
     }
-
-
   }
 
   function validateApiKey(apiKey) {
     const apiKeyRegex = /^[A-Za-z0-9]+$/;
     if (apiKeyRegex.test(apiKey)) {
-      statusMessage.textContent = '';
+      statusMessage.textContent = "";
       saveButton.disabled = false;
     } else {
-      statusMessage.textContent = 'Please enter a valid API Key (letters and numbers only, no spaces).';
+      statusMessage.textContent =
+        "Please enter a valid API Key (letters and numbers only, no spaces).";
       saveButton.disabled = true;
     }
   }
@@ -319,8 +295,7 @@ loadMoreButton.addEventListener('click', () => {
     return apiKeyRegex.test(apiKey);
   }
 
-
-  const savedApiKey = localStorage.getItem('tmdb_api_key');
+  const savedApiKey = localStorage.getItem("tmdb_api_key");
   if (savedApiKey) {
     apiKeyInput.value = savedApiKey;
     apiKey = savedApiKey;
@@ -329,5 +304,4 @@ loadMoreButton.addEventListener('click', () => {
   }
 
   renderMovieRecommendations();
-  
 });
