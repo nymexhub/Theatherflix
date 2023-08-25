@@ -11,6 +11,7 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+
 }
 .accordion-btn {
   background-color: #f1f1f1;
@@ -65,6 +66,7 @@ h1 {
   margin: 10px;
   cursor: pointer;
   border-radius: 5px;
+  
 }
 .button:hover {
   background-color: #45a049;
@@ -74,4 +76,7 @@ h1 {
   font-size: 14px;
   color: #555;
   font-weight: bold;
+}
+#load-more-button {
+  display: none;
 }

@@ -7,16 +7,58 @@ document.addEventListener('DOMContentLoaded', () => {
   const configSection = document.getElementById('config-section');
   const refreshButton = document.getElementById('refresh-button');
 
+  const searchInput = document.getElementById('search-input');
+  let searchTimeout;
+
+  configSection.classList.add('inactive');
+
+
   let apiKey = '';
   let page = 1;
   const moviesPerPage = 20;
   let movieRecommendations = [];
 
+  let searchResults = []; 
+
+
+  const defaultMoviesPerPage = 20;
+  let currentMoviesPerPage = defaultMoviesPerPage;
+  
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    const searchTerm = searchInput.value.toLowerCase();
+  
+    searchTimeout = setTimeout(async () => {
+      if (searchTerm === '') {
+        currentMoviesPerPage = defaultMoviesPerPage; 
+        renderMovieRecommendations();
+        searchResults = []; 
+        loadMoreButton.style.display = 'block';
+      } else {
+        try {
+          searchResults = await fetchSearchResults(searchTerm);
+          renderMovieRecommendations(searchResults);
+          loadMoreButton.style.display = 'block'; 
+        } catch (error) {
+          console.error('Error fetching search results:', error);
+        }
+      }
+    }, 500);
+  });
+  
+
+
+
+
+
 
   const accordionHeader = document.querySelector('.accordion-header');
   accordionHeader.addEventListener('click', () => {
+
     configSection.classList.toggle('active');
+    configSection.classList.toggle('inactive');
   });
+
 
   apiKeyInput.addEventListener('input', (event) => {
     apiKey = event.target.value.trim();
@@ -39,27 +81,76 @@ document.addEventListener('DOMContentLoaded', () => {
     refreshRecommendations();
   });
 
-  loadMoreButton.addEventListener('click', () => {
+
+
+loadMoreButton.addEventListener('click', () => {
+  if (searchResults.length > 0) {
+
+    loadMoreSearchResults();
+  } else {
+
     loadMoreRecommendations();
-  });
+  }
+});
+
+
+
+
+
 
   refreshButton.addEventListener('click', () => {
     refreshRecommendations();
   });
 
+
+ async function fetchSearchResults(searchTerm) {
+    if (!apiKey) {
+      throw new Error('API Key is required to fetch search results.');
+    }
+
+    try {
+      const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`);
+      return response.data.results;
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+      throw error;
+    }
+  }
+
+
+  function renderSearchResults(searchResults) {
+    recommendationsList.innerHTML = '';
+
+    searchResults.forEach((movie) => {
+      const movieBox = document.createElement('div');
+      movieBox.className = 'movie-box';
+
+      // ... (código para renderizar película)
+
+      recommendationsList.appendChild(movieBox);
+    });
+  }
+
+
+
+
+
+
   async function refreshRecommendations() {
+    configSection.classList.add('inactive');
     if (!apiKey) {
       statusMessage.textContent = 'Please enter a valid API Key before refreshing recommendations.';
       return;
     }
-
-    page = 1; // Reset page number on refresh
-
+  
+    page = 1; 
+    loadMoreButton.style.display = 'none'; 
+  
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations = recommendations;
       renderMovieRecommendations();
-      loadMoreButton.style.display = 'block';
+      loadMoreButton.style.display = 'block'; 
     } catch (error) {
       console.error('Error fetching movie recommendations:', error);
       statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
@@ -67,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function loadMoreRecommendations() {
+    configSection.classList.add('inactive');
     if (!apiKey) {
       statusMessage.textContent = 'Please enter a valid API Key before loading more recommendations.';
       return;
@@ -83,6 +175,38 @@ document.addEventListener('DOMContentLoaded', () => {
       statusMessage.textContent = 'Error fetching movie recommendations. Please try again later.';
     }
   }
+
+
+
+  async function loadMoreSearchResults() {
+    page++;
+    try {
+      const additionalResults = await fetchSearchResults(searchInput.value.toLowerCase(), page);
+  
+      if (additionalResults.length > 0) {
+        searchResults.push(...additionalResults);
+        renderMovieRecommendations(searchResults);
+      }
+  
+      if (additionalResults.length < moviesPerPage) {
+        loadMoreButton.style.display = 'none'; // Oculta el botón Load More si no hay más resultados nuevos
+      } else {
+        loadMoreButton.style.display = 'block'; // Muestra el botón Load More si hay más resultados nuevos
+      }
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+  
 
   async function fetchMovieRecommendations() {
     try {
@@ -108,7 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const results = response.data.results;
       const streamingServices = new Set();
 
-      // Collect streaming information from all countries without duplicates
       for (const country in results) {
         if (results[country].flatrate) {
           const countryStreamingServices = results[country].flatrate.map(service => service.provider_name);
@@ -123,21 +246,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function renderMovieRecommendations() {
-    const startIndex = (page - 1) * moviesPerPage;
-    const endIndex = startIndex + moviesPerPage;
-    const visibleRecommendations = movieRecommendations.slice(0, endIndex);
+  function renderMovieRecommendations(results = movieRecommendations) {
 
-    recommendationsList.innerHTML = '';
 
-    visibleRecommendations.forEach((movie) => {
+      const startIndex = (page - 1) * moviesPerPage;
+      const endIndex = startIndex + moviesPerPage;
+      const visibleRecommendations = movieRecommendations.slice(0, endIndex);
+    
+      recommendationsList.innerHTML = '';
+    
+      results.forEach((movie) => {
       const movieBox = document.createElement('div');
       movieBox.className = 'movie-box';
-
+    
       const moviePoster = document.createElement('img');
       moviePoster.className = 'movie-poster';
       moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
       movieBox.appendChild(moviePoster);
+
+        
 
       const movieInfo = document.createElement('div');
       movieInfo.className = 'movie-info';
@@ -166,11 +293,14 @@ document.addEventListener('DOMContentLoaded', () => {
       recommendationsList.appendChild(movieBox);
     });
 
-    if (endIndex >= movieRecommendations.length) {
-      loadMoreButton.style.display = 'none';
+
+    if (endIndex >= results.length) {
+      loadMoreButton.style.display = 'block';
     } else {
       loadMoreButton.style.display = 'block';
     }
+
+
   }
 
   function validateApiKey(apiKey) {
@@ -189,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return apiKeyRegex.test(apiKey);
   }
 
-  // Cargar API Key si existe en el almacenamiento local
+
   const savedApiKey = localStorage.getItem('tmdb_api_key');
   if (savedApiKey) {
     apiKeyInput.value = savedApiKey;
@@ -197,4 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     validateApiKey(apiKey);
     refreshRecommendations();
   }
+
+  renderMovieRecommendations();
+  
 });
