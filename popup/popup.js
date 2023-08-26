@@ -16,27 +16,25 @@ document.addEventListener("DOMContentLoaded", () => {
   let page = 1;
   const moviesPerPage = 20;
   let movieRecommendations = [];
-
   let searchResults = [];
 
   const defaultMoviesPerPage = 20;
   let currentMoviesPerPage = defaultMoviesPerPage;
 
-  searchInput.addEventListener("input", () => {
+  searchInput.addEventListener("input", async () => {
     clearTimeout(searchTimeout);
     const searchTerm = searchInput.value.toLowerCase();
 
     searchTimeout = setTimeout(async () => {
-      if (searchTerm === "") {
+      if (searchTerm <= "") {
         currentMoviesPerPage = defaultMoviesPerPage;
         renderMovieRecommendations();
-        searchResults = [];
         loadMoreButton.style.display = "block";
       } else {
         try {
           searchResults = await fetchSearchResults(searchTerm);
-          renderMovieRecommendations(searchResults);
-          loadMoreButton.style.display = "block";
+          renderSearchResults(searchResults);
+          loadMoreButton.style.display = "none"; // No mostrar Load More durante la búsqueda
         } catch (error) {
           console.error("Error fetching search results:", error);
         }
@@ -100,13 +98,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function renderSearchResults(searchResults) {
+  function renderSearchResults(results) {
     recommendationsList.innerHTML = "";
 
-    searchResults.forEach((movie) => {
+    results.forEach((movie) => {
       const movieBox = document.createElement("div");
       movieBox.className = "movie-box";
 
+      const moviePoster = document.createElement("img");
+      moviePoster.className = "movie-poster";
+      moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
+      movieBox.appendChild(moviePoster);
+
+      const movieInfo = document.createElement("div");
+      movieInfo.className = "movie-info";
+
+      const movieTitle = document.createElement("h2");
+      movieTitle.textContent = movie.title;
+      movieInfo.appendChild(movieTitle);
+
+      const movieOverview = document.createElement("p");
+      movieOverview.textContent = movie.overview;
+      movieInfo.appendChild(movieOverview);
+
+      if (movie.streamingInfo && movie.streamingInfo.length > 0) {
+        const streamingInfo = document.createElement("p");
+        const services = movie.streamingInfo.join(", ");
+        streamingInfo.innerHTML = `<b>Available on:</b> ${services}`;
+        movieInfo.appendChild(streamingInfo);
+      } else {
+        const noStreamingInfo = document.createElement("p");
+        noStreamingInfo.textContent =
+          "Not available on any streaming service at the moment. Check local cinemas for availability.";
+        noStreamingInfo.style.fontWeight = "bold";
+        movieInfo.appendChild(noStreamingInfo);
+      }
+
+      movieBox.appendChild(movieInfo);
       recommendationsList.appendChild(movieBox);
     });
   }
@@ -117,9 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid API Key before refreshing recommendations.";
       return;
     }
-
+  
     page = 1;
-
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations = recommendations;
@@ -139,32 +166,37 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid API Key before loading more recommendations.";
       return;
     }
-
+  
     page++;
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations.push(...recommendations);
       renderMovieRecommendations();
-      loadMoreButton.style.display = "block";
+      if (searchResults.length === 0) {
+        loadMoreButton.style.display = "block"; // Muestra el botón Load More para recomendaciones
+      }
     } catch (error) {
       console.error("Error fetching movie recommendations:", error);
       statusMessage.textContent =
         "Error fetching movie recommendations. Please try again later.";
     }
   }
+  
 
   async function loadMoreSearchResults() {
     page++;
-    loadMoreButton.style.display = "block";
     try {
       const additionalResults = await fetchSearchResults(
         searchInput.value.toLowerCase(),
         page
       );
-
+  
       if (additionalResults.length > 0) {
         searchResults.push(...additionalResults);
-        renderMovieRecommendations(searchResults);
+        renderSearchResults(searchResults);
+        loadMoreButton.style.display = "block"; // Muestra el botón Load More para resultados de búsqueda
+      } else {
+        loadMoreButton.style.display = "none"; // Oculta el botón Load More si no hay más resultados de búsqueda
       }
     } catch (error) {
       console.error("Error fetching search results:", error);
