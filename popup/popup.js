@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid API Key before refreshing recommendations.";
       return;
     }
-  
+
     page = 1;
     try {
       const recommendations = await fetchMovieRecommendations();
@@ -166,12 +166,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid API Key before loading more recommendations.";
       return;
     }
-  
+
     page++;
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations.push(...recommendations);
       renderMovieRecommendations();
+
       if (searchResults.length === 0) {
         loadMoreButton.style.display = "block"; // Muestra el botón Load More para recomendaciones
       }
@@ -181,7 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "Error fetching movie recommendations. Please try again later.";
     }
   }
-  
 
   async function loadMoreSearchResults() {
     page++;
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
         searchInput.value.toLowerCase(),
         page
       );
-  
+
       if (additionalResults.length > 0) {
         searchResults.push(...additionalResults);
         renderSearchResults(searchResults);
