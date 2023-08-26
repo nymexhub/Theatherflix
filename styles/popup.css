@@ -1,8 +1,6 @@
-/* styles/popup.css */
-
 body {
-  width: 600px; 
-  margin: 20px auto; 
+  width: 600px;
+  margin: 20px auto;
   padding: 20px;
 }
 #recommendations-list {
@@ -36,9 +34,6 @@ body {
 #status-message {
   color: blue;
 }
-#status-message-error {
-  color: blue;
-}
 .api-key-info {
   text-align: center;
   margin-top: 20px;
@@ -48,4 +43,15 @@ body {
 }
 .api-key-info p {
   margin-top: 5px;
+}
+.streaming-info {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
 }

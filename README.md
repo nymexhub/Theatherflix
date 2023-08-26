@@ -2,8 +2,11 @@
 
 <p align="center"><a href="https://github.com/NymexData/Theatherflix" target="_blank" rel="noopener noreferrer"><img width="400" src="https://user-images.githubusercontent.com/36637989/41645883-3671a30a-746a-11e8-90d5-540fe0ff6abf.png" alt="logo"></a></p>
 
-*Logo created by Dee-y | https://github.com/dee-y  | (Graphic Designer - Contributor)
+#
 
+> Felipe Alfonso González - Creator / Computer Science Engineer - https://github.com/felipealfonsog  | <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
+
+> *Logo created by Afolayan Stephen | https://github.com/dee-y  | (Graphic Designer - Contributor).
 #
 
 Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
@@ -24,11 +27,11 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 
 [![Get it on Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Get%20it%20now-brightgreen)](https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdckgjiillpcmlmlhhg) 
 
-![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue) 🎖️🔥
+[![Google Approved](https://img.shields.io/badge/Google%20Approved-Yes-blue)](#) 🎖️🔥
 #### YouTube Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=BWHu_yDAe9w">
+  <a href="https://www.youtube.com/watch?v=zGSAjYkvU9M">
     <img src="https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg" alt="YouTube Video">
   </a>
 </p>
@@ -83,15 +86,15 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
 --->
 
 <p align="center">
-  <img src="./images/small_sshots_1.1.1/sshot_front.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_front.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/small_sshots_1.1.1/sshot_top.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_top.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/small_sshots_1.1.1/sshot_bottom.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_bottom.png" alt="Screenshot" width="400" height="350">
 </p>
 
 #
@@ -165,4 +168,5 @@ Your support and contributions are greatly appreciated! Thank you for your help 
 - [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.com/felipealfonsog)
 - [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/felipealfonsog)
 - [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on-GitHub-green)](https://github.com/sponsors/felipealfonsog)
+
 
