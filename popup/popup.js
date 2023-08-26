@@ -10,7 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("search-input");
   let searchTimeout;
 
-  configSection.classList.add("inactive");
+  const apiKeyMessage = document.createElement("p");
+  apiKeyMessage.className = "api-key-message";
+  apiKeyMessage.textContent =
+    "Please configure your API Key before using the search functionality.";
+  searchInput.parentNode.insertBefore(apiKeyMessage, searchInput.nextSibling);
+
+  apiKeyMessage.style.display = "none";
 
   let apiKey = "";
   let page = 1;
@@ -21,20 +27,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultMoviesPerPage = 20;
   let currentMoviesPerPage = defaultMoviesPerPage;
 
+  let searchActive = false;
+
+  function toggleApiKeyMessage(show) {
+    apiKeyMessage.style.display = show ? "block" : "none";
+  }
+
+  function toggleLoadMoreButton() {
+    if (apiKey && apiKey.trim() !== "") {
+      loadMoreButton.style.display = "block";
+    } else {
+      loadMoreButton.style.display = "none";
+    }
+  }
+
   searchInput.addEventListener("input", async () => {
     clearTimeout(searchTimeout);
     const searchTerm = searchInput.value.toLowerCase();
 
+    if (!apiKey && searchTerm !== "") {
+      apiKeyMessage.style.display = "block";
+    } else {
+      apiKeyMessage.style.display = "none";
+    }
+
     searchTimeout = setTimeout(async () => {
-      if (searchTerm <= "") {
+      if (searchTerm === "") {
         currentMoviesPerPage = defaultMoviesPerPage;
         renderMovieRecommendations();
         loadMoreButton.style.display = "block";
+        toggleApiKeyMessage(false);
+        toggleLoadMoreButton();
       } else {
+        if (!apiKey) {
+          toggleApiKeyMessage(true);
+          return;
+        }
         try {
           searchResults = await fetchSearchResults(searchTerm);
           renderSearchResults(searchResults);
-          loadMoreButton.style.display = "none"; // No mostrar Load More durante la búsqueda
+          loadMoreButton.style.display = "none";
+
+          toggleApiKeyMessage(false);
         } catch (error) {
           console.error("Error fetching search results:", error);
         }
@@ -43,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const accordionHeader = document.querySelector(".accordion-header");
+  configSection.classList.add("inactive");
   accordionHeader.addEventListener("click", () => {
     configSection.classList.toggle("active");
     configSection.classList.toggle("inactive");
@@ -67,15 +102,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     localStorage.setItem("tmdb_api_key", apiKey);
     statusMessage.textContent = "API Key saved successfully!";
+    configSection.classList.add("inactive");
     refreshRecommendations();
   });
 
   loadMoreButton.addEventListener("click", () => {
-    if (searchResults.length > 0) {
-      loadMoreSearchResults();
-    } else {
-      loadMoreRecommendations();
-    }
+    loadMoreRecommendations();
   });
 
   refreshButton.addEventListener("click", () => {
@@ -151,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations = recommendations;
       renderMovieRecommendations();
+
       loadMoreButton.style.display = "block"; // Muestra el botón Load More
     } catch (error) {
       console.error("Error fetching movie recommendations:", error);
@@ -160,21 +193,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function loadMoreRecommendations() {
-    configSection.classList.add("inactive");
-    if (!apiKey) {
-      statusMessage.textContent =
-        "Please enter a valid API Key before loading more recommendations.";
-      return;
-    }
-
     page++;
     try {
       const recommendations = await fetchMovieRecommendations();
       movieRecommendations.push(...recommendations);
       renderMovieRecommendations();
 
-      if (searchResults.length === 0) {
-        loadMoreButton.style.display = "block"; // Muestra el botón Load More para recomendaciones
+      if (searchActive) {
+        loadMoreButton.style.display = "none";
+      } else {
+        loadMoreButton.style.display = "block";
       }
     } catch (error) {
       console.error("Error fetching movie recommendations:", error);
@@ -194,9 +222,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (additionalResults.length > 0) {
         searchResults.push(...additionalResults);
         renderSearchResults(searchResults);
-        loadMoreButton.style.display = "block"; // Muestra el botón Load More para resultados de búsqueda
+
+        if (additionalResults.length < moviesPerPage) {
+          loadMoreButton.style.display = "none";
+        } else {
+          loadMoreButton.style.display = "block";
+        }
       } else {
-        loadMoreButton.style.display = "none"; // Oculta el botón Load More si no hay más resultados de búsqueda
+        loadMoreButton.style.display = "none";
       }
     } catch (error) {
       console.error("Error fetching search results:", error);
@@ -298,6 +331,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       loadMoreButton.style.display = "block";
     }
+
+    toggleLoadMoreButton();
   }
 
   function validateApiKey(apiKey) {
