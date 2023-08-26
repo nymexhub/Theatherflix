@@ -32,7 +32,7 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=zGSAjYkvU9M">
-    <img src="https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg" alt="YouTube Video">
+    <img src="https://img.youtube.com/vi/zGSAjYkvU9M/0.jpg" alt="YouTube Video">
   </a>
 </p>
 
