@@ -31,7 +31,7 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 #### YouTube Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=lcYfPwwIKqI">
+  <a href="https://www.youtube.com/watch?v=zGSAjYkvU9M">
     <img src="https://img.youtube.com/vi/BWHu_yDAe9w/0.jpg" alt="YouTube Video">
   </a>
 </p>
@@ -86,15 +86,15 @@ Exciting news! Our extension will soon be available for Chrome users, providing 
 --->
 
 <p align="center">
-  <img src="./images/sshots_1.1.2/sshot_front.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_front.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/sshots_1.1.2/sshot_top.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_top.png" alt="Screenshot" width="400" height="350">
 </p>
 
 <p align="center">
-  <img src="./images/sshots_1.1.2/sshot_bottom.png" alt="Screenshot" width="400" height="350">
+  <img src="./images/sshots_1.1.3/sshot_bottom.png" alt="Screenshot" width="400" height="350">
 </p>
 
 #
