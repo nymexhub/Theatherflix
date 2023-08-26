@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       throw error;
     }
   }
-
+/*
   function renderSearchResults(results) {
     recommendationsList.innerHTML = "";
 
@@ -170,6 +170,55 @@ document.addEventListener("DOMContentLoaded", () => {
       recommendationsList.appendChild(movieBox);
     });
   }
+*/
+
+function renderSearchResults(results) {
+  recommendationsList.innerHTML = "";
+
+  results.forEach((movie) => {
+    const movieBox = document.createElement("div");
+    movieBox.className = "movie-box";
+
+    const moviePoster = document.createElement("img");
+    moviePoster.className = "movie-poster";
+    moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
+    movieBox.appendChild(moviePoster);
+
+    const movieInfo = document.createElement("div");
+    movieInfo.className = "movie-info";
+
+    // Create a link element for the movie title
+    const movieTitle = document.createElement("h3");
+    const titleLink = document.createElement("a");
+    titleLink.textContent = movie.title;
+    titleLink.href = `https://www.themoviedb.org/movie/${movie.id}`;
+    titleLink.target = "_blank"; // Open link in a new tab
+    movieTitle.appendChild(titleLink);
+    movieInfo.appendChild(movieTitle);
+
+    const movieOverview = document.createElement("p");
+    movieOverview.textContent = movie.overview;
+    movieInfo.appendChild(movieOverview);
+
+    if (movie.streamingInfo && movie.streamingInfo.length > 0) {
+      const streamingInfo = document.createElement("p");
+      const services = movie.streamingInfo.join(", ");
+      streamingInfo.innerHTML = `<b>Available on:</b> ${services}`;
+      movieInfo.appendChild(streamingInfo);
+    } else {
+      const noStreamingInfo = document.createElement("p");
+      noStreamingInfo.textContent =
+        "Not available on any streaming service at the moment. Check local cinemas for availability.";
+      noStreamingInfo.style.fontWeight = "bold";
+      movieInfo.appendChild(noStreamingInfo);
+    }
+
+    movieBox.appendChild(movieInfo);
+    recommendationsList.appendChild(movieBox);
+  });
+}
+
+
 
   async function refreshRecommendations() {
     if (!apiKey) {
@@ -281,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return [];
     }
   }
-
+/*
   function renderMovieRecommendations(results = movieRecommendations) {
     const startIndex = (page - 1) * moviesPerPage;
     const endIndex = startIndex + moviesPerPage;
@@ -334,6 +383,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
     toggleLoadMoreButton();
   }
+*/
+function renderMovieRecommendations(results = movieRecommendations) {
+  const startIndex = (page - 1) * moviesPerPage;
+  const endIndex = startIndex + moviesPerPage;
+  const visibleRecommendations = movieRecommendations.slice(0, endIndex);
+
+  recommendationsList.innerHTML = "";
+
+  results.forEach((movie) => {
+    const movieBox = document.createElement("div");
+    movieBox.className = "movie-box";
+
+    const moviePoster = document.createElement("img");
+    moviePoster.className = "movie-poster";
+    moviePoster.src = `https://image.tmdb.org/t/p/w185${movie.poster_path}`;
+    movieBox.appendChild(moviePoster);
+
+    const movieInfo = document.createElement("div");
+    movieInfo.className = "movie-info";
+
+    // Create a link element for the movie title
+    const movieTitle = document.createElement("h3");
+    const titleLink = document.createElement("a");
+    titleLink.textContent = movie.title;
+    titleLink.href = `https://www.themoviedb.org/movie/${movie.id}`;
+    titleLink.target = "_blank"; // Open link in a new tab
+    movieTitle.appendChild(titleLink);
+    movieInfo.appendChild(movieTitle);
+
+    const movieOverview = document.createElement("p");
+    movieOverview.textContent = movie.overview;
+    movieInfo.appendChild(movieOverview);
+
+    if (movie.streamingInfo && movie.streamingInfo.length > 0) {
+      const streamingInfo = document.createElement("p");
+      const services = movie.streamingInfo.join(", ");
+      streamingInfo.innerHTML = `<b>Available on:</b> ${services}`;
+      movieInfo.appendChild(streamingInfo);
+    } else {
+      const noStreamingInfo = document.createElement("p");
+      noStreamingInfo.textContent =
+        "Not available on any streaming service at the moment. Check local cinemas for availability.";
+      noStreamingInfo.style.fontWeight = "bold";
+      movieInfo.appendChild(noStreamingInfo);
+    }
+
+    movieBox.appendChild(movieInfo);
+    recommendationsList.appendChild(movieBox);
+  });
+
+  if (endIndex >= results.length) {
+    loadMoreButton.style.display = "block";
+  } else {
+    loadMoreButton.style.display = "block";
+  }
+
+  toggleLoadMoreButton();
+}
+
 
   function validateApiKey(apiKey) {
     const apiKeyRegex = /^[A-Za-z0-9]+$/;
