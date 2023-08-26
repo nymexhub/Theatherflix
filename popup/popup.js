@@ -1,3 +1,16 @@
+/*
+#####################################
+Developed by Felipe Alfonso González
+Computer Science Engineer
+f.alfonso@res-ear.ch
+github.com/felipealfonsog
+Santiago, Chile
+-------------------------------------
+MIT Licence
+#####################################
+*/
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const saveButton = document.getElementById("save-button");
   const apiKeyInput = document.getElementById("api-key");
