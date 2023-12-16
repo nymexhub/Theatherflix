@@ -1,5 +1,6 @@
 /*
 #####################################
+-------------------------------------
 Developed by Felipe Alfonso González
 Computer Science Engineer
 f.alfonso@res-ear.ch
