@@ -9,6 +9,8 @@
 > *Logo created by <!-- Afolayan Stephen | --> https://github.com/dee-y  | (Graphic Designer - Contributor).
 #
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/phakiffpjmnaecdckgjiillpcmlmlhhg.svg?style=flat-square&label=Chrome%20Web%20Store&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/phakiffpjmnaecdckgjiillpcmlmlhhg?hl=en&authuser=1)
+
 Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
 
 Theaterflix is a browser extension that provides personalized movie and series recommendations. It's built using HTML, CSS, and JavaScript, and it leverages the TMDb API to fetch data about movies and TV shows. Users can configure the extension by entering their TMDb API key. In the future, we plan to enhance the recommendation system with machine learning and expand compatibility to other browsers. The goal is to create a seamless and delightful user experience for discovering new content based on individual preferences.
