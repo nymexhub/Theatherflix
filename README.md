@@ -167,7 +167,7 @@ Founded and Started by Computer Science Enginer: Felipe Alfonso Gonzalez / EMail
 
 Your support and contributions are greatly appreciated! Thank you for your help in making this project better. 🙌
 
-- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.com/felipealfonsog)
+- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.me/felipealfonsog)
 - [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/felipealfonsog)
 - [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on-GitHub-green)](https://github.com/sponsors/felipealfonsog)
 
