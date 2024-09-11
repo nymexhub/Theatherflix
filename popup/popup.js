@@ -1,5 +1,6 @@
 /*
 #####################################
+-------------------------------------
 Developed by Felipe Alfonso González
 Computer Science Engineer
 f.alfonso@res-ear.ch
@@ -437,7 +438,7 @@ function renderMovieRecommendations(results = movieRecommendations) {
     } else {
       const noStreamingInfo = document.createElement("p");
       noStreamingInfo.textContent =
-        "Not available on any streaming service at the moment. Check local cinemas for availability.";
+        "Not available on any streaming service at the moment. Check local cinemas or a different platform for availability.";
       noStreamingInfo.style.fontWeight = "bold";
       movieInfo.appendChild(noStreamingInfo);
     }
@@ -453,6 +454,8 @@ function renderMovieRecommendations(results = movieRecommendations) {
   }
 
   toggleLoadMoreButton();
+  // taggleLoadMoreButton();
+
 }
 
 

@@ -6,8 +6,10 @@
 
 > Felipe Alfonso González - Creator / Computer Science Engineer - https://github.com/felipealfonsog  | <a href="mailto:f.alfonso@res-ear.ch">f.alfonso@res-ear.ch</a>.
 
-> *Logo created by Afolayan Stephen | https://github.com/dee-y  | (Graphic Designer - Contributor).
+> *Logo created by <!-- Afolayan Stephen | --> https://github.com/dee-y  | (Graphic Designer - Contributor).
 #
+
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/phakiffpjmnaecdckgjiillpcmlmlhhg.svg?style=flat-square&label=Chrome%20Web%20Store&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/phakiffpjmnaecdckgjiillpcmlmlhhg?hl=en&authuser=1)
 
 Theatherflix Extension is a browser extension that provides personalized movie and series recommendations to users. Using The Movie Database (TMDb) API, the extension fetches popular movie data and displays customized suggestions based on user preferences. By leveraging TMDb's extensive movie and series information, users can discover exciting titles and find their next favorite entertainment without the need for a Netflix API. The extension offers a seamless and enjoyable browsing experience, making it an ideal companion for movie enthusiasts looking to explore diverse content.
 
@@ -48,8 +50,9 @@ https://chrome.google.com/webstore/detail/theaterflix-extension/phakiffpjmnaecdc
 [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 -->
 
-[![Vim](https://img.shields.io/badge/--019733?logo=vim)](https://www.vim.org/)
-[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
+[![Vim Powered](https://img.shields.io/badge/Vim-Powered-%2311AB00.svg?logo=vim&logoColor=white)](https://www.vim.org)
+[![VS Code Powered](https://img.shields.io/badge/VS%20Code-Powered-%23007ACC.svg?logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+
 
 [![Build Status](https://travis-ci.org/node-red/node-red.svg)](https://travis-ci.org/theatherflix/theatherflix)
 [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.svg?branch=master)](https://coveralls.io/r/theatherflix/theatherflix?branch=master) 
@@ -165,7 +168,7 @@ Founded and Started by Computer Science Enginer: Felipe Alfonso Gonzalez / EMail
 
 Your support and contributions are greatly appreciated! Thank you for your help in making this project better. 🙌
 
-- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.com/felipealfonsog)
+- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.me/felipealfonsog)
 - [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/felipealfonsog)
 - [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on-GitHub-green)](https://github.com/sponsors/felipealfonsog)
 
